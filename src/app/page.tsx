@@ -6,7 +6,6 @@ import IndustryTopology from "../components/_home/IndustryTopology";
 import EngineeringServices from "../components/_home/EngineeringServices";
 import ProductEngineeringCapabilities from "../components/_home/ProductEngineeringCapabilities";
 import Testimonials from "../components/_home/Testimonials";
-import TalkToExpert from "../components/_home/TalkToExpert";
 
 export default function Home() {
   return (
@@ -19,7 +18,6 @@ export default function Home() {
       <EngineeringServices />
       <ProductEngineeringCapabilities />
       <Testimonials />
-      <TalkToExpert />
     </>
   );
 }
