@@ -56,7 +56,7 @@ const NavBar: React.FC = () => {
               </button>
               {isIotSolutionsOpen && (
                 <div className="absolute 2xl:top-[64px] xl:top-[50px] left-0 w-48 bg-white border shadow-lg 2xl:px-[20px] xl:px-[15px] flex flex-col min-w-[275px] xl:py-3 2xl:rounded-ee-[16px] xl:rounded-ee-[12px] 2xl:rounded-es-[16px] xl:rounded-es-[12px]">
-                  <Link href="/" className="text-black 2xl:text-[14px] text-[13.5px] transition-all duration-500 hover:text-[#3563E9] text-nowrap 2xl:py-2.5 xl:py-2 flex">
+                  <Link href="/our-industrial-solutions" className="text-black 2xl:text-[14px] text-[13.5px] transition-all duration-500 hover:text-[#3563E9] text-nowrap 2xl:py-2.5 xl:py-2 flex">
                     Industrial Solutions Overview
                   </Link>
                   <Link href="/" className="text-black 2xl:text-[14px] text-[13.5px] transition-all duration-500 hover:text-[#3563E9] text-nowrap 2xl:py-2.5 xl:py-2 flex">
