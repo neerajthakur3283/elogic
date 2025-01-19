@@ -5,6 +5,7 @@ import PageBanner from './PageBanner';
 import YouAre from './_components/YouAre';
 import Industries from './_components/Industries';
 import HardwareEcosystem from './_components/HardwareEcosystem';
+import OurProcess from './_components/OurProcess';
 
 function page() {
   return (
@@ -14,6 +15,7 @@ function page() {
       <Industries />
       <YouAre />
       <HardwareEcosystem />
+      <OurProcess />
     </>
   )
 }
