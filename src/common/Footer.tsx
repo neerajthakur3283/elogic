@@ -9,13 +9,12 @@ import footerLogo from "@/src/assets/images/footer-logo.svg";
 import linkedinImg from "@/src/assets/images/linkedin.svg";
 import mobLogo from "@/src/assets/images/mobile-footer-logo.svg";
 import TalkToExpert from "../components/_home/TalkToExpert";
-import GoogleMapComponent from "../components/_home/TalkToExpert";
 
 function Footer() {
   return (
     <>
       <footer className="bg-[#EEF1F5]">
-        <GoogleMapComponent />
+        <TalkToExpert />
         <div className="bg-[#172747] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] 2xl:py-[100px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px] 2xl:rounded-ss-[100px] xl:rounded-ss-[75px] md:rounded-ss-[66px] rounded-ss-[40px] 2xl:rounded-se-[100px] xl:rounded-se-[75px] md:rounded-se-[66px] rounded-se-[40px] max-[767px]:pb-[30px]">
           <div className="md:flex items-start 2xl:gap-x-[192.5px] xl:gap-x-[144px] lg:gap-x-[128px] max-[1200px]:!gap-x-[80px] max-[991px]:!gap-x-[30px] max-[790px]:!gap-x-[20px] max-[991px]:justify-around hidden">
             <div className="w-full 2xl:max-w-[430px] xl:max-w-[322.5px] lg:max-w-[286.67px] max-[1200px]:max-w-[250.67px]">
