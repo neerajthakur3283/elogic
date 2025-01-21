@@ -16,19 +16,19 @@ function CardApps() {
       cardImg: imgOne,
     },
     {
-      cardTitle: "OEE: Part count, stoppage, etc",
+      cardTitle: "Energy Consumption Monitoring",
       cardLink: "/",
       linkText: "Learn More",
       cardImg: imgTwo,
     },
     {
-      cardTitle: "OEE: Part count, stoppage, etc",
+      cardTitle: "Wireless instrumentation data Aggregation",
       cardLink: "/",
       linkText: "Learn More",
       cardImg: imgTwo,
     },
     {
-      cardTitle: "OEE: Part count, stoppage, etc",
+      cardTitle: "Machine health/condition monitoring",
       cardLink: "/",
       linkText: "Learn More",
       cardImg: imgOne,

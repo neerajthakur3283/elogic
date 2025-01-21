@@ -86,7 +86,7 @@ function TalkToExpert() {
                 <GoogleMap
                   mapContainerStyle={containerStyle}
                   center={center}
-                  zoom={10}
+                  zoom={16}
                 >
                   <Marker position={center} />
                 </GoogleMap>

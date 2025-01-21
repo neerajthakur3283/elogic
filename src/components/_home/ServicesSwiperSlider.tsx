@@ -3,8 +3,8 @@ import { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 // images
 import slideOneDesktop from "@/src/assets/images/service-one.jpg";
-import slideTwoDesktop from "@/src/assets/images/service-two.jpg";
-import slideThreeDesktop from "@/src/assets/images/service-three.jpg";
+import slideTwoDesktop from "@/src/assets/images/service-three.jpg";
+import slideThreeDesktop from "@/src/assets/images/service-two.jpg";
 
 import slideOneMobile from "@/src/assets/images/service-mob-one.jpg";
 import slideTwoMobile from "@/src/assets/images/service-mob-two.jpg";
@@ -65,21 +65,18 @@ export default function CircularSlider() {
               left: "50%",
               transform: "translateX(-50%)",
               zIndex: 10,
-              filter: "blur(0)",
             };
           } else if (position === 1) {
             style = {
               left: "100%",
               transform: "translateX(-91%) scale(0.8)",
               zIndex: 5,
-              filter: "blur(7px)",
             };
           } else if (position === images.length - 1) {
             style = {
               left: "0%",
               transform: "translateX(-8%) scale(0.8)",
               zIndex: 5,
-              filter: "blur(7px)",
             };
           } else {
             style = {
@@ -87,7 +84,6 @@ export default function CircularSlider() {
               transform: "translateX(-50%)",
               opacity: 0,
               zIndex: 0,
-              filter: "blur(0)",
             };
           }
 
@@ -98,6 +94,7 @@ export default function CircularSlider() {
                 alt={`Slide ${index + 1}`}
                 className="absolute transition-all duration-500 2xl:rounded-[24px] xl:rounded-[18px] md:rounded-[16px] rounded-[18.45px] 2xl:max-w-[1085px] xl:max-w-[815px] lg:max-w-[725px] md:max-w-[615px] sm:max-w-[505px] max-[639px]:max-w-[320px] max-[450px]:max-w-[230px]"
                 style={style}
+                onClick={() => handleDotClick(index)}
               />
             </div>
           );

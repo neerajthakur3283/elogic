@@ -24,14 +24,6 @@ function ProductEngineeringCapabilities() {
     },
     {
       productImg: productTwo,
-      title: "Embedded Hardware Design",
-      smallTitle:
-        "Build and scale generative AI applications with foundation models (FMs)",
-      cardLink: "/",
-      arrowImg: arrowImage,
-    },
-    {
-      productImg: productThree,
       title: "Embedded Software Development",
       smallTitle:
         "Build and scale generative AI applications with foundation models (FMs)",
@@ -39,8 +31,16 @@ function ProductEngineeringCapabilities() {
       arrowImg: arrowImage,
     },
     {
-      productImg: productFour,
+      productImg: productThree,
       title: "Wireless Systems Development",
+      smallTitle:
+        "Build and scale generative AI applications with foundation models (FMs)",
+      cardLink: "/",
+      arrowImg: arrowImage,
+    },
+    {
+      productImg: productFour,
+      title: "User Interface Development",
       smallTitle:
         "Build and scale generative AI applications with foundation models (FMs)",
       cardLink: "/",
