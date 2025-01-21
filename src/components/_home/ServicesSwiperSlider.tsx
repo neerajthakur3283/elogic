@@ -1,14 +1,14 @@
-'use client';
+"use client";
 import { useState, useEffect } from "react";
-import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from "react-responsive";
 // images
-import slideOneDesktop from '@/src/assets/images/service-one.jpg';
-import slideTwoDesktop from '@/src/assets/images/service-two.jpg';
-import slideThreeDesktop from '@/src/assets/images/service-three.jpg';
+import slideOneDesktop from "@/src/assets/images/service-one.jpg";
+import slideTwoDesktop from "@/src/assets/images/service-two.jpg";
+import slideThreeDesktop from "@/src/assets/images/service-three.jpg";
 
-import slideOneMobile from '@/src/assets/images/service-mob-one.jpg';
-import slideTwoMobile from '@/src/assets/images/service-mob-two.jpg';
-import slideThreeMobile from '@/src/assets/images/service-mob-three.jpg';
+import slideOneMobile from "@/src/assets/images/service-mob-one.jpg";
+import slideTwoMobile from "@/src/assets/images/service-mob-two.jpg";
+import slideThreeMobile from "@/src/assets/images/service-mob-three.jpg";
 
 import Image from "next/image";
 
@@ -28,16 +28,21 @@ export default function CircularSlider() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isClient, setIsClient] = useState(false);
 
-  // Ensure the component renders on the client
   useEffect(() => {
     setIsClient(true);
   }, []);
 
-  // Check if the device is mobile
-  const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
+  const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
 
-  // Use the correct image set based on the device type
   const images = isClient && isMobile ? mobileImages : desktopImages;
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [images.length]);
 
   const handleDotClick = (index: number) => {
     setActiveIndex(index);
@@ -47,7 +52,8 @@ export default function CircularSlider() {
     <div className="flex flex-col justify-center items-center relative w-full m-auto overflow-hidden 2xl:h-[590px] xl:h-[445px] lg:h-[397px] md:h-[330px] sm:h-[870px] max-[639px]:h-[560px] max-[450px]:h-[410px]">
       <div className={`relative flex w-full h-full`}>
         {images.map((image, index) => {
-          const position = (index - activeIndex + images.length) % images.length;
+          const position =
+            (index - activeIndex + images.length) % images.length;
 
           let style: React.CSSProperties = {
             left: "50%",
@@ -55,7 +61,6 @@ export default function CircularSlider() {
           };
 
           if (position === 0) {
-            // Active slide in the center
             style = {
               left: "50%",
               transform: "translateX(-50%)",
@@ -63,7 +68,6 @@ export default function CircularSlider() {
               filter: "blur(0)",
             };
           } else if (position === 1) {
-            // Slide to the right of the active
             style = {
               left: "100%",
               transform: "translateX(-91%) scale(0.8)",
@@ -71,7 +75,6 @@ export default function CircularSlider() {
               filter: "blur(7px)",
             };
           } else if (position === images.length - 1) {
-            // Slide to the left of the active
             style = {
               left: "0%",
               transform: "translateX(-8%) scale(0.8)",
@@ -79,7 +82,6 @@ export default function CircularSlider() {
               filter: "blur(7px)",
             };
           } else {
-            // Hidden slides (optional)
             style = {
               left: "50%",
               transform: "translateX(-50%)",
@@ -94,7 +96,7 @@ export default function CircularSlider() {
               <Image
                 src={image.slideImg}
                 alt={`Slide ${index + 1}`}
-                className='absolute transition-all duration-500 2xl:rounded-[24px] xl:rounded-[18px] md:rounded-[16px] rounded-[18.45px] 2xl:max-w-[1085px] xl:max-w-[815px] lg:max-w-[725px] md:max-w-[615px] sm:max-w-[505px] max-[639px]:max-w-[320px] max-[450px]:max-w-[230px]'
+                className="absolute transition-all duration-500 2xl:rounded-[24px] xl:rounded-[18px] md:rounded-[16px] rounded-[18.45px] 2xl:max-w-[1085px] xl:max-w-[815px] lg:max-w-[725px] md:max-w-[615px] sm:max-w-[505px] max-[639px]:max-w-[320px] max-[450px]:max-w-[230px]"
                 style={style}
               />
             </div>
