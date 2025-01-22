@@ -18,7 +18,7 @@ const YouAreCard: React.FC<YouAreCardProps> = ({ youCardView }) => {
   return (
     <>
       {youCardView.map((data, index) => (
-        <div key={index} className="bg-[#1C2845] 2xl:py-50px] xl:py-[37px] md:py-[33px] py-[32px] 2xl:px-[65px] xl:px-[50px] md:px-[43px] px-[42px] 2xl:rounded-[25px] xl:rounded-[18.75px] md:rounded-[16.67px] rounded-[16.26px] 2xl:[&>.card-title]:first-of-type:max-w-[401px] xl:[&>.card-title]:first-of-type:max-w-[301px] md:[&>.card-title]:first-of-type:max-w-[267px]">
+        <div key={index} className="bg-[#1C2845] 2xl:py-50px] xl:py-[37px] md:py-[33px] py-[32px] 2xl:px-[65px] xl:px-[50px] md:px-[43px] px-[42px] 2xl:rounded-[25px] xl:rounded-[18.75px] md:rounded-[16.67px] rounded-[16.26px] 2xl:[&>.card-title]:first-of-type:max-w-[401px] xl:[&>.card-title]:first-of-type:max-w-[301px] md:[&>.card-title]:first-of-type:max-w-[267px] duration-500 transition-all hover:scale-105">
           <div className='2xl:w-[176px] xl:w-[132px] md:w-[118px] w-[115px] rounded-[600px] overflow-hidden'>
             <Image src={data.cardImg} alt='' />
           </div>

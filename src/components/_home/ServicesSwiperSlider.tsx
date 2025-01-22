@@ -65,17 +65,20 @@ export default function CircularSlider() {
               left: "50%",
               transform: "translateX(-50%)",
               zIndex: 10,
+              filter: "blur(0)"
             };
           } else if (position === 1) {
             style = {
               left: "100%",
               transform: "translateX(-91%) scale(0.8)",
+              filter: "blur(7.7px)",
               zIndex: 5,
             };
           } else if (position === images.length - 1) {
             style = {
               left: "0%",
               transform: "translateX(-8%) scale(0.8)",
+              filter: "blur(7.7px)",
               zIndex: 5,
             };
           } else {

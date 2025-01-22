@@ -175,7 +175,7 @@ export default function OurProcess() {
               }`}
             >
               <div
-                className={`w-[37px] min-h-[37px] rounded-full border-[3px] flex items-center justify-center cursor-pointer relative z-[3] ${
+                className={`w-[37px] min-h-[37px] rounded-full border-[3px] flex items-center justify-center cursor-pointer relative z-[3] bg-[#EEF1F5] ${
                   index <= activeStep ? "border-[#3563E9]" : "border-[#D7DBE1]"
                 }`}
                 onClick={() => setActiveStep(index)}

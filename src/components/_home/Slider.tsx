@@ -1,16 +1,17 @@
 "use client";
-
+import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import SlickSlider from "react-slick";
 
 // images
-import slideOne from "@/src/assets/images/slide-one.jpg";
-import slideTwo from "@/src/assets/images/Slide-two.jpg";
-import slideThree from "@/src/assets/images/Slide-three.jpg";
-import slideFour from "@/src/assets/images/Slide-four.jpg";
+import slideOne from "@/src/assets/images/home-slide-1.png";
+import slideTwo from "@/src/assets/images/home-Slide-2.png";
+import slideThree from "@/src/assets/images/home-Slide-3.png";
+import slideFour from "@/src/assets/images/home-Slide-4.png";
 import moImgeOne from "@/src/assets/images/mobile-slide-1.jpg";
-import Link from "next/link";
+import staticMobBgImage from "@/src/assets/images/mobile-slide-1.jpg";
+import staticBgImage from "@/src/assets/images/Slide-three.jpg";
 
 const Slider: React.FC = () => {
   const sliderData = [
@@ -57,36 +58,18 @@ const Slider: React.FC = () => {
 
   return (
     <section>
-      <div className="relative after:absolute after:left-0 after:right-0 after:top-0 after:h-[210px] after:bg-gradient-to-b after:from-black to-[rgba(0,0,0,0)]">
+      <div className="relative ms:pt-0 pt-4 after:absolute after:left-0 after:right-0 after:top-0 after:h-[210px] after:bg-gradient-to-b after:from-black to-[rgba(0,0,0,0)]">
         <SlickSlider
-          className="w-full [&>.slick-dots>li>button]:p-0 [&>.slick-dots>li>button]:rounded-[16px] xl:rounded-[12px] rounded-[14px] [&>.slick-dots>li>button]:2xl:h-[6px] [&>.slick-dots>li>button]:xl:h-[4.5px] [&>.slick-dots>li>button]:md:h-[4px] [&>.slick-dots>li>button]:h-[6px] [&>.slick-dots>li>button]:before:hidden [&>.slick-dots>li]:m-0 [&>.slick-dots>li]:w-auto [&>.slick-dots>li]:h-auto [&>.slick-dots>li>button]:2xl:w-[48px] [&>.slick-dots>li>button]:xl:w-[36px] [&>.slick-dots>li>button]:md:w-[32px] [&>.slick-dots>li>button]:w-[48px] [&>.slick-dots>li>button]:bg-[rgba(255,255,255,0.4)] [&>.slick-dots]:absolute [&>.slick-dots]:left-0 [&>.slick-dots]:2xl:bottom-[39px] [&>.slick-dots]:xl:bottom-[30px] [&>.slick-dots]:md:bottom-[25.97px] [&>.slick-dots]:bottom-[18.95px] [&>.slick-dots]:gap-[8px] [&>.slick-dots]:!flex [&>.slick-dots]:justify-center [&>.slick-dots>li.slick-active>button]:bg-white [&>.slick-dots>li>button]:transition-all [&>.slick-dots>li>button]:duration-500"
+          className="absolute z-[2] left-0 top-0 bottom-0 flex items-center w-full [&>.slick-dots>li>button]:p-0 [&>.slick-dots>li>button]:rounded-[16px] xl:rounded-[12px] rounded-[14px] [&>.slick-dots>li>button]:2xl:h-[6px] [&>.slick-dots>li>button]:xl:h-[4.5px] [&>.slick-dots>li>button]:md:h-[4px] [&>.slick-dots>li>button]:h-[6px] [&>.slick-dots>li>button]:before:hidden [&>.slick-dots>li]:m-0 [&>.slick-dots>li]:w-auto [&>.slick-dots>li]:h-auto [&>.slick-dots>li>button]:2xl:w-[48px] [&>.slick-dots>li>button]:xl:w-[36px] [&>.slick-dots>li>button]:md:w-[32px] [&>.slick-dots>li>button]:w-[48px] [&>.slick-dots>li>button]:bg-[rgba(255,255,255,0.4)] [&>.slick-dots]:absolute [&>.slick-dots]:left-0 [&>.slick-dots]:2xl:bottom-[39px] [&>.slick-dots]:xl:bottom-[30px] [&>.slick-dots]:md:bottom-[25.97px] [&>.slick-dots]:bottom-[18.95px] [&>.slick-dots]:gap-[8px] [&>.slick-dots]:!flex [&>.slick-dots]:justify-center [&>.slick-dots>li.slick-active>button]:bg-white [&>.slick-dots>li>button]:transition-all [&>.slick-dots>li>button]:duration-500"
           {...settings}
         >
           {sliderData.map((data, index) => (
             <div
-              className="max-[767px]:after:hidden after:absolute after:left-0 after:top-0 after:bottom-0 after:right-0 after:bg-gradient-to-r after:from-[rgba(0,0,0,0.7)] after:to-[rgba(0,0,0,0)] relative"
+              className="relative"
               key={index}
             >
-              <div className="slider-image w-full relative">
-                <div className="md:flex hidden w-full">
-                  <Image
-                    className="w-full"
-                    src={data.sliderImg}
-                    alt=""
-                    width={1920}
-                    height={957}
-                  />
-                </div>
-                <div className="md:hidden flex w-full">
-                  <Image
-                    className="w-full"
-                    src={data.mobSliderImg}
-                    alt=""
-                    width={1920}
-                    height={957}
-                  />
-                </div>
-                <div className="absolute left-0 top-0 h-full flex md:items-center 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] md:pt-0 pt-[178px] max-[991px]:!top-[25px] z-[2]">
+              <div className="slider-image w-full relative flex items-center md:flex-nowrap flex-wrap justify-between">
+                <div className="flex md:items-center 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] max-[991px]:!top-[25px] z-[2]">
                   <div className="w-full 2xl:max-w-[845px] xl:max-w-[632px] md:max-w-[562px] max-w-[372px]">
                     <h1 className="text-white 2xl:text-[60px] xl:text-[45px] text-[40px] md:font-bold font-semibold 2xl:w-[550px] xl:w-[450px] md:w-[355px] mb-3 tracking-[-1.5px] max-[767px]:leading-[1.34]">
                       {data.sliderHeading}
@@ -104,10 +87,25 @@ const Slider: React.FC = () => {
                     </div>
                   </div>
                 </div>
+                <div className="slide-img max-[767px]:px-[20px] md:pt-0 sm:pt-[90px] pt-3">
+                  <div className="">
+                    <Image
+                      className="w-full"
+                      src={data.sliderImg}
+                      alt=""
+                      width={1920}
+                      height={957}
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           ))}
         </SlickSlider>
+        <div className="bg-image max-[767px]:after:hidden after:absolute after:left-0 after:top-0 after:bottom-0 after:right-0 after:bg-gradient-to-r after:from-[rgba(0,0,0,0.7)] after:to-[rgba(0,0,0,0)] max-[991px]:h-[600px] max-[767px]:h-auto max-[991px]:[&>img]:h-full max-[991px]:[&>img]:object-cover">
+          <Image className="md:flex hidden" src={staticBgImage} alt="" />
+          <Image className="md:hidden flex w-full" src={staticMobBgImage} alt="" />
+        </div>
       </div>
     </section>
   );

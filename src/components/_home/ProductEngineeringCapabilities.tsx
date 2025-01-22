@@ -81,7 +81,7 @@ function ProductEngineeringCapabilities() {
                 Our Product Engineering Capabilities
               </h2>
             </div>
-            <div className="2xl:pt-[60px] xl:pt-[45px] pt-[40px] max-[767px]:relative max-[767px]:mt-[40px]">
+            <div className="2xl:pt-[45px] xl:pt-[30px] pt-[25px] max-[767px]:relative max-[767px]:mt-[40px]">
               <ProductSlider productCardData={productCardData} />
             </div>
           </div>
