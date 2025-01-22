@@ -6,9 +6,9 @@ import SlickSlider from "react-slick";
 
 // images
 import slideOne from "@/src/assets/images/home-slide-1.png";
-import slideTwo from "@/src/assets/images/home-Slide-2.png";
-import slideThree from "@/src/assets/images/home-Slide-3.png";
-import slideFour from "@/src/assets/images/home-Slide-4.png";
+import slideTwo from "@/src/assets/images/home-slide-2.png";
+import slideThree from "@/src/assets/images/home-slide-3.png";
+import slideFour from "@/src/assets/images/home-slide-4.png";
 import moImgeOne from "@/src/assets/images/mobile-slide-1.jpg";
 import staticMobBgImage from "@/src/assets/images/mobile-slide-1.jpg";
 import staticBgImage from "@/src/assets/images/Slide-three.jpg";
