@@ -18,8 +18,7 @@ interface AppCardProps {
 const AppCard: React.FC<AppCardProps> = ({ appCardData }) => {
   return (
     <>
-      {
-      appCardData.map((data, index) => (
+      {appCardData.map((data, index) => (
         <div
           key={index}
           className="transition-all duration-500 hover:scale-105 2xl:rounded-[16px] xl:rounded-[12px] lg:px-[48px]rounded-[10px] rounded-[14px] overflow-hidden bg-[rgba(255,255,255,0.14)]"
