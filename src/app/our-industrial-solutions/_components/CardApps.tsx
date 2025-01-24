@@ -5,7 +5,7 @@ import { MdArrowOutward } from "react-icons/md";
 // images
 import imgOne from "@/src/assets/images/card-img-one.jpg";
 import imgTwo from "@/src/assets/images/card-img-two.jpg";
-import ApplicationCard from "./_components/ApplicationCard";
+import ApplicationCard from "./ApplicationCard";
 
 function CardApps() {
   const appCardData = [
