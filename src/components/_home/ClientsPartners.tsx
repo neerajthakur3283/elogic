@@ -33,6 +33,19 @@ const ClientsPartners: React.FC = () => {
     { partnerLogo: logoNine },
     { partnerLogo: logoTen },
   ];
+
+  const clientLageLogo =[
+    {partnerTopLogo:logoOne,partnerBottomLogo:logoSix},
+    {partnerTopLogo:logoTwo,partnerBottomLogo:logoSeven},
+    {partnerTopLogo:logoThree,partnerBottomLogo:logoEight},
+    {partnerTopLogo:logoFour,partnerBottomLogo:logoNine},
+    {partnerTopLogo:logoFive,partnerBottomLogo:logoTen},
+    {partnerTopLogo:logoOne,partnerBottomLogo:logoSix},
+    {partnerTopLogo:logoTwo,partnerBottomLogo:logoSeven},
+    {partnerTopLogo:logoThree,partnerBottomLogo:logoEight},
+    {partnerTopLogo:logoFour,partnerBottomLogo:logoNine},
+    {partnerTopLogo:logoFive,partnerBottomLogo:logoTen},
+  ]
   return (
     <>
       <section>
@@ -42,12 +55,44 @@ const ClientsPartners: React.FC = () => {
               Our Clients &amp; partners
             </h5>
           </div>
-          <div className="md:grid hidden grid-cols-5 2xl:gap-[48px] xl:gap-[42px]">
-            {clientData.map((data, index) => (
+          <div className="md:grid hidden grid-cols-1 2xl:gap-[48px] xl:gap-[42px]">
+            {/* {clientData.map((data, index) => (
               <div key={index}>
                 <Image src={data.partnerLogo} alt="" width={240} height={80} />
               </div>
-            ))}
+            ))} */}
+            <Carousel
+              opts={{ align: "start", loop: true }}
+              plugins={[
+                Autoplay({
+                  delay: 2000,
+                }),
+              ]}
+            >
+              <CarouselContent>
+                {clientLageLogo.map((data, index) => (
+                  <CarouselItem
+                    key={index}
+                    className="lg:basis-1/5 basis-1/4 max-[420px]:basis-full"
+                  >
+                    <div className="flex justify-center flex-col 2xl:gap-y-[70px] xl:gap-y-[48px] gap-y-[42px]">
+                      <Image
+                        src={data.partnerTopLogo}
+                        alt=""
+                        width={240}
+                        height={80}
+                      />
+                      <Image
+                        src={data.partnerBottomLogo}
+                        alt=""
+                        width={240}
+                        height={80}
+                      />
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+            </Carousel>
           </div>
           <div className="md:hidden">
             <Carousel
@@ -62,7 +107,7 @@ const ClientsPartners: React.FC = () => {
                 {clientData.map((data, index) => (
                   <CarouselItem
                     key={index}
-                    className="min-[576px]:basis-1/3 basis-1/2 max-[420px]:basis-full"
+                    className="min-[576px]:basis-1/3 basis-1/2"
                   >
                     <div className="flex justify-center">
                       <Image

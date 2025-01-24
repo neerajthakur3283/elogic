@@ -188,7 +188,7 @@ function ServicesView() {
                     Services
                 </div>
                 <div className='2xl:pt-[80px] xl:pt-[60px] md:pt-[53px] pt-[40px]'>
-                    <div className='grid lg:grid-cols-2 grid-cols-1 2xl:gap-x-[40px] xl:gap-x-[30px] md:gap-x-[25px] 2xl:gap-y-[80px] lg:gap-y-[53px] gap-y-[16px] [&>div:nth-child(2)>div:nth-child(1)>div>div:nth-child(2)>ul>li:nth-child(7)]:items-start [&>div:nth-child(2)>div:nth-child(1)>div>div:nth-child(2)>ul>li:nth-child(9)]:items-center [&>div:nth-child(2)>div:nth-child(1)>div>div:nth-child(2)>ul>li:nth-child(9)]:relative md:[&>div:nth-child(2)>div:nth-child(1)>div>div:nth-child(2)>ul>li:nth-child(9)]:-top-[50px]'>
+                    <div className='grid lg:grid-cols-2 grid-cols-1 2xl:gap-x-[40px] xl:gap-x-[30px] md:gap-x-[25px] 2xl:gap-y-[80px] lg:gap-y-[53px] gap-y-[16px] [&>div:nth-child(2)>div:nth-child(1)>div>div:nth-child(2)>ul>li:nth-child(7)]:items-start [&>div:nth-child(2)>div:nth-child(1)>div>div:nth-child(2)>ul>li:nth-child(9)]:items-center [&>div:nth-child(2)>div:nth-child(1)>div>div:nth-child(2)>ul>li:nth-child(9)]:relative md:[&>div:nth-child(2)>div:nth-child(1)>div>div:nth-child(2)>ul>li:nth-child(9)]:-top-[50px] [&>div:nth-child(2)>div:nth-child(1)>div>div:nth-child(2)>ul>li:nth-child(9)]:-top-[40px]'>
                     <ServiceCard serviceCardData={serviceCardData} />
                     </div>
                 </div>

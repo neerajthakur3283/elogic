@@ -29,9 +29,9 @@ const steps = [
             </span>
           </li>
         </ul>
-        <button className="bg-[#3563E9] text-white 2xl:text-[25.59px] xl:text-[19.19px] text-[17.06px] 2xl:w-[228.12px] xl:w-[171.09px] w-[152.41px] 2xl:h-[56.47px] xl:h-[42.35px] h-[37.65px] rounded-full 2xl:mt-[24px] xl:mt-[18px] mt-[16px]">
+        {/* <button className="bg-[#3563E9] text-white 2xl:text-[25.59px] xl:text-[19.19px] text-[17.06px] 2xl:w-[228.12px] xl:w-[171.09px] w-[152.41px] 2xl:h-[56.47px] xl:h-[42.35px] h-[37.65px] rounded-full 2xl:mt-[24px] xl:mt-[18px] mt-[16px]">
           Get Started →
-        </button>
+        </button> */}
       </>
     ),
   },
@@ -60,9 +60,9 @@ const steps = [
             </span>
           </li>
         </ul>
-        <button className="bg-[#3563E9] text-white 2xl:text-[25.59px] xl:text-[19.19px] text-[17.06px] 2xl:w-[228.12px] xl:w-[171.09px] w-[152.41px] 2xl:h-[56.47px] xl:h-[42.35px] h-[37.65px] rounded-full 2xl:mt-[24px] xl:mt-[18px] mt-[16px]">
+        {/* <button className="bg-[#3563E9] text-white 2xl:text-[25.59px] xl:text-[19.19px] text-[17.06px] 2xl:w-[228.12px] xl:w-[171.09px] w-[152.41px] 2xl:h-[56.47px] xl:h-[42.35px] h-[37.65px] rounded-full 2xl:mt-[24px] xl:mt-[18px] mt-[16px]">
           Get Started →
-        </button>
+        </button> */}
       </>
     ),
   },
@@ -91,9 +91,9 @@ const steps = [
             </span>
           </li>
         </ul>
-        <button className="bg-[#3563E9] text-white 2xl:text-[25.59px] xl:text-[19.19px] text-[17.06px] 2xl:w-[228.12px] xl:w-[171.09px] w-[152.41px] 2xl:h-[56.47px] xl:h-[42.35px] h-[37.65px] rounded-full 2xl:mt-[24px] xl:mt-[18px] mt-[16px]">
+        {/* <button className="bg-[#3563E9] text-white 2xl:text-[25.59px] xl:text-[19.19px] text-[17.06px] 2xl:w-[228.12px] xl:w-[171.09px] w-[152.41px] 2xl:h-[56.47px] xl:h-[42.35px] h-[37.65px] rounded-full 2xl:mt-[24px] xl:mt-[18px] mt-[16px]">
           Get Started →
-        </button>
+        </button> */}
       </>
     ),
   },
@@ -122,9 +122,9 @@ const steps = [
             </span>
           </li>
         </ul>
-        <button className="bg-[#3563E9] text-white 2xl:text-[25.59px] xl:text-[19.19px] text-[17.06px] 2xl:w-[228.12px] xl:w-[171.09px] w-[152.41px] 2xl:h-[56.47px] xl:h-[42.35px] h-[37.65px] rounded-full 2xl:mt-[24px] xl:mt-[18px] mt-[16px]">
+        {/* <button className="bg-[#3563E9] text-white 2xl:text-[25.59px] xl:text-[19.19px] text-[17.06px] 2xl:w-[228.12px] xl:w-[171.09px] w-[152.41px] 2xl:h-[56.47px] xl:h-[42.35px] h-[37.65px] rounded-full 2xl:mt-[24px] xl:mt-[18px] mt-[16px]">
           Get Started →
-        </button>
+        </button> */}
       </>
     ),
   },

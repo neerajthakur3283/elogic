@@ -6,9 +6,9 @@ import imgOne from '@/src/assets/images/you-are-one.jpg'
 
 function YouAre() {
     const youCardView = [
-        {cardImg:imgOne,cardTitle:'A manufacturing plan factory/unit', cardLink:'', linkText:'Learn More'},
-        {cardImg:imgOne,cardTitle:'An EPC, O&M, SI, automation specialist', cardLink:'', linkText:'Learn More'},
-        {cardImg:imgOne,cardTitle:'An OEM of industrial machinery, plant, instrumentation, other equipment', cardLink:'', linkText:'Learn More'},
+        {cardImg:imgOne,cardTitle:<>A manufacturing plan <br/>factory/unit</>, cardLink:'', linkText:'Learn More',cardPara:'We can communicate with a wide range of OEM equipment, PLCs, HMIs and sensors with rich protocol integrations and deploy tailor-made applications on both edge and cloud'},
+        {cardImg:imgOne,cardTitle:<>An EPC, O&M, SI, automation<br/>specialist</>, cardLink:'', linkText:'Learn More',cardPara:'We can communicate with a wide range of OEM equipment, PLCs, HMIs and sensors with rich protocol integrations and deploy tailor-made applications on both edge and cloud'},
+        {cardImg:imgOne,cardTitle:<>An OEM of industrial machinery,<br/>plant, instrumentation, other<br/>equipment</>, cardLink:'', linkText:'Learn More',cardPara:'We can communicate with a wide range of OEM equipment, PLCs, HMIs and sensors with rich protocol integrations and deploy tailor-made applications on both edge and cloud'},
     ]
   return (
     <>
@@ -21,7 +21,7 @@ function YouAre() {
                         We can communicate with a wide range of OEM equipment, PLCs, HMIs and sensors with rich protocol integrations and deploy tailor-made applications on both edge and cloud
                         </div>
                     </div>
-                    <div className='grid md:grid-cols-3 2xl:pt-[80px] xl:pt-[60px] lg:pt-[53px] md:pt-[45px] pt-[40px] 2xl:gap-[30px] xl:gap-[22px] md:xl:gap-[20px] gap-[15.81px]'>
+                    <div className='grid lg:grid-cols-3 2xl:pt-[80px] xl:pt-[60px] lg:pt-[53px] md:pt-[45px] pt-[40px] 2xl:gap-[30px] xl:gap-[22px] md:xl:gap-[20px] gap-[15.81px]'>
                         <YouAreCard youCardView={youCardView}/>
                     </div>
                 </div>

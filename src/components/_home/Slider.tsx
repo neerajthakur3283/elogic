@@ -5,7 +5,7 @@ import React from "react";
 import SlickSlider from "react-slick";
 
 // images
-import slideOne from "@/src/assets/images/home-slide-1.png";
+import slideOne from "@/src/assets/images/home-slide-1.svg";
 import slideTwo from "@/src/assets/images/home-slide-2.png";
 import slideThree from "@/src/assets/images/home-slide-3.png";
 import slideFour from "@/src/assets/images/home-slide-4.png";

@@ -22,10 +22,10 @@ const AppCard: React.FC<AppCardProps> = ({ appCardData }) => {
       appCardData.map((data, index) => (
         <div
           key={index}
-          className="transition-all duration-500 hover:scale-105 2xl:rounded-[16px] xl:rounded-[12px] lg:px-[48px]rounded-[10px] rounded-[14px] overflow-hidden bg-[rgba(255,255,255,0.14)]"
+          className="group transition-all duration-500 border border-transparent hover:border-[rgba(255,255,255,0.15)] hover:shadow-[0_0_15px_rgba(255,255,255,0.35)] 2xl:rounded-[16px] xl:rounded-[12px] lg:px-[48px]rounded-[10px] rounded-[14px] overflow-hidden bg-[rgba(255,255,255,0.14)]"
         >
-          <div>
-            <Image className="w-full" src={data.appImg} alt="" />
+          <div className="overflow-hidden">
+            <Image className="w-full transition-all duration-500 group-hover:scale-[1.35]" src={data.appImg} alt="" />
           </div>
           <div className="2xl:p-[27px] xl:p-[20px] lg:p-[8px] p-[24px]">
             <div className="flex justify-start">
@@ -38,7 +38,7 @@ const AppCard: React.FC<AppCardProps> = ({ appCardData }) => {
             </h4>
             <Link
               href={data.appLink}
-              className="flex items-center text-[#4272FF] 2xl:text-base xl:text-[12px] lg:text-[11px] text-[15px] font-bold 2xl:py-[10px] xl:py-[7.5px] lg:py-[6.6px] py-[8px] transition-all duration-500 hover:text-white"
+              className="flex items-center text-[#4272FF] 2xl:text-base xl:text-[12px] lg:text-[11px] text-[15px] font-bold 2xl:py-[10px] xl:py-[7.5px] lg:py-[6.6px] py-[8px]"
             >
               <span className="underline">{data.linkText}</span>{" "}
               <IoIosArrowForward />

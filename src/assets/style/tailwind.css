@@ -14,4 +14,10 @@
     .bg-21 {
         background-size: 21px;
     }
+    .bg-100 {
+        background-size: 100%;
+    }
+    .bg-200 {
+        background-size: 5100px;
+    }
 }

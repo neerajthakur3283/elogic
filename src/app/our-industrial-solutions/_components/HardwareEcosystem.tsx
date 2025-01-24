@@ -21,6 +21,7 @@ function HardwareEcosystem() {
   return (
     <section>
         <div className='bg-[#EEF1F5] 2xl:py-[100px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px]'>
+           
             <div className='flex justify-between items-start md:flex-nowrap flex-wrap md:gap-y-0 gap-y-[20px]'>
                 <div className='text-black'>
                     <span className='flex text-[#3563E9] uppercase font-bold 2xl:text-[16.88px] xl:text-[12.66px] md:text-[11.25px] text-[10px] 2xl:mb-[20px] xl:mb-[15px] md:mb-[13.33px] mb-[10px]'>in-house & 3rd party</span>
@@ -32,18 +33,25 @@ function HardwareEcosystem() {
                     </div>
                 </div>
             </div>
+
             <div className='2xl:pt-[100px] xl:pt-[75px] lg:pt-[66px] md:pt-[45px] pt-[50px] grid md:grid-cols-2 grid-cols-1 2xl:gap-[22.92px] xl:gap-[17.19px] gap-[15.28px]'>
-                <div className='2xl:rounded-[12px] xl:rounded-[8.4px] md:rounded-[7.74px] rounded-[8px] overflow-hidden relative'>
-                    <Image className='md:flex hidden' src={edgeComputer} alt='' />
-                    <Image className='md:hidden flex' src={edgeComputerMob} alt='' />
+                
+                <div className='2xl:rounded-[12px] xl:rounded-[8.4px] md:rounded-[7.74px] rounded-[8px] overflow-hidden relative group'>
+                    <div className='group-hover:[&>img]:blur-[3px]'>
+                        <Image className='md:flex hidden transition-all duration-500' src={edgeComputer} alt='' />
+                        <Image className='md:hidden flex transition-all duration-500' src={edgeComputerMob} alt='' />
+                    </div>
                     <div className='absolute left-0 top-0 h-full w-full flex flex-col justify-between text-white 2xl:p-[24px] xl:p-[18px] p-[16px]'>
                         <h4 className='font-bold 2xl:text-[30px]'>Edge computers & IIoT<br/>Gateways</h4>
                         <Link href=''><Image className='2xl:w-[18.7px] xl:w-[14px] w-[8px]' src={nextarrow} alt='' /></Link>
                     </div>
                 </div>
-                <div className='2xl:rounded-[12px] xl:rounded-[8.4px] md:rounded-[7.74px] rounded-[8px] overflow-hidden relative'>
-                    <Image className='md:flex hidden' src={rfBase} alt='' />
-                    <Image className='md:hidden flex' src={rfBaseMob} alt='' />
+
+                <div className='2xl:rounded-[12px] xl:rounded-[8.4px] md:rounded-[7.74px] rounded-[8px] overflow-hidden relative group'>
+                    <div className='group-hover:[&>img]:blur-[3px]'>
+                        <Image className='md:flex hidden transition-all duration-500' src={rfBase} alt='' />
+                        <Image className='md:hidden flex transition-all duration-500' src={rfBaseMob} alt='' />
+                    </div>
                     <div className='absolute left-0 top-0 h-full w-full flex flex-col justify-between text-white 2xl:p-[24px] xl:p-[18px] p-[16px]'>
                         <h4 className='font-bold 2xl:text-[30px]'>RF base + node</h4>
                         <Link href=''><Image className='2xl:w-[18.7px] xl:w-[14px] w-[8px]' src={nextarrow} alt='' /></Link>
@@ -51,9 +59,11 @@ function HardwareEcosystem() {
                 </div>
             </div>
             <div className='2xl:pt-[23px] xl:pt-[17.25x] pt-[15.28px] 2xl:gap-[22.92px] xl:gap-[17.19px] gap-[15.28px] grid md:grid-cols-3'>
-                <div className='2xl:rounded-[12px] xl:rounded-[8.4px] md:rounded-[7.74px] rounded-[8px] overflow-hidden relative'>
-                    <Image className='md:flex hidden' src={hmiImg} alt='' />
-                    <Image className='md:hidden flex' src={hmiMob} alt='' />
+                <div className='2xl:rounded-[12px] xl:rounded-[8.4px] md:rounded-[7.74px] rounded-[8px] overflow-hidden relative group'>
+                    <div className='group-hover:[&>img]:blur-[3px]'>
+                        <Image className='md:flex hidden transition-all duration-500' src={hmiImg} alt='' />
+                        <Image className='md:hidden flex transition-all duration-500' src={hmiMob} alt='' />
+                    </div>
                     <div className='absolute left-0 top-0 h-full w-full flex flex-col justify-between text-white 2xl:p-[24px] xl:p-[18px] p-[16px] 2xl:max-w-[421px] xl:max-w-[315.75px] max-w-[280.67px]'>
                         <div className='flex flex-col 2xl:gap-y-[10px] xl:gap-y-[8px] gap-y-[7px] text-white'>
                             <h6 className='2xl:text-[24px] xl:text-[18px] text-base font-bold'>HMIs</h6>
@@ -64,9 +74,11 @@ function HardwareEcosystem() {
                         <Link href=''><Image className='2xl:w-[18.7px] xl:w-[14px] w-[8px]' src={nextarrow} alt='' /></Link>
                     </div>
                 </div>
-                <div className='2xl:rounded-[12px] xl:rounded-[8.4px] md:rounded-[7.74px] rounded-[8px] overflow-hidden relative'>
-                    <Image className='md:flex hidden' src={sensorInstruments} alt='' />
-                    <Image className='md:hidden flex' src={sensorInstrumentsMob} alt='' />
+                <div className='2xl:rounded-[12px] xl:rounded-[8.4px] md:rounded-[7.74px] rounded-[8px] overflow-hidden relative group'>
+                    <div className='group-hover:[&>img]:blur-[3px]'>
+                        <Image className='md:flex hidden transition-all duration-500' src={sensorInstruments} alt='' />
+                        <Image className='md:hidden flex transition-all duration-500' src={sensorInstrumentsMob} alt='' />
+                    </div>
                     <div className='absolute left-0 top-0 h-full w-full flex flex-col justify-between text-white 2xl:p-[24px] xl:p-[18px] p-[16px] 2xl:max-w-[421px] xl:max-w-[315.75px] max-w-[280.67px]'>
                         <div className='flex flex-col 2xl:gap-y-[10px] xl:gap-y-[8px] gap-y-[7px] text-white'>
                             <h6 className='2xl:text-[24px] xl:text-[18px] text-base font-bold'>Sensors/instruments</h6>
@@ -77,9 +89,11 @@ function HardwareEcosystem() {
                         <Link href=''><Image className='2xl:w-[18.7px] xl:w-[14px] w-[8px]' src={nextarrow} alt='' /></Link>
                     </div>
                 </div>
-                <div className='2xl:rounded-[12px] xl:rounded-[8.4px] md:rounded-[7.74px] rounded-[8px] overflow-hidden relative'>
-                    <Image className='md:flex hidden' src={ioModule} alt='' />
-                    <Image className='md:hidden flex' src={ioModuleMob} alt='' />
+                <div className='2xl:rounded-[12px] xl:rounded-[8.4px] md:rounded-[7.74px] rounded-[8px] overflow-hidden relative group'>
+                    <div className='group-hover:[&>img]:blur-[3px]'>
+                        <Image className='md:flex hidden transition-all duration-500' src={ioModule} alt='' />
+                        <Image className='md:hidden flex transition-all duration-500' src={ioModuleMob} alt='' />
+                    </div>
                     <div className='absolute left-0 top-0 h-full w-full flex flex-col justify-between text-white 2xl:p-[24px] xl:p-[18px] p-[16px] 2xl:max-w-[421px] xl:max-w-[315.75px] max-w-[280.67px]'>
                         <div className='flex flex-col 2xl:gap-y-[10px] xl:gap-y-[8px] gap-y-[7px] text-white'>
                             <h6 className='2xl:text-[24px] xl:text-[18px] text-base font-bold'>I/O modules</h6>

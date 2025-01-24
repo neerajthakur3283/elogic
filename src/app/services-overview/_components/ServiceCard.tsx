@@ -30,7 +30,7 @@ const ServiceCard: React.FC <ServiceCardProps> = ({serviceCardData}) => {
             <div className='relative text-white' key={index}>
                 <div className='flex justify-between flex-col absolute left-0 top-0 bottom-0 2xl:p-[40px] xl:p-[30px] md:p-[26.67px] p-[22.14px]'>
                     <div className=''>
-                        <div className='2xl:text-[28.5px] xl:text-[25.33px] lg:text-[25.33px] md:text-[22px] text-[21.04px] font-bold'>
+                        <div className='2xl:text-[38px] xl:text-[28.5px] lg:text-[25.33px] md:text-[22px] text-[21.04px] font-bold'>
                             {data.cardTitle}
                         </div>
                         <div className='2xl:pt-[40px] xl:pt-[30px] md:pt-[26px] pt-[20px]'>
