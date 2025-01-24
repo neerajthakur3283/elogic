@@ -81,7 +81,7 @@ function TalkToExpert() {
             </div>
             <div className="2xl:w-[calc(100%_-_741px)] xl:w-[calc(100%_-_555px)] lg:w-[calc(100%_-_495px)] md:w-[calc(100%_-_395px)]">
               <LoadScript
-                googleMapsApiKey={"AIzaSyA6LQv49us3NUq1Lb0qAq3XPfXNuU-F9vo"}
+                googleMapsApiKey={"AIzaSyAeem8ndYN1fe9YA3uDFEfNXOO1dasDqQA"}
               >
                 <GoogleMap
                   mapContainerStyle={containerStyle}
