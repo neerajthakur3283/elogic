@@ -7,7 +7,7 @@ import NavBar from "./Navigation";
 function Header() {
   return (
     <>
-      <header className="w-full bg-[rgba(0,0,0,0.14)] backdrop-blur-[20px] 2xl:px-[72px] xl:px-[54px] px-[20px] 2xl:py-[26px] xl:py-[19.5px] py-[16.5px] flex justify-between items-center absolute left-0 top-0 right-0 z-[1]">
+      <header className="w-full bg-[rgba(0,0,0,0.14)] backdrop-blur-[20px] 2xl:px-[72px] xl:px-[54px] px-[20px] 2xl:py-[26px] xl:py-[19.5px] py-[16.5px] flex justify-between items-center absolute left-0 top-0 right-0 z-[9]">
         <Link href="/">
           <Image
             className="2xl:w-[200px] w-[150px]"

@@ -36,7 +36,7 @@ function TalkToExpert() {
                       </label>
                       <input
                         id="Name"
-                        className="w-full bg-[#F5F5F5] ring-0 2xl:rounded-[8px] xl:rounded-[6px] h-auto 2xl:text-[18px] md:text-[13.5px] text-[11.22px] 2xl:py-[23.5px] xl:py-[15px] md:py-[12.35px] py-[12.55px] 2xl:px-[20px] xl:px-[15px] md:px-[13.5px] px-[12.5px] placeholder:text-[#656567] text-black border-0"
+                        className="outline-none focus:shadow-[inset_0_0_0_1px_#3563E9] w-full bg-[#F5F5F5] ring-0 2xl:rounded-[8px] xl:rounded-[6px] h-auto 2xl:text-[18px] md:text-[13.5px] text-[11.22px] 2xl:py-[23.5px] xl:py-[15px] md:py-[12.35px] py-[12.55px] 2xl:px-[20px] xl:px-[15px] md:px-[13.5px] px-[12.5px] placeholder:text-[#656567] text-black border-0"
                         type="text"
                         placeholder="Enter your Name"
                       />
@@ -50,7 +50,7 @@ function TalkToExpert() {
                       </label>
                       <input
                         id="Email"
-                        className="w-full bg-[#F5F5F5] ring-0 2xl:rounded-[8px] xl:rounded-[6px] h-auto 2xl:text-[18px] md:text-[13.5px] text-[11.22px] 2xl:py-[23.5px] xl:py-[15px] md:py-[12.35px] py-[12.55px] 2xl:px-[20px] xl:px-[15px] md:px-[13.5px] px-[12.5px] placeholder:text-[#656567] text-black border-0"
+                        className="outline-none focus:shadow-[inset_0_0_0_1px_#3563E9] w-full bg-[#F5F5F5] ring-0 2xl:rounded-[8px] xl:rounded-[6px] h-auto 2xl:text-[18px] md:text-[13.5px] text-[11.22px] 2xl:py-[23.5px] xl:py-[15px] md:py-[12.35px] py-[12.55px] 2xl:px-[20px] xl:px-[15px] md:px-[13.5px] px-[12.5px] placeholder:text-[#656567] text-black border-0"
                         type="email"
                         placeholder="Enter your Email"
                       />
@@ -64,7 +64,7 @@ function TalkToExpert() {
                       </label>
                       <input
                         id="Phone"
-                        className="w-full bg-[#F5F5F5] ring-0 2xl:rounded-[8px] xl:rounded-[6px] h-auto 2xl:text-[18px] md:text-[13.5px] text-[11.22px] 2xl:py-[23.5px] xl:py-[15px] md:py-[12.35px] py-[12.55px] 2xl:px-[20px] xl:px-[15px] md:px-[13.5px] px-[12.5px] placeholder:text-[#656567] text-black border-0"
+                        className="outline-none focus:shadow-[inset_0_0_0_1px_#3563E9] w-full bg-[#F5F5F5] ring-0 2xl:rounded-[8px] xl:rounded-[6px] h-auto 2xl:text-[18px] md:text-[13.5px] text-[11.22px] 2xl:py-[23.5px] xl:py-[15px] md:py-[12.35px] py-[12.55px] 2xl:px-[20px] xl:px-[15px] md:px-[13.5px] px-[12.5px] placeholder:text-[#656567] text-black border-0"
                         type="tel"
                         placeholder="Enter your Phone Number"
                       />

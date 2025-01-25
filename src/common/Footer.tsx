@@ -8,7 +8,7 @@ import { FaEnvelope } from "react-icons/fa";
 import footerLogo from "@/src/assets/images/footer-logo.svg";
 import linkedinImg from "@/src/assets/images/linkedin.svg";
 import mobLogo from "@/src/assets/images/mobile-footer-logo.svg";
-import TalkToExpert from "../components/_home/TalkToExpert";
+import TalkToExpert from "./TalkToExpert";
 
 function Footer() {
   return (

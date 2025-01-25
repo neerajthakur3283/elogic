@@ -24,7 +24,7 @@ const YouAreCard: React.FC<YouAreCardProps> = ({ youCardView }) => {
             <div className='2xl:w-[176px] xl:w-[132px] md:w-[118px] w-[115px] rounded-[600px] overflow-hidden transition-all duration-500 group-hover:w-full 2xl:h-[110px] xl:h-[82px] h-[73px] group-hover:[&>img]:w-full'>
               <Image className='transition-all duration-500' src={data.cardImg} alt='' />
             </div>
-            <div className='card-title font-semibold min-[1760px]:text-[27px] 2xl:text-[22px] xl:text-[21px] md:text-[16.67px] text-[18.21px] 2xl:pt-[61px] 2xl:pb-[116px] xl:pt-[45px] xl:pb-[115px] md:pt-[41px] lg:pb-[98px] pt-[40px] pb-[76px] max-[575px]:pb-[135px] transition-all group-hover:w-full transition-all duration-500'>
+            <div className='card-title font-semibold min-[1760px]:text-[27px] 2xl:text-[22px] xl:text-[21px] md:text-[16.67px] text-[18.21px] 2xl:pt-[61px] 2xl:pb-[116px] xl:pt-[45px] xl:pb-[115px] md:pt-[41px] lg:pb-[98px] pt-[40px] pb-[76px] max-[575px]:pb-[135px] transition-all group-hover:w-full duration-500'>
               <h3 className='2xl:h-[121px] xl:h-[91px] md:h-[81px]'>{data.cardTitle}</h3>
             </div>
             <div className='absolute left-0 -bottom-[200px] w-full 2xl:text-[18px] xl:text-[13.5px] md:text-[12px] group-hover:bottom-0 z-[1] transition-all duration-500'>
