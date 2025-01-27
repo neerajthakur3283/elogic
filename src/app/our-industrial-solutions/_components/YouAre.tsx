@@ -41,7 +41,6 @@ function YouAre() {
           <br />
           instrument maker
           <br />
-          
         </>
       ),
       cardLink: "",
