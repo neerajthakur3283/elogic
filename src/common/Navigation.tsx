@@ -101,7 +101,7 @@ const NavBar: React.FC = () => {
                     Wireless Sensor Data Aggregation
                   </Link>
                   <Link
-                    href="/"
+                    href="/energy-consumption-monitoring"
                     className="text-black 2xl:text-[14px] text-[13.5px] transition-all duration-500 hover:text-[#3563E9] text-nowrap 2xl:py-2.5 xl:py-2 flex"
                     onClick={toggleIotSolutions}
                   >
@@ -147,7 +147,7 @@ const NavBar: React.FC = () => {
                     System Integration
                   </Link>
                   <Link
-                    href="/"
+                    href="/services-overview"
                     className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] text-nowrap 2xl:py-2.5 xl:py-2 flex"
                     onClick={toggleServices}
                   >
@@ -183,7 +183,7 @@ const NavBar: React.FC = () => {
           </ul>
 
           <button
-            className="xl:hidden text-white focus:outline-none"
+            className="xl:hidden text-white focus:outline-none togglebtn"
             onClick={toggleMenu}
           >
             <svg

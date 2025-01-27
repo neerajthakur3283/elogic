@@ -10,10 +10,10 @@ import AnalysticCard from './AnalysticCard'
 
 function PlatformFeatures() {
     const featuresCardData = [
-        {icon:iconOne,title:'Energy Monitoring Made Easy',description:'Monitor energy consumption patterns across your entire facility in real-time'},
-        {icon:iconOne,title:'Key Metrics at a Glance',description:'Track key metrics including power factor, voltage, current, and demand'},
-        {icon:iconOne,title:'Spot Trends and Anomalies',description:'Identify consumption trends and anomalies instantly'},
-        {icon:iconOne,title:'Data-Driven Insights',description:'Make data-driven decisions with comprehensive dashboard views'},
+        {icon:iconOne,title:'Machine Utilization Trends',description:'Monitor machine utilization trends across your entire facility'},
+        {icon:iconOne,title:'Performance Tracking',description:'Track performance against target zones and benchmarks'},
+        {icon:iconOne,title:'Spotting Inefficiencies',description:'Identify inefficiencies and bottlenecks instantly'},
+        {icon:iconOne,title:'Data-Driven Decisions',description:'Make data-driven decisions with comprehensive dashboard views'},
     ]
   return (
     <>
@@ -26,7 +26,7 @@ function PlatformFeatures() {
                     </h2>
                     </div>
                     <div className="text-[#4B5563] font-medium leading-snug w-full 2xl:max-w-[771.19px] xl:max-w-[578px] lg:max-w-[514px] md:max-w-[420px] 2xl:text-[24px] xl:text-[18px] text-base">
-                    Turn complex energy data into clear operational advantages with our comprehensive energy monitoring platform. Get real-time visibility, predictive insights, and automated reporting to optimize your energy usage and reduce operational costs.
+                    Use captured machine parameters to build intelligent maintenance strategies with our condition monitoring platform. Get real-time health insights, predictive maintenance alerts, and automated diagnostics to optimize equipment performance and prevent costly downtime.
                     <div className="2xl:pt-[40px] xl:pt-[30px] md:pt-[26px] pt-[20px]">
                         <Link className="bg-[#3563E9] text-white px-[2] w-full 2xl:max-w-[185px] xl:max-w-[139px] md:max-w-[123.44px] max-w-[140px] 2xl:h-[52px] xl:h-[39px] md:h-[35px] h-[40.29px] flex justify-center items-center py-[2px] 2xl:text-[20px] xl:text-[15px] md:text-[13.33px] text-[15.24px] md:font-bold font-semibold rounded-[16px] capitalize duration-500 hover:bg-black hover:text-white"
                         href="/">contact us <MdArrowOutward className="ms-2.5" /></Link>
@@ -38,7 +38,7 @@ function PlatformFeatures() {
                     
                     <div className='2xl:ps-[100px] xl:ps-[76px] lg:ps-[67px] md:ps-[45px] 2xl:pe-[95px] xl:pe-[70px] lg:pe-[25px] md:pe-[50px] 2xl:py-[95px] xl:py-[76px] md:py-[53px] p-[20px] flex items-center justify-between max-[1023px]:flex-col-reverse lg:flex-nowrap flex-wrap'>
                         <div className='2xl:w-[762.5px] xl:w-[571.87px] lg:w-[508.33px] w-full'>
-                            <h2 className='font-semibold 2xl:text-[36px] xl:text-[27px] md:text-[24px] text-[22.45px] lg:flex hidden'>Real-Time Energy Analytics</h2>
+                            <h2 className='font-semibold 2xl:text-[36px] xl:text-[27px] md:text-[24px] text-[22.45px] lg:flex hidden'>Real-Time Machine Utilization</h2>
                             <div className='grid md:grid-cols-2 2xl:pt-[50px] xl:pt-[40px] pt-[33.33px] 2xl:gap-[40px] xl:gap-[30px] gap-[26.67px]'>
                                 <AnalysticCard featuresCardData={featuresCardData} />
                             </div>
@@ -49,7 +49,7 @@ function PlatformFeatures() {
                         </div>
                         <div className='2xl:w-[calc(100%_-_762.5px)] xl:w-[calc(100%_-_571.87px)] lg:w-[calc(100%_-_508.33px)] w-full'>
                             <div className='lg:hidden flex mb-[30px]'>
-                                <h2 className='font-semibold text-[24px]'>Real-Time Energy Analytics</h2>
+                                <h2 className='font-semibold text-[24px]'>Real-Time Machine Utilization</h2>
                             </div>
                             <Image className='2xl:ms-auto' src={fiverrImg} alt='' />
                         </div>
