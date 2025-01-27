@@ -23,9 +23,9 @@ function YouAre() {
       cardImg: imgOne,
       cardTitle: (
         <>
-          An EPC, O&M, SI, automation
+          Plant EPC Contractor or
           <br />
-          specialist
+          System Integrator
         </>
       ),
       cardLink: "",
@@ -37,11 +37,11 @@ function YouAre() {
       cardImg: imgOne,
       cardTitle: (
         <>
-          An OEM of industrial machinery,
+          Industrial machine or
           <br />
-          plant, instrumentation, other
+          instrument maker
           <br />
-          equipment
+          
         </>
       ),
       cardLink: "",

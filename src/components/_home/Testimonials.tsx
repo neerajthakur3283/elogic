@@ -10,8 +10,8 @@ import userThree from '@/src/assets/images/user-3.jpg'
 function Testimonials() {
     const testimonialData = [
         {feedbackPara:'I have been using [Your Email Marketing Software Name] for over a year now, and I must say it has transformed the way we approach email marketing. The personalization features have allowed us to create tailored campaigns that resonate.',profileImg:userOne,profileName:'Sarah Thompson',profileDes:'Marketing Manager'},
-        {feedbackPara:'I have been using [Your Email Marketing Software Name] for over a year now, and I must say it has transformed the way we approach email marketing. The personalization features have allowed us to create tailored campaigns that resonate.',profileImg:userTwo,profileName:'John Roberts',profileDes:'E-commerce Owner'},
-        {feedbackPara:'I have been using [Your Email Marketing Software Name] for over a year now, and I must say it has transformed the way we approach email marketing. The personalization features have allowed us to create tailored campaigns that resonate.',profileImg:userThree,profileName:'Emily Parker',profileDes:'Non-profit Coordinator'},
+        {feedbackPara:'We tried various email marketing platforms before coming across [Your Email Marketing Software Name], and none of them could match the level of personalization and ease of use that this software offers.',profileImg:userTwo,profileName:'John Roberts',profileDes:'E-commerce Owner'},
+        {feedbackPara:'As a non-profit organization, our resources are limited, but our need to communicate effectively with donors and volunteers is crucial. [Your Email Marketing Software Name] has been a game-changer for us.',profileImg:userThree,profileName:'Emily Parker',profileDes:'Non-profit Coordinator'},
         {feedbackPara:'I have been using [Your Email Marketing Software Name] for over a year now, and I must say it has transformed the way we approach email marketing. The personalization features have allowed us to create tailored campaigns that resonate.',profileImg:userOne,profileName:'Sarah Thompson',profileDes:'Marketing Manager'},
     ]
   return (

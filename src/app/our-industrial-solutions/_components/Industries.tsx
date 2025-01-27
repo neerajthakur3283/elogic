@@ -15,11 +15,11 @@ const industries = [
     tabImg: imgOne,
     name: "Food Manufacturing / FMCG",
     details: [
-      "Track energy use in blast freezers and cold rooms during door openings and defrosting.",
-      "Monitor power quality in mixing and grinding equipment for maintenance and product quality.",
-      "Analyze OEE on packaging lines to minimize changeover times and waste.",
-      "Inspect bakery conveyor systems for belt misalignment to prevent contamination.",
-      "Evaluate temperature-related energy use in ovens and fryers to optimize batch scheduling.",
+      "Energy monitoring of blast freezers and cold rooms to detect door-open events and optimize defrost cycles",
+      "Real-time power quality monitoring of mixing and grinding equipment to predict maintenance needs and prevent product quality issues",
+      "OEE tracking of packaging lines with breakdown reason analysis to minimize changeover times and material waste",
+      "Condition monitoring of conveyor systems in bakery lines to detect belt misalignment and prevent contamination",
+      "Temperature-correlated energy consumption analysis of ovens and fryers to optimize batch scheduling",
     ],
   },
   {
@@ -27,9 +27,10 @@ const industries = [
     tabImg: imgTwo,
     name: "Textiles & Paper",
     details: [
-      "Track water usage in dyeing processes for sustainability.",
-      "Monitor energy consumption in spinning and weaving machines.",
-      "Optimize production schedules to minimize downtime.",
+      "Steam system efficiency monitoring through boiler-to-process energy tracking",
+      "Compressed air system optimization for textile spinning machines with production speed correlation",
+      "Paper machine drive system efficiency monitoring with moisture content correlation",
+      "Real-time tracking of dyeing machine energy consumption per batch for process standardization",
     ],
   },
   {
@@ -37,11 +38,11 @@ const industries = [
     tabImg: imgThree,
     name: "Plastics and Metal Parts Manufacturing",
     details: [
-      "Track energy use in blast freezers and cold rooms during door openings and defrosting.",
-      "Monitor power quality in mixing and grinding equipment for maintenance and product quality.",
-      "Analyze OEE on packaging lines to minimize changeover times and waste.",
-      "Inspect bakery conveyor systems for belt misalignment to prevent contamination.",
-      "Evaluate temperature-related energy use in ovens and fryers to optimize batch scheduling.",
+      "Temperature and power correlation of injection molding machines to detect mold heating issues",
+      "Energy consumption analysis of CNC machines per part program to optimize cutting parameters",
+      "Compressed air leak detection through power monitoring of air compressors during non-production hours",
+      "Real-time tracking of hydraulic press efficiency with cycle time correlation",
+      "Power factor monitoring of induction heating systems to optimize energy costs",
     ],
   },
   {
@@ -49,9 +50,11 @@ const industries = [
     tabImg: imgFour,
     name: "Utilities",
     details: [
-      "Monitor grid stability with real-time energy tracking.",
-      "Optimize load distribution for power plants and grids.",
-      "Analyze energy demand patterns to improve efficiency.",
+      "Pump efficiency monitoring using power/flow correlation to detect cavitation and impeller wear",
+      "Real-time power consumption tracking of aeration blowers in sewage treatment with DO level correlation",
+      "Solar inverter performance monitoring with string-level current comparison",
+      "Energy efficiency analysis of water treatment UV systems with turbidity correlation",
+      "Transformer load balancing and hotspot detection through detailed power quality analysis",
     ],
   },
   {
@@ -59,9 +62,11 @@ const industries = [
     tabImg: imgFive,
     name: "Pharma/Chemical",
     details: [
-      "Ensure compliance by monitoring critical equipment.",
-      "Track temperature and pressure in chemical processes.",
-      "Optimize batch processing to minimize energy use.",
+      "Power consumption pattern analysis of reactor vessels to validate batch consistency and detect process deviations",
+      "Vibration and power monitoring of centrifuges and separators to prevent imbalance-related failures",
+      "Energy efficiency tracking of clean room HVAC systems with pressure differential correlation",
+      "Real-time monitoring of air compressor systems with dew point correlation for contamination prevention",
+      "Power quality monitoring of precision scales and measurement equipment to ensure calibration validity",
     ],
   },
 ];
