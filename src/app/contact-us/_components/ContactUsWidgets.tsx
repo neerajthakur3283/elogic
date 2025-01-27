@@ -21,21 +21,21 @@ function ContactUsWidgets() {
                                         <div className='relative border border-[rgba(0,0,0,0.15)] w-[18px] h-[18px] rounded-full shadow-[inset_0_1px_4px_0_rgba(0,0,0,0.12)] flex justify-center items-center'>
                                         <span className='absolute left-[4px] top-[4px] w-[8px] h-[8px] rounded-full bg-white flex m-auto'></span>
                                         </div>
-                                        <span className='text-black opacity-[0.85] font-medium 2xl:text-[20px] xl:text-[15px]  text-[13.33px]'>Services</span>
+                                        <span className='text-black opacity-[0.85] font-medium 2xl:text-[20px] xl:text-[15px] text-[13.33px]'>Services</span>
                                     </label>
                                     <label className='relative flex items-center gap-2 [&_input:checked_+_div]:bg-[#007AFF] [&_input:checked_+_div]:shadow-[0_1px_4px_0_rgba(0,122,255,0.25)]' htmlFor='Partnership'>
                                         <input type='radio' name='selectService' className='absolute -left-[9999999px] top-0' id='Partnership' />
                                         <div className='relative border border-[rgba(0,0,0,0.15)] w-[18px] h-[18px] rounded-full shadow-[inset_0_1px_4px_0_rgba(0,0,0,0.12)] flex justify-center items-center'>
                                         <span className='absolute left-[4px] top-[4px] w-[8px] h-[8px] rounded-full bg-white flex m-auto'></span>
                                         </div>
-                                        <span className='text-black opacity-[0.85] font-medium 2xl:text-[20px] xl:text-[15px]  text-[13.33px]'>Partnership</span>
+                                        <span className='text-black opacity-[0.85] font-medium 2xl:text-[20px] xl:text-[15px] text-[13.33px]'>Partnership</span>
                                     </label>
                                     <label className='relative flex items-center gap-2 [&_input:checked_+_div]:bg-[#007AFF] [&_input:checked_+_div]:shadow-[0_1px_4px_0_rgba(0,122,255,0.25)]' htmlFor='Career'>
                                         <input type='radio' name='selectService' className='absolute -left-[9999999px] top-0' id='Career' />
                                         <div className='relative border border-[rgba(0,0,0,0.15)] w-[18px] h-[18px] rounded-full shadow-[inset_0_1px_4px_0_rgba(0,0,0,0.12)] flex justify-center items-center'>
                                             <span className='absolute left-[4px] top-[4px] w-[8px] h-[8px] rounded-full bg-white flex m-auto'></span>
                                         </div>
-                                        <span className='text-black opacity-[0.85] font-medium 2xl:text-[20px] xl:text-[15px]  text-[13.33px]'>Career</span>
+                                        <span className='text-black opacity-[0.85] font-medium 2xl:text-[20px] xl:text-[15px] text-[13.33px]'>Career</span>
                                     </label>
                                     <label className='relative flex items-center gap-2 [&_input:checked_+_div]:bg-[#007AFF] [&_input:checked_+_div]:shadow-[0_1px_4px_0_rgba(0,122,255,0.25)]' htmlFor='Solutions'>
                                         <input type='radio' name='selectService' className='absolute -left-[9999999px] top-0' id='Solutions' />

@@ -1,11 +1,11 @@
 import Link from "next/link";
 import React from "react";
 import { MdArrowOutward } from "react-icons/md";
+import ApplicationCard from "./ApplicationCard";
 
 // images
 import imgOne from "@/src/assets/images/card-img-one.jpg";
 import imgTwo from "@/src/assets/images/card-img-two.jpg";
-import ApplicationCard from "./ApplicationCard";
 
 function CardApps() {
   const appCardData = [
