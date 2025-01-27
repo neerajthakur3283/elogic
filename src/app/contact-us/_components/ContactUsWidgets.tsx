@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 import React from 'react'
 
 function ContactUsWidgets() {
@@ -6,8 +7,10 @@ function ContactUsWidgets() {
     <>
         <section>
             <div className='bg-[#EEF1F5] 2xl:pt-[100px] xl:pt-[75px] lg:pt-[66px] md:pt-[45px] pt-[50px] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] md:pb-0 pb-12'>
-                <div className='flex items-start justify-between 2xl:gap-[100px]'>
-                    <div className='2xl:w-[900px] 2xl:rounded-[26px] xl:rounded-[19.5px] md:rounded-[17.33px] rounded-[16.21px] bg-white 2xl:shadow-[0_0_50px_rgba(0,0,0,0.1)] xl:shadow-[0_0_18px_rgba(146,146,146,0.25)] md:shadow-[0_0_16px_rgba(146,146,146,0.25)] shadow-[0_0_14px_rgba(0,0,0,0.25)] 2xl:p-[50px] xl:p-[40px] lg:p-[35px] md:p-[30px] p-[25px]'>
+                
+                <div className='flex items-start justify-between 2xl:gap-[100px] xl:gap-[75px] lg:gap-[66px] lg:flex-nowrap flex-wrap'>
+
+                    <div className='lg:w-[900px] w-full 2xl:rounded-[26px] xl:rounded-[19.5px] md:rounded-[17.33px] rounded-[16.21px] bg-white 2xl:shadow-[0_0_50px_rgba(0,0,0,0.1)] xl:shadow-[0_0_18px_rgba(146,146,146,0.25)] md:shadow-[0_0_16px_rgba(146,146,146,0.25)] shadow-[0_0_14px_rgba(0,0,0,0.25)] 2xl:p-[50px] xl:p-[40px] lg:p-[35px] md:p-[30px] p-[25px]'>
                         <h2 className='text-[#262626] font-bold 2xl:text-[36px] xl:text-[27px] md:text-[24px] text-[22.45px] text-center'>Are you looking for?</h2>
                         <div className='2xl:pt-[60px] xl:pt-[50px] md:pt-[40px] pt-[30px] overflow-hidden'>
                             <form method='get' action="#">
@@ -70,40 +73,40 @@ function ContactUsWidgets() {
                                     <div className='text-black font-semibold 2xl:text-[18px] xl:text-[13.5px] md:text-[12px] text-[11.22px] mb-4'>
                                         Choose a Service
                                     </div>
-                                    <div className='grid lg:grid-cols-3 grid-cols-2 xl:gap-[20px] gap-[15px]'>
+                                    <div className='grid md:grid-cols-3 grid-cols-2 max-[500px]:grid-cols-1 xl:gap-[20px] gap-[15px]'>
                                         <label className='relative [&_input:checked_+_div]:shadow-[inset_0_0_0_1px_#3563E9] [&_input:checked_+_div]:text-[#3563E9]' htmlFor='ServiceOne'>
                                             <input type='radio' id='ServiceOne' className='absolute -left-[9999999px] top-0' name='chooseService' />
-                                            <div className='px-3 bg-[#F5F5F5] font-medium rounded-[8px] text-[#656567] text-[12px] justify-center flex items-center h-[41px]'>
+                                            <div className='px-3 bg-[#F5F5F5] font-medium rounded-[8px] text-[#656567] text-[12px] justify-center flex items-center h-[41px] text-center'>
                                             Embaded Hardware Sesign
                                             </div>
                                         </label>
                                         <label className='relative [&_input:checked_+_div]:shadow-[inset_0_0_0_1px_#3563E9] [&_input:checked_+_div]:text-[#3563E9]' htmlFor='ServiceTwo'>
                                             <input type='radio' id='ServiceTwo' className='absolute -left-[9999999px] top-0' name='chooseService' />
-                                            <div className='px-3 bg-[#F5F5F5] font-medium rounded-[8px] text-[#656567] text-[12px] justify-center flex items-center h-[41px]'>
+                                            <div className='px-3 bg-[#F5F5F5] font-medium rounded-[8px] text-[#656567] text-[12px] justify-center flex items-center h-[41px] text-center'>
                                             Embaded Software Development
                                             </div>
                                         </label>
                                         <label className='relative [&_input:checked_+_div]:shadow-[inset_0_0_0_1px_#3563E9] [&_input:checked_+_div]:text-[#3563E9]' htmlFor='ServiceThree'>
                                             <input type='radio' id='ServiceThree' className='absolute -left-[9999999px] top-0' name='chooseService' />
-                                            <div className='px-3 bg-[#F5F5F5] font-medium rounded-[8px] text-[#656567] text-[12px] justify-center flex items-center h-[41px]'>
+                                            <div className='px-3 bg-[#F5F5F5] font-medium rounded-[8px] text-[#656567] text-[12px] justify-center flex items-center h-[41px] text-center'>
                                             Wireless Systems Development
                                             </div>
                                         </label>
                                         <label className='relative [&_input:checked_+_div]:shadow-[inset_0_0_0_1px_#3563E9] [&_input:checked_+_div]:text-[#3563E9]' htmlFor='ServiceFour'>
                                             <input type='radio' id='ServiceFour' className='absolute -left-[9999999px] top-0' name='chooseService' />
-                                            <div className='px-3 bg-[#F5F5F5] font-medium rounded-[8px] text-[#656567] text-[12px] justify-center flex items-center h-[41px]'>
+                                            <div className='px-3 bg-[#F5F5F5] font-medium rounded-[8px] text-[#656567] text-[12px] justify-center flex items-center h-[41px] text-center'>
                                             User Interface Designing
                                             </div>
                                         </label>
                                         <label className='relative [&_input:checked_+_div]:shadow-[inset_0_0_0_1px_#3563E9] [&_input:checked_+_div]:text-[#3563E9]' htmlFor='ServiceFive'>
                                             <input type='radio' id='ServiceFive' className='absolute -left-[9999999px] top-0' name='chooseService' />
-                                            <div className='px-3 bg-[#F5F5F5] font-medium rounded-[8px] text-[#656567] text-[12px] justify-center flex items-center h-[41px]'>
+                                            <div className='px-3 bg-[#F5F5F5] font-medium rounded-[8px] text-[#656567] text-[12px] justify-center flex items-center h-[41px] text-center'>
                                             Technology Consultant
                                             </div>
                                         </label>
                                         <label className='relative [&_input:checked_+_div]:shadow-[inset_0_0_0_1px_#3563E9] [&_input:checked_+_div]:text-[#3563E9]' htmlFor='ServiceSix'>
                                             <input type='radio' id='ServiceSix' className='absolute -left-[9999999px] top-0' name='chooseService' />
-                                            <div className='px-3 bg-[#F5F5F5] font-medium rounded-[8px] text-[#656567] text-[12px] justify-center flex items-center h-[41px]'>
+                                            <div className='px-3 bg-[#F5F5F5] font-medium rounded-[8px] text-[#656567] text-[12px] justify-center flex items-center h-[41px] text-center'>
                                             Technology Consultant
                                             </div>
                                         </label>
@@ -121,7 +124,35 @@ function ContactUsWidgets() {
                             </form>
                         </div>
                     </div>
+
+                    <div className='lg:w-[calc(100%_-_900px)] w-full 2xl:pt-8 lg:mt-0 mt-10'>
+                        <div className='grid grid-cols-1'>
+                            <div className='flex flex-col border-b border-b-[#DCDCDC] 2xl:pb-[40px] xl:pb-[30px] md:pb-[26px] pb-[20px]'>
+                                <span className='text-[#656567] tracking-[-0.22px] 2xl:text-[18px] md:text-[13.5px] text-[11.22px]'>Email Address</span>
+                                <Link href='mailto:info.edge@Elogictech.com' className='mt-[5px] flex font-semibold text-[#4B5563] 2xl:text-[20px] xl:text-[15px] text-[13.33px]'>
+                                    info.edge@Elogictech.com
+                                </Link>
+                            </div>
+                            <div className='flex flex-col border-b border-b-[#DCDCDC] 2xl:pb-[40px] xl:pb-[30px] md:pb-[26px] pb-[20px] 2xl:mt-[40px] xl:mt-[30px] md:mt-[26px] mt-[20px]'>
+                                <span className='text-[#656567] tracking-[-0.22px] 2xl:text-[18px] md:text-[13.5px] text-[11.22px]'>Phone Number</span>
+                                <Link href='tel:+919177444992' className='mt-[5px] flex font-semibold text-[#4B5563] 2xl:text-[20px] xl:text-[15px] text-[13.33px]'>
+                                +91 9177444992
+                                </Link>
+                            </div>
+                            <div className='flex flex-col 2xl:pb-[40px] xl:pb-[30px] md:pb-[26px] pb-[20px] 2xl:mt-[40px] xl:mt-[30px] md:mt-[26px] mt-[20px]'>
+                                <span className='text-[#656567] tracking-[-0.22px] 2xl:text-[18px] md:text-[13.5px] text-[11.22px]'>Office Address</span>
+                                <Link href='tel:+919177444992' className='mt-[5px] flex font-semibold text-[#4B5563] 2xl:text-[20px] xl:text-[15px] text-[13.33px]'>
+                                2nd Floor, Ashoka HiTech Chambers, Road No. 2, opp. KBR Park, Banjara Hills, Hyderabad, Telangana 500034
+                                </Link>
+                            </div>
+                            <div className='rounded-[10px] overflow-hidden'>
+                                <iframe className='w-full 2xl:h-[550px] lg:h-[470px] h-[450px]' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1903.3713065186846!2d78.4218605!3d17.4241355!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb934a980b23bf%3A0xece004a582a4f6a6!2sSmatBot%20-%20AI%20chatbot%20Services!5e0!3m2!1sen!2sin!4v1737952681635!5m2!1sen!2sin"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
         </section>
     </>
