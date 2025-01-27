@@ -16,7 +16,7 @@ function ProductEngineeringCapabilities() {
   const productCardData = [
     {
       productImg: productOne,
-      title: "Embedded Hardware Design",
+      title: "Embedded Software Design",
       smallTitle:
         "Build and scale generative AI applications with foundation models (FMs)",
       cardLink: "/",

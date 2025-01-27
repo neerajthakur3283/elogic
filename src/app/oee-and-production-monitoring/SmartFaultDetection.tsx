@@ -10,10 +10,10 @@ import iconOne from '@/src/assets/images/increase.svg'
 
 function SmartFaultDetection() {
     const featuresCardData = [
-        {icon:iconOne,title:<>Smart Electrical Issue<br/>Detection</>,description:'Automatic detection and diagnosis of electrical issues'},
-        {icon:iconOne,title:<>Proactive Equipment<br/>Failure Alerts</>,description:'Early warning system for potential equipment failures'},
-        {icon:iconOne,title:<>Avoid Downtime with Predictive <br/>Maintenance</>,description:'Prevent costly downtime with predictive maintenance alerts'},
-        {icon:iconOne,title:<>Monitor Equipment Health via <br/>Power Quality</>,description:'Track equipment health through power quality indicators'},
+        {icon:iconOne,title:<>Performance Benchmarking</>,description:'Benchmark performance against industry standards'},
+        {icon:iconOne,title:<>Efficiency Opportunities</>,description:'Identify opportunities for efficiency improvements'},
+        {icon:iconOne,title:<>Downtime Analysis</>,description:'Analyze top causes of machine downtime using Pareto analysis'},
+        {icon:iconOne,title:<>Issue Resolution Tracking</>,description:'Track resolution of recurring issues'},
     ]
   return (
     <>
@@ -23,7 +23,7 @@ function SmartFaultDetection() {
                     
                     <div className='2xl:ps-[100px] xl:ps-[76px] lg:ps-[67px] md:ps-[45px] 2xl:pe-[95px] xl:pe-[70px] lg:pe-[25px] md:pe-[50px] 2xl:py-[95px] xl:py-[76px] md:py-[53px] p-[20px] flex items-center justify-between max-[1023px]:flex-col-reverse lg:flex-nowrap flex-wrap'>
                         <div className='2xl:w-[762.5px] xl:w-[571.87px] lg:w-[508.33px] w-full'>
-                            <h2 className='font-semibold 2xl:text-[36px] xl:text-[27px] md:text-[24px] text-[22.45px] lg:flex hidden'>Smart Fault Detection</h2>
+                            <h2 className='font-semibold 2xl:text-[36px] xl:text-[27px] md:text-[24px] text-[22.45px] lg:flex hidden'>OEE & Downtime Tracking</h2>
                             <div className='grid md:grid-cols-2 2xl:pt-[50px] xl:pt-[40px] pt-[33.33px] 2xl:gap-[40px] xl:gap-[30px] gap-[26.67px]'>
                                 <AnalysticCard featuresCardData={featuresCardData} />
                             </div>
@@ -34,7 +34,7 @@ function SmartFaultDetection() {
                         </div>
                         <div className='2xl:w-[calc(100%_-_762.5px)] xl:w-[calc(100%_-_571.87px)] lg:w-[calc(100%_-_508.33px)] w-full'>
                             <div className='lg:hidden flex mb-[30px]'>
-                                <h2 className='font-semibold text-[24px]'>Smart Fault Detection</h2>
+                                <h2 className='font-semibold text-[24px]'>OEE & Downtime Tracking</h2>
                             </div>
                             <Image className='2xl:ms-auto' src={fiverrImg} alt='' />
                         </div>
