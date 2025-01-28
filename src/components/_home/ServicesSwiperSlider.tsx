@@ -2,9 +2,9 @@
 import { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 // images
-import slideOneDesktop from "@/src/assets/images/service-one.jpg";
-import slideTwoDesktop from "@/src/assets/images/service-three.jpg";
-import slideThreeDesktop from "@/src/assets/images/service-two.jpg";
+import slideOneDesktop from "@/src/assets/images/service-one.png";
+import slideTwoDesktop from "@/src/assets/images/service-three.png";
+import slideThreeDesktop from "@/src/assets/images/service-two.png";
 
 import slideOneMobile from "@/src/assets/images/service-mob-one.jpg";
 import slideTwoMobile from "@/src/assets/images/service-mob-two.jpg";

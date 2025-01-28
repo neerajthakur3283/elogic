@@ -22,21 +22,23 @@ const ProductSlider: React.FC<ProductSliderProps> = ({productCardData}) => {
         infinite: true,
         speed: 500,
         slidesToShow: 4,
-        slidesToScroll: 1,
+        slidesToScroll: 4,
         autoplay: true,
         autoplaySpeed: 1500,
-        arrows: true,
+        arrows: false,
         responsive: [
             {
                 breakpoint: 991,
                 settings: {
                   slidesToShow: 3,
+                  slidesToScroll: 3,
                 }
               },
             {
                 breakpoint: 768,
                 settings: {
                   slidesToShow: 1,
+                  slidesToScroll: 1,
                 }
             }
         ]

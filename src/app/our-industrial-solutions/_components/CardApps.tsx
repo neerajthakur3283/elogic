@@ -1,34 +1,60 @@
 import Link from "next/link";
 import React from "react";
 import { MdArrowOutward } from "react-icons/md";
+import ApplicationCard from "./ApplicationCard";
 
 // images
 import imgOne from "@/src/assets/images/card-img-one.jpg";
 import imgTwo from "@/src/assets/images/card-img-two.jpg";
-import ApplicationCard from "./ApplicationCard";
 
 function CardApps() {
   const appCardData = [
     {
-      cardTitle: "OEE: Part count, stoppage, etc",
+      cardTitle: (
+        <>
+          OEE: Part count, <br /> stoppage, etc (incl. breakdown ticketing
+          system)
+          <br />
+        </>
+      ),
       cardLink: "/",
       linkText: "Learn More",
       cardImg: imgOne,
     },
     {
-      cardTitle: "Energy Consumption Monitoring",
+      cardTitle: (
+        <>
+          Energy <br />
+          Consumption
+          <br />
+          Monitoring
+        </>
+      ),
       cardLink: "/",
       linkText: "Learn More",
       cardImg: imgTwo,
     },
     {
-      cardTitle: "Wireless instrumentation data Aggregation",
+      cardTitle: (
+        <>
+          Wireless <br />
+          instrumentation <br />
+          data <br />
+          Aggregation???
+        </>
+      ),
       cardLink: "/",
       linkText: "Learn More",
       cardImg: imgTwo,
     },
     {
-      cardTitle: "Machine health/condition monitoring",
+      cardTitle: (
+        <>
+          Machine <br />
+          health/condition <br />
+          monitoring
+        </>
+      ),
       cardLink: "/",
       linkText: "Learn More",
       cardImg: imgOne,
@@ -40,7 +66,7 @@ function CardApps() {
         <div className="2xl:py-[80px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px]">
           <div className="flex justify-between items-start md:flex-nowrap flex-wrap md:gap-y-0 gap-y-[20px]">
             <div className="text-black">
-              <h2 className="leading-[1] 2xl:text-[61.77px] xl:text-[46.33px] md:text-[41.18px] text-[24px] font-bold">
+              <h2 className="leading-[1] 2xl:text-[61.77px] xl:text-[46.33px] md:text-[41.18px] text-[24px] font-bold capitalize">
                 applications
               </h2>
             </div>

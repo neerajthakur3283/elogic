@@ -21,21 +21,21 @@ function ContactUsWidgets() {
                                         <div className='relative border border-[rgba(0,0,0,0.15)] w-[18px] h-[18px] rounded-full shadow-[inset_0_1px_4px_0_rgba(0,0,0,0.12)] flex justify-center items-center'>
                                         <span className='absolute left-[4px] top-[4px] w-[8px] h-[8px] rounded-full bg-white flex m-auto'></span>
                                         </div>
-                                        <span className='text-black opacity-[0.85] font-medium 2xl:text-[20px] xl:text-[15px]  text-[13.33px]'>Services</span>
+                                        <span className='text-black opacity-[0.85] font-medium 2xl:text-[20px] xl:text-[15px] text-[13.33px]'>Services</span>
                                     </label>
                                     <label className='relative flex items-center gap-2 [&_input:checked_+_div]:bg-[#007AFF] [&_input:checked_+_div]:shadow-[0_1px_4px_0_rgba(0,122,255,0.25)]' htmlFor='Partnership'>
                                         <input type='radio' name='selectService' className='absolute -left-[9999999px] top-0' id='Partnership' />
                                         <div className='relative border border-[rgba(0,0,0,0.15)] w-[18px] h-[18px] rounded-full shadow-[inset_0_1px_4px_0_rgba(0,0,0,0.12)] flex justify-center items-center'>
                                         <span className='absolute left-[4px] top-[4px] w-[8px] h-[8px] rounded-full bg-white flex m-auto'></span>
                                         </div>
-                                        <span className='text-black opacity-[0.85] font-medium 2xl:text-[20px] xl:text-[15px]  text-[13.33px]'>Partnership</span>
+                                        <span className='text-black opacity-[0.85] font-medium 2xl:text-[20px] xl:text-[15px] text-[13.33px]'>Partnership</span>
                                     </label>
                                     <label className='relative flex items-center gap-2 [&_input:checked_+_div]:bg-[#007AFF] [&_input:checked_+_div]:shadow-[0_1px_4px_0_rgba(0,122,255,0.25)]' htmlFor='Career'>
                                         <input type='radio' name='selectService' className='absolute -left-[9999999px] top-0' id='Career' />
                                         <div className='relative border border-[rgba(0,0,0,0.15)] w-[18px] h-[18px] rounded-full shadow-[inset_0_1px_4px_0_rgba(0,0,0,0.12)] flex justify-center items-center'>
                                             <span className='absolute left-[4px] top-[4px] w-[8px] h-[8px] rounded-full bg-white flex m-auto'></span>
                                         </div>
-                                        <span className='text-black opacity-[0.85] font-medium 2xl:text-[20px] xl:text-[15px]  text-[13.33px]'>Career</span>
+                                        <span className='text-black opacity-[0.85] font-medium 2xl:text-[20px] xl:text-[15px] text-[13.33px]'>Career</span>
                                     </label>
                                     <label className='relative flex items-center gap-2 [&_input:checked_+_div]:bg-[#007AFF] [&_input:checked_+_div]:shadow-[0_1px_4px_0_rgba(0,122,255,0.25)]' htmlFor='Solutions'>
                                         <input type='radio' name='selectService' className='absolute -left-[9999999px] top-0' id='Solutions' />
@@ -77,13 +77,13 @@ function ContactUsWidgets() {
                                         <label className='relative [&_input:checked_+_div]:shadow-[inset_0_0_0_1px_#3563E9] [&_input:checked_+_div]:text-[#3563E9]' htmlFor='ServiceOne'>
                                             <input type='radio' id='ServiceOne' className='absolute -left-[9999999px] top-0' name='chooseService' />
                                             <div className='px-3 bg-[#F5F5F5] font-medium rounded-[8px] text-[#656567] text-[12px] justify-center flex items-center h-[41px] text-center'>
-                                            Embaded Hardware Sesign
+                                            Embedded Hardware Design
                                             </div>
                                         </label>
                                         <label className='relative [&_input:checked_+_div]:shadow-[inset_0_0_0_1px_#3563E9] [&_input:checked_+_div]:text-[#3563E9]' htmlFor='ServiceTwo'>
                                             <input type='radio' id='ServiceTwo' className='absolute -left-[9999999px] top-0' name='chooseService' />
                                             <div className='px-3 bg-[#F5F5F5] font-medium rounded-[8px] text-[#656567] text-[12px] justify-center flex items-center h-[41px] text-center'>
-                                            Embaded Software Development
+                                            Embedded Software Design
                                             </div>
                                         </label>
                                         <label className='relative [&_input:checked_+_div]:shadow-[inset_0_0_0_1px_#3563E9] [&_input:checked_+_div]:text-[#3563E9]' htmlFor='ServiceThree'>
@@ -95,21 +95,28 @@ function ContactUsWidgets() {
                                         <label className='relative [&_input:checked_+_div]:shadow-[inset_0_0_0_1px_#3563E9] [&_input:checked_+_div]:text-[#3563E9]' htmlFor='ServiceFour'>
                                             <input type='radio' id='ServiceFour' className='absolute -left-[9999999px] top-0' name='chooseService' />
                                             <div className='px-3 bg-[#F5F5F5] font-medium rounded-[8px] text-[#656567] text-[12px] justify-center flex items-center h-[41px] text-center'>
-                                            User Interface Designing
+                                            Human Machine Interface Development
                                             </div>
                                         </label>
                                         <label className='relative [&_input:checked_+_div]:shadow-[inset_0_0_0_1px_#3563E9] [&_input:checked_+_div]:text-[#3563E9]' htmlFor='ServiceFive'>
                                             <input type='radio' id='ServiceFive' className='absolute -left-[9999999px] top-0' name='chooseService' />
                                             <div className='px-3 bg-[#F5F5F5] font-medium rounded-[8px] text-[#656567] text-[12px] justify-center flex items-center h-[41px] text-center'>
-                                            Technology Consultant
+                                            Technology Consulting
                                             </div>
                                         </label>
                                         <label className='relative [&_input:checked_+_div]:shadow-[inset_0_0_0_1px_#3563E9] [&_input:checked_+_div]:text-[#3563E9]' htmlFor='ServiceSix'>
                                             <input type='radio' id='ServiceSix' className='absolute -left-[9999999px] top-0' name='chooseService' />
                                             <div className='px-3 bg-[#F5F5F5] font-medium rounded-[8px] text-[#656567] text-[12px] justify-center flex items-center h-[41px] text-center'>
-                                            Technology Consultant
+                                            Manufacturing Support
                                             </div>
                                         </label>
+                                        <label className='relative [&_input:checked_+_div]:shadow-[inset_0_0_0_1px_#3563E9] [&_input:checked_+_div]:text-[#3563E9]' htmlFor='ServiceSeven'>
+                                            <input type='radio' id='ServiceSeven' className='absolute -left-[9999999px] top-0' name='chooseService' />
+                                            <div className='px-3 bg-[#F5F5F5] font-medium rounded-[8px] text-[#656567] text-[12px] justify-center flex items-center h-[41px] text-center'>
+                                            Mechanical and Industrial Design
+                                            </div>
+                                        </label>
+                                        
                                     </div>
                                 </div>
                                 <div className='2xl:pb-[40px] xl:pb-[30px] pb-[22px]'>

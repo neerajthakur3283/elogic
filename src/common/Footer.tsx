@@ -80,7 +80,7 @@ function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="" className="text-white">
+                  <Link href="/contact-us" className="text-white">
                     Contact Us
                   </Link>
                 </li>
@@ -89,7 +89,7 @@ function Footer() {
             <div className="w-full 2xl:max-w-[107px] xl:max-w-[81px] md:max-w-[72px]">
               <ul className="flex flex-col xl:gap-y-[24px] lg:gap-y-[21px] md:gap-y-[16px] 2xl:text-[16px] xl:text-[12px] md:text-[10.67px] tracking-[-0.4px]">
                 <li>
-                  <Link href="" className="text-white">
+                  <Link href="/blogs" className="text-white">
                     Blog
                   </Link>
                 </li>
@@ -221,7 +221,7 @@ function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="" className="text-white">
+                    <Link href="/our-team" className="text-white">
                       Our Team
                     </Link>
                   </li>
@@ -245,7 +245,7 @@ function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="" className="text-white">
+                    <Link href="/our-team" className="text-white">
                       Our Team
                     </Link>
                   </li>
