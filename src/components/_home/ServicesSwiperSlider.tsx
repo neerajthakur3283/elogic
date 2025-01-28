@@ -65,7 +65,7 @@ export default function CircularSlider() {
               left: "50%",
               transform: "translateX(-50%)",
               zIndex: 10,
-              filter: "blur(0)"
+              filter: "blur(0)",
             };
           } else if (position === 1) {
             style = {

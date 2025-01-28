@@ -63,6 +63,10 @@ const Slider: React.FC = () => {
     };
   }, []);
 
+  const handleDotClick = (index: number) => {
+    setCurrentIndex(index);
+  };
+
   return (
     <section>
       <div className="relative ms:pt-0 pt-4 after:absolute after:left-0 after:right-0 after:top-0 after:h-[210px] after:bg-gradient-to-b after:from-black to-[rgba(0,0,0,0)]">
@@ -103,18 +107,19 @@ const Slider: React.FC = () => {
         </div>
         <div className="slider-dots absolute left-0 2xl:bottom-[39px] xl:bottom-[30px] md:bottom-[25.97px] bottom-[18.95px] z-[2] flex justify-center w-full">
           <ul className="flex justify-center w-full gap-[8px]">
-            <li>
-              <button className="cursor-pointer rounded-[16px] 2xl:h-[6px] xl:h-[4.5px] md:h-[4px] h-[6px] 2xl:w-[48px] xl:w-[36px] md:w-[32px] w-[48px] bg-[rgba(255,255,255,0.4)]"></button>
-            </li>
-            <li>
-              <button className="cursor-pointer rounded-[16px] 2xl:h-[6px] xl:h-[4.5px] md:h-[4px] h-[6px] 2xl:w-[48px] xl:w-[36px] md:w-[32px] w-[48px] bg-white"></button>
-            </li>
-            <li>
-              <button className="cursor-pointer rounded-[16px] 2xl:h-[6px] xl:h-[4.5px] md:h-[4px] h-[6px] 2xl:w-[48px] xl:w-[36px] md:w-[32px] w-[48px] bg-[rgba(255,255,255,0.4)]"></button>
-            </li>
-            <li>
-              <button className="cursor-pointer rounded-[16px] 2xl:h-[6px] xl:h-[4.5px] md:h-[4px] h-[6px] 2xl:w-[48px] xl:w-[36px] md:w-[32px] w-[48px] bg-[rgba(255,255,255,0.4)]"></button>
-            </li>
+            {sliderData.map((_, index) => (
+              <li key={index}>
+                <button
+                  className={`cursor-pointer rounded-[16px] 2xl:h-[6px] xl:h-[4.5px] md:h-[4px] h-[6px] 2xl:w-[48px] xl:w-[36px] md:w-[32px] w-[48px] ${
+                    index === currentIndex
+                      ? "bg-white"
+                      : "bg-[rgba(255,255,255,0.4)]"
+                  }`}
+                  onClick={() => handleDotClick(index)}
+                  aria-label={`Go to slide ${index + 1}`}
+                ></button>
+              </li>
+            ))}
           </ul>
         </div>
         <div className="bg-image max-[767px]:after:hidden after:absolute after:left-0 after:top-0 after:bottom-0 after:right-0 after:bg-gradient-to-r after:from-[rgba(0,0,0,0.7)] after:to-[rgba(0,0,0,0)] max-[991px]:h-[600px] max-[767px]:h-auto max-[991px]:[&>img]:h-full max-[991px]:[&>img]:object-cover">
