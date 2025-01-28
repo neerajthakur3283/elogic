@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import React from 'react'
 
 function UseData() {
@@ -6,7 +5,7 @@ function UseData() {
     <>
         <div className='2xl:text-[18px] xl:text-[13.5px] text-[12px] text-[#777777] [&_a]:text-[#3563E9] [&_a]:font-medium [&_a]:underline'>
             WeLogic Engineering Services Private Limited uses the collected data for various purposes:
-            <ul className="list-decimal list-outside pl-6">
+            <ul className="list-decimal list-outside md:pl-6">
                 <li className="ml-4">To provide and maintain our Service.</li>
                 <li className="ml-4">To notify you about changes to our Service when you choose to do so.</li>
                 <li className="ml-4">To allow you to participate in interactive features of our Service when you choose to do so.</li>
