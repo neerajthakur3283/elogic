@@ -101,6 +101,22 @@ const Slider: React.FC = () => {
             </div>
           </div>
         </div>
+        <div className="slider-dots absolute left-0 2xl:bottom-[39px] xl:bottom-[30px] md:bottom-[25.97px] bottom-[18.95px] z-[2] flex justify-center w-full">
+          <ul className="flex justify-center w-full gap-[8px]">
+            <li>
+              <button className="cursor-pointer rounded-[16px] 2xl:h-[6px] xl:h-[4.5px] md:h-[4px] h-[6px] 2xl:w-[48px] xl:w-[36px] md:w-[32px] w-[48px] bg-[rgba(255,255,255,0.4)]"></button>
+            </li>
+            <li>
+              <button className="cursor-pointer rounded-[16px] 2xl:h-[6px] xl:h-[4.5px] md:h-[4px] h-[6px] 2xl:w-[48px] xl:w-[36px] md:w-[32px] w-[48px] bg-white"></button>
+            </li>
+            <li>
+              <button className="cursor-pointer rounded-[16px] 2xl:h-[6px] xl:h-[4.5px] md:h-[4px] h-[6px] 2xl:w-[48px] xl:w-[36px] md:w-[32px] w-[48px] bg-[rgba(255,255,255,0.4)]"></button>
+            </li>
+            <li>
+              <button className="cursor-pointer rounded-[16px] 2xl:h-[6px] xl:h-[4.5px] md:h-[4px] h-[6px] 2xl:w-[48px] xl:w-[36px] md:w-[32px] w-[48px] bg-[rgba(255,255,255,0.4)]"></button>
+            </li>
+          </ul>
+        </div>
         <div className="bg-image max-[767px]:after:hidden after:absolute after:left-0 after:top-0 after:bottom-0 after:right-0 after:bg-gradient-to-r after:from-[rgba(0,0,0,0.7)] after:to-[rgba(0,0,0,0)] max-[991px]:h-[600px] max-[767px]:h-auto max-[991px]:[&>img]:h-full max-[991px]:[&>img]:object-cover">
           <Image className="md:flex hidden" src={staticBgImage} alt="" />
           <Image
