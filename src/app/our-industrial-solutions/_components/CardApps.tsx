@@ -10,25 +10,51 @@ import imgTwo from "@/src/assets/images/card-img-two.jpg";
 function CardApps() {
   const appCardData = [
     {
-      cardTitle: "OEE: Part count, stoppage, etc",
+      cardTitle: (
+        <>
+          OEE: Part count, <br /> stoppage, etc (incl. breakdown ticketing
+          system)
+          <br />
+        </>
+      ),
       cardLink: "/",
       linkText: "Learn More",
       cardImg: imgOne,
     },
     {
-      cardTitle: "Energy Consumption Monitoring",
+      cardTitle: (
+        <>
+          Energy <br />
+          Consumption
+          <br />
+          Monitoring
+        </>
+      ),
       cardLink: "/",
       linkText: "Learn More",
       cardImg: imgTwo,
     },
     {
-      cardTitle: "Wireless instrumentation data Aggregation",
+      cardTitle: (
+        <>
+          Wireless <br />
+          instrumentation <br />
+          data <br />
+          Aggregation???
+        </>
+      ),
       cardLink: "/",
       linkText: "Learn More",
       cardImg: imgTwo,
     },
     {
-      cardTitle: "Machine health/condition monitoring",
+      cardTitle: (
+        <>
+          Machine <br />
+          health/condition <br />
+          monitoring
+        </>
+      ),
       cardLink: "/",
       linkText: "Learn More",
       cardImg: imgOne,
