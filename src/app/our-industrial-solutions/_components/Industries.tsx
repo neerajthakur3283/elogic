@@ -133,8 +133,8 @@ const IndustriesTabs = () => {
             </div>
           </div>
           <div className="w-full min-[1536px]:min-w-[840px] min-[1720px]:min-w-[932px] min-[1280px]:min-w-[742px] min-[1024px]:min-w-[562px] relative after:absolute after:left-0 after:bottom-0 after:bg-gradient-to-t after:from-black after:to-[rgba(0,0,0,0)] 2xl:after:h-[699px] after:h-full after:w-full after:2xl:rounded-[24px] after:xl:rounded-[18px] after:md:rounded-[16px] after:rounded-[18.45px]">
-            <div className="2xl:rounded-[24px] xl:rounded-[18px] md:rounded-[16px] rounded-[18.45px] overflow-hidden">
-              <Image src={activeTab.tabImg} alt="" />
+            <div className="2xl:rounded-[24px] xl:rounded-[18px] md:rounded-[16px] rounded-[18.45px] overflow-hidden max-[500px]:h-[350px]">
+              <Image className="max-[500px]:h-full max-[500px]:object-cover" src={activeTab.tabImg} alt="" />
             </div>
             <div className="absolute bottom-0 left-0 2xl:p-[40px] xl:p-[30px] md:p-[26px] sm:p-[20px] p-[15px] z-[1]">
               <h3 className="2xl:text-[43.48px] xl:text-[32.61px] md:text-[28.98px] sm:text-[17.35px] text-base text-white font-semibold">

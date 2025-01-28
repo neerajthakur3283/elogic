@@ -76,7 +76,7 @@ function PrivacyPolicyText() {
                         const sectionId = section.replace(/\s+/g, '-').toLowerCase();
                         return (
                             <section key={sectionId} id={sectionId} className="scroll-mt-16">
-                            <h2 className="text-xl font-bold mb-2">{section}</h2>
+                            <h2 className="text-[#1B1B1F] font-semibold 2xl:text-[27px] xl:text-[20.25px] text-[18px]">{section}</h2>
                             <p className="text-gray-700">
                                 This is a placeholder for the {section} section. Add the actual content here.
                             </p>
