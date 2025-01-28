@@ -151,7 +151,7 @@ function Footer() {
             <div className="border-t border-t-[rgba(255,255,255,0.4)] flex justify-between items-center 2xl:pt-[32px] xl:pt-[23px] md:pt-[21px]">
               <div className="flex items-center capitalize 2xl:text-[18px] xl:text-[13.5px] md:text-[12px]">
                 <Link
-                  href="/"
+                  href="/privacy-policy"
                   className="flex items-center text-white font-semibold"
                 >
                   Privacy Policy{" "}
