@@ -4,8 +4,8 @@ import AppCard from "./AppCard";
 // image
 import imgFirst from "@/src/assets/images/app-one.jpg";
 import imgSecond from "@/src/assets/images/app-two.jpg";
-import imgThird from "@/src/assets/images/app-three.jpg";
-import imgFourth from "@/src/assets/images/app-four.jpg";
+import imgThird from "@/src/assets/images/app-four.jpg";
+import imgFourth from "@/src/assets/images/app-three.jpg";
 
 function OurApplications() {
   const appCardData = [
@@ -26,14 +26,14 @@ function OurApplications() {
     {
       appImg: imgThird,
       appTag: "Machine Learning",
-      cardTitle: "Wireless Sensor data Aggregation",
+      cardTitle: "Machine Health / Condition Monitoring",
       appLink: "/",
       linkText: "Learn more",
     },
     {
       appImg: imgFourth,
       appTag: "Machine Learning",
-      cardTitle: "Machine Health / Condition Monitoring",
+      cardTitle: "Custom applications",
       appLink: "/",
       linkText: "Learn more",
     },
