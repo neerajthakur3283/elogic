@@ -37,7 +37,7 @@ function HardwareEcosystem() {
             <div className='2xl:pt-[100px] xl:pt-[75px] lg:pt-[66px] md:pt-[45px] pt-[50px] grid md:grid-cols-2 grid-cols-1 2xl:gap-[22.92px] xl:gap-[17.19px] gap-[15.28px]'>
                 
                 <div className='2xl:rounded-[12px] xl:rounded-[8.4px] md:rounded-[7.74px] rounded-[8px] overflow-hidden relative group'>
-                    <div className='group-hover:[&>img]:blur-[3px]'>
+                    <div className='group-hover:[&>img]:scale-[1.23]'>
                         <Image className='md:flex hidden transition-all duration-500' src={edgeComputer} alt='' />
                         <Image className='md:hidden flex transition-all duration-500' src={edgeComputerMob} alt='' />
                     </div>
@@ -48,7 +48,7 @@ function HardwareEcosystem() {
                 </div>
 
                 <div className='2xl:rounded-[12px] xl:rounded-[8.4px] md:rounded-[7.74px] rounded-[8px] overflow-hidden relative group'>
-                    <div className='group-hover:[&>img]:blur-[3px]'>
+                    <div className='group-hover:[&>img]:scale-[1.23]'>
                         <Image className='md:flex hidden transition-all duration-500' src={rfBase} alt='' />
                         <Image className='md:hidden flex transition-all duration-500' src={rfBaseMob} alt='' />
                     </div>
@@ -60,7 +60,7 @@ function HardwareEcosystem() {
             </div>
             <div className='2xl:pt-[23px] xl:pt-[17.25x] pt-[15.28px] 2xl:gap-[22.92px] xl:gap-[17.19px] gap-[15.28px] grid md:grid-cols-3'>
                 <div className='2xl:rounded-[12px] xl:rounded-[8.4px] md:rounded-[7.74px] rounded-[8px] overflow-hidden relative group'>
-                    <div className='group-hover:[&>img]:blur-[3px]'>
+                    <div className='group-hover:[&>img]:scale-[1.23]'>
                         <Image className='md:flex hidden transition-all duration-500' src={hmiImg} alt='' />
                         <Image className='md:hidden flex transition-all duration-500' src={hmiMob} alt='' />
                     </div>
@@ -75,7 +75,7 @@ function HardwareEcosystem() {
                     </div>
                 </div>
                 <div className='2xl:rounded-[12px] xl:rounded-[8.4px] md:rounded-[7.74px] rounded-[8px] overflow-hidden relative group'>
-                    <div className='group-hover:[&>img]:blur-[3px]'>
+                    <div className='group-hover:[&>img]:scale-[1.23]'>
                         <Image className='md:flex hidden transition-all duration-500' src={sensorInstruments} alt='' />
                         <Image className='md:hidden flex transition-all duration-500' src={sensorInstrumentsMob} alt='' />
                     </div>
@@ -90,7 +90,7 @@ function HardwareEcosystem() {
                     </div>
                 </div>
                 <div className='2xl:rounded-[12px] xl:rounded-[8.4px] md:rounded-[7.74px] rounded-[8px] overflow-hidden relative group'>
-                    <div className='group-hover:[&>img]:blur-[3px]'>
+                    <div className='group-hover:[&>img]:scale-[1.23]'>
                         <Image className='md:flex hidden transition-all duration-500' src={ioModule} alt='' />
                         <Image className='md:hidden flex transition-all duration-500' src={ioModuleMob} alt='' />
                     </div>
