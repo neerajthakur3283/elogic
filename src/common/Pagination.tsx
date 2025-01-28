@@ -10,9 +10,9 @@ import nextArrow from '@/src/assets/images/long-next.svg';
 import Image from 'next/image';
 
 const paginationData = [
-  { page: 1, href: '#', isActive: true },
+  { page: 1, href: '#', isActive: false },
   { page: 2, href: '#', isActive: false },
-  { page: 3, href: '#', isActive: false }, // Active page
+  { page: 3, href: '#', isActive: true },
   { page: 4, href: '#', isActive: false },
   { page: 5, href: '#', isActive: false },
   { page: 6, href: '#', isActive: false },
@@ -31,20 +31,38 @@ function PaginationWithEllipsis() {
 
   return (
     <Pagination className="flex justify-between">
-      <PaginationItem className='list-none' disabled={currentPage === 1}>
-        <PaginationLink aria-label="Go to previous page" 
-        className={`${
-            currentPage === 1 ? 'bg-[#E2E2E2] cursor-not-allowed 2xl:h-[26.67px] xl:h-[22.67px] h-[20px] flex item-center rounded-full 2xl:px-[18px] xl:px-[14px] lg:px-[13px] px-[11px] justify-center w-auto' : 'bg-[#0066FF] 2xl:h-[26.67px] xl:h-[22.67px] h-[20px] flex item-center rounded-full 2xl:px-[18px] xl:px-[14px] lg:px-[13px] px-[11px] justify-center w-auto cursor-pointer'
-          }`}>
-          <Image className={`${currentPage === 1 ? 'filter grayscale brightness-50 2xl:w-[32px] xl:w-[24px] w-[21px]' : '2xl:w-[32px] xl:w-[24px] w-[21px]'}`} src={prevArrow} alt="Previous" />
+      {/* Previous Button */}
+      <PaginationItem
+        className={`list-none ${
+          currentPage === 1 ? 'pointer-events-none opacity-50' : ''
+        }`}
+      >
+        <PaginationLink
+          aria-label="Go to previous page"
+          className={`${
+            currentPage === 1
+              ? 'bg-[#E2E2E2] cursor-not-allowed 2xl:h-[26.67px] xl:h-[22.67px] h-[20px] flex item-center rounded-full 2xl:px-[18px] xl:px-[14px] lg:px-[13px] px-[11px] justify-center w-auto'
+              : 'bg-[#0066FF] 2xl:h-[26.67px] xl:h-[22.67px] h-[20px] flex item-center rounded-full 2xl:px-[18px] xl:px-[14px] lg:px-[13px] px-[11px] justify-center w-auto cursor-pointer'
+          }`}
+        >
+          <Image
+            className={`${
+              currentPage === 1
+                ? 'filter grayscale brightness-50 2xl:w-[32px] xl:w-[24px] w-[21px]'
+                : '2xl:w-[32px] xl:w-[24px] w-[21px]'
+            }`}
+            src={prevArrow}
+            alt="Previous"
+          />
         </PaginationLink>
       </PaginationItem>
 
+      {/* Page Numbers */}
       <PaginationContent className="[&>li[aria-current='page']]:hidden">
         {pageRange.map((item, index) => {
           if (item === '...') {
             return (
-              <PaginationItem key={`ellipsis-${index}`} disabled>
+              <PaginationItem key={`ellipsis-${index}`}>
                 <span className="flex justify-center items-center">...</span>
               </PaginationItem>
             );
@@ -68,20 +86,37 @@ function PaginationWithEllipsis() {
         })}
       </PaginationContent>
 
-      <PaginationItem className='list-none' disabled={currentPage === totalPages}>
-        <PaginationLink aria-label="Go to previous page" 
+      {/* Next Button */}
+      <PaginationItem
+        className={`list-none ${
+          currentPage === totalPages ? 'pointer-events-none opacity-50' : ''
+        }`}
+      >
+        <PaginationLink
+          aria-label="Go to next page"
+          className={`${
+            currentPage === totalPages
+              ? 'bg-[#E2E2E2] cursor-not-allowed 2xl:h-[26.67px] xl:h-[22.67px] h-[20px] flex item-center rounded-full 2xl:px-[18px] xl:px-[14px] lg:px-[13px] px-[11px] justify-center w-auto'
+              : 'bg-[#0066FF] 2xl:h-[26.67px] xl:h-[22.67px] h-[20px] flex item-center rounded-full 2xl:px-[18px] xl:px-[14px] lg:px-[13px] px-[11px] justify-center w-auto cursor-pointer'
+          }`}
+        >
+          <Image
             className={`${
-                currentPage === 1 ? 'bg-[#0066FF] 2xl:h-[26.67px] xl:h-[22.67px] h-[20px] flex item-center rounded-full 2xl:px-[18px] xl:px-[14px] lg:px-[13px] px-[11px] justify-center w-auto cursor-pointer ' : 'bg-[#E2E2E2] cursor-not-allowed 2xl:h-[26.67px] xl:h-[22.67px] h-[20px] flex item-center rounded-full 2xl:px-[18px] xl:px-[14px] lg:px-[13px] px-[11px] justify-center w-auto'
-            }`}>
-            <Image className={`${currentPage === 1 ? '2xl:w-[32px] xl:w-[24px] w-[21px]' : 'filter grayscale brightness-50 2xl:w-[32px] xl:w-[24px] w-[21px]'}`} src={nextArrow} alt="Next" />
-            </PaginationLink>
-        </PaginationItem>
+              currentPage === totalPages
+                ? 'filter grayscale brightness-50 2xl:w-[32px] xl:w-[24px] w-[21px]'
+                : '2xl:w-[32px] xl:w-[24px] w-[21px]'
+            }`}
+            src={nextArrow}
+            alt="Next"
+          />
+        </PaginationLink>
+      </PaginationItem>
     </Pagination>
   );
 }
 
-function calculatePageRange(currentPage, totalPages, visiblePages) {
-  const pages = [];
+function calculatePageRange(currentPage: number, totalPages: number, visiblePages: number): (number | string)[] {
+  const pages: (number | string)[] = [];
   const sidePages = Math.floor(visiblePages / 1);
 
   if (currentPage > 0) {
