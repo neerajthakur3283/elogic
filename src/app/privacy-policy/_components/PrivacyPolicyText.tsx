@@ -1,20 +1,62 @@
 'use client'
 import React, { useEffect, useState } from 'react'
+import Introduction from './Introduction';
+import Definitions from './Definitions';
+import InformationCollection from './InformationCollection';
+import PersonalData from './PersonalData';
+import UsageData from './UsageData';
+import TrackingCookiesData from './TrackingCookiesData';
 
 function PrivacyPolicyText() {
     const sections = [
-        'Introduction',
-        'Definitions',
-        'Information Collection and Use',
-        'Personal Data',
-        'Usage Data',
-        'Tracking Cookies Data',
-        'Examples of Cookies we use',
-        'Retention of Data',
-        'Transfer of Data',
-        'Disclosure of Data',
-        'Security of Data',
-        'Contact us',
+        {
+            title: 'Introduction',
+            content: (
+              <>
+                <Introduction />
+              </>
+            ),
+          },
+          {
+            title: 'Definitions',
+            content: (
+              <>
+                <Definitions />
+              </>
+            ),
+          },
+          {
+            title: 'Information Collection and Use',
+            content: (
+              <>
+                <InformationCollection />
+              </>
+            ),
+          },
+          {
+            title: 'Personal Data',
+            content: (
+              <>
+                <PersonalData />
+              </>
+            ),
+          },
+          {
+            title: 'Usage Data',
+            content: (
+              <>
+                <UsageData />
+              </>
+            ),
+          },
+          {
+            title: 'Tracking Cookies Data',
+            content: (
+              <>
+                <TrackingCookiesData />
+              </>
+            ),
+          },
       ];
       const [activeSection, setActiveSection] = useState('');
 
@@ -36,54 +78,56 @@ function PrivacyPolicyText() {
     const observer = new IntersectionObserver(observerCallback, observerOptions);
 
     sections.forEach((section) => {
-      const sectionElement = document.getElementById(section.replace(/\s+/g, '-').toLowerCase());
+      const sectionElement = document.getElementById(section.title.replace(/\s+/g, '-').toLowerCase());
       if (sectionElement) observer.observe(sectionElement);
     });
 
     return () => observer.disconnect();
-  }, []);
+  }, [sections]);
   return (
     <>
         <section>
             <div className='bg-[#EEF1F5] 2xl:pt-[100px] xl:pt-[75px] lg:pt-[66px] md:pt-[45px] pt-[50px] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px]'>
-                <div className="flex flex-col lg:flex-row">
-                <aside className="lg:w-1/4 w-full mb-8 lg:mb-0">
-                    <div className="sticky top-4">
-                    <h2 className="font-semibold text-[#424242] 2xl:text-[27px]">In this article</h2>
-                    <ul className="2xl:pt-[20px] grid grid-cols-1 gap-y-[10px] font-semibold text-[#424242]">
+                <div className="flex 2xl:gap-[30px]">
+                <aside className="2xl:w-[341px]">
+                    <div className="sticky top-[140px]">
+                        <h2 className="font-semibold text-[#424242] 2xl:text-[27px]">In this article</h2>
+                        <ul className="2xl:pt-[20px] grid grid-cols-1 gap-y-[10px] font-semibold text-[#424242]">
                         {sections.map((item, index) => {
-                        const sectionId = item.replace(/\s+/g, '-').toLowerCase();
-                        return (
+                            const sectionId = item.title.replace(/\s+/g, '-').toLowerCase();
+                            return (
                             <li key={index}>
-                            <a
+                                <a
                                 href={`#${sectionId}`}
                                 className={`block ${
-                                activeSection === sectionId ? 'text-[#3464FC] after:bg-[#3464FC]' : 'text-[#424242]'
+                                    activeSection === sectionId
+                                    ? 'text-[#3464FC] after:bg-[#3464FC]'
+                                    : 'text-[#424242]'
                                 } transition-all duration-500 2xl:py-2 2xl:ps-[20px] relative after:absolute after:left-0 after:top-0 after:bottom-0 after:w-[3px]`}
-                            >
-                                {item}
-                            </a>
+                                >
+                                {item.title}
+                                </a>
                             </li>
-                        );
+                            );
                         })}
-                    </ul>
+                        </ul>
                     </div>
-                </aside>
+                    </aside>
 
                 {/* Content Sections */}
-                    <main className="lg:w-3/4 w-full space-y-10">
-                        {sections.map((section) => {
-                        const sectionId = section.replace(/\s+/g, '-').toLowerCase();
+                <main className="2xl:w-[calc(100%_-_341px)] grid-cols-1 grid gap-[30px]">
+                    {sections.map((section) => {
+                        const sectionId = section.title.replace(/\s+/g, '-').toLowerCase();
                         return (
-                            <section key={sectionId} id={sectionId} className="scroll-mt-16">
-                            <h2 className="text-[#1B1B1F] font-semibold 2xl:text-[27px] xl:text-[20.25px] text-[18px]">{section}</h2>
-                            <p className="text-gray-700">
-                                This is a placeholder for the {section} section. Add the actual content here.
-                            </p>
-                            </section>
+                        <section key={sectionId} id={sectionId} className="scroll-mt-16">
+                            <h2 className="text-[#1B1B1F] font-semibold 2xl:text-[27px] xl:text-[20.25px] text-[18px]">
+                            {section.title}
+                            </h2>
+                            <div>{section.content}</div>
+                        </section>
                         );
-                        })}
-                    </main>
+                    })}
+                </main>
                 </div>
             </div>
         </section>
