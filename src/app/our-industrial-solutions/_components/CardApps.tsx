@@ -40,7 +40,7 @@ function CardApps() {
           Wireless <br />
           instrumentation <br />
           data <br />
-          Aggregation???
+          Aggregation
         </>
       ),
       cardLink: "/",
