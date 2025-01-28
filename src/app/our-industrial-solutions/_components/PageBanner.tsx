@@ -1,7 +1,5 @@
 import React from "react";
 
-// const pageVideo = "/videos/internal-video.mp4";
-
 function PageBanner() {
   return (
     <>
