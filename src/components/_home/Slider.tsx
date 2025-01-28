@@ -4,7 +4,7 @@ import Image from "next/image";
 import React, { useEffect, useState, useRef } from "react";
 
 // images
-import slideOne from "@/src/assets/images/home-slide-1.svg";
+import slideOne from "@/src/assets/images/home-slide-1.png";
 import slideTwo from "@/src/assets/images/home-slide-2.png";
 import slideThree from "@/src/assets/images/home-slide-3.png";
 import slideFour from "@/src/assets/images/home-slide-4.png";
