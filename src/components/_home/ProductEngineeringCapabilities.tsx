@@ -40,7 +40,7 @@ function ProductEngineeringCapabilities() {
     },
     {
       productImg: productFour,
-      title: "User Interface Development",
+      title: "Human Machine Interface Development",
       smallTitle:
         "Build and scale generative AI applications with foundation models (FMs)",
       cardLink: "/",
@@ -57,6 +57,14 @@ function ProductEngineeringCapabilities() {
     {
       productImg: productSix,
       title: "Mechanical & Industrial Design",
+      smallTitle:
+        "Build and scale generative AI applications with foundation models (FMs)",
+      cardLink: "/",
+      arrowImg: arrowImage,
+    },
+    {
+      productImg: productSeven,
+      title: "Manufacturing Support",
       smallTitle:
         "Build and scale generative AI applications with foundation models (FMs)",
       cardLink: "/",

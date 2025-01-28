@@ -6,6 +6,9 @@ import InformationCollection from './InformationCollection';
 import PersonalData from './PersonalData';
 import UsageData from './UsageData';
 import TrackingCookiesData from './TrackingCookiesData';
+import ExamplesCookies from './ExamplesCookies';
+import UseData from './UseData';
+import RetentionData from './RetentionData';
 
 function PrivacyPolicyText() {
     const sections = [
@@ -54,6 +57,30 @@ function PrivacyPolicyText() {
             content: (
               <>
                 <TrackingCookiesData />
+              </>
+            ),
+          },
+          {
+            title: 'Examples of Cookies we use:',
+            content: (
+              <>
+                <ExamplesCookies />
+              </>
+            ),
+          },
+          {
+            title: 'Use of Data',
+            content: (
+              <>
+                <UseData />
+              </>
+            ),
+          },
+          {
+            title: 'Retention of Data',
+            content: (
+              <>
+                <RetentionData />
               </>
             ),
           },
