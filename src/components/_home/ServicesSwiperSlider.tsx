@@ -2,9 +2,9 @@
 import { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 // images
-import slideOneDesktop from "@/src/assets/images/service-one.png";
-import slideTwoDesktop from "@/src/assets/images/service-three.png";
-import slideThreeDesktop from "@/src/assets/images/service-two.png";
+import slideOneDesktop from "@/src/assets/images/service-one.jpg";
+import slideTwoDesktop from "@/src/assets/images/service-three.jpg";
+import slideThreeDesktop from "@/src/assets/images/service-two.jpg";
 
 import slideOneMobile from "@/src/assets/images/service-mob-one.jpg";
 import slideTwoMobile from "@/src/assets/images/service-mob-two.jpg";
@@ -65,7 +65,7 @@ export default function CircularSlider() {
               left: "50%",
               transform: "translateX(-50%)",
               zIndex: 10,
-              filter: "blur(0)"
+              filter: "blur(0)",
             };
           } else if (position === 1) {
             style = {
