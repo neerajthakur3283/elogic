@@ -12,20 +12,29 @@ const steps = [
           <li className="flex gap-2">
             •{" "}
             <span className="ms-2 flex">
-              Free consultation to assess your operational challenges and goals.
-              Evaluation of equipment condition and energy efficiency.
+              Free consultation to understand your operational challenges and
+              goals.
             </span>
           </li>
           <li className="flex gap-2">
             •{" "}
             <span className="ms-2 flex">
-              On-site review to find the best monitoring spots and connectivity.
+              Expert assessment of machine health monitoring, energy usage, and
+              productivity metrics.
             </span>
           </li>
           <li className="flex gap-2">
             •{" "}
             <span className="ms-2 flex">
-              Customized solutions based on your existing setup.
+              Detailed site survey to identify optimal monitoring points and
+              connectivity options.
+            </span>
+          </li>
+          <li className="flex gap-2">
+            •{" "}
+            <span className="ms-2 flex">
+              Custom solution design that leverages your existing infrastructure
+              where possible.
             </span>
           </li>
         </ul>
@@ -43,20 +52,19 @@ const steps = [
           <li className="flex gap-2">
             •{" "}
             <span className="ms-2 flex">
-              Free consultation to assess your operational challenges and goals.
-              Evaluation of equipment condition and energy efficiency.
+              Quick deployment on 1-2 machines to demonstrate immediate value
             </span>
           </li>
           <li className="flex gap-2">
             •{" "}
             <span className="ms-2 flex">
-              On-site review to find the best monitoring spots and connectivity.
+              Real-time monitoring and basic analytics setup
             </span>
           </li>
           <li className="flex gap-2">
             •{" "}
             <span className="ms-2 flex">
-              Customized solutions based on your existing setup.
+              Clear demonstration of potential ROI and benefits
             </span>
           </li>
         </ul>
@@ -74,20 +82,19 @@ const steps = [
           <li className="flex gap-2">
             •{" "}
             <span className="ms-2 flex">
-              Free consultation to assess your operational challenges and goals.
-              Evaluation of equipment condition and energy efficiency.
+              Full-scale deployment across your facility.
             </span>
           </li>
           <li className="flex gap-2">
             •{" "}
             <span className="ms-2 flex">
-              On-site review to find the best monitoring spots and connectivity.
+              Complete system setup with custom dashboards and alerts.
             </span>
           </li>
           <li className="flex gap-2">
             •{" "}
             <span className="ms-2 flex">
-              Customized solutions based on your existing setup.
+              Comprehensive training for your team.
             </span>
           </li>
         </ul>
@@ -105,20 +112,19 @@ const steps = [
           <li className="flex gap-2">
             •{" "}
             <span className="ms-2 flex">
-              Free consultation to assess your operational challenges and goals.
-              Evaluation of equipment condition and energy efficiency.
+              Ongoing system optimization and technical support.
             </span>
           </li>
           <li className="flex gap-2">
             •{" "}
             <span className="ms-2 flex">
-              On-site review to find the best monitoring spots and connectivity.
+              Regular performance reviews and recommendations.
             </span>
           </li>
           <li className="flex gap-2">
             •{" "}
             <span className="ms-2 flex">
-              Customized solutions based on your existing setup.
+              Continuous platform enhancements based on your evolving needs.
             </span>
           </li>
         </ul>
@@ -145,7 +151,7 @@ export default function OurProcess() {
       <div className="flex justify-between items-start md:flex-nowrap flex-wrap md:gap-y-0 gap-y-[20px]">
         <div className="text-black">
           <h2 className="leading-[1] 2xl:text-[46.88px] xl:text-[35.16px] md:text-[31.25px] text-[24px] font-bold">
-            Our Process
+            Our Process (Highlighting PoC phase)
           </h2>
         </div>
         <div className="text-[#4B5563] font-medium leading-snug w-full 2xl:max-w-[771.19px] xl:max-w-[578px] lg:max-w-[514px] md:max-w-[420px] 2xl:text-[24px] xl:text-[18px] text-base">

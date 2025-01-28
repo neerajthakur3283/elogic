@@ -1,38 +1,48 @@
-import Image from 'next/image';
-import Link from 'next/link'
-import React from 'react'
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 import { MdArrowOutward } from "react-icons/md";
 
 // images
-import edgeComputer from '@/src/assets/images/edge-computer.jpg'
-import edgeComputerMob from '@/src/assets/images/edge-computer-mob.jpg'
-import rfBase from '@/src/assets/images/rf-base.jpg'
-import rfBaseMob from '@/src/assets/images/rf-base-mob.jpg'
-import nextarrow from '@/src/assets/images/next.svg'
-import hmiImg from '@/src/assets/images/hmi.jpg'
-import hmiMob from '@/src/assets/images/hmi-mob.jpg'
-import sensorInstruments from '@/src/assets/images/sensor-instruments.jpg'
-import sensorInstrumentsMob from '@/src/assets/images/sensor-instruments-mob.jpg'
-import ioModule from '@/src/assets/images/io-module.jpg'
-import ioModuleMob from '@/src/assets/images/io-module-mob.jpg'
+import edgeComputer from "@/src/assets/images/edge-computer.jpg";
+import edgeComputerMob from "@/src/assets/images/edge-computer-mob.jpg";
+import rfBase from "@/src/assets/images/rf-base.jpg";
+import rfBaseMob from "@/src/assets/images/rf-base-mob.jpg";
+import nextarrow from "@/src/assets/images/next.svg";
+import hmiImg from "@/src/assets/images/hmi.jpg";
+import hmiMob from "@/src/assets/images/hmi-mob.jpg";
+import sensorInstruments from "@/src/assets/images/sensor-instruments.jpg";
+import sensorInstrumentsMob from "@/src/assets/images/sensor-instruments-mob.jpg";
+import ioModule from "@/src/assets/images/io-module.jpg";
+import ioModuleMob from "@/src/assets/images/io-module-mob.jpg";
 
 function HardwareEcosystem() {
-
   return (
     <section>
-        <div className='bg-[#EEF1F5] 2xl:py-[100px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px]'>
-           
-            <div className='flex justify-between items-start md:flex-nowrap flex-wrap md:gap-y-0 gap-y-[20px]'>
-                <div className='text-black'>
-                    <span className='flex text-[#3563E9] uppercase font-bold 2xl:text-[16.88px] xl:text-[12.66px] md:text-[11.25px] text-[10px] 2xl:mb-[20px] xl:mb-[15px] md:mb-[13.33px] mb-[10px]'>in-house & 3rd party</span>
-                    <h2 className='leading-[1] 2xl:text-[46.88px] xl:text-[35.16px] md:text-[31.25px] text-[24px] font-bold'>Hardware Ecosystem</h2>
-                </div>
-                <div className='text-[#4B5563] font-medium leading-snug w-full 2xl:max-w-[771.19px] xl:max-w-[578px] lg:max-w-[514px] md:max-w-[420px] 2xl:text-[24px] xl:text-[18px] text-base'>We can communicate with a wide range of OEM equipment, PLCs, HMIs and sensors with rich protocol integrations and deploy tailor-made applications on both edge and cloud
-                    <div className='2xl:pt-[40px] xl:pt-[30px] md:pt-[26px] pt-[20px]'>
-                        <Link className='bg-[#3563E9] text-white px-[2] w-full 2xl:max-w-[185px] xl:max-w-[139px] md:max-w-[123.44px] max-w-[140px] 2xl:h-[52px] xl:h-[39px] md:h-[35px] h-[40.29px] flex justify-center items-center py-[2px] 2xl:text-[20px] xl:text-[15px] md:text-[13.33px] text-[15.24px] md:font-bold font-semibold rounded-[16px] capitalize duration-500 hover:bg-black hover:text-white' href='/'>contact us <MdArrowOutward className='ms-2.5' /></Link>
-                    </div>
-                </div>
+      <div className="bg-[#EEF1F5] 2xl:py-[100px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px]">
+        <div className="flex justify-between items-start md:flex-nowrap flex-wrap md:gap-y-0 gap-y-[20px]">
+          <div className="text-black">
+            <span className="flex text-[#3563E9] uppercase font-bold 2xl:text-[16.88px] xl:text-[12.66px] md:text-[11.25px] text-[10px] 2xl:mb-[20px] xl:mb-[15px] md:mb-[13.33px] mb-[10px]">
+              in-house & 3rd party
+            </span>
+            <h2 className="leading-[1] 2xl:text-[46.88px] xl:text-[35.16px] md:text-[31.25px] text-[24px] font-bold">
+              Hardware Ecosystem
+            </h2>
+          </div>
+          <div className="text-[#4B5563] font-medium leading-snug w-full 2xl:max-w-[771.19px] xl:max-w-[578px] lg:max-w-[514px] md:max-w-[420px] 2xl:text-[24px] xl:text-[18px] text-base">
+            We can communicate with a wide range of OEM equipment, PLCs, HMIs
+            and sensors with rich protocol integrations and deploy tailor-made
+            applications on both edge and cloud
+            <div className="2xl:pt-[40px] xl:pt-[30px] md:pt-[26px] pt-[20px]">
+              <Link
+                className="bg-[#3563E9] text-white px-[2] w-full 2xl:max-w-[185px] xl:max-w-[139px] md:max-w-[123.44px] max-w-[140px] 2xl:h-[52px] xl:h-[39px] md:h-[35px] h-[40.29px] flex justify-center items-center py-[2px] 2xl:text-[20px] xl:text-[15px] md:text-[13.33px] text-[15.24px] md:font-bold font-semibold rounded-[16px] capitalize duration-500 hover:bg-black hover:text-white"
+                href="/"
+              >
+                contact us <MdArrowOutward className="ms-2.5" />
+              </Link>
             </div>
+          </div>
+        </div>
 
             <div className='2xl:pt-[100px] xl:pt-[75px] lg:pt-[66px] md:pt-[45px] pt-[50px] grid md:grid-cols-2 grid-cols-1 2xl:gap-[22.92px] xl:gap-[17.19px] gap-[15.28px]'>
                 
@@ -107,7 +117,7 @@ function HardwareEcosystem() {
             </div>
         </div>
     </section>
-  )
+  );
 }
 
-export default HardwareEcosystem
+export default HardwareEcosystem;

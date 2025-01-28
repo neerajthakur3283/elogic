@@ -10,8 +10,8 @@ function YouAre() {
       cardImg: imgOne,
       cardTitle: (
         <>
-          A manufacturing plan <br />
-          factory/unit
+          A manufacturing plant/factory/unit <br />
+          (contract or in-house)
         </>
       ),
       cardLink: "",
@@ -21,13 +21,7 @@ function YouAre() {
     },
     {
       cardImg: imgOne,
-      cardTitle: (
-        <>
-          Plant EPC Contractor or
-          <br />
-          System Integrator
-        </>
-      ),
+      cardTitle: <>An EPC, O&M, SI, automation specialist etc.</>,
       cardLink: "",
       linkText: "Learn More",
       cardPara:
@@ -37,10 +31,8 @@ function YouAre() {
       cardImg: imgOne,
       cardTitle: (
         <>
-          Industrial machine or
-          <br />
-          instrument maker
-          <br />
+          An OEM of industrial machinery, plant, instrumentation, other
+          equipment
         </>
       ),
       cardLink: "",

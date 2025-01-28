@@ -60,7 +60,7 @@ const industries = [
   {
     id: 5,
     tabImg: imgFive,
-    name: "Pharma/Chemical",
+    name: "Chemical & Pharmaceuticals",
     details: [
       "Power consumption pattern analysis of reactor vessels to validate batch consistency and detect process deviations",
       "Vibration and power monitoring of centrifuges and separators to prevent imbalance-related failures",
