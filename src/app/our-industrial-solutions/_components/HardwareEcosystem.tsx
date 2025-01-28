@@ -44,78 +44,160 @@ function HardwareEcosystem() {
           </div>
         </div>
 
-            <div className='2xl:pt-[100px] xl:pt-[75px] lg:pt-[66px] md:pt-[45px] pt-[50px] grid md:grid-cols-2 grid-cols-1 2xl:gap-[22.92px] xl:gap-[17.19px] gap-[15.28px]'>
-                
-                <div className='2xl:rounded-[12px] xl:rounded-[8.4px] md:rounded-[7.74px] rounded-[8px] overflow-hidden relative group'>
-                    <div className='group-hover:[&>img]:scale-[1.23]'>
-                        <Image className='md:flex hidden transition-all duration-500' src={edgeComputer} alt='' />
-                        <Image className='md:hidden flex transition-all duration-500' src={edgeComputerMob} alt='' />
-                    </div>
-                    <div className='absolute left-0 top-0 h-full w-full flex flex-col justify-between text-white 2xl:p-[24px] xl:p-[18px] p-[16px]'>
-                        <h4 className='font-bold 2xl:text-[30px]'>Edge computers & IIoT<br/>Gateways</h4>
-                        <Link href=''><Image className='2xl:w-[18.7px] xl:w-[14px] w-[8px]' src={nextarrow} alt='' /></Link>
-                    </div>
-                </div>
+        <div className="2xl:pt-[100px] xl:pt-[75px] lg:pt-[66px] md:pt-[45px] pt-[50px] grid md:grid-cols-2 grid-cols-1 2xl:gap-[22.92px] xl:gap-[17.19px] gap-[15.28px]">
+          <div className="2xl:rounded-[12px] xl:rounded-[8.4px] md:rounded-[7.74px] rounded-[8px] overflow-hidden relative group">
+            <div className="group-hover:[&>img]:scale-[1.23]">
+              <Image
+                className="md:flex hidden transition-all duration-500"
+                src={edgeComputer}
+                alt=""
+              />
+              <Image
+                className="md:hidden flex transition-all duration-500"
+                src={edgeComputerMob}
+                alt=""
+              />
+            </div>
+            <div className="absolute left-0 top-0 h-full w-full flex flex-col justify-between text-white 2xl:p-[24px] xl:p-[18px] p-[16px]">
+              <h4 className="font-bold 2xl:text-[30px]">
+                Edge computers & IIoT
+                <br />
+                Gateways
+              </h4>
+              <Link href="">
+                <Image
+                  className="2xl:w-[18.7px] xl:w-[14px] w-[8px]"
+                  src={nextarrow}
+                  alt=""
+                />
+              </Link>
+            </div>
+          </div>
 
-                <div className='2xl:rounded-[12px] xl:rounded-[8.4px] md:rounded-[7.74px] rounded-[8px] overflow-hidden relative group'>
-                    <div className='group-hover:[&>img]:scale-[1.23]'>
-                        <Image className='md:flex hidden transition-all duration-500' src={rfBase} alt='' />
-                        <Image className='md:hidden flex transition-all duration-500' src={rfBaseMob} alt='' />
-                    </div>
-                    <div className='absolute left-0 top-0 h-full w-full flex flex-col justify-between text-white 2xl:p-[24px] xl:p-[18px] p-[16px]'>
-                        <h4 className='font-bold 2xl:text-[30px]'>RF base + node</h4>
-                        <Link href=''><Image className='2xl:w-[18.7px] xl:w-[14px] w-[8px]' src={nextarrow} alt='' /></Link>
-                    </div>
-                </div>
+          <div className="2xl:rounded-[12px] xl:rounded-[8.4px] md:rounded-[7.74px] rounded-[8px] overflow-hidden relative group">
+            <div className="group-hover:[&>img]:scale-[1.23]">
+              <Image
+                className="md:flex hidden transition-all duration-500"
+                src={rfBase}
+                alt=""
+              />
+              <Image
+                className="md:hidden flex transition-all duration-500"
+                src={rfBaseMob}
+                alt=""
+              />
             </div>
-            <div className='2xl:pt-[23px] xl:pt-[17.25x] pt-[15.28px] 2xl:gap-[22.92px] xl:gap-[17.19px] gap-[15.28px] grid md:grid-cols-3'>
-                <div className='2xl:rounded-[12px] xl:rounded-[8.4px] md:rounded-[7.74px] rounded-[8px] overflow-hidden relative group'>
-                    <div className='group-hover:[&>img]:scale-[1.23]'>
-                        <Image className='md:flex hidden transition-all duration-500' src={hmiImg} alt='' />
-                        <Image className='md:hidden flex transition-all duration-500' src={hmiMob} alt='' />
-                    </div>
-                    <div className='absolute left-0 top-0 h-full w-full flex flex-col justify-between text-white 2xl:p-[24px] xl:p-[18px] p-[16px] 2xl:max-w-[421px] xl:max-w-[315.75px] max-w-[280.67px]'>
-                        <div className='flex flex-col 2xl:gap-y-[10px] xl:gap-y-[8px] gap-y-[7px] text-white'>
-                            <h6 className='2xl:text-[24px] xl:text-[18px] text-base font-bold'>HMIs</h6>
-                            <p className='font-medium 2xl:text-base xl:text-[12px] text-[10.67px]'>
-                            Build and scale generative AI applications with foundation models (FMs)
-                            </p>
-                        </div>
-                        <Link href=''><Image className='2xl:w-[18.7px] xl:w-[14px] w-[8px]' src={nextarrow} alt='' /></Link>
-                    </div>
-                </div>
-                <div className='2xl:rounded-[12px] xl:rounded-[8.4px] md:rounded-[7.74px] rounded-[8px] overflow-hidden relative group'>
-                    <div className='group-hover:[&>img]:scale-[1.23]'>
-                        <Image className='md:flex hidden transition-all duration-500' src={sensorInstruments} alt='' />
-                        <Image className='md:hidden flex transition-all duration-500' src={sensorInstrumentsMob} alt='' />
-                    </div>
-                    <div className='absolute left-0 top-0 h-full w-full flex flex-col justify-between text-white 2xl:p-[24px] xl:p-[18px] p-[16px] 2xl:max-w-[421px] xl:max-w-[315.75px] max-w-[280.67px]'>
-                        <div className='flex flex-col 2xl:gap-y-[10px] xl:gap-y-[8px] gap-y-[7px] text-white'>
-                            <h6 className='2xl:text-[24px] xl:text-[18px] text-base font-bold'>Sensors/instruments</h6>
-                            <p className='font-medium 2xl:text-base xl:text-[12px] text-[10.67px]'>
-                            Build and scale generative AI applications with foundation models (FMs)
-                            </p>
-                        </div>
-                        <Link href=''><Image className='2xl:w-[18.7px] xl:w-[14px] w-[8px]' src={nextarrow} alt='' /></Link>
-                    </div>
-                </div>
-                <div className='2xl:rounded-[12px] xl:rounded-[8.4px] md:rounded-[7.74px] rounded-[8px] overflow-hidden relative group'>
-                    <div className='group-hover:[&>img]:scale-[1.23]'>
-                        <Image className='md:flex hidden transition-all duration-500' src={ioModule} alt='' />
-                        <Image className='md:hidden flex transition-all duration-500' src={ioModuleMob} alt='' />
-                    </div>
-                    <div className='absolute left-0 top-0 h-full w-full flex flex-col justify-between text-white 2xl:p-[24px] xl:p-[18px] p-[16px] 2xl:max-w-[421px] xl:max-w-[315.75px] max-w-[280.67px]'>
-                        <div className='flex flex-col 2xl:gap-y-[10px] xl:gap-y-[8px] gap-y-[7px] text-white'>
-                            <h6 className='2xl:text-[24px] xl:text-[18px] text-base font-bold'>I/O modules</h6>
-                            <p className='font-medium 2xl:text-base xl:text-[12px] text-[10.67px]'>
-                            Build and scale generative AI applications with foundation models (FMs)
-                            </p>
-                        </div>
-                        <Link href=''><Image className='2xl:w-[18.7px] xl:w-[14px] w-[8px]' src={nextarrow} alt='' /></Link>
-                    </div>
-                </div>
+            <div className="absolute left-0 top-0 h-full w-full flex flex-col justify-between text-white 2xl:p-[24px] xl:p-[18px] p-[16px]">
+              <h4 className="font-bold 2xl:text-[30px]">RF base + node</h4>
+              <Link href="">
+                <Image
+                  className="2xl:w-[18.7px] xl:w-[14px] w-[8px]"
+                  src={nextarrow}
+                  alt=""
+                />
+              </Link>
             </div>
+          </div>
         </div>
+        <div className="2xl:pt-[23px] xl:pt-[17.25x] pt-[15.28px] 2xl:gap-[22.92px] xl:gap-[17.19px] gap-[15.28px] grid md:grid-cols-3">
+          <div className="2xl:rounded-[12px] xl:rounded-[8.4px] md:rounded-[7.74px] rounded-[8px] overflow-hidden relative group">
+            <div className="group-hover:[&>img]:scale-[1.23]">
+              <Image
+                className="md:flex hidden transition-all duration-500"
+                src={hmiImg}
+                alt=""
+              />
+              <Image
+                className="md:hidden flex transition-all duration-500"
+                src={hmiMob}
+                alt=""
+              />
+            </div>
+            <div className="absolute left-0 top-0 h-full w-full flex flex-col justify-between text-white 2xl:p-[24px] xl:p-[18px] p-[16px] 2xl:max-w-[421px] xl:max-w-[315.75px] max-w-[280.67px]">
+              <div className="flex flex-col 2xl:gap-y-[10px] xl:gap-y-[8px] gap-y-[7px] text-white">
+                <h6 className="2xl:text-[24px] xl:text-[18px] text-base font-bold">
+                  HMIs (3rd party)
+                </h6>
+                <p className="font-medium 2xl:text-base xl:text-[12px] text-[10.67px]">
+                  Build and scale generative AI applications with foundation
+                  models (FMs)
+                </p>
+              </div>
+              <Link href="">
+                <Image
+                  className="2xl:w-[18.7px] xl:w-[14px] w-[8px]"
+                  src={nextarrow}
+                  alt=""
+                />
+              </Link>
+            </div>
+          </div>
+          <div className="2xl:rounded-[12px] xl:rounded-[8.4px] md:rounded-[7.74px] rounded-[8px] overflow-hidden relative group">
+            <div className="group-hover:[&>img]:scale-[1.23]">
+              <Image
+                className="md:flex hidden transition-all duration-500"
+                src={sensorInstruments}
+                alt=""
+              />
+              <Image
+                className="md:hidden flex transition-all duration-500"
+                src={sensorInstrumentsMob}
+                alt=""
+              />
+            </div>
+            <div className="absolute left-0 top-0 h-full w-full flex flex-col justify-between text-white 2xl:p-[24px] xl:p-[18px] p-[16px] 2xl:max-w-[421px] xl:max-w-[315.75px] max-w-[280.67px]">
+              <div className="flex flex-col 2xl:gap-y-[10px] xl:gap-y-[8px] gap-y-[7px] text-white">
+                <h6 className="2xl:text-[24px] xl:text-[18px] text-base font-bold">
+                  Sensors/isntruments (3rd party)
+                </h6>
+                <p className="font-medium 2xl:text-base xl:text-[12px] text-[10.67px]">
+                  Build and scale generative AI applications with foundation
+                  models (FMs)
+                </p>
+              </div>
+              <Link href="">
+                <Image
+                  className="2xl:w-[18.7px] xl:w-[14px] w-[8px]"
+                  src={nextarrow}
+                  alt=""
+                />
+              </Link>
+            </div>
+          </div>
+          <div className="2xl:rounded-[12px] xl:rounded-[8.4px] md:rounded-[7.74px] rounded-[8px] overflow-hidden relative group">
+            <div className="group-hover:[&>img]:scale-[1.23]">
+              <Image
+                className="md:flex hidden transition-all duration-500"
+                src={ioModule}
+                alt=""
+              />
+              <Image
+                className="md:hidden flex transition-all duration-500"
+                src={ioModuleMob}
+                alt=""
+              />
+            </div>
+            <div className="absolute left-0 top-0 h-full w-full flex flex-col justify-between text-white 2xl:p-[24px] xl:p-[18px] p-[16px] 2xl:max-w-[421px] xl:max-w-[315.75px] max-w-[280.67px]">
+              <div className="flex flex-col 2xl:gap-y-[10px] xl:gap-y-[8px] gap-y-[7px] text-white">
+                <h6 className="2xl:text-[24px] xl:text-[18px] text-base font-bold">
+                  I/O modules (3rd party)
+                </h6>
+                <p className="font-medium 2xl:text-base xl:text-[12px] text-[10.67px]">
+                  Build and scale generative AI applications with foundation
+                  models (FMs)
+                </p>
+              </div>
+              <Link href="">
+                <Image
+                  className="2xl:w-[18.7px] xl:w-[14px] w-[8px]"
+                  src={nextarrow}
+                  alt=""
+                />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
