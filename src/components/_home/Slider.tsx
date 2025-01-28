@@ -51,7 +51,7 @@ const Slider: React.FC = () => {
     const startSlider = () => {
       intervalRef.current = setInterval(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % sliderData.length);
-      }, 2000);
+      }, 3000);
     };
 
     startSlider();
