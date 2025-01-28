@@ -49,8 +49,8 @@ function PrivacyPolicyText() {
                 <div className="flex flex-col lg:flex-row">
                 <aside className="lg:w-1/4 w-full mb-8 lg:mb-0">
                     <div className="sticky top-4">
-                    <h2 className="font-semibold text-lg mb-4">In this article</h2>
-                    <ul className="space-y-3">
+                    <h2 className="font-semibold text-[#424242] 2xl:text-[27px]">In this article</h2>
+                    <ul className="2xl:pt-[20px] grid grid-cols-1 gap-y-[10px] font-semibold text-[#424242]">
                         {sections.map((item, index) => {
                         const sectionId = item.replace(/\s+/g, '-').toLowerCase();
                         return (
@@ -58,8 +58,8 @@ function PrivacyPolicyText() {
                             <a
                                 href={`#${sectionId}`}
                                 className={`block ${
-                                activeSection === sectionId ? 'text-blue-600 font-bold' : 'text-gray-600'
-                                } transition-all duration-300`}
+                                activeSection === sectionId ? 'text-[#3464FC] after:bg-[#3464FC]' : 'text-[#424242]'
+                                } transition-all duration-500 2xl:py-2 2xl:ps-[20px] relative after:absolute after:left-0 after:top-0 after:bottom-0 after:w-[3px]`}
                             >
                                 {item}
                             </a>

@@ -136,11 +136,11 @@ const IndustriesTabs = () => {
             <div className="2xl:rounded-[24px] xl:rounded-[18px] md:rounded-[16px] rounded-[18.45px] overflow-hidden">
               <Image src={activeTab.tabImg} alt="" />
             </div>
-            <div className="absolute bottom-0 left-0 2xl:p-[40px] xl:p-[30px] md:p-[26px] p-[20px] z-[1]">
-              <h3 className="2xl:text-[43.48px] xl:text-[32.61px] md:text-[28.98px] text-[17.35px] text-white font-semibold">
+            <div className="absolute bottom-0 left-0 2xl:p-[40px] xl:p-[30px] md:p-[26px] sm:p-[20px] p-[15px] z-[1]">
+              <h3 className="2xl:text-[43.48px] xl:text-[32.61px] md:text-[28.98px] sm:text-[17.35px] text-base text-white font-semibold">
                 {activeTab.name}
               </h3>
-              <ul className="2xl:pt-[40px] xl:pt-[30px] md:pt-[26px] pt-[20px] text-white 2xl:text-[24px] xl:text-[18px] md:text-base text-[9.58px] gap-2 flex flex-col">
+              <ul className="2xl:pt-[40px] xl:pt-[30px] md:pt-[26px] sm:pt-[20px] pt-[10px] text-white 2xl:text-[24px] xl:text-[18px] md:text-base text-[9.58px] gap-2 flex flex-col">
                 {activeTab.details.map((detail, index) => (
                   <li className="font-normal leading-snug flex" key={index}>
                     <div className="flex justify-center 2xl:w-[40px] 2xl:pt-3 lg:pt-2 md:pt-2 pt-1 pe-2">
