@@ -16,7 +16,7 @@ function ProductEngineeringCapabilities() {
   const productCardData = [
     {
       productImg: productOne,
-      title: "Embedded Software Design",
+      title: "Embedded Hardware Design",
       smallTitle:
         "Build and scale generative AI applications with foundation models (FMs)",
       cardLink: "/",
@@ -24,31 +24,7 @@ function ProductEngineeringCapabilities() {
     },
     {
       productImg: productTwo,
-      title: "Embedded Software Development",
-      smallTitle:
-        "Build and scale generative AI applications with foundation models (FMs)",
-      cardLink: "/",
-      arrowImg: arrowImage,
-    },
-    {
-      productImg: productThree,
-      title: "Wireless Systems Development",
-      smallTitle:
-        "Build and scale generative AI applications with foundation models (FMs)",
-      cardLink: "/",
-      arrowImg: arrowImage,
-    },
-    {
-      productImg: productFour,
-      title: "Human Machine Interface Development",
-      smallTitle:
-        "Build and scale generative AI applications with foundation models (FMs)",
-      cardLink: "/",
-      arrowImg: arrowImage,
-    },
-    {
-      productImg: productFive,
-      title: "Technology Consulting",
+      title: "Embedded Software Design",
       smallTitle:
         "Build and scale generative AI applications with foundation models (FMs)",
       cardLink: "/",
@@ -63,6 +39,22 @@ function ProductEngineeringCapabilities() {
       arrowImg: arrowImage,
     },
     {
+      productImg: productFour,
+      title: "Human Machine Interface Development",
+      smallTitle:
+        "Build and scale generative AI applications with foundation models (FMs)",
+      cardLink: "/",
+      arrowImg: arrowImage,
+    },
+    {
+      productImg: productThree,
+      title: "Wireless Systems Development",
+      smallTitle:
+        "Build and scale generative AI applications with foundation models (FMs)",
+      cardLink: "/",
+      arrowImg: arrowImage,
+    },    
+    {
       productImg: productSeven,
       title: "Manufacturing Support",
       smallTitle:
@@ -72,7 +64,15 @@ function ProductEngineeringCapabilities() {
     },
     {
       productImg: productSeven,
-      title: "Manufacturing Support",
+      title: "IoT application development",
+      smallTitle:
+        "Build and scale generative AI applications with foundation models (FMs)",
+      cardLink: "/",
+      arrowImg: arrowImage,
+    },
+    {
+      productImg: productFive,
+      title: "Technology consulting",
       smallTitle:
         "Build and scale generative AI applications with foundation models (FMs)",
       cardLink: "/",
@@ -89,7 +89,7 @@ function ProductEngineeringCapabilities() {
                 Our Product Engineering Capabilities
               </h2>
             </div>
-            <div className="2xl:pt-[45px] xl:pt-[30px] pt-[25px] max-[767px]:relative max-[767px]:mt-[40px]">
+            <div className="2xl:pt-[45px] xl:pt-[30px] pt-[25px] max-[767px]:pt-4 max-[767px]:relative max-[767px]:mt-[0px]">
               <ProductSlider productCardData={productCardData} />
             </div>
           </div>
