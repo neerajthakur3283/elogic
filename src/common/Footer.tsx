@@ -240,7 +240,7 @@ function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="" className="text-white">
+                    <Link href="/privacy-policy" className="text-white">
                       Privacy Policy
                     </Link>
                   </li>
