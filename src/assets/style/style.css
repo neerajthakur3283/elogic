@@ -6,3 +6,7 @@
 .font-roboto{
     font-family: "Roboto", serif;
 }
+.header-sticky .head-action a:hover{
+    background-color: black;
+    color: white;
+}

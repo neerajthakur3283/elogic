@@ -29,12 +29,6 @@ const ProductSlider: React.FC<ProductSliderProps> = ({productCardData}) => {
         arrows: false,
         responsive: [
             {
-                breakpoint: 1366,
-                settings: {
-                    rows: 1,
-                }
-              },
-            {
                 breakpoint: 991,
                 settings: {
                   slidesToShow: 3,
@@ -46,6 +40,7 @@ const ProductSlider: React.FC<ProductSliderProps> = ({productCardData}) => {
                 settings: {
                   slidesToShow: 1,
                   slidesToScroll: 1,
+                  rows: 1,
                 }
             }
         ]
