@@ -20,7 +20,7 @@ function PageBanner() {
                 </div>
               </div>
               <h1 className="2xl:text-[40px] xl:text-[32px] lg:text-[23px] text-[20px] font-semibold 2xl:max-w-[960px]">
-                Mastering ChatGPT Blog Creation: Dos and Don'ts for SaaS
+                Mastering ChatGPT Blog Creation: Dos and Don&apos;ts for SaaS
                 Marketing Managers
               </h1>
               <div className="mx-auto 2xl:text-[20.72px] xl:text-[15.54px] text-[14px]">
