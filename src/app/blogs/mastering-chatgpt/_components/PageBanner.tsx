@@ -1,8 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-import teamBgImg from '@/src/assets/images/mastering-chatgpt-banner.jpg'
-import Link from "next/link";
+import teamBgImg from "@/src/assets/images/mastering-chatgpt-banner.jpg";
 
 function PageBanner() {
   return (
@@ -16,16 +15,15 @@ function PageBanner() {
               </div>
               <h1 className="2xl:text-[40px] xl:text-[32px] lg:text-[23px] text-[20px] font-semibold 2xl:max-w-[960px] xl:max-w-[750px] lg:max-w-[520px] max-w-[420px]">Mastering ChatGPT Blog Creation: Dos and Don'ts for SaaS Marketing Managers</h1>
               <div className="mx-auto 2xl:text-[20.72px] xl:text-[15.54px] text-[14px]">
-              <ul className="flex items-center gap-4">
-                <li>
-                  Oct 19
-                </li>
-                <li>
-                 <div className="flex items-center gap-3">
-                  <div className="w-[7px] h-[7px] rounded-full bg-white"></div> 10 min read
-                 </div>
-                </li>
-              </ul>
+                <ul className="flex items-center gap-4">
+                  <li>Oct 19</li>
+                  <li>
+                    <div className="flex items-center gap-3">
+                      <div className="w-[7px] h-[7px] rounded-full bg-white"></div>{" "}
+                      10 min read
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
