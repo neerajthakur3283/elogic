@@ -30,9 +30,7 @@ function HardwareEcosystem() {
             </h2>
           </div>
           <div className="text-[#4B5563] font-medium leading-snug w-full 2xl:max-w-[771.19px] xl:max-w-[578px] lg:max-w-[514px] md:max-w-[420px] 2xl:text-[24px] xl:text-[18px] text-base">
-            We can communicate with a wide range of OEM equipment, PLCs, HMIs
-            and sensors with rich protocol integrations and deploy tailor-made
-            applications on both edge and cloud
+          We can communicate with a wide range of OEM equipment, PLCs, HMIs and sensors with rich protocol integrations and deploy tailor-made applications on both edge and cloud
             <div className="2xl:pt-[40px] xl:pt-[30px] md:pt-[26px] pt-[20px]">
               <Link
                 className="bg-[#3563E9] text-white px-[2] w-full 2xl:max-w-[275px] xl:max-w-[209px] md:max-w-[175.44px] max-w-[195px] 2xl:h-[52px] xl:h-[39px] md:h-[35px] h-[40.29px] flex justify-center items-center py-[2px] 2xl:text-[20px] xl:text-[15px] md:text-[13.33px] text-[15.24px] md:font-bold font-semibold rounded-[16px] capitalize duration-500 hover:bg-black hover:text-white"
@@ -116,11 +114,11 @@ function HardwareEcosystem() {
             <div className="absolute left-0 top-0 h-full w-full flex flex-col justify-between text-white 2xl:p-[24px] xl:p-[18px] p-[16px] 2xl:max-w-[421px] xl:max-w-[315.75px] max-w-[280.67px]">
               <div className="flex flex-col 2xl:gap-y-[10px] xl:gap-y-[8px] gap-y-[7px] text-white">
                 <h6 className="2xl:text-[24px] xl:text-[18px] text-base font-bold">
-                  HMIs (3rd party)
+                  HMIs
                 </h6>
                 <p className="font-medium 2xl:text-base xl:text-[12px] text-[10.67px]">
-                  Build and scale generative AI applications with foundation
-                  models (FMs)
+                Build and scale generative AI applications with
+                foundation models (FMs)
                 </p>
               </div>
               <Link href="">
@@ -148,11 +146,11 @@ function HardwareEcosystem() {
             <div className="absolute left-0 top-0 h-full w-full flex flex-col justify-between text-white 2xl:p-[24px] xl:p-[18px] p-[16px] 2xl:max-w-[421px] xl:max-w-[315.75px] max-w-[280.67px]">
               <div className="flex flex-col 2xl:gap-y-[10px] xl:gap-y-[8px] gap-y-[7px] text-white">
                 <h6 className="2xl:text-[24px] xl:text-[18px] text-base font-bold">
-                  Sensors/isntruments (3rd party)
+                  Sensors/instruments
                 </h6>
                 <p className="font-medium 2xl:text-base xl:text-[12px] text-[10.67px]">
-                  Build and scale generative AI applications with foundation
-                  models (FMs)
+                Build and scale generative AI applications with
+                foundation models (FMs)
                 </p>
               </div>
               <Link href="">
@@ -180,11 +178,11 @@ function HardwareEcosystem() {
             <div className="absolute left-0 top-0 h-full w-full flex flex-col justify-between text-white 2xl:p-[24px] xl:p-[18px] p-[16px] 2xl:max-w-[421px] xl:max-w-[315.75px] max-w-[280.67px]">
               <div className="flex flex-col 2xl:gap-y-[10px] xl:gap-y-[8px] gap-y-[7px] text-white">
                 <h6 className="2xl:text-[24px] xl:text-[18px] text-base font-bold">
-                  I/O modules (3rd party)
+                  I/O modules
                 </h6>
                 <p className="font-medium 2xl:text-base xl:text-[12px] text-[10.67px]">
-                  Build and scale generative AI applications with foundation
-                  models (FMs)
+                Build and scale generative AI applications with
+                foundation models (FMs)
                 </p>
               </div>
               <Link href="">

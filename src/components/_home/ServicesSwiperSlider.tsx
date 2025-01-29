@@ -28,7 +28,8 @@ const desktopImages = [
       { listPoint: <>Cellular & Cloud Connectivity </> },
       { listPoint: <>Star, P2P & Mesh<br/>Networking</> },
       { listPoint: <>SubGHz Medium to Long <br/>Range Communication</> },
-      { listPoint: <>IoT Connectivity<br />Signal Processing</> },
+      { listPoint: <>IoT Connectivity</> },
+      { listPoint: <>Signal Processing</> },
     ]
   },
   {
@@ -38,7 +39,8 @@ const desktopImages = [
       { listPoint: <>User-Machine and<br />Peripherals Interfacing</> },
       { listPoint: <>Data Logging</> },
       { listPoint: <>On-board Processing</> },
-      { listPoint: <>IoT Connectivity<br />Signal Processing</> },
+      { listPoint: <>IoT Connectivity</> },
+      { listPoint: <>Signal Processing</> },
     ]
   },
 ];
@@ -117,7 +119,7 @@ export default function CircularSlider() {
                     ))}
                   </ul>
                 </div>
-                <div className="md:pt-0 2xl:w-[calc(100%_-_395.81px)] xl:w-[calc(100%_-_330px)] lg:w-[calc(100%_-_360px)] md:w-[calc(100%_-_315px)] pt-[23px] 2xl:h-[402px] xl:h-[363px] lg:h-[300px] md:h-[260px] flex items-center">
+                <div className="md:pt-0 2xl:w-[calc(100%_-_395.81px)] xl:w-[calc(100%_-_330px)] lg:w-[calc(100%_-_360px)] md:w-[calc(100%_-_315px)] pt-[23px] 2xl:h-[402px] xl:h-[363px] lg:h-[300px] md:h-[267px] flex items-center">
                   <Image src={image.slideImg} alt="" />
                 </div>
               </div>

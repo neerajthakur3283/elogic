@@ -10,7 +10,7 @@ function YouAre() {
       cardImg: imgOne,
       cardTitle: (
         <>
-          A manufacturing plan factory/unit <br />
+          Factory or manufacturing<br/>plant 
         </>
       ),
       cardLink: "",
@@ -20,7 +20,7 @@ function YouAre() {
     },
     {
       cardImg: imgOne,
-      cardTitle: <>Plant EPC Contractor or System Integrator</>,
+      cardTitle: <>Plant EPC contractor or system integrator</>,
       cardLink: "",
       linkText: "Learn More",
       cardPara:
@@ -44,11 +44,9 @@ function YouAre() {
               <h2 className="text-white 2xl:text-[62px] xl:text-[47px] lg:text-[41px] text-[24px] font-bold capitalize">
                 You are
               </h2>
-              <div className="2xl:pt-[40px] xl:pt-[30px] md:pt-[26px] pt-[20px] mx-auto text-white font-medium leading-snug w-full 2xl:max-w-[1270px] xl:max-w-[578px] lg:max-w-[514px] md:max-w-[420px] 2xl:text-[24px] xl:text-[18px] text-base opacity-[0.8]">
-                We can communicate with a wide range of OEM equipment, PLCs,
-                HMIs and sensors with rich protocol integrations and deploy
-                tailor-made applications on both edge and cloud
-              </div>
+              {/* <div className="2xl:pt-[40px] xl:pt-[30px] md:pt-[26px] pt-[20px] mx-auto text-white font-medium leading-snug w-full 2xl:max-w-[1270px] xl:max-w-[578px] lg:max-w-[514px] md:max-w-[420px] 2xl:text-[24px] xl:text-[18px] text-base opacity-[0.8]">
+              We can communicate with a wide range of OEM equipment, PLCs, HMIs and sensors with rich protocol integrations and deploy tailor-made applications on both edge and cloud
+              </div> */}
             </div>
             <div className="grid lg:grid-cols-3 2xl:pt-[80px] xl:pt-[60px] lg:pt-[53px] md:pt-[45px] pt-[40px] 2xl:gap-[30px] xl:gap-[22px] md:xl:gap-[20px] gap-[15.81px]">
               <YouAreCard youCardView={youCardView} />

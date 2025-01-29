@@ -5,7 +5,7 @@ import { IoIosArrowForward } from "react-icons/io";
 
 interface appCardData {
   appImg: string | StaticImageData;
-  appTag: string;
+  // appTag: string;
   cardTitle: string;
   appLink: string;
   linkText: string;
@@ -32,9 +32,9 @@ const AppCard: React.FC<AppCardProps> = ({ appCardData }) => {
           </div>
           <div className="2xl:p-[27px] xl:p-[20px] lg:p-[8px] p-[24px]">
             <div className="flex justify-start">
-              <span className="px-[10px] py-[6px] bg-[rgba(255,255,255,0.15)] text-white rounded-[50px] flex 2xl:text-[10px] xl:text-[7px] lg:text-[6.65px] text-[8.8px]">
+              {/* <span className="px-[10px] py-[6px] bg-[rgba(255,255,255,0.15)] text-white rounded-[50px] flex 2xl:text-[10px] xl:text-[7px] lg:text-[6.65px] text-[8.8px]">
                 {data.appTag}
-              </span>
+              </span> */}
             </div>
             <h4 className="text-white font-semibold 2xl:text-[24px] xl:text-[18px] md:text-base text-[18px] 2xl:py-[16px] xl:py-[12px] lg:py-[11px] py-[14px] 2xl:leading-[1.5]">
               {data.cardTitle}

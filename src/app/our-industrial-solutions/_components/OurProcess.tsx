@@ -12,31 +12,28 @@ const steps = [
           <li className="flex gap-2">
             •{" "}
             <span className="ms-2 flex">
-              Free consultation to understand your operational challenges and
-              goals.
+              Free consultation to assess your operational challenges and goals. Evaluation of equipment condition and energy efficiency.
             </span>
           </li>
           <li className="flex gap-2">
             •{" "}
             <span className="ms-2 flex">
-              Expert assessment of machine health monitoring, energy usage, and
-              productivity metrics.
+            On-site review to find the best monitoring spots and connectivity.
             </span>
           </li>
           <li className="flex gap-2">
             •{" "}
             <span className="ms-2 flex">
-              Detailed site survey to identify optimal monitoring points and
-              connectivity options.
+            Customized solutions based on your existing setup.
             </span>
           </li>
-          <li className="flex gap-2">
+          {/* <li className="flex gap-2">
             •{" "}
             <span className="ms-2 flex">
               Custom solution design that leverages your existing infrastructure
               where possible.
             </span>
-          </li>
+          </li> */}
         </ul>
         {/* <button className="bg-[#3563E9] text-white 2xl:text-[25.59px] xl:text-[19.19px] text-[17.06px] 2xl:w-[228.12px] xl:w-[171.09px] w-[152.41px] 2xl:h-[56.47px] xl:h-[42.35px] h-[37.65px] rounded-full 2xl:mt-[24px] xl:mt-[18px] mt-[16px]">
           Get Started →
@@ -52,19 +49,19 @@ const steps = [
           <li className="flex gap-2">
             •{" "}
             <span className="ms-2 flex">
-              Quick deployment on 1-2 machines to demonstrate immediate value
+            Quick deployment on 1-2 machines to demonstrate immediate value
             </span>
           </li>
           <li className="flex gap-2">
             •{" "}
             <span className="ms-2 flex">
-              Real-time monitoring and basic analytics setup
+            Real-time monitoring and basic analytics setup
             </span>
           </li>
           <li className="flex gap-2">
             •{" "}
             <span className="ms-2 flex">
-              Clear demonstration of potential ROI and benefits
+            Clear demonstration of potential ROI and benefits
             </span>
           </li>
         </ul>
@@ -82,19 +79,19 @@ const steps = [
           <li className="flex gap-2">
             •{" "}
             <span className="ms-2 flex">
-              Full-scale deployment across your facility.
+            Full-scale deployment across your facility
             </span>
           </li>
           <li className="flex gap-2">
             •{" "}
             <span className="ms-2 flex">
-              Complete system setup with custom dashboards and alerts.
+            Complete system setup with custom dashboards and alerts
             </span>
           </li>
           <li className="flex gap-2">
             •{" "}
             <span className="ms-2 flex">
-              Comprehensive training for your team.
+            Comprehensive training for your team
             </span>
           </li>
         </ul>
@@ -112,19 +109,19 @@ const steps = [
           <li className="flex gap-2">
             •{" "}
             <span className="ms-2 flex">
-              Ongoing system optimization and technical support.
+            Ongoing system optimisation and technical support
             </span>
           </li>
           <li className="flex gap-2">
             •{" "}
             <span className="ms-2 flex">
-              Regular performance reviews and recommendations.
+            Regular performance reviews and recommendations
             </span>
           </li>
           <li className="flex gap-2">
             •{" "}
             <span className="ms-2 flex">
-              Continuous platform enhancements based on your evolving needs.
+            Continuous platform enhancements based on your evolving needs
             </span>
           </li>
         </ul>
@@ -151,12 +148,11 @@ export default function OurProcess() {
       <div className="flex justify-between items-start md:flex-nowrap flex-wrap md:gap-y-0 gap-y-[20px]">
         <div className="text-black">
           <h2 className="leading-[1] 2xl:text-[46.88px] xl:text-[35.16px] md:text-[31.25px] text-[24px] font-bold">
-            Our Process (Highlighting PoC phase)
+          Our Process
           </h2>
         </div>
         <div className="text-[#4B5563] font-medium leading-snug w-full 2xl:max-w-[771.19px] xl:max-w-[578px] lg:max-w-[514px] md:max-w-[420px] 2xl:text-[24px] xl:text-[18px] text-base">
-          Partner with us to transform your industrial operations through
-          data-driven insights and automated monitoring.
+        Partner with us to transform your industrial operations through data-driven insights and automated monitoring.
           <div className="2xl:pt-[40px] xl:pt-[30px] md:pt-[26px] pt-[20px]">
             <Link
               className="bg-[#3563E9] text-white px-[2] w-full 2xl:max-w-[275px] xl:max-w-[209px] md:max-w-[175.44px] max-w-[195px] 2xl:h-[52px] xl:h-[39px] md:h-[35px] h-[40.29px] flex justify-center items-center py-[2px] 2xl:text-[20px] xl:text-[15px] md:text-[13.33px] text-[15.24px] md:font-bold font-semibold rounded-[16px] capitalize duration-500 hover:bg-black hover:text-white"
