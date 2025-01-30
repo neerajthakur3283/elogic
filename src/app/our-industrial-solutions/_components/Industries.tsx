@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { useEffect, useState } from "react";
 
 // images
@@ -20,7 +20,7 @@ const industries = [
       "OEE tracking of packaging lines with breakdown reason analysis to minimize changeover times and material waste",
       "Condition monitoring of conveyor systems in bakery lines to detect belt misalignment and prevent contamination",
       "Temperature-correlated energy consumption analysis of ovens and fryers to optimize batch scheduling",
-    ]
+    ],
   },
   {
     id: 2,
@@ -32,7 +32,7 @@ const industries = [
       "Paper machine drive system efficiency monitoring with moisture content correlation",
       "Real-time tracking of dyeing machine energy consumption per batch for process standardization",
       "Stenter frame heat recovery system efficiency monitoring for energy optimization",
-    ]
+    ],
   },
   {
     id: 3,
@@ -44,7 +44,7 @@ const industries = [
       "Compressed air leak detection through power monitoring of air compressors during non-production hours",
       "Real-time tracking of hydraulic press efficiency with cycle time correlation",
       "Power factor monitoring of induction heating systems to optimize energy costs",
-    ]
+    ],
   },
   {
     id: 4,
@@ -56,7 +56,7 @@ const industries = [
       "Solar inverter performance monitoring with string-level current comparison",
       "Energy efficiency analysis of water treatment UV systems with turbidity correlation",
       "Transformer load balancing and hotspot detection through detailed power quality analysis",
-    ]
+    ],
   },
   {
     id: 5,
@@ -68,14 +68,24 @@ const industries = [
       "Energy efficiency tracking of clean room HVAC systems with pressure differential correlation",
       "Real-time monitoring of air compressor systems with dew point correlation for contamination prevention",
       "Power quality monitoring of precision scales and measurement equipment to ensure calibration validity",
-    ]
+    ],
   },
 ];
 
+type Industry = {
+  id: number;
+  tabImg: StaticImageData;
+  name: string;
+  details: string[];
+};
+
 const IndustriesTabs = () => {
   const [activeTab, setActiveTab] = useState(industries[0]);
+  const [isManual, setIsManual] = useState(false);
 
   useEffect(() => {
+    if (isManual) return;
+
     const interval = setInterval(() => {
       setActiveTab((prevTab) => {
         const currentIndex = industries.findIndex(
@@ -87,7 +97,12 @@ const IndustriesTabs = () => {
     }, 4000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [isManual]);
+
+  const handleTabClick = (industry: Industry) => {
+    setActiveTab(industry);
+    setIsManual(true);
+  };
 
   return (
     <section>
@@ -98,7 +113,11 @@ const IndustriesTabs = () => {
               <h2 className="leading-[1] 2xl:text-[61.77px] xl:text-[46.33px] md:text-[41.18px] text-[24px] font-bold 2xl:mb-4 xl:mb-3 mb-2.5">
                 Industries
               </h2>
-              <p className="text-[#4B5563] lg:font-medium md:leading-snug leading-[1.65] 2xl:text-[24px] xl:text-[18px] text-base break-all max-[1360px]:h-[100px] max-[1279px]:h-[85px]">Our solutions have enabled manufacturers across a range of industries bring proven, measurable improvements to process efficiency and reliability</p>
+              <p className="text-[#4B5563] lg:font-medium md:leading-snug leading-[1.65] 2xl:text-[24px] xl:text-[18px] text-base whitespace-normal break-words overflow-hidden text-ellipsis max-w-full">
+                Our solutions have enabled manufacturers across a range of
+                industries bring proven, measurable improvements to process
+                efficiency and reliability.
+              </p>
             </div>
             <div className="lg:flex hidden flex-col 2xl:mt-[94.5px] xl:mt-[68.5px] lg:mt-[60px] md:mt-[45px] 2xl:gap-y-[9px] md:gap-y-[6px] gap-y-[5px]">
               <div className="flex items-center justify-between 2xl:mb-3 md:mb-2 mb-1.5">
@@ -110,7 +129,7 @@ const IndustriesTabs = () => {
               {industries.map((industry) => (
                 <button
                   key={industry.id}
-                  onClick={() => setActiveTab(industry)}
+                  onClick={() => handleTabClick(industry)}
                   className={`2xl:p-[10px] xl:p-[7.5px] p-[6.67px] text-left border 2xl:rounded-[12px] xl:rounded-[8.4px] md:rounded-[7.74px] rounded-[8px] ${
                     activeTab.id === industry.id
                       ? "bg-[#E4E7FF] border-[#2F44FF] text-[#101010] font-semibold"
@@ -131,7 +150,11 @@ const IndustriesTabs = () => {
           </div>
           <div className="w-full min-[1536px]:min-w-[840px] min-[1720px]:min-w-[932px] min-[1280px]:min-w-[742px] min-[1024px]:min-w-[562px] relative after:absolute after:left-0 after:bottom-0 after:bg-gradient-to-t after:from-black after:to-[rgba(0,0,0,0)] 2xl:after:h-[699px] after:h-full after:w-full after:2xl:rounded-[24px] after:xl:rounded-[18px] after:md:rounded-[16px] after:rounded-[18.45px] max-[1535px]:h-[562px] max-[1360px]:h-[587px] max-[1279px]:h-[547px] max-[1023px]:h-auto">
             <div className="2xl:rounded-[24px] xl:rounded-[18px] md:rounded-[16px] rounded-[18.45px] overflow-hidden h-full max-[500px]:h-[350px]">
-              <Image className="h-full object-cover" src={activeTab.tabImg} alt="" />
+              <Image
+                className="h-full object-cover"
+                src={activeTab.tabImg}
+                alt=""
+              />
             </div>
             <div className="absolute bottom-0 left-0 2xl:p-[40px] xl:p-[30px] md:p-[26px] sm:p-[20px] p-[15px] z-[1]">
               <h3 className="2xl:text-[43.48px] xl:text-[32.61px] md:text-[28.98px] sm:text-[17.35px] text-base text-white font-semibold md:leading-normal">

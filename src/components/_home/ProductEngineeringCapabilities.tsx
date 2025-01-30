@@ -40,7 +40,7 @@ function ProductEngineeringCapabilities() {
     },
     {
       productImg: productFour,
-      title: "Human Machine Interface Development pending",
+      title: "Human Machine Interface Development",
       smallTitle:
         "Input/output interface design and implementation for device control and monitoring",
       cardLink: "/",
@@ -53,7 +53,7 @@ function ProductEngineeringCapabilities() {
         "Integration of wireless communication subsystems into embedded product architectures.",
       cardLink: "/",
       arrowImg: arrowImage,
-    },    
+    },
     {
       productImg: productSeven,
       title: "Manufacturing Support",
@@ -66,7 +66,7 @@ function ProductEngineeringCapabilities() {
       productImg: productSeven,
       title: "IoT application development",
       smallTitle:
-        "application front-end and back-end development for cloud-side device data processing management .",
+        "Application front-end and back-end development for cloud-side device data processing management .",
       cardLink: "/",
       arrowImg: arrowImage,
     },
