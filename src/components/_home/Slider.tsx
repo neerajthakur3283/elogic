@@ -25,8 +25,12 @@ const Slider: React.FC = () => {
       id: 2,
       sliderImg: slideTwo,
       mobSliderImg: moImgeOne,
-      slidePara:
-        <>Reduction in downtime loss costs through early <br/>failure predictions"</>
+      slidePara: (
+        <>
+          Reduction in downtime loss costs through early <br />
+          failure predictions&quot;
+        </>
+      ),
     },
     {
       id: 3,

@@ -2,17 +2,17 @@
 import { Button } from "@/components/ui/button";
 import React from "react";
 import { GrFormNextLink } from "react-icons/gr";
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+// import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
-const containerStyle = {
-  width: "100%",
-  height: "100%",
-};
+// const containerStyle = {
+//   width: "100%",
+//   height: "100%",
+// };
 
-const center = {
-  lat: 17.424353241929957,
-  lng: 78.4239042251552,
-};
+// const center = {
+//   lat: 17.424353241929957,
+//   lng: 78.4239042251552,
+// };
 
 function TalkToExpert() {
   return (
@@ -91,7 +91,10 @@ function TalkToExpert() {
                   <Marker position={center} />
                 </GoogleMap>
               </LoadScript> */}
-              <iframe className='h-full w-full' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1903.3713065186846!2d78.4218605!3d17.4241355!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb934a980b23bf%3A0xece004a582a4f6a6!2sSmatBot%20-%20AI%20chatbot%20Services!5e0!3m2!1sen!2sin!4v1737952681635!5m2!1sen!2sin"></iframe>
+              <iframe
+                className="h-full w-full"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1903.3713065186846!2d78.4218605!3d17.4241355!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb934a980b23bf%3A0xece004a582a4f6a6!2sSmatBot%20-%20AI%20chatbot%20Services!5e0!3m2!1sen!2sin!4v1737952681635!5m2!1sen!2sin"
+              ></iframe>
             </div>
           </div>
         </div>
