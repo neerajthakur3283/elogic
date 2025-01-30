@@ -18,7 +18,7 @@ function ProductEngineeringCapabilities() {
       productImg: productOne,
       title: "Embedded Hardware Design",
       smallTitle:
-        "Build and scale generative AI applications with foundation models (FMs)",
+        "Hardware architecture and PCB design from system specification to manufacturing release.",
       cardLink: "/",
       arrowImg: arrowImage,
     },
@@ -26,7 +26,7 @@ function ProductEngineeringCapabilities() {
       productImg: productTwo,
       title: "Embedded Software Design",
       smallTitle:
-        "Build and scale generative AI applications with foundation models (FMs)",
+        "Firmware and software stack development from bootloader through application layer.",
       cardLink: "/",
       arrowImg: arrowImage,
     },
@@ -34,15 +34,15 @@ function ProductEngineeringCapabilities() {
       productImg: productSix,
       title: "Mechanical & Industrial Design",
       smallTitle:
-        "Build and scale generative AI applications with foundation models (FMs)",
+        "Mechanical integration and manufacturing-optimized enclosure development for electronic products.",
       cardLink: "/",
       arrowImg: arrowImage,
     },
     {
       productImg: productFour,
-      title: "Human Machine Interface Development",
+      title: "Human Machine Interface Development pending",
       smallTitle:
-        "Build and scale generative AI applications with foundation models (FMs)",
+        "Input/output interface design and implementation for device control and monitoring",
       cardLink: "/",
       arrowImg: arrowImage,
     },
@@ -50,7 +50,7 @@ function ProductEngineeringCapabilities() {
       productImg: productThree,
       title: "Wireless Systems Development",
       smallTitle:
-        "Build and scale generative AI applications with foundation models (FMs)",
+        "Integration of wireless communication subsystems into embedded product architectures.",
       cardLink: "/",
       arrowImg: arrowImage,
     },    
@@ -58,7 +58,7 @@ function ProductEngineeringCapabilities() {
       productImg: productSeven,
       title: "Manufacturing Support",
       smallTitle:
-        "Build and scale generative AI applications with foundation models (FMs)",
+        "Production process engineering for scalable electronics manufacturing and testing.",
       cardLink: "/",
       arrowImg: arrowImage,
     },
@@ -66,7 +66,7 @@ function ProductEngineeringCapabilities() {
       productImg: productSeven,
       title: "IoT application development",
       smallTitle:
-        "Build and scale generative AI applications with foundation models (FMs)",
+        "application front-end and back-end development for cloud-side device data processing management .",
       cardLink: "/",
       arrowImg: arrowImage,
     },
@@ -74,7 +74,7 @@ function ProductEngineeringCapabilities() {
       productImg: productFive,
       title: "Technology consulting",
       smallTitle:
-        "Build and scale generative AI applications with foundation models (FMs)",
+        "Technical assessment and compliance support and economic feasibility planning for regulatory and market requirements.",
       cardLink: "/",
       arrowImg: arrowImage,
     },

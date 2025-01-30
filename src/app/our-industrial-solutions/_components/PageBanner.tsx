@@ -12,7 +12,7 @@ function PageBanner() {
                 Solutions Overview
               </h1>
               <div className="mx-auto 2xl:text-[20.72px] xl:text-[15.54px] text-[14px] 2xl:max-w-[588px] xl:max-w-[441px] md:max-w-[392px] max-w-[388px]">
-              Helping manufacturers make their production operations smarter and more reliable, sustainable and efficient
+              Helping manufacturers make their production operations smarter and more reliable, sustainable and efficient
               </div>
             </div>
           </div>

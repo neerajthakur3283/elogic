@@ -19,28 +19,28 @@ const Slider: React.FC = () => {
       sliderImg: slideOne,
       mobSliderImg: moImgeOne,
       slidePara:
-        "Monitor efficiency, health and productivity of your manufacturing operations and make data-driven decisions",
+        "Reducing energy costs through identification of operational pattern inefficiencies",
     },
     {
       id: 2,
       sliderImg: slideTwo,
       mobSliderImg: moImgeOne,
       slidePara:
-        "Monitor efficiency, health and productivity of your manufacturing operations and make data-driven decisions",
+        <>Reduction in downtime loss costs through early <br/>failure predictions"</>
     },
     {
       id: 3,
       sliderImg: slideThree,
       mobSliderImg: moImgeOne,
       slidePara:
-        "Monitor efficiency, health and productivity of your manufacturing operations and make data-driven decisions",
+        "Automated capturing and analysis of output, quality, bottlenecks and efficiency metrics",
     },
     {
       id: 4,
       sliderImg: slideFour,
       mobSliderImg: moImgeOne,
       slidePara:
-        "Monitor efficiency, health and productivity of your manufacturing operations and make data-driven decisions",
+        "Identification of costly sub-optimial running conditions such as excess power, consumables and wastage",
     },
   ];
 

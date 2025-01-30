@@ -80,7 +80,7 @@ function TalkToExpert() {
               </div>
             </div>
             <div className="2xl:w-[calc(100%_-_741px)] xl:w-[calc(100%_-_555px)] lg:w-[calc(100%_-_495px)] md:w-[calc(100%_-_395px)]">
-              <LoadScript
+              {/* <LoadScript
                 googleMapsApiKey={"AIzaSyAeem8ndYN1fe9YA3uDFEfNXOO1dasDqQA"}
               >
                 <GoogleMap
@@ -90,7 +90,8 @@ function TalkToExpert() {
                 >
                   <Marker position={center} />
                 </GoogleMap>
-              </LoadScript>
+              </LoadScript> */}
+              <iframe className='h-full w-full' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1903.3713065186846!2d78.4218605!3d17.4241355!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb934a980b23bf%3A0xece004a582a4f6a6!2sSmatBot%20-%20AI%20chatbot%20Services!5e0!3m2!1sen!2sin!4v1737952681635!5m2!1sen!2sin"></iframe>
             </div>
           </div>
         </div>
