@@ -25,9 +25,9 @@ const desktopImages = [
     slideImg: slideTwoDesktop,
     slideTitle: <>Custom <br/>Instrumentation <br/>Electronics</>,
     slidePoints: [
-      { listPoint: <>Cellular & Cloud Connectivity </> },
-      { listPoint: <>Star, P2P & Mesh<br/>Networking</> },
-      { listPoint: <>SubGHz Medium to Long <br/>Range Communication</> },
+      { listPoint: <>User-Machine and<br/>Peripherals Interfacing</> },
+      { listPoint: <>Data Logging</> },
+      { listPoint: <>On-board Processing</> },
       { listPoint: <>IoT Connectivity</> },
       { listPoint: <>Signal Processing</> },
     ]
@@ -36,11 +36,10 @@ const desktopImages = [
     slideImg: slideThreeDesktop,
     slideTitle: <>Industrial IOT & Wireless <br/>Communication <br/>equipment</>,
     slidePoints: [
-      { listPoint: <>User-Machine and<br />Peripherals Interfacing</> },
-      { listPoint: <>Data Logging</> },
-      { listPoint: <>On-board Processing</> },
-      { listPoint: <>IoT Connectivity</> },
-      { listPoint: <>Signal Processing</> },
+      { listPoint: <>Cellular & Cloud<br/>Connectivity </> },
+      { listPoint: <>Star,P2P & Mesh Networking</> },
+      { listPoint: <>SubGHz Medium to Long Range Communication</> },
+      { listPoint: <>Multichannel I/O</> },
     ]
   },
 ];
