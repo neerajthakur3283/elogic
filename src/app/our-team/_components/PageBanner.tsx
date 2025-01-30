@@ -16,7 +16,7 @@ function PageBanner() {
               Our experienced team design bespoke solutions which can be retro-fitted into existing venues or be installed in new developments to support a wide range of digital services.
               </div>
                 <div className="flex justify-center">
-                <Link className="bg-[#3563E9] text-white px-[2] w-full md:max-w-[136.44px] max-w-[130px] md:h-[41px] h-[40.29px] flex justify-center items-center py-[2px] md:text-[12.67px] text-[11px] md:font-bold font-semibold rounded-[10.67px] capitalize duration-500 hover:bg-black hover:text-white"
+                <Link className="bg-[#3563E9] text-white px-[2] w-full md:max-w-[136.44px] max-w-[130px] md:h-[41px] h-[40.29px] flex justify-center items-center py-[2px] md:text-[12.67px] text-[11px] md:font-bold font-semibold rounded-[10.67px] capitalize duration-500 hover:bg-white hover:text-black"
                         href="/">Get In Touch</Link>
               </div>
             </div>

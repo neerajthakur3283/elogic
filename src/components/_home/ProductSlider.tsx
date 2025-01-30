@@ -54,10 +54,10 @@ const ProductSlider: React.FC<ProductSliderProps> = ({productCardData}) => {
                     <Image className='w-full transition-all duration-500 group-hover:blur-[3.5px]' src={data.productImg} alt='' />
                     <div className='absolute left-0 right-0 top-0 bottom-0 2xl:p-[32px] xl:p-[24px] md:p-[10px] p-[15px] flex flex-col justify-between z-[1]'>
                         <div className='text-white'>
-                            <h5 className='2xl:text-[24px] lg:text-[18px] md:text-[14.5px] text-base font-bold'>
+                            <h5 className='2xl:text-[28px] xl:text-[24px] leading-tight lg:text-[22px] md:text-[16px] text-base font-bold'>
                                 {data.title}
                             </h5>
-                            <p className='2xl:pt-[14px] lg:pt-[11px] md:pt-[6px] pt-[10px] 2xl:text-[16px] lg:text-[12px] text-[11px]'>{data.smallTitle}</p>
+                            <p className='opacity-0 group-hover:opacity-100 duration-500 transition-all 2xl:pt-[14px] lg:pt-[11px] md:pt-[6px] pt-[10px] 2xl:text-[16px] lg:text-[12px] text-[11px]'>{data.smallTitle}</p>
                         </div>
                         <div>
                             <Link href={data.cardLink}><Image className='2xl:w-[25px] xl:w-[19px] w-[17px]' src={data.arrowImg} alt='' /></Link>

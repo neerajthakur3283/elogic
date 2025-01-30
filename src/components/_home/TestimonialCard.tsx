@@ -60,9 +60,9 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
         {testimonialData.map((data, index) => (
           <div
             key={index}
-            className="bg-white 2xl:rounded-[26px] 2xl:px-[61px] xl:px-[46.26px] md:px-[41px] px-[40px] 2xl:pt-[40px] xl:pt-[30px] md:pt-[27px] pt-[26px] 2xl:pb-[50px] xl:pb-[37px] md:pb-[31px] pb-[32px] relative xl:rounded-[19.68px] lg:px-[48px]rounded-[10px] rounded-[14px] overflow-hidden 2xl:me-[15px]"
+            className="bg-white 2xl:rounded-[26px] 2xl:px-[40px] xl:px-[46.26px] md:px-[20px] px-[40px] max-[400px]:px-[25px] 2xl:pt-[40px] xl:pt-[30px] md:pt-[27px] pt-[26px] 2xl:pb-[50px] xl:pb-[37px] md:pb-[31px] pb-[32px] relative xl:rounded-[19.68px] lg:px-[48px]rounded-[10px] rounded-[14px] overflow-hidden 2xl:me-[15px]"
           >
-            <p className="text-black 2xl:text-[18.37px] xl:text-[13.77px] md:text-[12.24px] text-[11.94px]">
+            <p className="text-black 2xl:text-[18.37px] xl:text-[13.77px] md:text-[12.24px] text-[11.94px] max-[1780px]:h-[192px] max-[1535px]:h-[130px] max-[992px]:h-[100px] max-[639px]:h-[125px] max-[400px]:h-[135px]">
               {data.feedbackPara}
             </p>
             <div className="flex items-center 2xl:mt-[25px] lg:mt-[18px] md:mt-[16px] gap-[12px]">

@@ -80,14 +80,14 @@ const NavBar: React.FC = () => {
                     Industrial Solutions Overview
                   </Link>
                   <Link
-                    href="/"
+                    href="/oee-and-production-monitoring"
                     className="text-black 2xl:text-[14px] text-[13.5px] transition-all duration-500 hover:text-[#3563E9] text-nowrap 2xl:py-2.5 xl:py-2 flex"
                     onClick={toggleIotSolutions}
                   >
                     OEE & Production Monitoring
                   </Link>
                   <Link
-                    href="/"
+                    href="/machine-condition-monitoring"
                     className="text-black 2xl:text-[14px] text-[13.5px] transition-all duration-500 hover:text-[#3563E9] text-nowrap 2xl:py-2.5 xl:py-2 flex"
                     onClick={toggleIotSolutions}
                   >
@@ -158,7 +158,7 @@ const NavBar: React.FC = () => {
             </li>
             <li>
               <Link
-                href="/about"
+                href="/about-us"
                 className="2xl:text-[18px] xl:text-[13.5px] text-base text-white"
               >
                 About Us
@@ -246,7 +246,7 @@ const NavBar: React.FC = () => {
                       Wireless Sensor Data Aggregation
                     </Link>
                     <Link
-                      href="/"
+                      href="/energy-consumption-monitoring"
                       className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
                     >
                       Energy Consumption Monitoring
@@ -297,7 +297,7 @@ const NavBar: React.FC = () => {
               </li>
               <li>
                 <Link
-                  href="/about"
+                  href="/about-us"
                   className="py-[18px] text-base text-black flex items-center justify-between border-t border-t-[#E5E5E5] px-[20px] focus:text-[#3563E9]"
                 >
                   About Us{" "}
