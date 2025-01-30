@@ -14,7 +14,11 @@ function IndustryTopology() {
               Industrial IoT Topology
             </h2>
             <div className="text-[#4B5563] leading-[1.5] 2xl:pt-[20px] xl:pt-[22px] pt-[20px] text-center mx-auto 2xl:max-w-[1015px] 2xl:text-[24px] xl:max-w-[760.5px] xl:text-[18px] lg:max-w-[676px] text-base">
-              <p>We can communicate with a wide range of OEM equipment, PLCs, HMIs and sensors with rich protocol integrations and deploy tailor-made applications on both edge and cloud</p>
+              <p>
+                We can communicate with a wide range of OEM equipment, PLCs,
+                HMIs and sensors with rich protocol integrations and deploy
+                tailor-made applications on both edge and cloud
+              </p>
             </div>
           </div>
           <div className="flex justify-center 2xl:pt-[10px] xl:pt-[38px] lg:pt-[35px]">
