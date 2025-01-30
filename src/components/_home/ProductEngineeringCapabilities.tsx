@@ -40,7 +40,7 @@ function ProductEngineeringCapabilities() {
     },
     {
       productImg: productFour,
-      title: "Human Machine Interface Development pending",
+      title: "Human Machine Interface Development",
       smallTitle:
         "Input/output interface design and implementation for device control and monitoring",
       cardLink: "/",

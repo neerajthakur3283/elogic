@@ -139,6 +139,7 @@ export default function CircularSlider() {
             <div
               key={index}
               style={style}
+              onClick={() => handleDotClick(index)}
               className="absolute transition-all duration-500 2xl:max-w-[1085px] xl:max-w-[815px] lg:max-w-[725px] md:max-w-[615px] sm:max-w-[505px] max-[639px]:max-w-[320px] max-[450px]:max-w-[calc(100%_-_60px)] w-full"
             >
               <div className="2xl:rounded-[24px] xl:rounded-[18px] md:rounded-[16px] rounded-[18.45px] bg-no-repeat bg-cover md:bg-[url('../images/swipe-slide-bg.jpg')] bg-[url('../images/swipe-slide-mob-bg.jpg')] mx-auto 2xl:py-[74px] xl:py-[55px] md:py-[30px] py-[30px] 2xl:ps-[60px] xl:ps-[50px] lg:ps-[25px] ps-[20px] 2xl:pe-[70px] xl:pe-[60px] lg:pe-[30px] pe-[20px] flex items-center justify-between md:flex-nowrap flex-wrap max-[767px]:h-[734px] max-[639px]:h-[600px]">

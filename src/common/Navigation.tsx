@@ -63,7 +63,7 @@ const NavBar: React.FC = () => {
                 onClick={toggleIotSolutions}
                 className="2xl:text-[18px] xl:text-[13.5px] text-base text-white flex items-center gap-3"
               >
-                Our IOT Solutions{" "}
+                Our IoT Solutions{" "}
                 <FaChevronDown
                   className={`w-[12px] transform transition-all duration-300 ${
                     isIotSolutionsOpen ? "rotate-180" : ""
