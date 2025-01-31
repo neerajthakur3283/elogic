@@ -11,6 +11,7 @@ import { FaLinkedin, FaSquareXTwitter } from "react-icons/fa6";
 
 // images
 import downArrow from "@/src/assets/images/downarrow.svg";
+import RelatedBlogs from "./_components/RelatedBlogs";
 
 function Page() {
   const sections = useMemo(
@@ -64,7 +65,7 @@ function Page() {
       <PageBanner />
 
       <section>
-        <div className="bg-[#EEF1F5] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] 2xl:py-[100px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px]">
+        <div className="2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] 2xl:py-[100px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px]">
           <div className="flex 2xl:gap-[80px] xl:gap-[60px] lg:gap-[50px] md:gap-[40px] md:flex-nowrap flex-wrap">
             <div className="md:hidden w-full mb-[40px]">
               <button
@@ -225,6 +226,7 @@ function Page() {
           </div>
         </div>
       </section>
+      <RelatedBlogs />
     </>
   );
 }

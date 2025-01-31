@@ -14,7 +14,7 @@ function page() {
     {
       cardTitle:
         "The Impact of Technology on the Workplace: How Technology is Changing",
-      cardLink: "/",
+      cardLink: "blogs/mastering-chatgpt",
       linkText: "Learn More",
       cardImg: bogOne,
       blogTag: "Technology",
@@ -23,7 +23,7 @@ function page() {
     {
       cardTitle:
         "The Impact of Technology on the Workplace: How Technology is Changing",
-      cardLink: "/",
+      cardLink: "blogs/mastering-chatgpt",
       linkText: "Learn More",
       cardImg: blogTwo,
       blogTag: "Technology",
@@ -32,7 +32,7 @@ function page() {
     {
       cardTitle:
         "The Impact of Technology on the Workplace: How Technology is Changing",
-      cardLink: "/",
+      cardLink: "blogs/mastering-chatgpt",
       linkText: "Learn More",
       cardImg: blogThree,
       blogTag: "Technology",
@@ -41,7 +41,7 @@ function page() {
     {
       cardTitle:
         "The Impact of Technology on the Workplace: How Technology is Changing",
-      cardLink: "/",
+      cardLink: "blogs/mastering-chatgpt",
       linkText: "Learn More",
       cardImg: blogFour,
       blogTag: "Technology",
@@ -50,7 +50,7 @@ function page() {
     {
       cardTitle:
         "The Impact of Technology on the Workplace: How Technology is Changing",
-      cardLink: "/",
+      cardLink: "blogs/mastering-chatgpt",
       linkText: "Learn More",
       cardImg: bogOne,
       blogTag: "Technology",
@@ -59,7 +59,7 @@ function page() {
     {
       cardTitle:
         "The Impact of Technology on the Workplace: How Technology is Changing",
-      cardLink: "/",
+      cardLink: "blogs/mastering-chatgpt",
       linkText: "Learn More",
       cardImg: blogTwo,
       blogTag: "Technology",
@@ -68,7 +68,7 @@ function page() {
     {
       cardTitle:
         "The Impact of Technology on the Workplace: How Technology is Changing",
-      cardLink: "/",
+      cardLink: "blogs/mastering-chatgpt",
       linkText: "Learn More",
       cardImg: blogThree,
       blogTag: "Technology",
@@ -77,7 +77,7 @@ function page() {
     {
       cardTitle:
         "The Impact of Technology on the Workplace: How Technology is Changing",
-      cardLink: "/",
+      cardLink: "blogs/mastering-chatgpt",
       linkText: "Learn More",
       cardImg: blogFour,
       blogTag: "Technology",
