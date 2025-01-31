@@ -17,7 +17,7 @@ function OurApplications() {
     },
     {
       appImg: imgSecond,
-      cardTitle: "Conditional Monitoring",
+      cardTitle: "Condition Monitoring",
       appLink: "/",
       linkText: "Learn more",
     },

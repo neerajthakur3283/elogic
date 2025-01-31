@@ -23,7 +23,7 @@ function CardApps() {
     {
       cardTitle: (
         <>
-          Conditional <br />
+          Condition <br />
           Monitoring
         </>
       ),
