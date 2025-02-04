@@ -7,9 +7,13 @@ function DisclosureData() {
             We may disclose personal information that we collect, or you provide:
             <ul className="list-disc list-outside md:pl-6">
                 <li className="ml-4 font-medium">Disclosure for Law Enforcement.</li>
-                <li className="ml-4 font-medium">Under certain circumstances, we may be required to disclose your Personal Data if required to do so by law or in response to valid requests by public authorities.</li>
+                    <ul className="list-disc list-outside md:pl-6">
+                        <li className="ml-4 font-medium">Under certain circumstances, we may be required to disclose your Personal Data if required to do so by law or in response to valid requests by public authorities.</li>
+                    </ul>
                 <li className="ml-4 font-medium">Business Transaction.</li>
-                <li className="ml-4 font-medium">If we or our subsidiaries are involved in a merger, acquisition or asset sale, your Personal Data may be transferred.</li>
+                    <ul className="list-disc list-outside md:pl-6">
+                        <li className="ml-4 font-medium">If we or our subsidiaries are involved in a merger, acquisition or asset sale, your Personal Data may be transferred.</li>
+                    </ul>
                 <li className="ml-4 font-medium">Other cases. We may disclose your information also:
                     <ol className='list-[upper-roman] md:ps-6 ps-4'>
                         <li className='font-normal'>To our subsidiaries and affiliates.</li>
