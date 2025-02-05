@@ -13,9 +13,11 @@ import TransferData from "./TransferData";
 import DisclosureData from "./DisclosureData";
 import SecurityData from "./SecurityData";
 import ContactUsView from "./ContactUsView";
+import OtherData from "./OtherData";
 import Image from "next/image";
 
 import downArrow from "@/src/assets/images/downarrow.svg";
+
 
 function PrivacyPolicyText() {
   const sections = useMemo(
@@ -49,6 +51,10 @@ function PrivacyPolicyText() {
         content: <ExamplesCookies />,
       },
       {
+        title: "Other Data",
+        content: <OtherData />,
+      },
+      {
         title: "Use of Data",
         content: <UseData />,
       },
@@ -72,6 +78,7 @@ function PrivacyPolicyText() {
         title: "Contact Us",
         content: <ContactUsView />,
       },
+      
     ],
     []
   );
@@ -108,6 +115,7 @@ function PrivacyPolicyText() {
 
     return () => observer.disconnect();
   }, [sections]);
+
   return (
     <>
       <section>
@@ -204,8 +212,8 @@ function PrivacyPolicyText() {
                           className={`block ${
                             activeSection === sectionId
                               ? "text-[#3464FC] after:bg-[#3464FC]"
-                              : "text-[#424242]"
-                          } transition-all duration-500 2xl:py-2 2xl:ps-[20px] xl:ps-[15px] md:ps-[13px] 2xl:text-base xl:text-12px] md:text-[10.67px] relative after:absolute after:left-0 after:top-0 after:bottom-0 after:w-[3px]`}
+                              : "text-[#424242] hover:text-[#3464FC] after:hover:bg-[#3464FC]"
+                          } test-dev transition-all duration-500 2xl:py-2 2xl:ps-[20px] xl:ps-[15px] md:ps-[13px] 2xl:text-base xl:text-12px] md:text-[10.67px] relative after:absolute after:left-0 after:top-0 after:bottom-0 after:w-[3px]`}
                         >
                           {item.title}
                         </a>
