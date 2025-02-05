@@ -62,7 +62,7 @@ function ServicesView() {
             cardImg: cardOneImg,
             cardMobImg:cardOneMobImg,
             cardTitle: <>Embedded<br/>Hardware Design</>,
-            cardLink: '/',
+            cardLink: '/services-overview/embedded-hardware-design',
             linkText: 'Learn More',
             nextArrow: nextIcon,
             cardListPoint: [
@@ -81,7 +81,7 @@ function ServicesView() {
             cardImg: cardTwoImg,
             cardMobImg:cardTwoMobImg,
             cardTitle: <>Embedded<br/>Software<br/>Development</>,
-            cardLink: '/',
+            cardLink: '/services-overview/embedded-software-design',
             linkText: 'Learn More',
             nextArrow: nextIcon,
             cardListPoint: [
@@ -100,7 +100,7 @@ function ServicesView() {
             cardImg: cardThreeImg,
             cardMobImg:cardThreeMobImg,
             cardTitle: <>Wireless<br/>Systems<br/>Development</>,
-            cardLink: '/',
+            cardLink: '/services-overview/wireless-systems-development',
             linkText: 'Learn More',
             nextArrow: nextIcon,
             cardListPoint: [
@@ -116,7 +116,7 @@ function ServicesView() {
             cardImg: cardFourImg,
             cardMobImg:cardFourMobImg,
             cardTitle: <>User Interface<br/>Development</>,
-            cardLink: '/',
+            cardLink: '/services-overview/human-machine-interface-ux-development',
             linkText: 'Learn More',
             nextArrow: nextIcon,
             cardListPoint: [
@@ -132,7 +132,7 @@ function ServicesView() {
             cardImg: cardFiveImg,
             cardMobImg:cardFiveMobImg,
             cardTitle: <>Mechanical &<br/>industrial design</>,
-            cardLink: '/',
+            cardLink: '/services-overview/mechanical-and-industrial-design',
             linkText: 'Learn More',
             nextArrow: nextIcon,
             cardListPoint: [
@@ -153,7 +153,7 @@ function ServicesView() {
             cardImg: cardSixImg,
             cardMobImg:cardSixMobImg,
             cardTitle: <>Manufacturing<br/>support</>,
-            cardLink: '/',
+            cardLink: '/services-overview/manufacturing-optimization-support',
             linkText: 'Learn More',
             nextArrow: nextIcon,
             cardListPoint: [
@@ -168,7 +168,7 @@ function ServicesView() {
             cardImg: cardSevenImg,
             cardMobImg:cardSevenMobImg,
             cardTitle: <>Technology<br/>Consulting</>,
-            cardLink: '/',
+            cardLink: '/services-overview/technology-compliance-consulting',
             linkText: 'Learn More',
             nextArrow: nextIcon,
             cardListPoint: [

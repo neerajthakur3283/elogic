@@ -10,3 +10,6 @@
     background-color: black;
     color: white;
 }
+.expmpl-apps li:last-child .list-points{
+    height: auto;
+}
