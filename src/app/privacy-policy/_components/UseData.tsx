@@ -7,7 +7,7 @@ function UseData() {
             eLogic Engineering Services Private Limited uses the collected data for various purposes:
             <ul className="list-decimal list-outside md:pl-6">
                 <li className="ml-4">To provide and maintain our Service.</li>
-                <li className="ml-4">To notify you about changes to our Service</li>
+                <li className="ml-4">To notify you about changes to our Service.</li>
                 <li className="ml-4">To allow you to participate in interactive features of our Service when you choose to do so.</li>
                 <li className="ml-4">To provide customer support.</li>
                 <li className="ml-4">To gather analysis or valuable information so that we can improve our Service.</li>

@@ -107,8 +107,7 @@ function SecurityData() {
                         <li className='font-normal'>We may use remarketing services to advertise on third party websites to you after you visited our Service. We and our third-party vendors use cookies to inform, optimise and serve ads based on your past visits to our Service. Google Ads (AdWords) Google Ads (AdWords) remarketing service is provided by Google Inc. You can opt out of Google Analytics for Display Advertising and customize the Google Display Network ads by visiting the Google Ads Settings page: 
                         <Link href='http://www.google.com/settings/ads'>http://www.google.com/settings/ads</Link>. Google also recommends installing the Google Analytics Opt-out Browser Add-on 
                         - <Link href='https://tools.google.com/dlpage/gaoptout'>https://tools.google.com/dlpage/gaoptout</Link> - for your web browser. Google Analytics Opt-out Browser Add-on provides visitors with the ability to prevent their data from being collected and used by Google Analytics. For more information on the privacy practices of Google, 
-                        please visit the Google Privacy & Terms web page: 
-                        <Link href='https://policies.google.com/privacy?hl=en'>https://policies.google.com/privacy?hl=en</Link>.</li>
+                        please visit the Google Privacy & Terms web page: <Link href='https://policies.google.com/privacy?hl=en'>https://policies.google.com/privacy?hl=en</Link>.</li>
                     </ol>
                 </li>
                 <li className='ml-4'>
@@ -117,7 +116,7 @@ function SecurityData() {
                         <li className='font-normal'>Our Service may contain links to other sites that are not operated by us. If you click a third party link, you will be directed to that third party’s site. We strongly advise you to review the Privacy Policy of every site you visit. We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services. For example, the outlined privacy policy has been made using PolicyMaker.io, a free tool that helps create high-quality legal documents. PolicyMaker’s privacy policy generator is an easy-to-use tool for creating a privacy policy for blog, website, e-commerce store or mobile app.</li>
                     </ol>
                 </li>
-                <li className='ml-4'>
+                <li className='ml-4'>  
                 Children’s Privacy
                     <ol className='list-disc ps-5'>
                         <li className='font-normal'>Our Services are not intended for use by children under the age of 18 (“Child” or “Children”). We do not knowingly collect personally identifiable information from Children under 18. If you become aware that a Child has provided us with Personal Data, please contact us. If we become aware that we have collected Personal Data from Children without verification of parental consent, we take steps to remove that information from our servers.</li>
