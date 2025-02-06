@@ -10,7 +10,7 @@ import valueCulturedImg from '@/src/assets/images/service-card-one.jpg';
 import CulturedPoints from './CulturedPoints';
 
 interface ExampleApplicationsProps {
-    someProperty: string;
+    someProperty?: string;
   }
 interface ListDataItem {
   leftTitle: string;
