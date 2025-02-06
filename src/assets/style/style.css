@@ -3,6 +3,9 @@
 .font-sora{
     font-family: "Sora", serif;
 }
+.smooth{
+    transition: all 400ms ease-in-out 0s;
+}
 .font-roboto{
     font-family: "Roboto", serif;
 }
