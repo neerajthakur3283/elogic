@@ -9,8 +9,10 @@ import { MdArrowOutward } from 'react-icons/md';
 import valueCulturedImg from '@/src/assets/images/service-card-one.jpg';
 import CulturedPoints from './CulturedPoints';
 
-interface ExampleApplicationsProps {}
-
+interface ExampleApplicationsProps {
+    someProperty: string;
+  }
+  
 interface ListDataItem {
   leftTitle: string;
   rightDes: string;

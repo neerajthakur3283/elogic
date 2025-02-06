@@ -4,8 +4,8 @@ import { MdArrowOutward } from "react-icons/md";
 import ServiceCard from "./ServiceCard";
 
 // images
-import imgOne from "@/src/assets/images/card-img-one.jpg";
-import imgTwo from "@/src/assets/images/card-img-two.jpg";
+// import imgOne from "@/src/assets/images/card-img-one.jpg";
+// import imgTwo from "@/src/assets/images/card-img-two.jpg";
 import serviceOne from '@/src/assets/images/card-one.jpg'
 import serviceTwo from '@/src/assets/images/card-two.jpg'
 import serviceThree from '@/src/assets/images/card-three.jpg'
@@ -16,53 +16,53 @@ import mobThree from '@/src/assets/images/card-mob-three.jpg'
 import mobFour from '@/src/assets/images/card-mob-four.jpg'
 
 function ServiceOverview() {
-  const appCardData = [
-    {
-      cardTitle: (
-        <>
-          Prediction <br />
-          Monitoring
-        </>
-      ),
-      cardLink: "/",
-      linkText: "Learn More",
-      cardImg: imgOne,
-    },
-    {
-      cardTitle: (
-        <>
-          Condition <br />
-          Monitoring
-        </>
-      ),
-      cardLink: "/",
-      linkText: "Learn More",
-      cardImg: imgTwo,
-    },
-    {
-      cardTitle: (
-        <>
-          Energy <br />
-          consumption <br />
-          monitoring
-        </>
-      ),
-      cardLink: "/",
-      linkText: "Learn More",
-      cardImg: imgTwo,
-    },
-    {
-      cardTitle: (
-        <>
-          Custom <br />
-          application
-        </>
-      ),
-      cardLink: "/",
-      linkText: "Learn More",
-      cardImg: imgOne,
-    },
-  ];
+  // const appCardData = [
+  //   {
+  //     cardTitle: (
+  //       <>
+  //         Prediction <br />
+  //         Monitoring
+  //       </>
+  //     ),
+  //     cardLink: "/",
+  //     linkText: "Learn More",
+  //     cardImg: imgOne,
+  //   },
+  //   {
+  //     cardTitle: (
+  //       <>
+  //         Condition <br />
+  //         Monitoring
+  //       </>
+  //     ),
+  //     cardLink: "/",
+  //     linkText: "Learn More",
+  //     cardImg: imgTwo,
+  //   },
+  //   {
+  //     cardTitle: (
+  //       <>
+  //         Energy <br />
+  //         consumption <br />
+  //         monitoring
+  //       </>
+  //     ),
+  //     cardLink: "/",
+  //     linkText: "Learn More",
+  //     cardImg: imgTwo,
+  //   },
+  //   {
+  //     cardTitle: (
+  //       <>
+  //         Custom <br />
+  //         application
+  //       </>
+  //     ),
+  //     cardLink: "/",
+  //     linkText: "Learn More",
+  //     cardImg: imgOne,
+  //   },
+  // ];
   const serviceCardData = [
     {cardTag:'Embedded Software Design', cardTitle:'System Software Development', cardImg:serviceOne,cardImgMob:mobOne,
         cardList:[
