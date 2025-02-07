@@ -3,9 +3,11 @@ import HardwareCard from "./HardwareCard";
 
 // images
 import edgeGetway from "@/src/assets/images/edge-connect-pro-getway.png";
+import energyMeter from '@/src/assets/images/energy-meter.png'
 
 function Hardware() {
   const hardwaredCardData = [
+    {bgCard:'bg-white',titleColor:'text-black',cardTitle:'PLCs/HMIs',cardPara:'Our industry-leading cameras see the world like people do—in dynamic detail. Capturing rich texture and color data to take spatial perception to a whole new level. ',cardImage:energyMeter,imgWidth:''},
     {
       bgCard: "bg-[#051731]",
       titleColor: "text-white",
@@ -32,7 +34,7 @@ function Hardware() {
               spatial perception to a whole new level.
             </div>
           </div>
-          <div className="grid 2xl:mt-[60px] xl:mt-[45px] mt-[40px] 2xl:gap-[51.48px] xl:gap-[38.61px] md:gap-[34.32px] gap-[22.21px]">
+          <div className="grid md:grid-cols-2 2xl:mt-[60px] xl:mt-[45px] mt-[40px] 2xl:gap-[51.48px] xl:gap-[38.61px] md:gap-[34.32px] gap-[22.21px]">
             <HardwareCard hardwaredCardData={hardwaredCardData} />
           </div>
         </div>

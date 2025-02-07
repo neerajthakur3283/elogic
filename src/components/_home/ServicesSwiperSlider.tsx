@@ -144,7 +144,7 @@ export default function CircularSlider() {
             >
               <div className="2xl:rounded-[24px] xl:rounded-[18px] md:rounded-[16px] rounded-[18.45px] bg-no-repeat bg-cover md:bg-[url('../images/swipe-slide-bg.jpg')] bg-[url('../images/swipe-slide-mob-bg.jpg')] mx-auto 2xl:py-[74px] xl:py-[55px] md:py-[30px] py-[30px] 2xl:ps-[60px] xl:ps-[50px] lg:ps-[25px] ps-[20px] 2xl:pe-[70px] xl:pe-[60px] lg:pe-[30px] pe-[20px] flex items-center justify-between md:flex-nowrap flex-wrap max-[767px]:h-[734px] max-[639px]:h-[600px]">
                 <div className="2xl:w-[395.81px] xl:w-[330px] lg:w-[360px] md:w-[315px] w-full">
-                  <h3 className="font-bold 2xl:text-[32.54px] xl:text-[24px] lg:text-[22.5px] text-[20px] text-white">
+                  <h3 className="font-bold 2xl:text-[32.54px] xl:text-[24px] lg:text-[22.5px] text-[20px] text-white capitalize">
                     {image.slideTitle}
                   </h3>
                   <ul className="list-disc list-outside 2xl:ps-4 xl:ps-3.5 md:ps-3 ps-3.5 2xl:pt-[23px] xl:pt-[18px] lg:pt-[15px] pt-[12.5px] text-white 2xl:text-base xl:text-[14px] lg:text-[13px] md:text-[12.5px] gap-2 flex flex-col max-[767px]:[&_br]:hidden">

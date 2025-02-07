@@ -16,53 +16,6 @@ import mobThree from '@/src/assets/images/card-mob-three.jpg'
 import mobFour from '@/src/assets/images/card-mob-four.jpg'
 
 function ServiceOverview() {
-  // const appCardData = [
-  //   {
-  //     cardTitle: (
-  //       <>
-  //         Prediction <br />
-  //         Monitoring
-  //       </>
-  //     ),
-  //     cardLink: "/",
-  //     linkText: "Learn More",
-  //     cardImg: imgOne,
-  //   },
-  //   {
-  //     cardTitle: (
-  //       <>
-  //         Condition <br />
-  //         Monitoring
-  //       </>
-  //     ),
-  //     cardLink: "/",
-  //     linkText: "Learn More",
-  //     cardImg: imgTwo,
-  //   },
-  //   {
-  //     cardTitle: (
-  //       <>
-  //         Energy <br />
-  //         consumption <br />
-  //         monitoring
-  //       </>
-  //     ),
-  //     cardLink: "/",
-  //     linkText: "Learn More",
-  //     cardImg: imgTwo,
-  //   },
-  //   {
-  //     cardTitle: (
-  //       <>
-  //         Custom <br />
-  //         application
-  //       </>
-  //     ),
-  //     cardLink: "/",
-  //     linkText: "Learn More",
-  //     cardImg: imgOne,
-  //   },
-  // ];
   const serviceCardData = [
     {cardTag:'Embedded Hardware Design', cardTitle:'Architecture & Systems Design', cardImg:serviceOne,cardImgMob:mobOne,
         cardList:[

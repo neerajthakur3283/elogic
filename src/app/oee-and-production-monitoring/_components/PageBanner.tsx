@@ -18,7 +18,7 @@ function PageBanner() {
             </div>
           </div>
           <div className="h-full">
-            <video className="h-full object-cover" loop muted playsInline autoPlay crossOrigin="anonymous">
+            <video className="h-full w-full object-cover" loop muted playsInline autoPlay crossOrigin="anonymous">
               <source src="/videos/internal-video.mp4" type="video/mp4" />
             </video>
           </div>

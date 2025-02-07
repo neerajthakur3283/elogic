@@ -197,7 +197,7 @@ function PrivacyPolicyText() {
                           onClick={(e) => {
                             e.preventDefault();
                             const element = document.getElementById(sectionId);
-                            if (element) {
+                              if (element) {
                               const headerOffset = 130;
                               const elementPosition =
                                 element.getBoundingClientRect().top +

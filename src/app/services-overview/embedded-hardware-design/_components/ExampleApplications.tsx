@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { MdArrowOutward } from 'react-icons/md';
 
 // images
-import valueCulturedImg from '@/src/assets/images/service-card-one.jpg';
+import valueCulturedImg from '@/src/assets/images/hardware-design-slide-img.jpg';
 import CulturedPoints from './CulturedPoints';
 
 interface ExampleApplicationsProps {
@@ -25,31 +25,28 @@ interface ExampleCardSliderItem {
   
   const ExampleApplications: React.FC<ExampleApplicationsProps> = ({}) => {
     const listData: ListDataItem[] = [
-        {leftTitle:'Industrial Controllers',rightDes:'Attitude and willingness to learn are greater assets than aptitude and experience',
+        {leftTitle:'Industrial Gateway',rightDes:'Multi-protocol support (MODBUS, OPC UA, EtherCAT, HART)',
             cardList:[
-                {pointName:'Real-time control systems'},
-                {pointName:'Multi-protocol communication stacks'},
-                {pointName:'Sensor data processing'},
-                {pointName:'Machine control algorithms'},
-                {pointName:'Diagnostic systems'},
+                {pointName:'Multi-protocol support (MODBUS, OPC UA, EtherCAT, HART)'},
+                {pointName:'Industrial-grade power design'},
+                {pointName:'Multiple communication interfaces'},
+                {pointName:'Robust EMC protection'},
             ]            
         },
-        {leftTitle:'Scientific Instruments',rightDes:'We unite diverse engineering disciplines and approaches under one roof',
+        {leftTitle:'Medical Instrumentation',rightDes:'We unite diverse engineering disciplines and approaches under one roof',
             cardList:[
-                {pointName:'High-precision measurements'},
-                {pointName:'Complex data processing'},
-                {pointName:'Calibration algorithms'},
-                {pointName:'User interface control'},
-                {pointName:'Data logging systems'},
+                {pointName:'High-precision analog front-end'},
+                {pointName:'Medical safety standard compliance'},
+                {pointName:'Battery management systems'},
+                {pointName:'Low-noise design techniques'},
             ] 
         },
-        {leftTitle:'IoT Devices',rightDes:'We go beyond service provision to become trusted advisors, sharing our experience and insights',
+        {leftTitle:'Wireless Control Systems',rightDes:'We go beyond service provision to become trusted advisors, sharing our experience and insights',
             cardList:[
-                {pointName:'Power management'},
-                {pointName:'Wireless protocol stacks'},
-                {pointName:'Secure communication'},
-                {pointName:'Remote update capability'},
-                {pointName:'Cloud connectivity'},
+                {pointName:'RF circuit design and integration'},
+                {pointName:'Power-optimized architecture'},
+                {pointName:'Multiple interface support'},
+                {pointName:'Custom protocol implementation'},
             ] 
         },
     ]

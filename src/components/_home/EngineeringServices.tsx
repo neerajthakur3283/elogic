@@ -18,8 +18,7 @@ function EngineeringServices() {
               </h3>
               <div className="text-[#4B5563] leading-[1.5] 2xl:pt-[40px] xl:pt-[30px] md:pt-[26px] pt-[20px] text-center mx-auto 2xl:max-w-[1015px] 2xl:text-[24px] xl:max-w-[760.5px] xl:text-[18px] lg:max-w-[676px] text-base">
                 <p>
-                  Embedded systems & electronics products from concept to
-                  production
+                  Embedded systems & electronics products from concept to production
                 </p>
               </div>
             </div>
