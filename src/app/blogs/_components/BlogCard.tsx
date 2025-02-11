@@ -15,7 +15,6 @@ interface blogCardData {
 interface BlogCardProps {
     blogCardData:blogCardData[]
 }
-
 const BlogCard: React.FC <BlogCardProps> = ({blogCardData}) => {
   return (
     <>
