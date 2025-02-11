@@ -2,13 +2,19 @@
 import { Button } from "@/components/ui/button";
 import React from "react";
 import { GrFormNextLink } from "react-icons/gr";
+import { motion } from "framer-motion";
 
 function TalkToExpert() {
   return (
     <>
       <section>
         <div className="bg-[#EEF1F5] 2xl:py-[100px] xl:py-[75px] lg:py-[66px] md:py-[30px] pb-[50px] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px]">
-          <div className="flex 2xl:rounded-[26px] xl:rounded-[19.5px] md:rounded-[17.33px] rounded-[16.21px] overflow-hidden 2xl:shadow-[0_0_50px_rgba(0,0,0,0.1)] xl:shadow-[0_0_18px_rgba(146,146,146,0.25)] md:shadow-[0_0_16px_rgba(146,146,146,0.25)] shadow-[0_0_14px_rgba(0,0,0,0.25)] md:flex-nowrap flex-wrap">
+          <motion.div 
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.3}}
+          className="flex 2xl:rounded-[26px] xl:rounded-[19.5px] md:rounded-[17.33px] rounded-[16.21px] overflow-hidden 2xl:shadow-[0_0_50px_rgba(0,0,0,0.1)] xl:shadow-[0_0_18px_rgba(146,146,146,0.25)] md:shadow-[0_0_16px_rgba(146,146,146,0.25)] shadow-[0_0_14px_rgba(0,0,0,0.25)] md:flex-nowrap flex-wrap">
             <div className="2xl:w-[741px] xl:w-[555px] lg:w-[495px] md:w-[395px] w-full bg-white 2xl:px-[50px] xl:px-[37.5px] md:px-[33.33px] px-[31.17px] 2xl:py-[53px] xl:py-[37.5px] md:py-[32.5px] py-[29.97px]">
               <h3 className="text-[#262626] font-bold 2xl:text-[36px] xl:text-[27px] md:text-[24px] text-[22.45px]">
                 Talk to Expert
@@ -74,7 +80,7 @@ function TalkToExpert() {
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30453.907124137066!2d78.423904!3d17.424338!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb970d18993739%3A0x90c151e6974d10e8!2seLogicTech%20Edge!5e0!3m2!1sen!2sin!4v1738235240338!5m2!1sen!2sin"
               ></iframe>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
     </>

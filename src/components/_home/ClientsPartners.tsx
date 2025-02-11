@@ -7,6 +7,7 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import { motion } from "framer-motion";
 
 // images
 import logoOne from "@/src/assets/images/partner-1.png";
@@ -49,7 +50,12 @@ const ClientsPartners: React.FC = () => {
   return (
     <>
       <section>
-        <div className="2xl:py-[75px] xl:py-[66px] py-[40px] px-[25px]">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeInOut", delay: 0.3}}
+        className="2xl:py-[75px] xl:py-[66px] py-[40px] px-[25px]">
           <div className="xl:mb-[45px] mb-[40px]">
             <h5 className="text-black font-bold xl:text-[18px] lg:text-base text-[24px] text-center">
               Our Clients &amp; partners
@@ -122,7 +128,7 @@ const ClientsPartners: React.FC = () => {
               </CarouselContent>
             </Carousel>
           </div>
-        </div>
+        </motion.div>
       </section>
     </>
   );

@@ -2,6 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import React, { useEffect, useState, useRef } from "react";
+import { motion } from "framer-motion";
 
 // images
 import slideOne from "@/src/assets/images/home-slide-1.png";
@@ -73,7 +74,11 @@ const Slider: React.FC = () => {
 
   return (
     <section>
-      <div className="relative ms:pt-0 pt-4 after:absolute after:left-0 after:right-0 after:top-0 after:h-[210px] after:bg-gradient-to-b after:from-black to-[rgba(0,0,0,0)]">
+      <motion.div 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1}}
+      transition={{ duration: 0.8, ease: "easeInOut", delay: 0}}
+      className="relative ms:pt-0 pt-4 after:absolute after:left-0 after:right-0 after:top-0 after:h-[210px] after:bg-gradient-to-b after:from-black to-[rgba(0,0,0,0)]">
         <div className="absolute z-[2] left-0 top-0 bottom-0 flex items-center w-full">
           <div className="relative" key={currentIndex}>
             <div className="slider-image w-full relative flex items-center md:flex-nowrap flex-wrap justify-between">
@@ -134,7 +139,7 @@ const Slider: React.FC = () => {
             alt=""
           />
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

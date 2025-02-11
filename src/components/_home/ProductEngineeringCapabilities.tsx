@@ -1,4 +1,5 @@
 "use client";
+import { motion } from "framer-motion";
 import React from "react";
 import ProductSlider from "./ProductSlider";
 
@@ -83,6 +84,11 @@ function ProductEngineeringCapabilities() {
     <>
       <section>
         <div className="bg-[#EEF1F5] 2xl:pt-[80px] xl:pt-[70px] lg:pt-[60px] md:pt-[0px] pt-[15px] overflow-hidden">
+        <motion.div 
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5}}>
           <div className="relative">
             <div className="2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px]">
               <h2 className="text-[#1D3157] 2xl:text-[47px] xl:text-[35px] lg:text-[31px] text-[24px] font-bold">
@@ -93,7 +99,8 @@ function ProductEngineeringCapabilities() {
               <ProductSlider productCardData={productCardData} />
             </div>
           </div>
-        </div>
+          </motion.div>
+          </div>
       </section>
     </>
   );

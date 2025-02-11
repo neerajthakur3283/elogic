@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import TestimonialCard from "./TestimonialCard";
+import { motion } from "framer-motion";
 
 // images
 import userOne from "@/src/assets/images/user-1.jpg";
@@ -41,7 +42,12 @@ function Testimonials() {
   return (
     <>
       <section>
-        <div className="bg-[#EEF1F5] 2xl:pt-[140px] xl:pt-[105px] lg:pt-[90px] md:pt-[70px] pt-[60px] overflow-hidden 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] 2xl:pb-[100px] xl:pb-[75px] md:pb-[66px] pb-[100px]">
+        <motion.div 
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.5}}
+        className="bg-[#EEF1F5] 2xl:pt-[140px] xl:pt-[105px] lg:pt-[90px] md:pt-[70px] pt-[60px] overflow-hidden 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] 2xl:pb-[100px] xl:pb-[75px] md:pb-[66px] pb-[100px]">
           <div className="relative">
             <div className="">
               <h2 className="text-[#1D3157] 2xl:text-[47px] xl:text-[35px] lg:text-[31px] text-[24px] font-bold">
@@ -52,7 +58,7 @@ function Testimonials() {
               <TestimonialCard testimonialData={testimonialData} />
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
     </>
   );

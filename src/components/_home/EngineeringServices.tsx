@@ -1,11 +1,18 @@
+'use client'
 import React from "react";
 import ServicesSwiperSlider from "./ServicesSwiperSlider";
+import { motion } from "framer-motion";
 
 function EngineeringServices() {
   return (
     <>
       <section>
         <div className="bg-[#EEF1F5] 2xl:py-[80px] xl:py-[75px] lg:py-[66px] py-[100px] max-[767px]:pb-[40px]">
+          <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5}}>
           <div className="2xl:pb-[40px] xl:pb-[52px] lg:pb-[45px] pb-[40px]">
             <h2 className="text-center text-[#1D3157] 2xl:text-[62px] xl:text-[47px] lg:text-[41px] text-[24px] font-bold capitalize">
               Product engineering services
@@ -26,6 +33,7 @@ function EngineeringServices() {
               <ServicesSwiperSlider />
             </div>
           </div>
+          </motion.div>
         </div>
       </section>
     </>

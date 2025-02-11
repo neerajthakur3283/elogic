@@ -1,5 +1,7 @@
+'use client'
 import React from "react";
 import ValueCard from "./ValueCard";
+import { motion } from "framer-motion";
 
 // images
 import IconOne from "@/src/assets/images/labour-issues.svg";
@@ -20,7 +22,12 @@ function OurValue() {
   return (
     <>
       <section>
-        <div className="bg-[#111B40] 2xl:pb-[40px] xl:pb-[135px] lg:pb-[120px] pb-[50px] 2xl:pt-[40px] xl:pt-[30px] lg:pt-[25px] pt-[20px] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px]">
+        <motion.div 
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5}}
+        className="bg-[#111B40] 2xl:pb-[40px] xl:pb-[135px] lg:pb-[120px] pb-[50px] 2xl:pt-[40px] xl:pt-[30px] lg:pt-[25px] pt-[20px] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px]">
           <div className="2xl:pb-[70px] xl:pb-[52px] lg:pb-[45px] pb-[40px]">
             <h2 className="text-center text-white 2xl:text-[47px] xl:text-[35px] lg:text-[31px] text-[24px] font-bold">
               Our Value Adds
@@ -37,7 +44,7 @@ function OurValue() {
               Schedule a demo
             </Link>
           </div>
-        </div>
+        </motion.div>
       </section>
     </>
   );
