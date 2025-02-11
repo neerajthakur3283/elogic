@@ -65,7 +65,7 @@ const Slider: React.FC = () => {
         clearInterval(intervalRef.current);
       }
     };
-  }, []);
+  }, [sliderData.length]);
 
   const handleDotClick = (index: number) => {
     setCurrentIndex(index);
@@ -80,7 +80,7 @@ const Slider: React.FC = () => {
               <div className="flex md:items-center 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] max-[991px]:!top-[25px] z-[2]">
                 <div className="w-full 2xl:max-w-[845px] xl:max-w-[632px] md:max-w-[562px] max-w-[372px]">
                   <h1 className="text-white 2xl:text-[60px] xl:text-[45px] text-[40px] md:font-bold font-semibold 2xl:w-[550px] xl:w-[450px] md:w-[355px] mb-3 tracking-[-1.5px] max-[767px]:leading-[1.34]">
-                    Digitiz﻿e your shop floor operations
+                    Digitize your shop floor operations
                   </h1>
                   <p className="text-[#F9F9FB] 2xl:text-[24px] xl:text-[18px] text-base md:leading-7 leading-[1.65] tracking-[-0.2px] 2xl:pt-[30px] xl:pt-[20px] md:pt-[15x] pt-[12px]">
                     {sliderData[currentIndex].slidePara}

@@ -2,19 +2,9 @@ import Link from 'next/link'
 import React from 'react'
 import { MdArrowOutward } from 'react-icons/md'
 
-// images
-import GlobeIcon from '@/src/assets/images/wordwide-presence.svg'
-import CustomIcon from '@/src/assets/images/custom-products.svg'
-import DivrsIcon from '@/src/assets/images/diverse-clients.svg'
-import ExperncIcon from '@/src/assets/images/years-experience.svg'
 
 function Approach() {
-    const aboutCardData = [
-        {cardIcon:GlobeIcon,cardTitle:'Worldwide Presence',cardNumber:'44'},
-        {cardIcon:CustomIcon,cardTitle:'Custom products supplied',cardNumber:'1000+'},
-        {cardIcon:DivrsIcon,cardTitle:'Diverse Clients',cardNumber:'12'},
-        {cardIcon:ExperncIcon,cardTitle:'Years of Experience',cardNumber:'100+'},
-    ]
+    
   return (
     <>
       <section>

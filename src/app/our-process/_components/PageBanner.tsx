@@ -2,7 +2,6 @@ import Image from "next/image";
 import React from "react";
 
 import teamBgImg from '@/src/assets/images/our-process-banner.jpg'
-import Link from "next/link";
 
 function PageBanner() {
   return (

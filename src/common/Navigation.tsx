@@ -1,17 +1,13 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { FaChevronDown } from "react-icons/fa6";
-import Image from "next/image";
 
 // images
-import mobArrow from "@/src/assets/images/right-arrow.svg";
 import { FaChevronRight } from "react-icons/fa";
 import { MdArrowOutward } from "react-icons/md";
 
 const NavBar: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const [activeIndexIot, setActiveIndexIot] = useState<number>(0);
   const [activeIndexProduct, setActiveIndexProduct] = useState<number>(0);
   const [activeIndexProducts, setActiveIndexProducts] = useState<number>(0);
