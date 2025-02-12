@@ -1,4 +1,4 @@
-"use client";
+'use client'
 import React, { useState } from "react";
 import Link from "next/link";
 import { FaChevronDown } from "react-icons/fa6";
@@ -13,99 +13,122 @@ const NavBar: React.FC = () => {
   const [activeIndexProducts, setActiveIndexProducts] = useState<number>(0);
   const [activeIndexAboutUs, setActiveIndexAboutUs] = useState<number>(0);
   const [activeIndexMedia, setActiveIndexMedia] = useState<number>(0);
-
-  const iotSolutiosItems = [
+  
+  interface NavItem {
+    title: string;
+    desTitle: string;
+    learnMoreLink?: string; // Fixed typo
+    description: string;
+    links?: string[];
+  }
+  
+  const iotSolutiosItems  = [
     {
       title: "Industrial Solutions Overview",
       desTitle:'Industrial Solutions Overview',
+      learnMoreLink:'/our-industrial-solutions',
       description: "Transform customer support with skills designed to efficiently solve recurring issues.",
       links: ["Applications", "Industries", "Who you are"],
     },
     {
       title: "OEE & Production Monitoring",
       desTitle:'OEE & Production Monitoring',
+      learnMoreLink:'/oee-and-production-monitoring',
       description: "Enhance production efficiency with real-time monitoring and analytics.",
       links: ["Process Optimization", "Manufacturing Insights", "Reports & Analytics"],
     },
     {
       title: "Machine Condition Monitoring",
       desTitle:'Machine Condition Monitoring',
+      learnMoreLink:'/machine-condition-monitoring',
       description: "Monitor equipment health to reduce downtime and improve maintenance planning.",
       links: ["Predictive Maintenance", "Sensor Data Analysis", "Failure Prevention"],
     },
     {
       title: "Wireless Sensor Data Aggregation",
       desTitle:'Wireless Sensor Data Aggregation',
+      learnMoreLink:'/',
       description: "Aggregate and analyze sensor data to optimize operations and performance.",
       links: ["Applications", "Hardware Ecosystem", "Industries", "Our Process", "Who you are"],
     },
     {
       title: "Energy Consumption Monitoring",
       desTitle:'Energy Consumption Monitoring',
+      learnMoreLink:'/energy-consumption-monitoring',
       description: "Track and optimize energy usage to reduce costs and improve sustainability.",
       links: ["Energy Efficiency", "Consumption Trends", "Sustainability Reports"],
     },
   ];
-  const productSolutionsItems = [
+  const productSolutionsItems  = [
     {
       title: "Overview",
       desTitle:'Product Development Overview',
+      learnMoreLink:'/',
       description: "Transform customer support with skills designed to efficiently solve recurring.",
       links: ["Why Us", "Design & Development ", "Our Process", "Production and supply"],
     },
     {
       title: "Capabilities",
       desTitle:'Capabilities Overview',
+      learnMoreLink:'/',
       description: "Enhance production efficiency with real-time monitoring and analytics.",
       links: ["Process Optimization", "Manufacturing Insights", "Reports & Analytics"],
     },
     {
       title: "Projects",
       desTitle:'Projects',
+      learnMoreLink:'/',
       description: "Monitor equipment health to reduce downtime and improve maintenance planning.",
       links: ["Predictive Maintenance", "Sensor Data Analysis", "Failure Prevention"],
     },
   ];
   
-  const productsItems = [
+  const productsItems  = [
     {
       title: "Edge Connect Series",
       desTitle:'Edge Connect Series Overview',
+      learnMoreLink:'/',
       description: "Transform customer support with skills designed to efficiently solve recurring.",
     },
     {
       title: "Field Connect Series",
       desTitle:'Field Connect Series Overview',
+      learnMoreLink:'/',
       description: "Transform customer support with skills designed to efficiently solve recurring.",
     }
   ];
-  const aboutUsItems = [
+  const aboutUsItems  = [
     {
       title: "Overview",
       desTitle:'About Us Overview',
+      learnMoreLink:'/',
       description: "Transform customer support with skills designed to efficiently solve recurring.",
     },
     {
       title: "Team",
       desTitle:'Our Team Overview',
+      learnMoreLink:'/our-team',
       description: "Transform customer support with skills designed to efficiently solve recurring.",
     },
     {
       title: "Careers",
       desTitle:'Careers Overview',
+      learnMoreLink:'/',
       description: "Transform customer support with skills designed to efficiently solve recurring.",
     },
   ];
   
-  const mediaItems = [
+  const mediaItems  = [
     {
       title: "Blogs",
       desTitle:'Blogs Overview',
+      learnMoreLink:'/blogs',
       description: "Transform customer support with skills designed to efficiently solve recurring.",
     },
     {
       title: "Press",
       desTitle:'Press Overview',
+      learnMoreLink:'/',
       description: "Transform customer support with skills designed to efficiently solve recurring.",
     },
   ];
@@ -156,9 +179,11 @@ const NavBar: React.FC = () => {
                     <span className="text-[13px] text-[#4B5563] 2xl:pb-8 xl:pb-6 lg:pb-4 flex">Description</span>
                     <h3 className="text-[14px] font-medium text-black">{item.desTitle}</h3>
                     <p className="text-[12px] text-[#4B5563] mt-2.5 mb-6 max-w-[230px] opacity-80">{item.description}</p>
-                    <button className="flex items-center h-[40px] px-[18px] bg-[#3563E9] transition-all duration-500 hover:bg-black rounded-[8px] text-white font-semibold">
-                      <span className="text-[14px]">Learn More</span> <MdArrowOutward className="ms-2.5" />
-                    </button>
+                    <div className="flex justify-start">
+                      <Link href={item.learnMoreLink} className="flex items-center h-[40px] px-[18px] bg-[#3563E9] transition-all duration-500 hover:bg-black rounded-[8px] text-white font-semibold">
+                        <span className="text-[14px]">Learn More</span> <MdArrowOutward className="ms-2.5" />
+                      </Link>
+                    </div>
                   </div>
 
                   <div className="text-[14px] text-black w-[calc(100%_-_277px)] font-medium">
@@ -223,9 +248,11 @@ const NavBar: React.FC = () => {
                     <span className="text-[13px] text-[#4B5563] 2xl:pb-8 xl:pb-6 lg:pb-4 flex">Description</span>
                     <h3 className="text-[14px] font-medium text-black">{item.desTitle}</h3>
                     <p className="text-[12px] text-[#4B5563] mt-2.5 mb-6 max-w-[230px] opacity-80">{item.description}</p>
-                    <button className="flex items-center h-[40px] px-[18px] bg-[#3563E9] transition-all duration-500 hover:bg-black rounded-[8px] text-white font-semibold">
-                      <span className="text-[14px]">Learn More</span> <MdArrowOutward className="ms-2.5" />
-                    </button>
+                    <div className="flex justify-start">
+                      <Link href={item.learnMoreLink} className="flex items-center h-[40px] px-[18px] bg-[#3563E9] transition-all duration-500 hover:bg-black rounded-[8px] text-white font-semibold">
+                        <span className="text-[14px]">Learn More</span> <MdArrowOutward className="ms-2.5" />
+                      </Link>
+                    </div>
                   </div>
 
                   <div className="text-[14px] text-black w-[calc(100%_-_277px)] font-medium">
@@ -290,9 +317,11 @@ const NavBar: React.FC = () => {
                     <span className="text-[13px] text-[#4B5563] 2xl:pb-8 xl:pb-6 lg:pb-4 flex">Description</span>
                     <h3 className="text-[14px] font-medium text-black">{item.desTitle}</h3>
                     <p className="text-[12px] text-[#4B5563] mt-2.5 mb-6 max-w-[230px] opacity-80">{item.description}</p>
-                    <button className="flex items-center h-[40px] px-[18px] bg-[#3563E9] transition-all duration-500 hover:bg-black rounded-[8px] text-white font-semibold">
-                      <span className="text-[14px]">Learn More</span> <MdArrowOutward className="ms-2.5" />
-                    </button>
+                    <div className="flex justify-start">
+                      <Link href={item.learnMoreLink} className="flex items-center h-[40px] px-[18px] bg-[#3563E9] transition-all duration-500 hover:bg-black rounded-[8px] text-white font-semibold">
+                        <span className="text-[14px]">Learn More</span> <MdArrowOutward className="ms-2.5" />
+                      </Link>
+                    </div>
                   </div>
                 </div>
               ))}
@@ -347,9 +376,11 @@ const NavBar: React.FC = () => {
                     <span className="text-[13px] text-[#4B5563] 2xl:pb-8 xl:pb-6 lg:pb-4 flex">Description</span>
                     <h3 className="text-[14px] font-medium text-black">{item.desTitle}</h3>
                     <p className="text-[12px] text-[#4B5563] mt-2.5 mb-6 max-w-[230px] opacity-80">{item.description}</p>
-                    <button className="flex items-center h-[40px] px-[18px] bg-[#3563E9] transition-all duration-500 hover:bg-black rounded-[8px] text-white font-semibold">
-                      <span className="text-[14px]">Learn More</span> <MdArrowOutward className="ms-2.5" />
-                    </button>
+                    <div className="flex justify-start">
+                      <Link href={item.learnMoreLink} className="flex items-center h-[40px] px-[18px] bg-[#3563E9] transition-all duration-500 hover:bg-black rounded-[8px] text-white font-semibold">
+                        <span className="text-[14px]">Learn More</span> <MdArrowOutward className="ms-2.5" />
+                      </Link>
+                    </div>
                   </div>
                 </div>
               ))}
@@ -403,9 +434,11 @@ const NavBar: React.FC = () => {
                     <span className="text-[13px] text-[#4B5563] 2xl:pb-8 xl:pb-6 lg:pb-4 flex">Description</span>
                     <h3 className="text-[14px] font-medium text-black">{item.desTitle}</h3>
                     <p className="text-[12px] text-[#4B5563] mt-2.5 mb-6 max-w-[230px] opacity-80">{item.description}</p>
-                    <button className="flex items-center h-[40px] px-[18px] bg-[#3563E9] transition-all duration-500 hover:bg-black rounded-[8px] text-white font-semibold">
-                      <span className="text-[14px]">Learn More</span> <MdArrowOutward className="ms-2.5" />
-                    </button>
+                    <div className="flex justify-start">
+                      <Link href={item.learnMoreLink} className="flex items-center h-[40px] px-[18px] bg-[#3563E9] transition-all duration-500 hover:bg-black rounded-[8px] text-white font-semibold">
+                        <span className="text-[14px]">Learn More</span> <MdArrowOutward className="ms-2.5" />
+                      </Link>
+                    </div>
                   </div>
                 </div>
               ))}

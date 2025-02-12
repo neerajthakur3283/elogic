@@ -20,7 +20,7 @@ function ProductEngineeringCapabilities() {
       title: "Embedded Hardware Design",
       smallTitle:
         "Hardware architecture and PCB design from system specification to manufacturing release.",
-      cardLink: "/",
+      cardLink: "/services-overview/embedded-hardware-design",
       arrowImg: arrowImage,
     },
     {
@@ -28,7 +28,7 @@ function ProductEngineeringCapabilities() {
       title: "Embedded Software Design",
       smallTitle:
         "Firmware and software stack development from bootloader through application layer.",
-      cardLink: "/",
+      cardLink: "/services-overview/embedded-software-design",
       arrowImg: arrowImage,
     },
     {
@@ -36,7 +36,7 @@ function ProductEngineeringCapabilities() {
       title: "Mechanical & Industrial Design",
       smallTitle:
         "Mechanical integration and manufacturing-optimized enclosure development for electronic products.",
-      cardLink: "/",
+      cardLink: "/services-overview/mechanical-and-industrial-design",
       arrowImg: arrowImage,
     },
     {
@@ -44,7 +44,7 @@ function ProductEngineeringCapabilities() {
       title: "Human Machine Interface Development",
       smallTitle:
         "Input/output interface design and implementation for device control and monitoring",
-      cardLink: "/",
+      cardLink: "/services-overview/human-machine-interface-ux-development",
       arrowImg: arrowImage,
     },
     {
@@ -52,7 +52,7 @@ function ProductEngineeringCapabilities() {
       title: "Wireless Systems Development",
       smallTitle:
         "Integration of wireless communication subsystems into embedded product architectures.",
-      cardLink: "/",
+      cardLink: "/services-overview/wireless-systems-development",
       arrowImg: arrowImage,
     },
     {
@@ -60,7 +60,7 @@ function ProductEngineeringCapabilities() {
       title: "Manufacturing Support",
       smallTitle:
         "Production process engineering for scalable electronics manufacturing and testing.",
-      cardLink: "/",
+      cardLink: "/services-overview/manufacturing-optimization-support",
       arrowImg: arrowImage,
     },
     {
@@ -68,7 +68,7 @@ function ProductEngineeringCapabilities() {
       title: "IoT application development",
       smallTitle:
         "Application front-end and back-end development for cloud-side device data processing management .",
-      cardLink: "/",
+      cardLink: "/services-overview/custom-iot-apps-development",
       arrowImg: arrowImage,
     },
     {
@@ -76,7 +76,7 @@ function ProductEngineeringCapabilities() {
       title: "Technology consulting",
       smallTitle:
         "Technical assessment and compliance support and economic feasibility planning for regulatory and market requirements.",
-      cardLink: "/",
+      cardLink: "/services-overview/technology-compliance-consulting",
       arrowImg: arrowImage,
     },
   ];

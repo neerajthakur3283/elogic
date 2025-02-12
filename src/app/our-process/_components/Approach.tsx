@@ -20,7 +20,7 @@ function Approach() {
               <div className="2xl:pt-[40px] xl:pt-[30px] md:pt-[26px] pt-[20px]">
                 <Link
                   className="bg-[#3563E9] text-white px-[2] w-full 2xl:max-w-[319px] xl:max-w-[255px] md:max-w-[220px] max-w-[245px] 2xl:h-[52px] xl:h-[39px] md:h-[35px] h-[40.29px] flex justify-center items-center py-[2px] 2xl:text-[20px] xl:text-[15px] md:text-[13.33px] text-[15.24px] md:font-bold font-semibold rounded-[16px] capitalize duration-500 hover:bg-black hover:text-white"
-                  href="/"
+                  href="/contact-us"
                 >
                   Discuss your requirement <MdArrowOutward className="ms-2.5" />
                 </Link>

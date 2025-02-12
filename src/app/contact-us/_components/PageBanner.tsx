@@ -17,7 +17,7 @@ function PageBanner() {
               </div>
               <div className="flex justify-center">
                 <Link className="bg-[#3563E9] text-white px-[2] w-full md:max-w-[136.44px] max-w-[130px] md:h-[41px] h-[40.29px] flex justify-center items-center py-[2px] md:text-[12.67px] text-[11px] md:font-bold font-semibold rounded-[10.67px] capitalize duration-500 hover:bg-white hover:text-black"
-                        href="/">Get In Touch</Link>
+                        href="/contact-us">Get In Touch</Link>
               </div>
             </div>
           </div>
