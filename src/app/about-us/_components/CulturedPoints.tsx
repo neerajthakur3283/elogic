@@ -8,7 +8,6 @@ interface ListData {
   interface CulturedPointsProps {
     listData: ListData[];
   }
-
   const CulturedPoints: React.FC<CulturedPointsProps> = ({ listData }) => {
   return (
     <>
