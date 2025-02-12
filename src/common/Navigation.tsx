@@ -14,7 +14,6 @@ const NavBar: React.FC = () => {
   const [activeIndexAboutUs, setActiveIndexAboutUs] = useState<number>(0);
   const [activeIndexMedia, setActiveIndexMedia] = useState<number>(0);
 
-
   const iotSolutiosItems = [
     {
       title: "Industrial Solutions Overview",
