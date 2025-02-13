@@ -41,7 +41,7 @@ function ProductEngineeringCapabilities() {
     },
     {
       productImg: productFour,
-      title: "Human Machine Interface Development",
+      title: "Human machine Interface and UX development",
       smallTitle:
         "Input/output interface design and implementation for device control and monitoring",
       cardLink: "/services-overview/human-machine-interface-ux-development",
@@ -57,7 +57,7 @@ function ProductEngineeringCapabilities() {
     },
     {
       productImg: productSeven,
-      title: "Manufacturing Support",
+      title: "Manufacturing and Optimization support",
       smallTitle:
         "Production process engineering for scalable electronics manufacturing and testing.",
       cardLink: "/services-overview/manufacturing-optimization-support",
@@ -65,7 +65,7 @@ function ProductEngineeringCapabilities() {
     },
     {
       productImg: productSeven,
-      title: "IoT application development",
+      title: "Custom IoT application development",
       smallTitle:
         "Application front-end and back-end development for cloud-side device data processing management .",
       cardLink: "/services-overview/custom-iot-apps-development",
@@ -73,7 +73,7 @@ function ProductEngineeringCapabilities() {
     },
     {
       productImg: productFive,
-      title: "Technology consulting",
+      title: "Technology & Compliance Consulting",
       smallTitle:
         "Technical assessment and compliance support and economic feasibility planning for regulatory and market requirements.",
       cardLink: "/services-overview/technology-compliance-consulting",
@@ -84,23 +84,23 @@ function ProductEngineeringCapabilities() {
     <>
       <section>
         <div className="bg-[#EEF1F5] 2xl:pt-[80px] xl:pt-[70px] lg:pt-[60px] md:pt-[0px] pt-[15px] overflow-hidden">
-        <motion.div 
-        initial={{ opacity: 0, y: -20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5}}>
-          <div className="relative">
-            <div className="2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px]">
-              <h2 className="text-[#1D3157] 2xl:text-[47px] xl:text-[35px] lg:text-[31px] text-[24px] font-bold">
-                Our Product Engineering Capabilities
-              </h2>
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}>
+            <div className="relative">
+              <div className="2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px]">
+                <h2 className="text-[#1D3157] 2xl:text-[47px] xl:text-[35px] lg:text-[31px] text-[24px] font-bold">
+                  Our Product Engineering Capabilities
+                </h2>
+              </div>
+              <div className="2xl:pt-[45px] xl:pt-[30px] pt-[25px] max-[767px]:pt-4 max-[767px]:relative max-[767px]:mt-[0px]">
+                <ProductSlider productCardData={productCardData} />
+              </div>
             </div>
-            <div className="2xl:pt-[45px] xl:pt-[30px] pt-[25px] max-[767px]:pt-4 max-[767px]:relative max-[767px]:mt-[0px]">
-              <ProductSlider productCardData={productCardData} />
-            </div>
-          </div>
           </motion.div>
-          </div>
+        </div>
       </section>
     </>
   );

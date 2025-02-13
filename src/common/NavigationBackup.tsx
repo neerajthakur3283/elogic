@@ -65,9 +65,8 @@ const NavBar: React.FC = () => {
               >
                 Our IoT Solutions{" "}
                 <FaChevronDown
-                  className={`w-[12px] transform transition-all duration-300 ${
-                    isIotSolutionsOpen ? "rotate-180" : ""
-                  }`}
+                  className={`w-[12px] transform transition-all duration-300 ${isIotSolutionsOpen ? "rotate-180" : ""
+                    }`}
                 />
               </button>
               {isIotSolutionsOpen && (
@@ -84,14 +83,14 @@ const NavBar: React.FC = () => {
                     className="text-black 2xl:text-[14px] text-[13.5px] transition-all duration-500 hover:text-[#3563E9] text-nowrap 2xl:py-2.5 xl:py-2 flex"
                     onClick={toggleIotSolutions}
                   >
-                    OEE & Production Monitoring
+                    Productivity Monitoring
                   </Link>
                   <Link
                     href="/machine-condition-monitoring"
                     className="text-black 2xl:text-[14px] text-[13.5px] transition-all duration-500 hover:text-[#3563E9] text-nowrap 2xl:py-2.5 xl:py-2 flex"
                     onClick={toggleIotSolutions}
                   >
-                    Machine Condition Monitoring
+                    Condition Monitoring
                   </Link>
                   <Link
                     href="/"
@@ -105,7 +104,7 @@ const NavBar: React.FC = () => {
                     className="text-black 2xl:text-[14px] text-[13.5px] transition-all duration-500 hover:text-[#3563E9] text-nowrap 2xl:py-2.5 xl:py-2 flex"
                     onClick={toggleIotSolutions}
                   >
-                    Energy Consumption Monitoring
+                    Energy Monitoring
                   </Link>
                 </div>
               )}
@@ -118,9 +117,8 @@ const NavBar: React.FC = () => {
               >
                 Our Services{" "}
                 <FaChevronDown
-                  className={`w-[12px] transform transition-all duration-300 ${
-                    isServicesOpen ? "rotate-180" : ""
-                  }`}
+                  className={`w-[12px] transform transition-all duration-300 ${isServicesOpen ? "rotate-180" : ""
+                    }`}
                 />
               </button>
               {isServicesOpen && (
@@ -214,9 +212,8 @@ const NavBar: React.FC = () => {
                 >
                   Our IOT Solutions{" "}
                   <FaChevronDown
-                    className={`ml-2 transform transition-all duration-300 ${
-                      isIotSolutionsOpen ? "rotate-180" : ""
-                    }`}
+                    className={`ml-2 transform transition-all duration-300 ${isIotSolutionsOpen ? "rotate-180" : ""
+                      }`}
                   />
                 </button>
                 {isIotSolutionsOpen && (
@@ -231,25 +228,25 @@ const NavBar: React.FC = () => {
                       href="/"
                       className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
                     >
-                      OEE & Production Monitoring
+                      Productivity Monitoring
                     </Link>
                     <Link
                       href="/"
                       className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
                     >
-                      Machine Condition Monitoring
+                      Condition Monitoring
                     </Link>
-                    <Link
+                    {/* <Link
                       href="/"
                       className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
                     >
                       Wireless Sensor Data Aggregation
-                    </Link>
+                    </Link> */}
                     <Link
                       href="/energy-consumption-monitoring"
                       className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
                     >
-                      Energy Consumption Monitoring
+                      Energy Monitoring
                     </Link>
                   </div>
                 )}
@@ -261,9 +258,8 @@ const NavBar: React.FC = () => {
                 >
                   Our Services{" "}
                   <FaChevronDown
-                    className={`ml-2 transform transition-all duration-300 ${
-                      isServicesOpen ? "rotate-180" : ""
-                    }`}
+                    className={`ml-2 transform transition-all duration-300 ${isServicesOpen ? "rotate-180" : ""
+                      }`}
                   />
                 </button>
                 {isServicesOpen && (

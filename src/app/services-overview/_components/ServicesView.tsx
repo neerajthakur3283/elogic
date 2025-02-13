@@ -57,143 +57,158 @@ import iconSxFour from '@/src/assets/images/implementation-road.svg'
 import iconSxFive from '@/src/assets/images/financial.svg'
 
 function ServicesView() {
-    const serviceCardData = [
-        {
-            cardImg: cardOneImg,
-            cardMobImg:cardOneMobImg,
-            cardTitle: <>Embedded<br/>Hardware Design</>,
-            cardLink: '/services-overview/embedded-hardware-design',
-            linkText: 'Learn More',
-            nextArrow: nextIcon,
-            cardListPoint: [
-              { dataAlign:'items-center',listIcon: iconOne, pointText: <>Architecture &<br/>Systems Design</> },
-              { dataAlign:'items-center',listIcon: iconTwo, pointText: <>Multilayer PCB design <br/>and layout</>},
-              { dataAlign:'items-center',listIcon: iconThree, pointText: <>FPGA design</>},
-              { dataAlign:'items-center',listIcon: iconFour, pointText: <>Reference Platform <br/>Development</>},
-              { dataAlign:'items-center',listIcon: iconFive, pointText: <>Low Power & <br/>Wearable Design</>},
-              { dataAlign:'items-center',listIcon: iconSix, pointText: <>Prototyping & <br/>Assembly</>},
-              { dataAlign:'items-center',listIcon: iconSeven, pointText: <>Testing, Validation & <br/>Certifications</>},
-              { dataAlign:'items-center',listIcon: iconEight, pointText: <>RF Antenna Design</>},
-              { dataAlign:'items-center',listIcon: iconNine, pointText: <>System-on-chip (SoC), <br/>System-on-module <br/>(SoM)</>},
-            ],
-        },
-        {
-            cardImg: cardTwoImg,
-            cardMobImg:cardTwoMobImg,
-            cardTitle: <>Embedded<br/>Software<br/>Development</>,
-            cardLink: '/services-overview/embedded-software-design',
-            linkText: 'Learn More',
-            nextArrow: nextIcon,
-            cardListPoint: [
-              { dataAlign:'items-center',listIcon: iconSndOne, pointText: <>Board <br/>bring up</> },
-              { dataAlign:'items-center',listIcon: iconSndTwo, pointText: <>Device driver <br/>development</>},
-              { dataAlign:'items-center',listIcon: iconSndThree, pointText: <>Firmware <br/>development</>},
-              { dataAlign:'items-center',listIcon: iconSndFour, pointText: <>Board Support <br/>Package development</>},
-              { dataAlign:'items-center',listIcon: iconSndFive, pointText: <>Boot loader <br/>development</>},
-              { dataAlign:'items-center',listIcon: iconSndSix, pointText: <>RTOS development & <br/>OS porting</>},
-              { dataAlign:'items-center',listIcon: iconSndSeven, pointText: <>Embedded linux <br/>development</>},
-              { dataAlign:'items-start',listIcon: iconSndEight, pointText: <>Developing HAL,<br/>middleware &<br/>application layer Unit,<br/>functional and<br/>integration testing.</>},
-              { dataAlign:'items-center',listIcon: iconSndNine, pointText: <>Edge Computing for<br/>CV & ML.</>},
-            ],
-        },
-        {
-            cardImg: cardThreeImg,
-            cardMobImg:cardThreeMobImg,
-            cardTitle: <>Wireless<br/>Systems<br/>Development</>,
-            cardLink: '/services-overview/wireless-systems-development',
-            linkText: 'Learn More',
-            nextArrow: nextIcon,
-            cardListPoint: [
-              { dataAlign:'items-center',listIcon: iconTrdOne, pointText: <>Application analysis <br/>for technology<br/>selection.</> },
-              { dataAlign:'items-center',listIcon: iconTrdTwo, pointText: <>Modem / SoC <br/>selection.</>},
-              { dataAlign:'items-center',listIcon: iconTrdThree, pointText: <>Antenna Design &<br/>Verification</>},
-              { dataAlign:'items-center',listIcon: iconTrdFour, pointText: <>Modular subsystem<br/>development to<br/>enable wireless<br/>connectivity.</>},
-              { dataAlign:'items-center',listIcon: iconTrdFive, pointText: <>Boot loader <br/>development</>},
-              { dataAlign:'items-center',listIcon: iconTrdSix, pointText: <>Design & mapping of<br/>connectivity<br/>infrastructure.</>},
-            ],
-        },
-        {
-            cardImg: cardFourImg,
-            cardMobImg:cardFourMobImg,
-            cardTitle: <>User Interface<br/>Development</>,
-            cardLink: '/services-overview/human-machine-interface-ux-development',
-            linkText: 'Learn More',
-            nextArrow: nextIcon,
-            cardListPoint: [
-              { dataAlign:'items-center',listIcon: iconForOne, pointText: <>UI/UX design</> },
-              { dataAlign:'items-center',listIcon: iconForTwo, pointText: <>Interaction design</>},
-              { dataAlign:'items-center',listIcon: iconForThree, pointText: <>Responsiveness<br/>Optimization</>},
-              { dataAlign:'items-center',listIcon: iconForFour, pointText: <>Dashboard<br/>development</>},
-              { dataAlign:'items-center',listIcon: iconForFive, pointText: <>Native application <br/>development</>},
-              { dataAlign:'items-center',listIcon: iconForSix, pointText: <>Cross platform<br/>application<br/>development.</>},
-            ],
-        },
-        {
-            cardImg: cardFiveImg,
-            cardMobImg:cardFiveMobImg,
-            cardTitle: <>Mechanical &<br/>industrial design</>,
-            cardLink: '/services-overview/mechanical-and-industrial-design',
-            linkText: 'Learn More',
-            nextArrow: nextIcon,
-            cardListPoint: [
-              { dataAlign:'items-center',listIcon: iconOne, pointText: <>Database Management</> },
-              { dataAlign:'items-center',listIcon: iconTwo, pointText: <>Serverless Application<br/>development</>},
-              { dataAlign:'items-center',listIcon: iconThree, pointText: <>Data collection<br/>pipelines</>},
-              { dataAlign:'items-center',listIcon: iconFour, pointText: <>API development</>},
-              { dataAlign:'items-center',listIcon: iconFive, pointText: <>Analytics</>},
-              { dataAlign:'items-center',listIcon: iconSix, pointText: <>Fleet management</>},
-              { dataAlign:'items-center',listIcon: iconSeven, pointText: <>Remote Monitoring</>},
-              { dataAlign:'items-center',listIcon: iconEight, pointText: <>RF Antenna Design</>},
-              { dataAlign:'items-center',listIcon: iconTen, pointText: <>Over The Air Updates</>},
-              { dataAlign:'items-center',listIcon: iconEleven, pointText: <>Data streaming<br/>pipelines for CV, ML &<br/>AI applications.</>},
-              { dataAlign:'items-center',listIcon: iconFive, pointText: <>Scientific Computing</>},
-            ],
-        },
-        {
-            cardImg: cardSixImg,
-            cardMobImg:cardSixMobImg,
-            cardTitle: <>Manufacturing<br/>support</>,
-            cardLink: '/services-overview/manufacturing-optimization-support',
-            linkText: 'Learn More',
-            nextArrow: nextIcon,
-            cardListPoint: [
-              { dataAlign:'items-center',listIcon: iconSxOne, pointText: <>Technology ROI</> },
-              { dataAlign:'items-center',listIcon: iconSxTwo, pointText: <>Market Analysis</>},
-              { dataAlign:'items-center',listIcon: iconSxThree, pointText: <>Transformation<br/>Strategy</>},
-              { dataAlign:'items-center',listIcon: iconSxFour, pointText: <>Implementation road<br/>map</>},
-              { dataAlign:'items-center',listIcon: iconSxFive, pointText: <>Financial Analysis</>},
-            ],
-        },
-        {
-            cardImg: cardSevenImg,
-            cardMobImg:cardSevenMobImg,
-            cardTitle: <>Technology<br/>Consulting</>,
-            cardLink: '/services-overview/technology-compliance-consulting',
-            linkText: 'Learn More',
-            nextArrow: nextIcon,
-            cardListPoint: [
-              { dataAlign:'items-center',listIcon: iconSxOne, pointText: <>Technology ROI</> },
-              { dataAlign:'items-center',listIcon: iconSxTwo, pointText: <>Market Analysis</>},
-              { dataAlign:'items-center',listIcon: iconSxThree, pointText: <>Transformation<br/>Strategy</>},
-              { dataAlign:'items-center',listIcon: iconSxFour, pointText: <>Implementation road<br/>map</>},
-              { dataAlign:'items-center',listIcon: iconSxFive, pointText: <>Financial Analysis</>},
-            ],
-        }
-    ]
+  const serviceCardData = [
+    {
+      cardImg: cardOneImg,
+      cardMobImg: cardOneMobImg,
+      cardTitle: <>Embedded<br />Hardware Design</>,
+      cardLink: '/services-overview/embedded-hardware-design',
+      linkText: 'Learn More',
+      nextArrow: nextIcon,
+      cardListPoint: [
+        { dataAlign: 'items-center', listIcon: iconOne, pointText: <>Architecture &<br />Systems Design</> },
+        { dataAlign: 'items-center', listIcon: iconTwo, pointText: <>Multilayer PCB design <br />and layout</> },
+        { dataAlign: 'items-center', listIcon: iconThree, pointText: <>FPGA design</> },
+        { dataAlign: 'items-center', listIcon: iconFour, pointText: <>Reference Platform <br />Development</> },
+        { dataAlign: 'items-center', listIcon: iconFive, pointText: <>Low Power & <br />Wearable Design</> },
+        { dataAlign: 'items-center', listIcon: iconSix, pointText: <>Prototyping & <br />Assembly</> },
+        { dataAlign: 'items-center', listIcon: iconSeven, pointText: <>Testing, Validation & <br />Certifications</> },
+        { dataAlign: 'items-center', listIcon: iconEight, pointText: <>RF Antenna Design</> },
+        { dataAlign: 'items-center', listIcon: iconNine, pointText: <>System-on-chip (SoC), <br />System-on-module <br />(SoM)</> },
+      ],
+    },
+    {
+      cardImg: cardTwoImg,
+      cardMobImg: cardTwoMobImg,
+      cardTitle: <>Embedded<br />Software<br />Development</>,
+      cardLink: '/services-overview/embedded-software-design',
+      linkText: 'Learn More',
+      nextArrow: nextIcon,
+      cardListPoint: [
+        { dataAlign: 'items-center', listIcon: iconSndOne, pointText: <>Board <br />bring up</> },
+        { dataAlign: 'items-center', listIcon: iconSndTwo, pointText: <>Device driver <br />development</> },
+        { dataAlign: 'items-center', listIcon: iconSndThree, pointText: <>Firmware <br />development</> },
+        { dataAlign: 'items-center', listIcon: iconSndFour, pointText: <>Board Support <br />Package development</> },
+        { dataAlign: 'items-center', listIcon: iconSndFive, pointText: <>Boot loader <br />development</> },
+        { dataAlign: 'items-center', listIcon: iconSndSix, pointText: <>RTOS development & <br />OS porting</> },
+        { dataAlign: 'items-center', listIcon: iconSndSeven, pointText: <>Embedded linux <br />development</> },
+        { dataAlign: 'items-start', listIcon: iconSndEight, pointText: <>Developing HAL,<br />middleware &<br />application layer Unit,<br />functional and<br />integration testing.</> },
+        { dataAlign: 'items-center', listIcon: iconSndNine, pointText: <>Edge Computing for<br />CV & ML.</> },
+      ],
+    },
+    {
+      cardImg: cardThreeImg,
+      cardMobImg: cardThreeMobImg,
+      cardTitle: <>Wireless<br />Systems<br />Development</>,
+      cardLink: '/services-overview/wireless-systems-development',
+      linkText: 'Learn More',
+      nextArrow: nextIcon,
+      cardListPoint: [
+        { dataAlign: 'items-center', listIcon: iconTrdOne, pointText: <>Application analysis <br />for technology<br />selection.</> },
+        { dataAlign: 'items-center', listIcon: iconTrdTwo, pointText: <>Modem / SoC <br />selection.</> },
+        { dataAlign: 'items-center', listIcon: iconTrdThree, pointText: <>Antenna Design &<br />Verification</> },
+        { dataAlign: 'items-center', listIcon: iconTrdFour, pointText: <>Modular subsystem<br />development to<br />enable wireless<br />connectivity.</> },
+        { dataAlign: 'items-center', listIcon: iconTrdFive, pointText: <>Boot loader <br />development</> },
+        { dataAlign: 'items-center', listIcon: iconTrdSix, pointText: <>Design & mapping of<br />connectivity<br />infrastructure.</> },
+      ],
+    },
+    {
+      cardImg: cardFourImg,
+      cardMobImg: cardFourMobImg,
+      cardTitle: <>User Interface<br />Development</>,
+      cardLink: '/services-overview/human-machine-interface-ux-development',
+      linkText: 'Learn More',
+      nextArrow: nextIcon,
+      cardListPoint: [
+        { dataAlign: 'items-center', listIcon: iconForOne, pointText: <>UI/UX design</> },
+        { dataAlign: 'items-center', listIcon: iconForTwo, pointText: <>Interaction design</> },
+        { dataAlign: 'items-center', listIcon: iconForThree, pointText: <>Responsiveness<br />Optimization</> },
+        { dataAlign: 'items-center', listIcon: iconForFour, pointText: <>Dashboard<br />development</> },
+        { dataAlign: 'items-center', listIcon: iconForFive, pointText: <>Native application <br />development</> },
+        { dataAlign: 'items-center', listIcon: iconForSix, pointText: <>Cross platform<br />application<br />development.</> },
+      ],
+    },
+    {
+      cardImg: cardFiveImg,
+      cardMobImg: cardFiveMobImg,
+      cardTitle: <>Mechanical &<br />industrial design</>,
+      cardLink: '/services-overview/mechanical-and-industrial-design',
+      linkText: 'Learn More',
+      nextArrow: nextIcon,
+      cardListPoint: [
+        { dataAlign: 'items-center', listIcon: iconOne, pointText: <>Database Management</> },
+        { dataAlign: 'items-center', listIcon: iconTwo, pointText: <>Serverless Application<br />development</> },
+        { dataAlign: 'items-center', listIcon: iconThree, pointText: <>Data collection<br />pipelines</> },
+        { dataAlign: 'items-center', listIcon: iconFour, pointText: <>API development</> },
+        { dataAlign: 'items-center', listIcon: iconFive, pointText: <>Analytics</> },
+        { dataAlign: 'items-center', listIcon: iconSix, pointText: <>Fleet management</> },
+        { dataAlign: 'items-center', listIcon: iconSeven, pointText: <>Remote Monitoring</> },
+        { dataAlign: 'items-center', listIcon: iconEight, pointText: <>RF Antenna Design</> },
+        { dataAlign: 'items-center', listIcon: iconTen, pointText: <>Over The Air Updates</> },
+        { dataAlign: 'items-center', listIcon: iconEleven, pointText: <>Data streaming<br />pipelines for CV, ML &<br />AI applications.</> },
+        { dataAlign: 'items-center', listIcon: iconFive, pointText: <>Scientific Computing</> },
+      ],
+    },
+    {
+      cardImg: cardSixImg,
+      cardMobImg: cardSixMobImg,
+      cardTitle: <>Manufacturing<br />support</>,
+      cardLink: '/services-overview/manufacturing-optimization-support',
+      linkText: 'Learn More',
+      nextArrow: nextIcon,
+      cardListPoint: [
+        { dataAlign: 'items-center', listIcon: iconSxOne, pointText: <>Technology ROI</> },
+        { dataAlign: 'items-center', listIcon: iconSxTwo, pointText: <>Market Analysis</> },
+        { dataAlign: 'items-center', listIcon: iconSxThree, pointText: <>Transformation<br />Strategy</> },
+        { dataAlign: 'items-center', listIcon: iconSxFour, pointText: <>Implementation road<br />map</> },
+        { dataAlign: 'items-center', listIcon: iconSxFive, pointText: <>Financial Analysis</> },
+      ],
+    },
+    {
+      cardImg: cardSevenImg,
+      cardMobImg: cardSevenMobImg,
+      cardTitle: <>Technology<br />Consulting</>,
+      cardLink: '/services-overview/technology-compliance-consulting',
+      linkText: 'Learn More',
+      nextArrow: nextIcon,
+      cardListPoint: [
+        { dataAlign: 'items-center', listIcon: iconSxOne, pointText: <>Technology ROI</> },
+        { dataAlign: 'items-center', listIcon: iconSxTwo, pointText: <>Market Analysis</> },
+        { dataAlign: 'items-center', listIcon: iconSxThree, pointText: <>Transformation<br />Strategy</> },
+        { dataAlign: 'items-center', listIcon: iconSxFour, pointText: <>Implementation road<br />map</> },
+        { dataAlign: 'items-center', listIcon: iconSxFive, pointText: <>Financial Analysis</> },
+      ],
+    },
+    {
+      cardImg: cardSevenImg,
+      cardMobImg: cardSevenMobImg,
+      cardTitle: <>IoT<br />Application</>,
+      cardLink: '/services-overview/technology-compliance-consulting',
+      linkText: 'Learn More',
+      nextArrow: nextIcon,
+      cardListPoint: [
+        { dataAlign: 'items-center', listIcon: iconSxOne, pointText: <>Technology ROI</> },
+        { dataAlign: 'items-center', listIcon: iconSxTwo, pointText: <>Market Analysis</> },
+        { dataAlign: 'items-center', listIcon: iconSxThree, pointText: <>Transformation<br />Strategy</> },
+        { dataAlign: 'items-center', listIcon: iconSxFour, pointText: <>Implementation road<br />map</> },
+        { dataAlign: 'items-center', listIcon: iconSxFive, pointText: <>Financial Analysis</> },
+      ],
+    }
+  ]
   return (
     <>
-        <section>
-            <div className='bg-[#EEF1F5] 2xl:py-[100px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px]'>
-                <div className='leading-[1] 2xl:text-[61.77px] xl:text-[46.33px] md:text-[41.18px] text-[24px] font-bold'>
-                    Services
-                </div>
-                <div className='2xl:pt-[80px] xl:pt-[60px] md:pt-[53px] pt-[40px]'>
-                    <div className='grid lg:grid-cols-2 grid-cols-1 2xl:gap-x-[40px] xl:gap-x-[30px] md:gap-x-[25px] 2xl:gap-y-[80px] lg:gap-y-[53px] gap-y-[16px] [&>div:nth-child(2)>div:nth-child(1)>div>div:nth-child(2)>ul>li:nth-child(7)]:items-start [&>div:nth-child(2)>div:nth-child(1)>div>div:nth-child(2)>ul>li:nth-child(9)]:items-center [&>div:nth-child(2)>div:nth-child(1)>div>div:nth-child(2)>ul>li:nth-child(9)]:relative md:[&>div:nth-child(2)>div:nth-child(1)>div>div:nth-child(2)>ul>li:nth-child(9)]:-top-[50px] [&>div:nth-child(2)>div:nth-child(1)>div>div:nth-child(2)>ul>li:nth-child(9)]:-top-[40px]'>
-                    <ServiceCard serviceCardData={serviceCardData} />
-                    </div>
-                </div>
+      <section>
+        <div className='bg-[#EEF1F5] 2xl:py-[100px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px]'>
+          <div className='leading-[1] 2xl:text-[61.77px] xl:text-[46.33px] md:text-[41.18px] text-[24px] font-bold'>
+            Services
+          </div>
+          <div className='2xl:pt-[80px] xl:pt-[60px] md:pt-[53px] pt-[40px]'>
+            <div className='grid lg:grid-cols-2 grid-cols-1 2xl:gap-x-[40px] xl:gap-x-[30px] md:gap-x-[25px] 2xl:gap-y-[80px] lg:gap-y-[53px] gap-y-[16px] [&>div:nth-child(2)>div:nth-child(1)>div>div:nth-child(2)>ul>li:nth-child(7)]:items-start [&>div:nth-child(2)>div:nth-child(1)>div>div:nth-child(2)>ul>li:nth-child(9)]:items-center [&>div:nth-child(2)>div:nth-child(1)>div>div:nth-child(2)>ul>li:nth-child(9)]:relative md:[&>div:nth-child(2)>div:nth-child(1)>div>div:nth-child(2)>ul>li:nth-child(9)]:-top-[50px] [&>div:nth-child(2)>div:nth-child(1)>div>div:nth-child(2)>ul>li:nth-child(9)]:-top-[40px]'>
+              <ServiceCard serviceCardData={serviceCardData} />
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </>
   )
 }
