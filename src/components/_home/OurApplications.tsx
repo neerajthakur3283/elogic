@@ -31,7 +31,7 @@ function OurApplications() {
     },
     {
       appImg: imgFourth,
-      cardTitle: "Custom application",
+      cardTitle: "Custom solutions",
       appLink: "/contact-us",
       linkText: "Learn more",
     },

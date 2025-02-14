@@ -16,7 +16,7 @@ function CardApps() {
           Monitoring
         </>
       ),
-      cardLink: "/",
+      cardLink: "/predictive-machine-intelligence",
       linkText: "Learn More",
       cardImg: imgOne,
     },
@@ -27,7 +27,7 @@ function CardApps() {
           Monitoring
         </>
       ),
-      cardLink: "/",
+      cardLink: "/machine-condition-monitoring",
       linkText: "Learn More",
       cardImg: imgTwo,
     },
@@ -39,7 +39,7 @@ function CardApps() {
           monitoring
         </>
       ),
-      cardLink: "/",
+      cardLink: "/energy-consumption-monitoring",
       linkText: "Learn More",
       cardImg: imgTwo,
     },
@@ -47,10 +47,10 @@ function CardApps() {
       cardTitle: (
         <>
           Custom <br />
-          application
+          solutions
         </>
       ),
-      cardLink: "/",
+      cardLink: "/contact-us",
       linkText: "Learn More",
       cardImg: imgOne,
     },

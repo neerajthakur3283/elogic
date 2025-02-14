@@ -180,7 +180,7 @@ const NavBar: React.FC = () => {
                     <span className="text-[13px] text-[#4B5563] 2xl:pb-8 xl:pb-6 lg:pb-4 flex">More</span>
                     <div className="grid grid-cols-2 gap-2 gap-y-8">
                       {item.links.map((link, idx) => (
-                        <Link key={idx} href="#" className="hover:text-[#3563E9]">
+                        <Link key={idx} href="#" className="">
                           {link}
                         </Link>
                       ))}

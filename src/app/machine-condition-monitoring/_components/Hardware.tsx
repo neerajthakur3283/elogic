@@ -7,7 +7,7 @@ import edgeGetway from '@/src/assets/images/edge-connect-pro-getway.png'
 
 function Hardware() {
     const hardwaredCardData = [
-        {bgCard:'bg-white',titleColor:'text-black',cardTitle:'Energy Meters',cardPara:'Our industry-leading cameras see the world like people do—in dynamic detail. Capturing rich texture and color data to take spatial perception to a whole new level. ',cardImage:energyMeter,imgWidth:''},
+        {bgCard:'bg-white',titleColor:'text-black',cardTitle:'Sensors',cardPara:'Our industry-leading cameras see the world like people do—in dynamic detail. Capturing rich texture and color data to take spatial perception to a whole new level. ',cardImage:energyMeter,imgWidth:''},
         {bgCard:'bg-[#051731]',titleColor:'text-white',cardTitle:'Edge Connect Pro Gateway',cardPara:'Our industry-leading cameras see the world like people do—in dynamic detail. Capturing rich texture and color data to take spatial perception to a whole new level. ',cardImage:edgeGetway,imgWidth:''},
     ]
   return (
