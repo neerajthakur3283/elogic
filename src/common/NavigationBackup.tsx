@@ -109,7 +109,6 @@ const NavBar: React.FC = () => {
                 </div>
               )}
             </li>
-
             <li className="relative" ref={dropdownServicesRef}>
               <button
                 onClick={toggleServices}
