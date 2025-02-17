@@ -80,7 +80,7 @@ const Slider: React.FC = () => {
       transition={{ duration: 0.8, ease: "easeInOut", delay: 0}}
       className="relative ms:pt-0 pt-4 after:absolute after:left-0 after:right-0 after:top-0 after:h-[210px] after:bg-gradient-to-b after:from-black to-[rgba(0,0,0,0)]">
         <div className="absolute z-[2] left-0 top-0 bottom-0 flex items-center w-full">
-          <div className="relative" key={currentIndex}>
+          <div className="relative w-full" key={currentIndex}>
             <div className="slider-image w-full relative flex items-center md:flex-nowrap flex-wrap justify-between">
               <div className="flex md:items-center 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] max-[991px]:!top-[25px] z-[2]">
                 <div className="w-full 2xl:max-w-[845px] xl:max-w-[632px] md:max-w-[562px] max-w-[372px]">
@@ -100,7 +100,7 @@ const Slider: React.FC = () => {
                   </div>
                 </div>
               </div>
-              <div className="slide-img max-[767px]:px-[20px] md:pt-0 sm:pt-[90px] pt-3">
+              <div className="2xl:w-[calc(100%_-_845px)] xl:w-[calc(100%_-_632px)] md:w-[calc(100%_-_562px)] slide-img max-[767px]:px-[20px] md:pt-0 sm:pt-[90px] pt-3 2xl:px-[85px] min-[1800px]:px-[135px] xl:px-[80px] md:px-[30px]">
                 <div className="">
                   <Image
                     className="w-full"

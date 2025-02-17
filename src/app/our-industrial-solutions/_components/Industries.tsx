@@ -1,6 +1,6 @@
 "use client";
 import Image, { StaticImageData } from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 // images
 import imgOne from "@/src/assets/images/food-industry.jpg";
@@ -82,28 +82,52 @@ type Industry = {
 const IndustriesTabs = () => {
   const [activeTab, setActiveTab] = useState(industries[0]);
   const [isManual, setIsManual] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
-    if (isManual) return;
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
 
-    const interval = setInterval(() => {
-      setActiveTab((prevTab) => {
-        const currentIndex = industries.findIndex(
-          (industry) => industry.id === prevTab.id
-        );
-        const nextIndex = (currentIndex + 1) % industries.length;
-        return industries[nextIndex];
-      });
-    }, 4000);
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
 
-    return () => clearInterval(interval);
-  }, [isManual]);
+  // Autoplay only if not mobile
+  useEffect(() => {
+    if (isMobile) {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+      return;
+    }
 
-  const handleTabClick = (industry: Industry) => {
+    if (!isManual) {
+      intervalRef.current = setInterval(() => {
+        setActiveTab((prevTab) => {
+          const currentIndex = industries.findIndex((industry) => industry.id === prevTab.id);
+          const nextIndex = (currentIndex + 1) % industries.length;
+          return industries[nextIndex];
+        });
+      }, 4000);
+    }
+
+    return () => {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+    };
+  }, [isManual, isMobile]);
+
+  const handleTabClick = (industry: any) => {
     setActiveTab(industry);
     setIsManual(true);
-  };
 
+    // Only reset autoplay if on desktop
+    if (!isMobile) {
+      setTimeout(() => {
+        setIsManual(false);
+      }, 10000);
+    }
+  };
   return (
     <section>
       <div className="2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] 2xl:py-[80px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px]">
