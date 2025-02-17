@@ -2,7 +2,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { FaChevronDown } from "react-icons/fa6";
-
 // images
 import { FaChevronRight } from "react-icons/fa";
 import { MdArrowOutward } from "react-icons/md";
@@ -121,6 +120,7 @@ const NavBar: React.FC = () => {
     },
   ];
 
+  
   const productsItems = [
     {
       title: "Edge Connect Series",
