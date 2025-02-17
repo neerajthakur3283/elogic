@@ -34,7 +34,7 @@ interface ExampleCardSliderItem {
                 {pointName:'Remote control systems'},
             ]            
         },
-        {leftTitle:'Scientific Instruments',rightDes:'We unite diverse engineering disciplines and approaches under one roof',
+        {leftTitle:'Connected Instruments',rightDes:'We unite diverse engineering disciplines and approaches under one roof',
             cardList:[
                 {pointName:'Remote monitoring systems'},
                 {pointName:'Data collection networks'},
@@ -43,7 +43,7 @@ interface ExampleCardSliderItem {
                 {pointName:'Performance tracking'},
             ] 
         },
-        {leftTitle:'IoT Devices',rightDes:'We go beyond service provision to become trusted advisors, sharing our experience and insights',
+        {leftTitle:'Smart Infrastructure',rightDes:'We go beyond service provision to become trusted advisors, sharing our experience and insights',
             cardList:[
                 {pointName:'Building automation'},
                 {pointName:'Environmental monitoring'},

@@ -12,9 +12,9 @@ import imgFourth from "@/src/assets/images/app-three.jpg";
 function OurApplications() {
   const appCardData = [
     {
-      appImg: imgFirst,
-      cardTitle: "Productivity Monitoring",
-      appLink: "/oee-and-production-monitoring",
+      appImg: imgThird,
+      cardTitle: "Energy Monitoring",
+      appLink: "/energy-consumption-monitoring",
       linkText: "Learn more",
     },
     {
@@ -24,9 +24,9 @@ function OurApplications() {
       linkText: "Learn more",
     },
     {
-      appImg: imgThird,
-      cardTitle: "Energy Monitoring",
-      appLink: "/energy-consumption-monitoring",
+      appImg: imgFirst,
+      cardTitle: "Productivity Monitoring",
+      appLink: "/oee-and-production-monitoring",
       linkText: "Learn more",
     },
     {
@@ -47,7 +47,7 @@ function OurApplications() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="2xl:pb-[70px] xl:pb-[52px] lg:pb-[45px] pb-[40px]">
           <h2 className="text-center text-white 2xl:text-[47px] xl:text-[35px] lg:text-[31px] text-[24px] font-bold">
-            Our IoT applications
+          Industrial IoT Solutions
           </h2>
         </motion.div>
         <motion.div

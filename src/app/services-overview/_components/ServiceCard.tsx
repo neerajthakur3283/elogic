@@ -27,7 +27,7 @@ const ServiceCard: React.FC <ServiceCardProps> = ({serviceCardData}) => {
   return (
     <>
         {serviceCardData.map((data,index)=>(
-            <div className='relative text-white' key={index}>
+            <Link href={data.cardLink} className='relative text-white' key={index}>
                 <div className='flex justify-between flex-col absolute left-0 top-0 bottom-0 2xl:p-[40px] xl:p-[30px] md:p-[26.67px] p-[22.14px]'>
                     <div className=''>
                         <div className='2xl:text-[38px] xl:text-[28.5px] lg:text-[25.33px] md:text-[22px] text-[21.04px] font-bold'>
@@ -51,14 +51,14 @@ const ServiceCard: React.FC <ServiceCardProps> = ({serviceCardData}) => {
                         </div>
                     </div>
                     <div className='text-white'>
-                        <Link href={data.cardLink} className='flex items-center gap-2 font-bold 2xl:text-[18.59px] xl:text-[13.95px] md:text-[12.4px] text-[12.09px]'>{data.linkText} <span className='flex 2xl:w-[14.97px] xl:w-[11.23px] md:w-[9.98px] w-[8.29px]'><Image src={data.nextArrow} alt='' /></span></Link>
+                        <span className='flex items-center gap-2 font-bold 2xl:text-[18.59px] xl:text-[13.95px] md:text-[12.4px] text-[12.09px]'>{data.linkText} <span className='flex 2xl:w-[14.97px] xl:w-[11.23px] md:w-[9.98px] w-[8.29px]'><Image src={data.nextArrow} alt='' /></span></span>
                     </div>
                 </div>
                 <div className='2xl:rounded-[12px] xl:rounded-[9px] md:rounded-[8px] rounded-[6.65px] overflow-hidden'>
                     <Image className='w-full md:flex hidden' src={data.cardImg} alt='' />
                     <Image className='w-full md:hidden flex' src={data.cardMobImg} alt='' />
                 </div>
-            </div>
+            </Link>
         ))}
     </>
   )

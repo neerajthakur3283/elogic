@@ -183,7 +183,7 @@ function ServicesView() {
       cardImg: cardSevenImg,
       cardMobImg: cardSevenMobImg,
       cardTitle: <>IoT<br />Application</>,
-      cardLink: '/services-overview/technology-compliance-consulting',
+      cardLink: '/services-overview/custom-iot-apps-development',
       linkText: 'Learn More',
       nextArrow: nextIcon,
       cardListPoint: [

@@ -7,13 +7,12 @@ import energyMeter from '@/src/assets/images/energy-meter.png'
 
 function Hardware() {
   const hardwaredCardData = [
-    {bgCard:'bg-white',titleColor:'text-black',cardTitle:'PLCs/HMIs',cardPara:'Our industry-leading cameras see the world like people do—in dynamic detail. Capturing rich texture and color data to take spatial perception to a whole new level. ',cardImage:energyMeter,imgWidth:''},
+    {bgCard:'bg-white',titleColor:'text-black',cardTitle:'PLCs/HMIs',cardPara:'',cardImage:energyMeter,imgWidth:''},
     {
       bgCard: "bg-[#051731]",
       titleColor: "text-white",
       cardTitle: "Edge Connect Pro Gateway",
-      cardPara:
-        "Our industry-leading cameras see the world like people do—in dynamic detail. Capturing rich texture and color data to take spatial perception to a whole new level. ",
+      cardPara:"",
       cardImage: edgeGetway,
       imgWidth: "",
     },

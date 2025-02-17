@@ -50,8 +50,8 @@ const ProductSlider: React.FC<ProductSliderProps> = ({ productCardData }) => {
 
         <div className='md:grid hidden grid-cols-4 2xl:px-[72px] xl:px-[54px] px-[20px] lg:gap-[18px] gap-[10px]'>
             {productCardData.map((data, index) => (
-                <div key={index} className='group relative 2xl:rounded-[16px] xl:rounded-[12px] lg:px-[48px]rounded-[10px] rounded-[14px] overflow-hidden'>
-                    <Image className='w-full transition-all duration-500 group-hover:blur-[3.5px]' src={data.productImg} alt='' />
+                <Link href={data.cardLink} key={index} className='group relative 2xl:rounded-[16px] xl:rounded-[12px] lg:px-[48px]rounded-[10px] rounded-[14px] overflow-hidden'>
+                    <Image className='w-full transition-all duration-500 min-[1200px]:group-hover:blur-[3.5px]' src={data.productImg} alt='' />
                     <div className='absolute left-0 right-0 top-0 bottom-0 2xl:p-[32px] xl:p-[24px] md:p-[10px] p-[15px] flex flex-col justify-between z-[1]'>
                         <div className='text-white'>
                             <h5 className='2xl:text-[28px] xl:text-[24px] leading-tight lg:text-[22px] md:text-[16px] text-base font-bold'>
@@ -60,10 +60,10 @@ const ProductSlider: React.FC<ProductSliderProps> = ({ productCardData }) => {
                             <p className='opacity-0 group-hover:opacity-100 duration-500 transition-all 2xl:pt-[14px] lg:pt-[11px] md:pt-[6px] pt-[10px] 2xl:text-[16px] lg:text-[12px] text-[11px]'>{data.smallTitle}</p>
                         </div>
                         <div>
-                            <Link href={data.cardLink}><Image className='2xl:w-[25px] xl:w-[19px] w-[17px]' src={data.arrowImg} alt='' /></Link>
+                            <span><Image className='2xl:w-[25px] xl:w-[19px] w-[17px]' src={data.arrowImg} alt='' /></span>
                         </div>
                     </div>
-                </div>
+                </Link>
             ))}
         </div>
 
@@ -72,12 +72,12 @@ const ProductSlider: React.FC<ProductSliderProps> = ({ productCardData }) => {
         {...settings}
       >
         {productCardData.map((data, index) => (
-          <div
+          <Link href={data.cardLink}
             key={index}
             className="group relative 2xl:rounded-[16px] xl:rounded-[12px] lg:px-[48px]rounded-[10px] rounded-[14px] overflow-hidden 2xl:me-[15px]"
           >
             <Image
-              className="w-full transition-all duration-500 group-hover:blur-[3.5px]"
+              className="w-full transition-all duration-500 min-[1200px]:group-hover:blur-[3.5px]"
               src={data.productImg}
               alt=""
             />
@@ -91,16 +91,16 @@ const ProductSlider: React.FC<ProductSliderProps> = ({ productCardData }) => {
                 </p>
               </div>
               <div>
-                <Link href={data.cardLink}>
+                <span>
                   <Image
                     className="2xl:w-[25px] xl:w-[19px] w-[17px]"
                     src={data.arrowImg}
                     alt=""
                   />
-                </Link>
+                </span>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </SlickSlider>
     </>
