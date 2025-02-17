@@ -52,7 +52,6 @@ const NavBar: React.FC = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
-
   return (
     <nav className="">
       <div className="mx-auto">
