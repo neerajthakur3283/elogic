@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 // images
@@ -72,12 +72,12 @@ const industries = [
   },
 ];
 
-// type Industry = {
-//   id: number;
-//   tabImg: StaticImageData;
-//   name: string;
-//   details: string[];
-// };
+type Industry = {
+  id: number;
+  tabImg: StaticImageData;
+  name: string;
+  details: string[];
+};
 
 const IndustriesTabs = () => {
   const [activeTab, setActiveTab] = useState(industries[0]);
@@ -117,7 +117,7 @@ const IndustriesTabs = () => {
     };
   }, [isManual, isMobile]);
 
-  const handleTabClick = (industry: any) => {
+  const handleTabClick = (industry: Industry) => {
     setActiveTab(industry);
     setIsManual(true);
 
@@ -155,8 +155,8 @@ const IndustriesTabs = () => {
                   key={industry.id}
                   onClick={() => handleTabClick(industry)}
                   className={`2xl:p-[10px] xl:p-[7.5px] p-[6.67px] text-left border 2xl:rounded-[12px] xl:rounded-[8.4px] md:rounded-[7.74px] rounded-[8px] ${activeTab.id === industry.id
-                    ? "bg-[#E4E7FF] border-[#2F44FF] text-[#101010] font-semibold"
-                    : "bg-gray-50 border-gray-300 text-[rgba(16,16,16,0.5)]"
+                      ? "bg-[#E4E7FF] border-[#2F44FF] text-[#101010] font-semibold"
+                      : "bg-gray-50 border-gray-300 text-[rgba(16,16,16,0.5)]"
                     } transition`}
                 >
                   <div className="flex items-center 2xl:gap-[18px] xl:gap-[13.5px] gap-[12px]">
@@ -207,8 +207,8 @@ const IndustriesTabs = () => {
                 key={industry.id}
                 onClick={() => setActiveTab(industry)}
                 className={`2xl:p-[10px] xl:p-[7.5px] p-[6.67px] text-left border 2xl:rounded-[12px] xl:rounded-[8.4px] md:rounded-[7.74px] rounded-[8px] ${activeTab.id === industry.id
-                  ? "bg-[#E4E7FF] border-[#2F44FF] text-[#101010] font-semibold"
-                  : "bg-gray-50 border-gray-300 text-[rgba(16,16,16,0.5)]"
+                    ? "bg-[#E4E7FF] border-[#2F44FF] text-[#101010] font-semibold"
+                    : "bg-gray-50 border-gray-300 text-[rgba(16,16,16,0.5)]"
                   } transition`}
               >
                 <div className="flex items-center 2xl:gap-[18px] xl:gap-[13.5px] gap-[12px]">
