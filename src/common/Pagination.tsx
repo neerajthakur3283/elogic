@@ -28,7 +28,6 @@ function PaginationWithEllipsis() {
 
   const visiblePages = 3; // Number of visible pages around the current page
   const pageRange = calculatePageRange(currentPage, totalPages, visiblePages);
-
   return (
     <Pagination className="flex justify-between">
       {/* Previous Button */}
