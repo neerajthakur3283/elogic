@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { FaChevronDown } from "react-icons/fa6";
 import Image from "next/image";
+
 // images
 import mobArrow from "@/src/assets/images/right-arrow.svg";
 
