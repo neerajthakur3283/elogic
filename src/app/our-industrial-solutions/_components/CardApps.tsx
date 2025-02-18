@@ -12,13 +12,13 @@ function CardApps() {
     {
       cardTitle: (
         <>
-          Prediction <br />
+          Energy <br />
           Monitoring
         </>
       ),
-      cardLink: "/predictive-machine-intelligence",
+      cardLink: "/energy-consumption-monitoring",
       linkText: "Learn More",
-      cardImg: imgOne,
+      cardImg: imgTwo,
     },
     {
       cardTitle: (
@@ -34,20 +34,19 @@ function CardApps() {
     {
       cardTitle: (
         <>
-          Energy <br />
-          consumption <br />
-          monitoring
+          Productivity <br />
+          Monitoring
         </>
       ),
-      cardLink: "/energy-consumption-monitoring",
+      cardLink: "/predictive-machine-intelligence",
       linkText: "Learn More",
-      cardImg: imgTwo,
+      cardImg: imgOne,
     },
     {
       cardTitle: (
         <>
           Custom <br />
-          solutions
+          Solutions
         </>
       ),
       cardLink: "/contact-us",
@@ -55,6 +54,7 @@ function CardApps() {
       cardImg: imgOne,
     },
   ];
+
   return (
     <>
       <section>

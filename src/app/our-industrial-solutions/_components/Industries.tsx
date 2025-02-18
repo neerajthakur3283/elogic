@@ -87,7 +87,7 @@ const IndustriesTabs = () => {
 
   useEffect(() => {
     const checkScreenSize = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 1024);
     };
 
     checkScreenSize();
@@ -109,7 +109,7 @@ const IndustriesTabs = () => {
           const nextIndex = (currentIndex + 1) % industries.length;
           return industries[nextIndex];
         });
-      }, 4000);
+      }, 10000);
     }
 
     return () => {
