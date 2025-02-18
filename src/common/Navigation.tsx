@@ -61,6 +61,14 @@ const NavBar: React.FC = () => {
   }, []);
   const iotSolutiosItems = [
     {
+      title: "Industrial Solutions Overview",
+      desTitle: "Industrial Solutions Overview",
+      learnMoreLink: "/our-industrial-solutions",
+      description:
+        "Transform customer support with skills designed to efficiently solve recurring issues.",
+      links: ["Applications", "Industries", "Who you are"],
+    },
+    {
       title: "Energy Monitoring",
       desTitle: "Energy Monitoring",
       learnMoreLink: "/energy-consumption-monitoring",
@@ -95,14 +103,6 @@ const NavBar: React.FC = () => {
         "Manufacturing Insights",
         "Reports & Analytics",
       ],
-    },
-    {
-      title: "Industrial Solutions Overview",
-      desTitle: "Industrial Solutions Overview",
-      learnMoreLink: "/our-industrial-solutions",
-      description:
-        "Transform customer support with skills designed to efficiently solve recurring issues.",
-      links: ["Applications", "Industries", "Who you are"],
     },
   ];
   const productSolutionsItems = [

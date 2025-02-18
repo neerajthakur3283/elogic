@@ -80,7 +80,7 @@ function ServicesView() {
     {
       cardImg: cardTwoImg,
       cardMobImg: cardTwoMobImg,
-      cardTitle: <>Embedded<br />Software<br />Development</>,
+      cardTitle: <>Embedded<br />Software Design</>,
       cardLink: '/services-overview/embedded-software-design',
       linkText: 'Learn More',
       nextArrow: nextIcon,
