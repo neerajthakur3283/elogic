@@ -19,7 +19,7 @@ function IndustryTopology() {
         >
           <div className="2xl:pb-[40px] xl:pb-[52px] lg:pb-[45px] pb-[40px]">
             <h2 className="text-center text-black 2xl:text-[47px] xl:text-[35px] lg:text-[31px] text-[24px] font-bold">
-              Industrial IoT Solutions
+              Industrial IoT Topology
             </h2>
             <div className="text-[#4B5563] leading-[1.5] 2xl:pt-[20px] xl:pt-[22px] pt-[20px] text-center mx-auto 2xl:max-w-[1015px] 2xl:text-[24px] xl:max-w-[760.5px] xl:text-[18px] lg:max-w-[676px] text-base">
               <p>
