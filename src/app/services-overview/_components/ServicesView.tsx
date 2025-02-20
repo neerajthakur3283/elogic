@@ -80,7 +80,7 @@ function ServicesView() {
     {
       cardImg: cardTwoImg,
       cardMobImg: cardTwoMobImg,
-      cardTitle: <>Embedded<br />Software<br />Development</>,
+      cardTitle: <>Embedded<br />Software Design</>,
       cardLink: '/services-overview/embedded-software-design',
       linkText: 'Learn More',
       nextArrow: nextIcon,
@@ -115,7 +115,7 @@ function ServicesView() {
     {
       cardImg: cardFourImg,
       cardMobImg: cardFourMobImg,
-      cardTitle: <>User Interface<br />Development</>,
+      cardTitle: <>Human machine Interface<br />and <br/> UX development</>,
       cardLink: '/services-overview/human-machine-interface-ux-development',
       linkText: 'Learn More',
       nextArrow: nextIcon,
@@ -152,7 +152,7 @@ function ServicesView() {
     {
       cardImg: cardSixImg,
       cardMobImg: cardSixMobImg,
-      cardTitle: <>Manufacturing<br />support</>,
+      cardTitle: <>Manufacturing<br />and Optimization support</>,
       cardLink: '/services-overview/manufacturing-optimization-support',
       linkText: 'Learn More',
       nextArrow: nextIcon,
@@ -167,7 +167,7 @@ function ServicesView() {
     {
       cardImg: cardSevenImg,
       cardMobImg: cardSevenMobImg,
-      cardTitle: <>Technology<br />Consulting</>,
+      cardTitle: <>Technology & Compliance <br />Consulting</>,
       cardLink: '/services-overview/technology-compliance-consulting',
       linkText: 'Learn More',
       nextArrow: nextIcon,
@@ -182,7 +182,7 @@ function ServicesView() {
     {
       cardImg: cardSevenImg,
       cardMobImg: cardSevenMobImg,
-      cardTitle: <>IoT<br />Application</>,
+      cardTitle: <>Custom IoT <br/> application development</>,
       cardLink: '/services-overview/custom-iot-apps-development',
       linkText: 'Learn More',
       nextArrow: nextIcon,

@@ -10,12 +10,13 @@ function IndustryTopology() {
   return (
     <>
       <section>
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5}}
-          className="2xl:py-[50px] xl:py-[75px] lg:py-[66px] py-[100px] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px]">
+          transition={{ duration: 0.5 }}
+          className="2xl:py-[50px] xl:py-[75px] lg:py-[66px] py-[100px] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px]"
+        >
           <div className="2xl:pb-[40px] xl:pb-[52px] lg:pb-[45px] pb-[40px]">
             <h2 className="text-center text-black 2xl:text-[47px] xl:text-[35px] lg:text-[31px] text-[24px] font-bold">
               Industrial IoT Topology

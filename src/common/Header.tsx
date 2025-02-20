@@ -21,6 +21,7 @@ function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  
   return (
     <>
       <motion.header

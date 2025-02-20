@@ -87,7 +87,7 @@ const IndustriesTabs = () => {
 
   useEffect(() => {
     const checkScreenSize = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 1024);
     };
 
     checkScreenSize();
@@ -109,7 +109,7 @@ const IndustriesTabs = () => {
           const nextIndex = (currentIndex + 1) % industries.length;
           return industries[nextIndex];
         });
-      }, 4000);
+      }, 10000);
     }
 
     return () => {
@@ -117,7 +117,7 @@ const IndustriesTabs = () => {
     };
   }, [isManual, isMobile]);
 
-  const handleTabClick = (industry: any) => {
+  const handleTabClick = (industry: Industry) => {
     setActiveTab(industry);
     setIsManual(true);
 
@@ -154,11 +154,10 @@ const IndustriesTabs = () => {
                 <button
                   key={industry.id}
                   onClick={() => handleTabClick(industry)}
-                  className={`2xl:p-[10px] xl:p-[7.5px] p-[6.67px] text-left border 2xl:rounded-[12px] xl:rounded-[8.4px] md:rounded-[7.74px] rounded-[8px] ${
-                    activeTab.id === industry.id
+                  className={`2xl:p-[10px] xl:p-[7.5px] p-[6.67px] text-left border 2xl:rounded-[12px] xl:rounded-[8.4px] md:rounded-[7.74px] rounded-[8px] ${activeTab.id === industry.id
                       ? "bg-[#E4E7FF] border-[#2F44FF] text-[#101010] font-semibold"
                       : "bg-gray-50 border-gray-300 text-[rgba(16,16,16,0.5)]"
-                  } transition`}
+                    } transition`}
                 >
                   <div className="flex items-center 2xl:gap-[18px] xl:gap-[13.5px] gap-[12px]">
                     <div className="2xl:rounded-[5px] xl:rounded-[3.75px] rounded-[3.33px] overflow-hidden 2xl:w-[70px] md:w-[52.5px] w-[46.67px]">
@@ -207,11 +206,10 @@ const IndustriesTabs = () => {
               <button
                 key={industry.id}
                 onClick={() => setActiveTab(industry)}
-                className={`2xl:p-[10px] xl:p-[7.5px] p-[6.67px] text-left border 2xl:rounded-[12px] xl:rounded-[8.4px] md:rounded-[7.74px] rounded-[8px] ${
-                  activeTab.id === industry.id
+                className={`2xl:p-[10px] xl:p-[7.5px] p-[6.67px] text-left border 2xl:rounded-[12px] xl:rounded-[8.4px] md:rounded-[7.74px] rounded-[8px] ${activeTab.id === industry.id
                     ? "bg-[#E4E7FF] border-[#2F44FF] text-[#101010] font-semibold"
                     : "bg-gray-50 border-gray-300 text-[rgba(16,16,16,0.5)]"
-                } transition`}
+                  } transition`}
               >
                 <div className="flex items-center 2xl:gap-[18px] xl:gap-[13.5px] gap-[12px]">
                   <div className="2xl:rounded-[5px] xl:rounded-[3.75px] rounded-[3.33px] overflow-hidden 2xl:w-[70px] md:w-[52.5px] w-[46.67px]">
