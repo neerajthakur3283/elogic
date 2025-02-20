@@ -24,6 +24,7 @@ const NavBar: React.FC = () => {
     }
   };
 
+  
   const toggleServices = () => {
     setIsServicesOpen((prev) => !prev);
     if (isIotSolutionsOpen) {
