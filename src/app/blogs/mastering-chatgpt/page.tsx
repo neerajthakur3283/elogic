@@ -12,6 +12,7 @@ import { FaLinkedin, FaSquareXTwitter } from "react-icons/fa6";
 // images
 import downArrow from "@/src/assets/images/downarrow.svg";
 import RelatedBlogs from "./_components/RelatedBlogs";
+import TalkToExpert from "@/src/common/TalkToExpert";
 
 function Page() {
   const sections = useMemo(
@@ -227,6 +228,7 @@ function Page() {
         </div>
       </section>
       <RelatedBlogs />
+      <TalkToExpert/>
     </>
   );
 }

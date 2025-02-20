@@ -37,7 +37,7 @@ const RoadMap = () => {
       image: firstMap,
     },
     {
-      year: "Heading here",
+      year: "2025",
       description:
         "5+ clients and their customers' assets  onboarded onto our cloud platform",
       image: firstMap,

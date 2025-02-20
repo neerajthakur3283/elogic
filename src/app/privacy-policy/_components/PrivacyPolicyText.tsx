@@ -121,7 +121,7 @@ function PrivacyPolicyText() {
       <section>
         <div className="bg-[#EEF1F5] 2xl:pt-[100px] xl:pt-[75px] lg:pt-[66px] md:pt-[45px] pt-[50px] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] md:pb-0 pb-12">
           <div className="flex 2xl:gap-[30px] md:flex-nowrap flex-wrap">
-            <div className="md:hidden w-full mb-[40px]">
+            <div className="hidden w-full mb-[40px]">
               <button
                 className="text-[#1B1B1F] text-[18px] font-semibold py-2 rounded-lg w-full flex justify-between items-center"
                 onClick={() => setDropdownOpen(!dropdownOpen)}

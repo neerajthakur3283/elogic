@@ -4,6 +4,7 @@ import PlatformFeatures from './_components/PlatformFeatures'
 import CostControlAllocation from './_components/CostControlAllocation'
 import SmartFaultDetection from './SmartFaultDetection'
 import Hardware from './_components/Hardware'
+import TalkToExpert from '@/src/common/TalkToExpert'
 
 function page() {
   return (
@@ -13,6 +14,7 @@ function page() {
         <CostControlAllocation/>
         <SmartFaultDetection/>
         <Hardware/>
+        <TalkToExpert/>
     </>
   )
 }

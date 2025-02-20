@@ -5,6 +5,7 @@ import YouAre from "./_components/YouAre";
 import Industries from "./_components/Industries";
 import HardwareEcosystem from "./_components/HardwareEcosystem";
 import OurProcess from "./_components/OurProcess";
+import TalkToExpert from "@/src/common/TalkToExpert";
 
 function page() {
   return (
@@ -15,6 +16,7 @@ function page() {
       <YouAre />
       <HardwareEcosystem />
       <OurProcess />
+      <TalkToExpert/>
     </>
   );
 }

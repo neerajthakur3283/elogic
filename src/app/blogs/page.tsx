@@ -8,6 +8,7 @@ import blogTwo from "@/src/assets/images/blog-2.jpg";
 import blogThree from "@/src/assets/images/blog-3.jpg";
 import blogFour from "@/src/assets/images/blog-4.jpg";
 import PaginationWithEllipsis from "@/src/common/Pagination";
+import TalkToExpert from "@/src/common/TalkToExpert";
 
 function page() {
   const blogCardData = [
@@ -102,6 +103,7 @@ function page() {
           </div>
         </div>
       </section>
+      <TalkToExpert/>
     </>
   );
 }

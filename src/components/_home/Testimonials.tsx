@@ -47,7 +47,7 @@ function Testimonials() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.5}}
-        className="bg-[#EEF1F5] 2xl:pt-[140px] xl:pt-[105px] lg:pt-[90px] md:pt-[70px] pt-[60px] overflow-hidden 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] 2xl:pb-[100px] xl:pb-[75px] md:pb-[66px] pb-[100px]">
+        className="bg-[#EEF1F5] 2xl:pt-[140px] xl:pt-[105px] lg:pt-[90px] md:pt-[70px] pt-[60px] overflow-hidden 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px]">
           <div className="relative">
             <div className="">
               <h2 className="text-[#1D3157] 2xl:text-[47px] xl:text-[35px] lg:text-[31px] text-[24px] font-bold">

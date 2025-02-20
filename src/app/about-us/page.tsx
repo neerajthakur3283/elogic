@@ -5,6 +5,7 @@ import TeamInfo from './_components/TeamInfo'
 import VisionMission from './_components/VisionMission'
 import OurCulturedValues from './_components/OurCulturedValues'
 import RoadMap from './_components/RoadMap'
+import TalkToExpert from '@/src/common/TalkToExpert'
 
 function page() {
   return (
@@ -15,6 +16,7 @@ function page() {
         <VisionMission />
         <OurCulturedValues />
         <RoadMap />
+        <TalkToExpert/>
     </>
   )
 }

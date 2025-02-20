@@ -5,6 +5,7 @@ import CostControlAllocation from './_components/CostControlAllocation'
 import SmartFaultDetection from './SmartFaultDetection'
 import ComplianceReporting from './_components/ComplianceReporting'
 import Hardware from './_components/Hardware'
+import TalkToExpert from '@/src/common/TalkToExpert'
 
 function page() {
   return (
@@ -15,6 +16,7 @@ function page() {
         <SmartFaultDetection/>
         <ComplianceReporting/>
         <Hardware/>
+        <TalkToExpert/>
     </>
   )
 }

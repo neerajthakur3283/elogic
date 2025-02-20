@@ -8,7 +8,7 @@ function TalkToExpert() {
   return (
     <>
       <section>
-        <div className="bg-[#EEF1F5] 2xl:py-[100px] xl:py-[75px] lg:py-[66px] md:py-[30px] pb-[50px] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px]">
+        <div className="bg-[#EEF1F5] 2xl:py-[100px] xl:py-[75px] lg:py-[66px] md:py-[30px] py-[50px] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px]">
           <motion.div 
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}

@@ -26,7 +26,7 @@ function PlatformFeatures() {
                             </h2>
                         </div>
                         <div className="text-[#4B5563] font-medium leading-snug w-full 2xl:max-w-[771.19px] xl:max-w-[578px] lg:max-w-[514px] md:max-w-[420px] 2xl:text-[24px] xl:text-[18px] text-base">
-                            Use captured machine parameters to build intelligent maintenance strategies with our condition monitoring platform. Get real-time health insights, predictive maintenance alerts, and automated diagnostics to optimize equipment performance and prevent costly downtime.
+                        Convert complex production data into clear operational advantages with our comprehensive machine monitoring platform. Get real-time visibility, downtime analysis, and automated reporting to optimize your manufacturing efficiency and maximize equipment effectiveness.
                             <div className="2xl:pt-[40px] xl:pt-[30px] md:pt-[26px] pt-[20px]">
                                 <Link className="bg-[#3563E9] text-white px-[2] w-full 2xl:max-w-[275px] xl:max-w-[209px] md:max-w-[175.44px] max-w-[195px] 2xl:h-[52px] xl:h-[39px] md:h-[35px] h-[40.29px] flex justify-center items-center py-[2px] 2xl:text-[20px] xl:text-[15px] md:text-[13.33px] text-[15.24px] md:font-bold font-semibold rounded-[16px] capitalize duration-500 hover:bg-black hover:text-white"
                                     href="/contact-us">Schedule a demo <MdArrowOutward className="ms-2.5" /></Link>

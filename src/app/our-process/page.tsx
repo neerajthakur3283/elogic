@@ -5,6 +5,7 @@ import WhyChooseCard from './_components/WhyCard'
 import TeamInfo from './_components/TeamInfo';
 import WhatYouGiveUs from './_components/WhatYouGiveUs';
 import DesignDevelop from './_components/DesignDevelop';
+import TalkToExpert from '@/src/common/TalkToExpert';
 
 function page() {
   const cardData = [
@@ -37,6 +38,7 @@ function page() {
         <TeamInfo />
         <WhatYouGiveUs/>
         <DesignDevelop />
+        <TalkToExpert/>
     </>
   )
 }
