@@ -59,6 +59,7 @@ const NavBar: React.FC = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+  
   const iotSolutiosItems = [
     {
       title: "Industrial Solutions Overview",
