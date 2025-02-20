@@ -60,12 +60,12 @@ const RoadMap = () => {
                         index % 2 === 1 ? "flex-row" : "flex-row-reverse"
                         } `}
                     >
-                        <div className="step-line xl:ps-[14px] xl:pt-[14px] xl:pe-[14px] bg-no-repeat bg-[url('../images/step-card-bg.svg')] 2xl:pb-[10px] xl:pb-[25px] relative after:absolute after:w-[300px] after:h-[3px] after:bg-[#3563E9] after:z-[-1]">
+                        <div className="step-line step-card:[nth-child(2)_.step-line]:bg-[url('../images/step-card-bg-large.svg')] xl:ps-[14px] xl:pt-[14px] xl:pe-[14px] bg-no-repeat bg-[url('../images/step-card-bg.svg')] 2xl:pb-[10px] xl:pb-[25px] relative after:absolute after:w-[300px] after:h-[3px] after:bg-[#3563E9] after:z-[-1]">
                         <div className="xl:w-[422px]">
                             <Image className="rounded-[13px_13px_0_0]" src={item.image} alt={item.year} />
                             <div className="2xl:p-[24px] xl:p-[20px]">
                                 <h3 className="text-black font-bold 2xl:text-[24px] xl:text-[18px] text-base">{item.year}</h3>
-                                <p className="text-black text-[15px] mt-[15px]">{item.description}</p>
+                                <p className="text-black 2xl:text-[15px] xl:text-[11.25px] text-[10px] mt-[15px]">{item.description}</p>
                             </div>
                         </div>
                         </div>

@@ -17,3 +17,6 @@
 .expmpl-apps li:last-child .list-points{
     height: auto;
 }
+.step-card:nth-child(2) .step-line{
+    /* background-image: url("../images/step-card-bg-large.svg"); */
+}
