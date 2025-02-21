@@ -39,6 +39,7 @@ const NavBar: React.FC = () => {
       setIsIotSolutionsOpen(false);
     }
   };
+  
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
