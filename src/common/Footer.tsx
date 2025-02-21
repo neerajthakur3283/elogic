@@ -5,6 +5,7 @@ import React from "react";
 import { FaPhone } from "react-icons/fa6";
 import { FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { MdArrowOutward } from 'react-icons/md'
 
 // images
 import footerLogo from "@/src/assets/images/footer-logo.svg";
@@ -21,106 +22,165 @@ function Footer() {
         viewport={{ once: true }}
         transition={{ duration: 0.8, delay: 0.3}}
         className="bg-[#172747] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] 2xl:py-[100px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px] 2xl:rounded-ss-[100px] xl:rounded-ss-[75px] md:rounded-ss-[66px] rounded-ss-[40px] 2xl:rounded-se-[100px] xl:rounded-se-[75px] md:rounded-se-[66px] rounded-se-[40px] max-[767px]:pb-[30px]">
-          <div className="md:flex items-start 2xl:gap-x-[192.5px] xl:gap-x-[144px] lg:gap-x-[128px] max-[1200px]:!gap-x-[80px] max-[991px]:!gap-x-[30px] max-[790px]:!gap-x-[20px] max-[991px]:justify-around hidden">
-            <div className="w-full 2xl:max-w-[430px] xl:max-w-[322.5px] lg:max-w-[286.67px] max-[1200px]:max-w-[250.67px]">
+          <div className="flex items-start 2xl:gap-x-[85px] xl:gap-x-[60px] lg:gap-x-[70px] max-[1200px]:!gap-x-[40px] max-[991px]:!gap-x-[30px] max-[790px]:!gap-x-[20px] max-[991px]:justify-around max-[767px]:flex-wrap">
+            <div className="w-full 2xl:max-w-[430px] xl:max-w-[322.5px] lg:max-w-[286.67px] max-[1200px]:max-w-[250.67px] max-[767px]:max-w-full">
               <Image
                 className="2xl:w-[200px] xl:w-[150px] lg:w-[133px] md:w-[125px]"
                 src={footerLogo}
                 alt=""
               />
-              <div className="2xl:text-[16px] xl:text-[12px] md:text-[10.67px] 2xl:pt-[32px] xl:pt-[24px] md:pt-[15px] text-white font-normal tracking-[-0.4px]">
+              <div className="2xl:text-[14.5px] xl:text-[12px] md:text-[10.67px] 2xl:pt-[32px] xl:pt-[24px] pt-[15px] text-white font-normal tracking-[-0.4px]">
                 We Provide Cutting Edge Solutions To Hardware And Software
                 Clients Across Various Industries
               </div>
             </div>
-            <div className="w-full 2xl:max-w-[148px] xl:max-w-[110px] lg:max-w-[98px] max-[1200px]:max-w-[94px]">
-              <ul className="flex flex-col xl:gap-y-[24px] lg:gap-y-[21px] md:gap-y-[16px] 2xl:text-[16px] xl:text-[12px] md:text-[10.67px] tracking-[-0.4px]">
+            <div className="w-full 2xl:max-w-[218px] xl:max-w-[180px] lg:max-w-[155px] max-[1200px]:max-w-[94px] max-[767px]:max-w-full md:mt-0 mt-8">
+              <h4 className="mb-3 text-white font-bold 2xl:text-[18px] xl:text-[14.5px] md:text-[13.75px] text-[17px]">Industrial IoT Solutions</h4>
+              <ul className="flex flex-col xl:gap-y-[22px] lg:gap-y-[19px] md:gap-y-[17px] gap-y-[15px] 2xl:text-[14.5px] xl:text-[12px] md:text-[10.67px] tracking-[-0.4px]">
                 <li>
-                  <Link href="" className="text-white">
-                    Digital Invoice
+                  <Link href="/our-industrial-solutions" className="text-white">
+                    Overview
                   </Link>
                 </li>
                 <li>
-                  <Link href="" className="text-white">
-                    Insights
+                  <Link href="/energy-consumption-monitoring" className="text-white">
+                  Energy Monitoring
                   </Link>
                 </li>
                 <li>
-                  <Link href="" className="text-white">
-                    Reimbursements
+                  <Link href="/machine-condition-monitoring" className="text-white">
+                  Condition Monitoring
                   </Link>
                 </li>
                 <li>
-                  <Link href="" className="text-white">
-                    Virtual Assistant
-                  </Link>
-                </li>
-                <li>
-                  <Link href="" className="text-white">
-                    Artificial Intelligence
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className="w-full 2xl:max-w-[93px] xl:max-w-[70px] md:max-w-[62px]">
-              <ul className="flex flex-col xl:gap-y-[24px] lg:gap-y-[21px] md:gap-y-[16px] 2xl:text-[16px] xl:text-[12px] md:text-[10.67px] tracking-[-0.4px]">
-                <li>
-                  <Link href="/about-us" className="text-white">
-                    About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link href="" className="text-white">
-                    Newsletters
-                  </Link>
-                </li>
-                <li>
-                  <Link href="" className="text-white">
-                    Our Partners
-                  </Link>
-                </li>
-                <li>
-                  <Link href="" className="text-white">
-                    Career
+                  <Link href="/oee-and-production-monitoring" className="text-white">
+                  Productivity Monitoring
                   </Link>
                 </li>
                 <li>
                   <Link href="/contact-us" className="text-white">
-                    Contact Us
+                    Custom Solutions
+                  </Link>
+                </li>
+                <li>
+                  <Link href="" className="text-white">
+                    Case Studies
                   </Link>
                 </li>
               </ul>
             </div>
-            <div className="w-full 2xl:max-w-[107px] xl:max-w-[81px] md:max-w-[72px]">
-              <ul className="flex flex-col xl:gap-y-[24px] lg:gap-y-[21px] md:gap-y-[16px] 2xl:text-[16px] xl:text-[12px] md:text-[10.67px] tracking-[-0.4px]">
+            <div className="w-full 2xl:max-w-[270px] xl:max-w-[215px] md:max-w-[190px] md:my-0 my-8">
+            <h4 className="mb-3 text-white font-bold 2xl:text-[18px] xl:text-[14.5px] md:text-[13.75px] text-[17px]">Product Development</h4>
+              <ul className="flex flex-col xl:gap-y-[22px] lg:gap-y-[19px] md:gap-y-[17px] gap-y-[15px] 2xl:text-[14.5px] xl:text-[12px] md:text-[10.67px] tracking-[-0.4px]">
                 <li>
-                  <Link href="/blogs" className="text-white">
-                    Blog
+                  <Link href="/services-overview" className="text-white">
+                    Overview
                   </Link>
                 </li>
                 <li>
-                  <Link href="" className="text-white">
-                    Pricing
+                  <Link href="/services-overview/embedded-hardware-design" className="text-white">
+                  Embedded Hardware Design
                   </Link>
                 </li>
                 <li>
-                  <Link href="" className="text-white">
-                    FAQ
+                  <Link href="/services-overview/embedded-software-design" className="text-white">
+                  Embedded Software Design
                   </Link>
                 </li>
                 <li>
-                  <Link href="" className="text-white">
-                    Events
+                  <Link href="/services-overview/human-machine-interface-ux-development" className="text-white">
+                  Human-machine Interface Development
                   </Link>
                 </li>
                 <li>
-                  <Link href="" className="text-white">
-                    Ebook & Guide
+                  <Link href="/services-overview/wireless-systems-development" className="text-white">
+                    Wireless Systems Development
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services-overview/mechanical-and-industrial-design" className="text-white">
+                  Mechanical & Industrial Design
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services-overview/manufacturing-optimization-support" className="text-white">
+                  Manufacturing Support
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services-overview/custom-iot-apps-development" className="text-white">
+                  IoT application Development
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services-overview/technology-compliance-consulting" className="text-white">
+                  Technology Consulting
                   </Link>
                 </li>
               </ul>
             </div>
-            <div className="w-full 2xl:max-w-[230px] xl:max-w-[172.5px] md:max-w-[153.33px] 2xl:text-[14px] xl:text-[10.5px] md:text-[9.33px]  text-white flex flex-col gap-y-[25px] xl:gap-y-[21px] lg:gap-y-[19px] md:gap-y-[16px]">
+            <div className="w-full 2xl:max-w-[155px] xl:max-w-[140px] md:max-w-[105px] max-[767px]:flex max-[767px]:justify-between max-[480px]:flex-wrap max-[480px]:flex-col max-[480px]:gap-[30px]">
+            
+            <div>
+              <h4 className="mb-3 text-white font-bold 2xl:text-[18px] xl:text-[14.5px] md:text-[13.75px] text-[17px]">Products</h4>
+                <ul className="flex flex-col xl:gap-y-[22px] lg:gap-y-[19px] md:gap-y-[17px] gap-y-[15px] 2xl:text-[14.5px] xl:text-[12px] md:text-[10.67px] tracking-[-0.4px]">
+                  <li>
+                    <Link href="/blogs" className="text-white">
+                      Edge Connect Series
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="" className="text-white">
+                    Field Connect Series
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            
+            <div className="md:my-6">
+              <h4 className="mb-3 text-white font-bold 2xl:text-[18px] xl:text-[14.5px] md:text-[13.75px] text-[17px]">About Us</h4>
+                <ul className="flex flex-col xl:gap-y-[22px] lg:gap-y-[19px] md:gap-y-[17px] gap-y-[15px] 2xl:text-[14.5px] xl:text-[12px] md:text-[10.67px] tracking-[-0.4px]">
+                  <li>
+                    <Link href="/about-us" className="text-white">
+                      Overview
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/our-process" className="text-white">
+                    Our Process
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/our-team" className="text-white">
+                    Team
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/careers" className="text-white">
+                    Careers
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            
+            <div>
+              <h4 className="mb-3 text-white font-bold 2xl:text-[18px] xl:text-[14.5px] md:text-[13.75px] text-[17px]">Media</h4>
+                <ul className="flex flex-col xl:gap-y-[22px] lg:gap-y-[19px] md:gap-y-[17px] gap-y-[15px] 2xl:text-[14.5px] xl:text-[12px] md:text-[10.67px] tracking-[-0.4px]">
+                  <li>
+                    <Link href="/blogs" className="text-white">
+                      Blogs
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="" className="text-white">
+                    Press
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+            <div className="w-full 2xl:max-w-[230px] xl:max-w-[172.5px] md:max-w-[153.33px] 2xl:text-[14px] xl:text-[10.5px] md:text-[9.33px]  text-white flex flex-col gap-y-[25px] xl:gap-y-[21px] lg:gap-y-[19px] md:gap-y-[16px] md:mt-0 mt-8">
               <span className="capitalize">Contact us</span>
               <div className="flex flex-col 2xl:gap-y-[26px] xl:gap-y-[22px] lg:gap-y-[19px] md:gap-y-[16px]">
                 <Link
@@ -152,147 +212,23 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div className="copyright 2xl:pt-[122px] xl:pt-[96px] lg:pt-[85px] md:pt-[65px] tracking-[-0.4px] md:inline-block w-full hidden">
-            <div className="border-t border-t-[rgba(255,255,255,0.4)] flex justify-between items-center 2xl:pt-[32px] xl:pt-[23px] md:pt-[21px]">
+          <div className="copyright 2xl:pt-[122px] xl:pt-[96px] lg:pt-[85px] md:pt-[65px] pt-[40px] tracking-[-0.4px] inline-block w-full">
+            <div className="border-t border-t-[rgba(255,255,255,0.4)] flex justify-between items-center 2xl:pt-[32px] xl:pt-[23px] pt-[21px] max-[575px]:flex-col max-[575px]:gap-5">
               <div className="flex items-center capitalize 2xl:text-[18px] xl:text-[13.5px] md:text-[12px]">
                 <Link
                   href="/privacy-policy"
                   className="flex items-center text-white font-semibold"
                 >
                   Privacy Policy{" "}
-                  <span className="flex w-[1px] bg-[#747D91] 2xl:h-[20px] xl:h-[15px] md:h-[13px] 2xl:mx-[32px] xl:mx-[24px] lg:mx-[21px] md:mx-[18px]"></span>
+                  {/* <span className="flex w-[1px] bg-[#747D91] 2xl:h-[20px] xl:h-[15px] md:h-[13px] 2xl:mx-[32px] xl:mx-[24px] lg:mx-[21px] md:mx-[18px]"></span> */}
                 </Link>
-                <Link
-                  href="/"
-                  className="flex items-center text-white font-semibold"
-                >
-                  Terms & Conditions
-                  <span className="flex w-[1px] bg-[#747D91] 2xl:h-[20px] xl:h-[15px] md:h-[13px] 2xl:mx-[32px] xl:mx-[24px] lg:mx-[21px] md:mx-[18px]"></span>
-                </Link>
-                <Link
-                  href="/"
-                  className="flex items-center text-white font-semibold"
-                >
-                  Cookie Policy
-                </Link>
+                <div className="sm:ms-5 ms-3">
+                    <Link className="bg-[#3563E9] text-white px-[2] w-full 2xl:min-w-[275px] xl:min-w-[209px] md:min-w-[175.44px] sm:min-w-[195px] min-w-[175px] 2xl:h-[52px] xl:h-[39px] md:h-[35px] h-[40.29px] flex justify-center items-center py-[2px] 2xl:text-[20px] xl:text-[15px] md:text-[13.33px] text-[15.24px] md:font-bold font-semibold rounded-[16px] capitalize duration-500 hover:bg-white hover:text-black"
+                        href="/contact-us">Schedule a demo <MdArrowOutward className="ms-2.5" /></Link>
+                </div>
               </div>
-              <div className="text-white font-medium 2xl:text-[16px] xl:text-[12px] md:text-[10.67px]">
-                ©Elogictech Edge 2024
-              </div>
-            </div>
-          </div>
-
-          <div className="md:hidden flex flex-col w-full">
-            <div className="flex justify-between items-start w-full">
-              <div className="">
-                <ul className="flex flex-col text-[14px] gap-[12px]">
-                  <li>
-                    <Link href="" className="text-white">
-                      Home
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="" className="text-white">
-                      Industrial IoT
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="" className="text-white">
-                      Smart Building
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="" className="text-white">
-                      Services
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="">
-                <ul className="flex flex-col text-[14px] gap-[12px]">
-                  <li>
-                    <Link href="/about-us" className="text-white">
-                      About Us
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="" className="text-white">
-                      Careers
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="" className="text-white">
-                      Our Work
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/our-team" className="text-white">
-                      Our Team
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="">
-                <ul className="flex flex-col text-[14px] gap-[12px]">
-                  <li>
-                    <Link href="" className="text-white">
-                      Media
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="" className="text-white">
-                      Our Process
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/privacy-policy" className="text-white">
-                      Privacy Policy
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/our-team" className="text-white">
-                      Our Team
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="my-[42px] text-white font-roboto text-[14px] gap-y-[12px] flex flex-col">
-              <span className="capitalize">Contact us</span>
-              <div className="flex flex-col gap-y-[12px]">
-                <Link
-                  href="tel:+919177444992"
-                  className="flex items-center gap-[8px] text-white"
-                >
-                  <span className="w-[20px] flex">
-                    <FaPhone className="text-lg" />
-                  </span>{" "}
-                  +91 9177444992
-                </Link>
-                <Link
-                  href="mailto:info.edge@Elogictech.com"
-                  className="flex items-center gap-[8px] text-white"
-                >
-                  <span className="w-[20px] flex">
-                    <FaEnvelope className="text-lg" />
-                  </span>{" "}
-                  info.edge@Elogictech.com
-                </Link>
-              </div>
-              <div className="flex gap-[10px]">
-                <Image className="w-[18px]" src={linkedinImg} alt="" />
-                <span>Follow Us On</span>
-              </div>
-            </div>
-
-            <div>
-              <div>
-                <Image src={mobLogo} alt="" />
-              </div>
-              <div className="text-white text-[12.89px] mt-4">
-                We Provide Cutting Edge Solutions To Hardware And Software
-                Clients Across Various Industries
+              <div className="text-white font-medium 2xl:text-[14.5px] xl:text-[12px] md:text-[10.67px]">
+                ©Elogictech Edge 2025
               </div>
             </div>
           </div>

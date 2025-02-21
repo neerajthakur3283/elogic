@@ -1,13 +1,15 @@
 "use client";
-
+import Image from "next/image";
 import { useState, useEffect } from "react";
 
+import projectOne from '@/src/assets/images/power-distribution.jpg'
+
 const projects = [
-  { name: <>Power Distribution <br/>Board</>, client: "Picaso" },
-  { name: <>Wireless Voting <br/>System</>, client: "Client Name" },
-  { name: <>Smarthome <br/>Automation Controller</>, client: "Client Name" },
-  { name: <>Project Name 1</>, client: "Client Name" },
-  { name: <>Project Name 2</>, client: "Client Name" },
+    { name: <>Power Distribution<br/>Board</>, client: "Picaso",},
+    { name: <>Wireless Voting <br/>System</>, client: "Client Name",},
+    { name: <>Smarthome <br/>Automation Controller</>, client: "Client Name",},
+    { name: <>Project Name 1</>, client: "Client Name",},
+    { name: <>Project Name 2</>, client: "Client Name",},
 ];
 
 export default function Projects() {
@@ -22,10 +24,14 @@ export default function Projects() {
     return () => clearInterval(interval);
   }, []);
 
+  const projectDes = [
+    {projectImg:projectOne,projectTag:'Commercial/Industrial Robotics',clientName:'Picaso', projectTitle:'Power Distribution Board'}
+  ]
+
   return (
     <section>
         <div className="2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] 2xl:py-[100px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px]">
-            <div className="flex items-start">
+            <div className="flex items-start 2xl:gap-[54px]">
                 {/* Sidebar Timeline */}
                 <div className="2xl:w-[383px]">
                     <h2 className="text-2xl font-bold mb-4">Projects</h2>
@@ -49,7 +55,7 @@ export default function Projects() {
                                 index === currentIndex ? "bg-[#3563E9] after:bg-[#DAE2FB] after:-z-[1]" : "bg-[#D7DBE1]"
                             }`}
                             ></div>
-                            {project.name}
+                            <div className="min-h-[66px] flex items-center">{project.name}</div>
                         </li>
                         ))}
                     </ul>
@@ -58,22 +64,27 @@ export default function Projects() {
 
                 {/* Project Details Card */}
                 <div className="2xl:w-[calc(100%_-_383px)] bg-[#051731] 2xl:rounded-[17.78px] xl:rounded-[12px] rounded-[10px] 2xl:p-[44px]">
-                    <div className="relative w-full h-60 bg-gradient-to-r from-pink-500 to-orange-500 rounded-lg">
-                    <img
-                        src="/project-image.jpg"
-                        alt={projects[currentIndex].name}
-                        className="absolute inset-0 w-full h-full object-cover opacity-60 rounded-lg"
-                    />
-                    <div className="absolute inset-0 flex flex-col justify-center items-center text-white">
-                        <span className="rounded-full font-medium 2xl:text-base xl:text-[15px] md:text-[14px] text-[12px] bg-[rgba(0,0,0,0.32)] 2xl:px-[22px] xl:px-[18px] px-[15px] 2xl:py-[8px] xl:py-[7px] py-[6px]">
-                        Commercial/Industrial Robotics
-                        </span>
-                        <h2 className="font-semibold 2xl:text-[32px] xl:text-[28px] md:text-[25px] text-[22px]">
-                        {projects[currentIndex].name}
-                        </h2>
-                        <p className="2xl:text-[18px] xl:text-[13.5px] md:text-[12px] text-[11.22px]"><span className="font-semibold">Client Name:</span> {projects[currentIndex].client}</p>
-                    </div>
-                    </div>
+                    {projectDes.map((data,subindex)=>(
+                        <div key={subindex}>
+                            <div className="relative w-full after:bg-from-[#000000] after:to-[#000000] after:bg-linear-to-t after:absolute after:left-0 after:bottom-0 after:h-full after:w-full after:z-[1]">
+                                <Image
+                                    src={data.projectImg}
+                                    alt="Project"
+                                    width={1920}
+                                    className="w-full h-full object-cover rounded-lg"
+                                />
+                                <div className="absolute bottom-0 2xl:p-[40px] xl:p-[30px] md:p-[26px] p-[30px] w-full text-white">
+                                    <span className="rounded-full font-medium 2xl:text-base xl:text-[15px] md:text-[14px] text-[12px] bg-[rgba(0,0,0,0.32)] 2xl:px-[22px] xl:px-[18px] px-[15px] 2xl:py-[8px] xl:py-[7px] py-[6px]">
+                                    {data.projectTag}
+                                    </span>
+                                    <h2 className="font-semibold 2xl:text-[32px] xl:text-[28px] md:text-[25px] text-[22px] 2xl:my-2">
+                                    {data.projectTitle}
+                                    </h2>
+                                    <p className="2xl:text-[18px] xl:text-[13.5px] md:text-[12px] text-[11.22px]"><span className="font-semibold">Client Name:</span> {data.clientName}</p>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
 
                     {/* Content Sections */}
                     <div className="mt-6">
