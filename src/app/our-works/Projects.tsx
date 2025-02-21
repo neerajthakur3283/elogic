@@ -65,13 +65,13 @@ export default function Projects() {
                         className="absolute inset-0 w-full h-full object-cover opacity-60 rounded-lg"
                     />
                     <div className="absolute inset-0 flex flex-col justify-center items-center text-white">
-                        <span className="text-sm bg-black bg-opacity-50 px-3 py-1 rounded-md">
+                        <span className="rounded-full font-medium 2xl:text-base xl:text-[15px] md:text-[14px] text-[12px] bg-[rgba(0,0,0,0.32)] 2xl:px-[22px] xl:px-[18px] px-[15px] 2xl:py-[8px] xl:py-[7px] py-[6px]">
                         Commercial/Industrial Robotics
                         </span>
-                        <h2 className="text-2xl font-bold mt-2">
+                        <h2 className="font-semibold 2xl:text-[32px] xl:text-[28px] md:text-[25px] text-[22px]">
                         {projects[currentIndex].name}
                         </h2>
-                        <p className="text-sm">Client Name: {projects[currentIndex].client}</p>
+                        <p className="2xl:text-[18px] xl:text-[13.5px] md:text-[12px] text-[11.22px]"><span className="font-semibold">Client Name:</span> {projects[currentIndex].client}</p>
                     </div>
                     </div>
 
