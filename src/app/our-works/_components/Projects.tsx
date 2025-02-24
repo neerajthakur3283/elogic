@@ -616,7 +616,7 @@ export default function Projects() {
   const scrollContainerRef = useRef<HTMLUListElement>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
-  const [lineHeight, setLineHeight] = useState("0px");
+  // const [lineHeight, setLineHeight] = useState("0px");
 
   useEffect(() => {
     const id = setInterval(() => {
@@ -656,7 +656,7 @@ export default function Projects() {
       for (let i = 0; i <= index; i++) {
         newHeight += listItems[i].clientHeight + 20;
       }
-      setLineHeight(`${newHeight}px`);
+      // setLineHeight(`${newHeight}px`);
     }
   };
 
