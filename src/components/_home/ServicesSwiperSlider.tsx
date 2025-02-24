@@ -92,6 +92,7 @@ export default function CircularSlider() {
   const handleDotClick = (index: number) => {
     setActiveIndex(index);
   };
+  
 
   return (
     <div className="flex flex-col justify-center items-center relative w-full m-auto overflow-hidden 2xl:h-[590px] xl:h-[510px] lg:h-[415px] md:h-[375px] sm:h-[780px] max-[639px]:h-[630px]">
