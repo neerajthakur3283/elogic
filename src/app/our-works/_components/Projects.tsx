@@ -614,59 +614,51 @@ const projects = [
 
 export default function Projects() {
   const scrollContainerRef = useRef<HTMLUListElement>(null);
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const circlesRef = useRef<(HTMLDivElement | null)[]>([]);
+  const userInteractedRef = useRef(false);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
-  // const [lineHeight, setLineHeight] = useState("0px");
-
-  useEffect(() => {
-    const id = setInterval(() => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === projects.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 4000);
-
-    return () => {
-      if (id) {
-        clearInterval(id);
-      }
-    };
-  }, []);
-
-  const startAutoSwitch = () => {
-    if (intervalRef.current) {
-      clearInterval(intervalRef.current);
-    }
-    intervalRef.current = setInterval(() => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === projects.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 4000);
-  };
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [lineHeight, setLineHeight] = useState<number>(0);
 
   const handleClick = (index: number) => {
     setCurrentIndex(index);
-    startAutoSwitch();
-    //updateLineHeight(index);
+    userInteractedRef.current = true;
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+    }
   };
 
-  // const updateLineHeight = (index: number) => {
-  //   if (scrollContainerRef.current) {
-  //     const listItems = scrollContainerRef.current.children;
-  //     let newHeight = 0;
-  //     for (let i = 0; i <= index; i++) {
-  //       newHeight += listItems[i].clientHeight + 20;
-  //     }
-  //     // setLineHeight(`${newHeight}px`);
-  //   }
-  // };
+  const startAutomation = () => {
+    if (!userInteractedRef.current) {
+      intervalRef.current = setInterval(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % projects.length);
+      }, 4000);
+    }
+  };
 
   useEffect(() => {
-    if (scrollContainerRef.current) {
-      const itemHeight = 60;
-      scrollContainerRef.current.scrollTo({
-        top: currentIndex * itemHeight,
-        behavior: "smooth",
-      });
+    const resetUserInteraction = setTimeout(() => {
+      userInteractedRef.current = false;
+      startAutomation();
+    }, 15000);
+
+    return () => clearTimeout(resetUserInteraction);
+  }, [currentIndex]);
+
+  useEffect(() => {
+    startAutomation();
+    return () => {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (circlesRef.current[currentIndex]) {
+      const containerTop =
+        scrollContainerRef.current?.getBoundingClientRect().top || 0;
+      const activeCircleTop =
+        circlesRef.current[currentIndex]?.getBoundingClientRect().top || 0;
+      setLineHeight(activeCircleTop - containerTop);
     }
   }, [currentIndex]);
 
@@ -680,7 +672,10 @@ export default function Projects() {
               <div className="absolute h-full w-1 bg-gray-300 max-h-[90vh] -z-[1] timeline-custom">
                 <div
                   className="absolute left-0 w-1 bg-blue-500 transition-all duration-300"
-                  //style={{ height: lineHeight }}
+                  style={{
+                    height: `${lineHeight}px`,
+                    top: "5px",
+                  }}
                 />
               </div>
               <ul
@@ -698,6 +693,9 @@ export default function Projects() {
                     onClick={() => handleClick(index)}
                   >
                     <div
+                      ref={(el) => {
+                        circlesRef.current[index] = el;
+                      }}
                       style={{
                         boxShadow:
                           index == currentIndex
