@@ -4,7 +4,7 @@ import React from 'react'
 import { MdArrowOutward } from 'react-icons/md'
 
 // images
-import fiverrImg from '@/src/assets/images/fiverr-pro.png'
+import fiverrImg from '@/src/assets/images/fiverr-pro.svg'
 import iconOne from '@/src/assets/images/increase.svg'
 import AnalysticCard from './AnalysticCard'
 
