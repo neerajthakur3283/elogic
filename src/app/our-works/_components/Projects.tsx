@@ -646,19 +646,19 @@ export default function Projects() {
   const handleClick = (index: number) => {
     setCurrentIndex(index);
     startAutoSwitch();
-    updateLineHeight(index);
+    //updateLineHeight(index);
   };
 
-  const updateLineHeight = (index: number) => {
-    if (scrollContainerRef.current) {
-      const listItems = scrollContainerRef.current.children;
-      let newHeight = 0;
-      for (let i = 0; i <= index; i++) {
-        newHeight += listItems[i].clientHeight + 20;
-      }
-      // setLineHeight(`${newHeight}px`);
-    }
-  };
+  // const updateLineHeight = (index: number) => {
+  //   if (scrollContainerRef.current) {
+  //     const listItems = scrollContainerRef.current.children;
+  //     let newHeight = 0;
+  //     for (let i = 0; i <= index; i++) {
+  //       newHeight += listItems[i].clientHeight + 20;
+  //     }
+  //     // setLineHeight(`${newHeight}px`);
+  //   }
+  // };
 
   useEffect(() => {
     if (scrollContainerRef.current) {
