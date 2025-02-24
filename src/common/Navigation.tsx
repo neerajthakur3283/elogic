@@ -112,7 +112,7 @@ const NavBar: React.FC = () => {
     {
       title: "Overview",
       desTitle: "Product Development Overview",
-      learnMoreLink: "/services-overview",
+      learnMoreLink: "/our-process",
       description:
         "Transform customer support with skills designed to efficiently solve recurring.",
       links: [
@@ -125,7 +125,7 @@ const NavBar: React.FC = () => {
     {
       title: "Capabilities",
       desTitle: "Capabilities Overview",
-      learnMoreLink: "/",
+      learnMoreLink: "/services-overview",
       description:
         "Enhance production efficiency with real-time monitoring and analytics.",
       links: [
