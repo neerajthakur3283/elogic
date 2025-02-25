@@ -137,7 +137,7 @@ const NavBar: React.FC = () => {
     {
       title: "Projects",
       desTitle: "Projects",
-      learnMoreLink: "/",
+      learnMoreLink: "/our-works",
       description:
         "Monitor equipment health to reduce downtime and improve maintenance planning.",
       links: [
