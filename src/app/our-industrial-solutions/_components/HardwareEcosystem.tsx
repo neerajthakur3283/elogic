@@ -116,7 +116,7 @@ function HardwareEcosystem() {
                 <h6 className="2xl:text-[24px] xl:text-[18px] text-base font-bold">
                   HMIs
                 </h6>
-                <p className="font-medium 2xl:text-base xl:text-[12px] text-[10.67px]">
+                <p className="hidden font-medium 2xl:text-base xl:text-[12px] text-[10.67px]">
                   Build and scale generative AI applications with
                   foundation models (FMs)
                 </p>
@@ -148,7 +148,7 @@ function HardwareEcosystem() {
                 <h6 className="2xl:text-[24px] xl:text-[18px] text-base font-bold">
                   Sensors/instruments
                 </h6>
-                <p className="font-medium 2xl:text-base xl:text-[12px] text-[10.67px]">
+                <p className="hidden font-medium 2xl:text-base xl:text-[12px] text-[10.67px]">
                   Build and scale generative AI applications with
                   foundation models (FMs)
                 </p>
@@ -180,7 +180,7 @@ function HardwareEcosystem() {
                 <h6 className="2xl:text-[24px] xl:text-[18px] text-base font-bold">
                   I/O modules
                 </h6>
-                <p className="font-medium 2xl:text-base xl:text-[12px] text-[10.67px]">
+                <p className="hidden font-medium 2xl:text-base xl:text-[12px] text-[10.67px]">
                   Build and scale generative AI applications with
                   foundation models (FMs)
                 </p>
