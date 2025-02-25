@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import { useSwipeable } from "react-swipeable";
 // images
 import slideOneDesktop from "@/src/assets/images/machine-controller.png";
 import slideTwoDesktop from "@/src/assets/images/custom-instruments-electronics.png";
@@ -93,9 +94,14 @@ export default function CircularSlider() {
     setActiveIndex(index);
   };
   
-
+// Swipe handlers
+const swipeHandlers = useSwipeable({
+  onSwipedLeft: () => setActiveIndex((prevIndex) => (prevIndex + 1) % desktopImages.length),
+  onSwipedRight: () => setActiveIndex((prevIndex) => (prevIndex - 1 + desktopImages.length) % desktopImages.length),
+  trackMouse: true, // Enable mouse swipe for testing in desktop mode
+});
   return (
-    <div className="flex flex-col justify-center items-center relative w-full m-auto overflow-hidden 2xl:h-[590px] xl:h-[510px] lg:h-[415px] md:h-[375px] sm:h-[780px] max-[639px]:h-[630px]">
+    <div {...swipeHandlers} className="flex flex-col justify-center items-center relative w-full m-auto overflow-hidden 2xl:h-[590px] xl:h-[510px] lg:h-[415px] md:h-[375px] sm:h-[780px] max-[639px]:h-[630px]">
       <div className="relative flex w-full h-full">
         {desktopImages.map((image, index) => {
           const position =

@@ -680,7 +680,7 @@ export default function Projects() {
               </div>
               <ul
                 ref={scrollContainerRef}
-                className="relative flex flex-col gap-y-[20px] overflow-y-auto max-h-[90vh] px-[20px] scrollbar-hide"
+                className="relative flex flex-col gap-y-[20px] overflow-y-auto max-h-[90vh] px-[20px] 2xl:py-[85px] xl:py-[60px] md:py-[45px] scrollbar-hide after:absolute after:top-0 after:left-0 after:w-full after:2xl:h-[85px] after:xl:h-[60px] after:md:h-[45px] after:bg-gradient-to-b after:from-white after:to-[rgba(255,255,255,0.0)] before:w-full before:2xl:h-[85px] before:xl:h-[60px] before:md:h-[45px] before:bg-gradient-to-t before:from-white before:to-[rgba(255,255,255,0.0)]"
               >
                 {projects.map((project, index) => (
                   <li

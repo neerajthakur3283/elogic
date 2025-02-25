@@ -30,13 +30,61 @@ function page() {
       description:"The protection of our clients' IP is our number-one priority! We believe that trust is the first step in collaboration and our agreement terms are stringently drafted to protect the clients' interests. We also adopt state-of-the-art IT infrastructure for data security.",
     },
   ];
+
+  const listofData = [
+    {cardTitle:'Concept:',
+      listOfPoints:[
+        {pointText:'Idea'},
+        {pointText:'Sketch'},
+        {pointText:'Model'},
+        {pointText:'Block diagram'},
+        {pointText:'Concept notes'},
+        {pointText:'Concept renders'},
+      ]
+    },
+    {cardTitle:'Specification Matrix:',
+      listOfPoints:[
+        {pointText:'Electrical specifications'},
+        {pointText:'Mechanical specifications'},
+        {pointText:'Computational resource &'},
+        {pointText:'memory specifications'},
+        {pointText:'Peripherals specifications'},
+        {pointText:'Wireless specifications'},
+        {pointText:'Environmental specifications'},
+      ]
+    },
+    {cardTitle:'Functional Requirement:',
+      listOfPoints:[
+        {pointText:'Feature list'},
+        {pointText:'Cross compatibility requirements'},
+        {pointText:'Standards compliance requirements'},
+        {pointText:'Form factor requirements'},
+      ]
+    },
+    {cardTitle:'ReferenceProducts:',
+      listOfPoints:[
+        {pointText:'Alternative products'},
+        {pointText:'Design inspirations'},
+        {pointText:'User experience references'},
+      ]
+    },
+    {cardTitle:'Commercial requirements:',
+      listOfPoints:[
+        {pointText:'Forecasted production volumes'},
+        {pointText:'Production cost target'},
+        {pointText:'Supply chain sourcing requirements'},
+        {pointText:'Go-to market timeline'},
+      ]
+    },
+  ]
+
   return (
     <>
         <PageBanner />
         <Approach />
         <WhyChooseCard cardData={cardData}/>
         <TeamInfo />
-        <WhatYouGiveUs/>
+        <WhatYouGiveUs listofData={listofData}/>
         <DesignDevelop />
         <TalkToExpert/>
     </>
