@@ -32,14 +32,14 @@ const NavBar: React.FC = () => {
       setIsServicesOpen(false);
     }
   };
-  
+
   const toggleServices = () => {
     setIsServicesOpen((prev) => !prev);
     if (isIotSolutionsOpen) {
       setIsIotSolutionsOpen(false);
     }
   };
-  
+
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -61,7 +61,7 @@ const NavBar: React.FC = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
-  
+
   const iotSolutiosItems = [
     {
       title: "Industrial Solutions Overview",
