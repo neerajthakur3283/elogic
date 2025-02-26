@@ -27,11 +27,12 @@ const projects = [
         cardHeading: "Capabilities involved",
         cardDes: (
           <>
-            hardware design <br />
-            PCB layout & routing <br />
-            power integrity analysis
-            <br />
-            lab prototyping
+            <ul className="list-disc ps-[17px] grid grid-cols-2">
+              <li>hardware design </li>
+              <li>PCB layout & routing </li>
+              <li>power integrity analysis</li>
+              <li>lab prototyping</li>
+            </ul>
           </>
         ),
       },
@@ -75,10 +76,10 @@ const projects = [
               <li>RF protocol design</li>
               <li>firmware development</li>
               <li>power optimization</li>
-              <li>mechanical design</li>             
+              <li>mechanical design</li>
               <li>3D rendering</li>
               <li>custom PCB membrane design</li>
-              <li>user interface design</li>             
+              <li>user interface design</li>
               <li>power & signal integrity analysis</li>
               <li>lab prototyping</li>
               <li>tooling design</li>
@@ -119,12 +120,12 @@ const projects = [
         cardHeading: "Capabilities involved",
         cardDes: (
           <>
-          <ul className="list-disc ps-[17px] grid grid-cols-2">
+            <ul className="list-disc ps-[17px] grid grid-cols-2">
               <li>hardware design</li>
               <li>PCB layout & routing</li>
               <li>firmware development</li>
               <li>wireless protocol implementation</li>
-              <li>mechanical design</li>             
+              <li>mechanical design</li>
               <li>3D rendering</li>
               <li>user interface design</li>
             </ul>
@@ -163,15 +164,15 @@ const projects = [
         cardHeading: "Capabilities involved",
         cardDes: (
           <>
-          <ul className="list-disc ps-[17px] grid grid-cols-2">
-          <li>analog & digital hardware design</li>
-          <li>mixed-signal PCB layout & routing</li>
-          <li>firmware development</li>
-          <li>wireless protocol implementation</li>
-          <li> mechanical design</li>
-          <li>3D rendering</li>
-          <li>user interface design</li> 
-        </ul>
+            <ul className="list-disc ps-[17px] grid grid-cols-2">
+              <li>analog & digital hardware design</li>
+              <li>mixed-signal PCB layout & routing</li>
+              <li>firmware development</li>
+              <li>wireless protocol implementation</li>
+              <li> mechanical design</li>
+              <li>3D rendering</li>
+              <li>user interface design</li>
+            </ul>
           </>
         ),
       },
@@ -207,8 +208,12 @@ const projects = [
         cardHeading: "Capabilities involved",
         cardDes: (
           <>
-            ADC, DAC & power electronics hardware design, mixed-signal PCB
-            layout & routing
+            <ul className="list-disc ps-[17px] grid">
+              <li>
+                ADC, DAC & power electronics hardware design, mixed-signal PCB
+                layout & routing
+              </li>
+            </ul>
           </>
         ),
       },
@@ -243,23 +248,19 @@ const projects = [
       {
         cardHeading: "Capabilities involved",
         cardDes: (
-          <>
-            modular analog front-end design <br />
-            System-on-module-based hardware design <br />
-            mixed-signal & high speed PCB layout & routing
-            <br />
-            linux kernel customization and application development
-            <br />
-            mechanical design <br />
-            3D rendering
-            <br />
-            touch interface design <br />
-            power & signal integrity analysis <br />
-            lab prototyping
-            <br />
-            tooling design <br />
-            DfM optimization
-          </>
+          <ul className="list-disc ps-[17px] grid grid-cols-2">
+            <li>modular analog front-end design </li>
+            <li>System-on-module-based hardware design </li>
+            <li>mechanical design </li>
+            <li>mixed-signal & high speed PCB layout & routing</li>
+            <li>linux kernel customization and application development</li>
+            <li>3D rendering</li>
+            <li>touch interface design </li>
+            <li>power & signal integrity analysis</li>
+            <li>lab prototyping</li>
+            <li>tooling design </li>
+            <li>DfM optimization</li>
+          </ul>
         ),
       },
       {
@@ -288,18 +289,17 @@ const projects = [
       {
         cardHeading: "Capabilities involved",
         cardDes: (
-          <>
-            modular analog front-end design <br />
-            hardware design <br />
-            mixed-signal PCB layout & routing
-            <br />
-            linux kernel customization and application development
-            <br />
-            mechanical design <br />
-            3D rendering <br />
-            touch interface design <br />
-            power & signal integrity analysis <br /> lab prototyping
-          </>
+          <ul className="list-disc ps-[17px] grid grid-cols-2">
+            <li>modular analog front-end design</li>
+            <li>hardware design</li>
+            <li>mixed-signal PCB layout & routing</li>
+            <li>linux kernel customization and application development</li>
+            <li>mechanical design</li>
+            <li>3D rendering</li>
+            <li>touch interface design</li>
+            <li>power & signal integrity analysis</li>
+            <li>lab prototyping</li>
+          </ul>
         ),
       },
       {
@@ -333,16 +333,18 @@ const projects = [
       {
         cardHeading: "Capabilities involved",
         cardDes: (
-          <>
-            hardware design <br />
-            PCB layout & routing <br />
-            firmware development <br />
-            cellular connectivity & IoT protocols implementation <br />
-            wired & wireless industrial fieldbus protocols implementation <br />
-            mechanical design <br />
-            3D rendering <br />
-            user interface design <br />
-          </>
+          <ul className="list-disc ps-[17px] grid grid-cols-2">
+            <li>hardware design</li>
+            <li>PCB layout & routing</li>
+            <li>firmware development</li>
+            <li>cellular connectivity & IoT protocols implementation</li>
+            <li>
+              wired & wireless industrial fieldbus protocols implementation
+            </li>
+            <li>mechanical design</li>
+            <li>3D rendering</li>
+            <li>user interface design</li>
+          </ul>
         ),
       },
       {
@@ -376,20 +378,20 @@ const projects = [
       {
         cardHeading: "Capabilities involved",
         cardDes: (
-          <>
-            System-on-module-based hardware design <br />
-            mixed-signal & high speed PCB layout & routing <br />
-            linux kernel customization and application development <br />
-            wired & wireless protocol implementation <br />
-            cellular connectivity & IoT protocols implementation <br />
-            mechanical design <br />
-            3D rendering <br />
-            web-server user interface design <br />
-            power & signal integrity analysis <br />
-            lab prototyping <br />
-            tooling design <br />
-            DfM optimization
-          </>
+          <ul className="list-disc ps-[17px] grid grid-cols-2">
+            <li>System-on-module-based hardware design</li>
+            <li>mixed-signal & high speed PCB layout & routing</li>
+            <li>linux kernel customization and application development</li>
+            <li>wired & wireless protocol implementation</li>
+            <li>cellular connectivity & IoT protocols implementation</li>
+            <li>mechanical design</li>
+            <li>3D rendering</li>
+            <li>web-server user interface design</li>
+            <li>power & signal integrity analysis</li>
+            <li>lab prototyping</li>
+            <li>tooling design</li>
+            <li>DfM optimization</li>
+          </ul>
         ),
       },
       {
@@ -423,19 +425,19 @@ const projects = [
       {
         cardHeading: "Capabilities involved",
         cardDes: (
-          <>
-            microprocessor-based hardware design <br />
-            mixed-signal & high speed PCB layout & routing <br />
-            linux kernel customization and application development <br />
-            wired & wireless protocol implementation <br />
-            mechanical design <br />
-            3D rendering <br />
-            power & signal integrity analysis <br />
-            lab prototyping <br />
-            tooling design <br />
-            DfM optimization <br />
-            standards-compliance documentation & testing
-          </>
+          <ul className="list-disc ps-[17px] grid grid-cols-2">
+            <li>microprocessor-based hardware design</li>
+            <li>mixed-signal & high speed PCB layout & routing</li>
+            <li>linux kernel customization and application development</li>
+            <li>wired & wireless protocol implementation</li>
+            <li>mechanical design</li>
+            <li>3D rendering</li>
+            <li>power & signal integrity analysis</li>
+            <li>lab prototyping</li>
+            <li>tooling design</li>
+            <li>DfM optimization</li>
+            <li>standards-compliance documentation & testing</li>
+          </ul>
         ),
       },
       {
@@ -469,16 +471,16 @@ const projects = [
       {
         cardHeading: "Capabilities involved",
         cardDes: (
-          <>
-            hardware design <br />
-            PCB layout & routing <br />
-            power & thermal simulations <br />
-            firmware development <br />
-            closed-loop control system development & tuning <br />
-            wireless protocol implementation <br />
-            harness design <br />
-            field testing
-          </>
+          <ul className="list-disc ps-[17px] grid grid-cols-2">
+            <li>hardware design</li>
+            <li>PCB layout & routing</li>
+            <li>power & thermal simulations</li>
+            <li>firmware development</li>
+            <li>closed-loop control system development & tuning</li>
+            <li>wireless protocol implementation</li>
+            <li>harness design</li>
+            <li>field testing</li>
+          </ul>
         ),
       },
       {
@@ -512,16 +514,16 @@ const projects = [
       {
         cardHeading: "Capabilities involved",
         cardDes: (
-          <>
-            analog front end design <br />
-            hardware design <br />
-            PCB layout & routing <br />
-            firmware development <br />
-            cellular connectivity & IoT protocols implementation <br />
-            mechanical design <br />
-            3D rendering <br />
-            user interface design
-          </>
+          <ul className="list-disc ps-[17px] grid grid-cols-2">
+            <li>analog front end design</li>
+            <li>hardware design</li>
+            <li>PCB layout & routing</li>
+            <li>firmware development</li>
+            <li>cellular connectivity & IoT protocols implementation</li>
+            <li>mechanical design</li>
+            <li>3D rendering</li>
+            <li>user interface design</li>
+          </ul>
         ),
       },
       {
@@ -554,12 +556,12 @@ const projects = [
       {
         cardHeading: "Capabilities involved",
         cardDes: (
-          <>
-            Closed-loop control system design & tuning <br />
-            Firmware development <br />
-            System Integration <br />
-            Field testing
-          </>
+          <ul className="list-disc ps-[17px] grid grid-cols-2">
+            <li>Firmware development</li>
+            <li>System Integration</li>
+            <li>Field testing</li>
+            <li>Closed-loop control system design & tuning</li>
+          </ul>
         ),
       },
       {
@@ -593,12 +595,12 @@ const projects = [
       {
         cardHeading: "Capabilities involved",
         cardDes: (
-          <>
-            Closed-loop control system design & tuning <br />
-            Firmware development <br />
-            System Integration <br />
-            Field testing
-          </>
+          <ul className="list-disc ps-[17px] grid grid-cols-2">
+            <li>Firmware development</li>
+            <li>System Integration</li>
+            <li>Field testing</li>
+            <li>Closed-loop control system design & tuning</li>
+          </ul>
         ),
       },
       {
@@ -747,9 +749,9 @@ export default function Projects() {
                     <h1 className="2xl:text-[21.33px] xl:text-[16px] md:text-[14.22px] text-base text-white">
                       {data.cardHeading}
                     </h1>
-                    <p className="2xl:text-base xl:text-[15px] md:text-[14px] text-[12px] text-white 2xl:mt-4 mt-3">
+                    <div className="2xl:text-base xl:text-[15px] md:text-[14px] text-[12px] text-white 2xl:mt-4 mt-3">
                       {data.cardDes}
-                    </p>
+                    </div>
                   </div>
                 ))}
               </div>
