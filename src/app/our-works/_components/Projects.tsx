@@ -633,7 +633,7 @@ export default function Projects() {
     if (!userInteractedRef.current) {
       intervalRef.current = setInterval(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % projects.length);
-      }, 4000);
+      }, 6000);
     }
   };
 
