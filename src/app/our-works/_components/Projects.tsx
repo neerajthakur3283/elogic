@@ -68,22 +68,22 @@ const projects = [
         cardHeading: "Capabilities involved",
         cardDes: (
           <>
-            hardware design <br />
-            PCB layout & routing <br />
-            antenna design <br />
-            RF protocol design <br />
-            firmware development <br />
-            power optimization <br />
-            mechanical design
-            <br />
-            3D rendering <br />
-            custom PCB membrane design <br />
-            user interface design
-            <br />
-            power & signal integrity analysis <br />
-            lab prototyping <br />
-            tooling design <br />
-            DfM+DfA optimization
+            <ul className="list-disc ps-[17px] grid grid-cols-2">
+              <li>hardware design</li>
+              <li>PCB layout & routing</li>
+              <li>antenna design</li>
+              <li>RF protocol design</li>
+              <li>firmware development</li>
+              <li>power optimization</li>
+              <li>mechanical design</li>             
+              <li>3D rendering</li>
+              <li>custom PCB membrane design</li>
+              <li>user interface design</li>             
+              <li>power & signal integrity analysis</li>
+              <li>lab prototyping</li>
+              <li>tooling design</li>
+              <li>DfM+DfA optimization</li>
+            </ul>
           </>
         ),
       },
@@ -119,15 +119,15 @@ const projects = [
         cardHeading: "Capabilities involved",
         cardDes: (
           <>
-            hardware design <br />
-            PCB layout & routing <br />
-            firmware development
-            <br />
-            wireless protocol implementation <br />
-            mechanical design <br />
-            3D rendering <br />
-            user interface design
-            <br />
+          <ul className="list-disc ps-[17px] grid grid-cols-2">
+              <li>hardware design</li>
+              <li>PCB layout & routing</li>
+              <li>firmware development</li>
+              <li>wireless protocol implementation</li>
+              <li>mechanical design</li>             
+              <li>3D rendering</li>
+              <li>user interface design</li>
+            </ul>
           </>
         ),
       },
@@ -163,14 +163,15 @@ const projects = [
         cardHeading: "Capabilities involved",
         cardDes: (
           <>
-            analog & digital hardware design <br />
-            mixed-signal PCB layout & routing <br />
-            firmware development
-            <br />
-            wireless protocol implementation <br />
-            mechanical design <br />
-            3D rendering <br />
-            user interface design
+          <ul className="list-disc ps-[17px] grid grid-cols-2">
+          <li>analog & digital hardware design</li>
+          <li>mixed-signal PCB layout & routing</li>
+          <li>firmware development</li>
+          <li>wireless protocol implementation</li>
+          <li> mechanical design</li>
+          <li>3D rendering</li>
+          <li>user interface design</li> 
+        </ul>
           </>
         ),
       },
