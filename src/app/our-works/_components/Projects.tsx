@@ -379,12 +379,12 @@ const projects = [
         cardHeading: "Capabilities involved",
         cardDes: (
           <ul className="list-disc ps-[17px] grid grid-cols-2">
-            <li>System-on-module-based hardware design</li>
-            <li>mixed-signal & high speed PCB layout & routing</li>
             <li>linux kernel customization and application development</li>
+            <li>System-on-module-based hardware design</li>
             <li>wired & wireless protocol implementation</li>
             <li>cellular connectivity & IoT protocols implementation</li>
             <li>mechanical design</li>
+            <li>mixed-signal & high speed PCB layout & routing</li>
             <li>3D rendering</li>
             <li>web-server user interface design</li>
             <li>power & signal integrity analysis</li>
