@@ -38,3 +38,6 @@
     ),
     linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 5%);
 }
+.step-line{
+  background-size: 100%;
+}
