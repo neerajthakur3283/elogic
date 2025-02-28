@@ -100,7 +100,7 @@ const Slider: React.FC = () => {
                   </div>
                 </div>
               </div>
-              <div className="2xl:w-[calc(100%_-_845px)] xl:w-[calc(100%_-_632px)] md:w-[calc(100%_-_562px)] slide-img max-[767px]:px-[20px] md:pt-0 sm:pt-[90px] pt-3 2xl:px-[85px] min-[1800px]:px-[135px] xl:px-[80px] md:px-[30px]">
+              <div className="2xl:w-[calc(100%_-_845px)] xl:w-[calc(100%_-_632px)] md:w-[calc(100%_-_562px)] slide-img max-[767px]:px-[20px] md:pt-0 sm:pt-[90px] pt-3 2xl:px-[85px] min-[1800px]:px-[135px] xl:px-[80px] md:px-[30px] max-[991px]:!px-[20px] max-[991px]:!w-[425px] max-[767px]:!w-auto">
                 <div className="">
                   <Image
                     className="w-full"
