@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from 'next/font/google';
-import '../assets/style/style.css'
-import '../assets/style/tailwind.css'
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import { Inter } from "next/font/google";
+import "../assets/style/style.css";
+import "../assets/style/tailwind.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Header from "../common/Header";
 import Footer from "../common/Footer";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "ElogcTech",
