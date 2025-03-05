@@ -11,38 +11,62 @@ function YouAre() {
   const youCardView = [
     {
       cardImg: imgOne,
-      cardIcon:iconOne,
+      cardIcon: iconOne,
       cardTitle: (
         <>
-          Factory or <br/> Manufacturing plant 
+          Factory or <br /> Manufacturing plant
         </>
       ),
-      decListData:[
-        {listTitle:'Excess operating cost and inconsistent output quality due to',
-          orderListData:[
-            {subTitle:'equipment being in critical health'},
-            {subTitle:'hidden inefficiencies in operational patterns'},
-          ]
+      decListData: [
+        {
+          listTitle:
+            "Excess operating cost and inconsistent output quality due to",
+          orderListData: [
+            { subTitle: "equipment being in critical health" },
+            { subTitle: "hidden inefficiencies in operational patterns" },
+          ],
         },
-        {listTitle:'Production Loss due to unexpected breakdowns'}
+        { listTitle: "Production Loss due to unexpected breakdowns" },
       ],
     },
     {
       cardImg: imgOne,
-      cardIcon:iconTwo,
-      cardTitle: <>Plant EPC contractor or <br/>System integrator</>,
-      decListData:[
-        {listTitle:'No visibility over health & status of equipment commissioned across locations',},
-        {listTitle:'Customers & end users deviating from standard SOPs leading to expensive site visits for diagnosis & repair'}
+      cardIcon: iconTwo,
+      cardTitle: (
+        <>
+          Plant EPC contractor or <br />
+          System integrator
+        </>
+      ),
+      decListData: [
+        {
+          listTitle:
+            "No visibility over health & status of equipment commissioned across locations",
+        },
+        {
+          listTitle:
+            "Customers & end users deviating from standard SOPs leading to expensive site visits for diagnosis & repair",
+        },
       ],
     },
     {
       cardImg: imgOne,
-      cardIcon:iconThree,
-      cardTitle: <>Industrial machine or <br/>Instrument maker</>,
-      decListData:[
-        {listTitle:'No visibility over health & status of equipment commissioned across locations',},
-        {listTitle:'Customers & end users deviating from standard SOPs leading to expensive site visits for diagnosis & repair'}
+      cardIcon: iconThree,
+      cardTitle: (
+        <>
+          Industrial machine or <br />
+          Instrument maker
+        </>
+      ),
+      decListData: [
+        {
+          listTitle:
+            "No visibility over health & status of equipment commissioned across locations",
+        },
+        {
+          listTitle:
+            "Customers & end users deviating from standard SOPs leading to expensive site visits for diagnosis & repair",
+        },
       ],
     },
   ];
