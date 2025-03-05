@@ -25,7 +25,7 @@ const YouAreCard: React.FC<YouAreCardProps> = ({ youCardView }) => {
       {youCardView.map((data, index) => (
         <div
           key={index}
-          className="bg-[#1C2845] 2xl:p-[35px] xl:p-[30px] md:p-[20px] p-[20px] 2xl:rounded-[25px] xl:rounded-[18.75px] md:rounded-[16.67px] rounded-[16.26px] 2xl:[&>.card-title]:first-of-type:max-w-[401px] xl:[&>.card-title]:first-of-type:max-w-[301px] md:[&>.card-title]:first-of-type:max-w-[267px] transition-all duration-500 text-white group lg:hover:min-w-[62%] md:hover:min-w-[50%] max-[767px]:w-full md:w-[33.333%]"
+          className="bg-[#1C2845] 2xl:p-[35px] xl:p-[30px] md:p-[20px] p-[20px] 2xl:rounded-[25px] xl:rounded-[18.75px] md:rounded-[16.67px] rounded-[16.26px] 2xl:[&>.card-title]:first-of-type:max-w-[401px] xl:[&>.card-title]:first-of-type:max-w-[301px] md:[&>.card-title]:first-of-type:max-w-[267px] text-white group lg:hover:min-w-[62%] md:hover:min-w-[50%] max-[767px]:w-full md:w-[33.333%] transition-all duration-[1.5s] linear"  
           onMouseEnter={() => setHoveredIndex(index)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
