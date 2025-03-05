@@ -1,52 +1,71 @@
+'use client'
 import Image, { StaticImageData } from "next/image";
-import Link from "next/link";
-import React from "react";
-import { GrFormNextLink } from "react-icons/gr";
+import React, { useState } from "react";
 
 interface YouCardView {
   cardImg: string | StaticImageData;
+  cardIcon: string | StaticImageData;
   cardTitle: React.JSX.Element;
   cardLink: string;
   linkText: string;
   cardPara: string;
+  decListData: DecListData[];
 }
-
+interface DecListData {
+  listTitle: string;
+  orderListData:orderListData[]
+}
+interface orderListData{
+  subTitle: string
+}
 interface YouAreCardProps {
   youCardView: YouCardView[];
 }
-
 const YouAreCard: React.FC<YouAreCardProps> = ({ youCardView }) => {
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   return (
     <>
       {youCardView.map((data, index) => (
-        <div
-          key={index}
-          className="bg-[#1C2845] 2xl:py-50px] xl:py-[37px] md:py-[33px] py-[32px] min-[1760px]:px-[65px] 2xl:px-[45px] xl:px-[42px] lg:px-[25px] px-[42px] max-[575px]:px-[25px] 2xl:rounded-[25px] xl:rounded-[18.75px] md:rounded-[16.67px] rounded-[16.26px] 2xl:[&>.card-title]:first-of-type:max-w-[401px] xl:[&>.card-title]:first-of-type:max-w-[301px] md:[&>.card-title]:first-of-type:max-w-[267px] transition-all duration-500 hover:bg-white group hover:text-black text-white group"
+        <div key={index} className="bg-[#1C2845] 2xl:p-[35px] xl:p-[30px] md:p-[20px] p-[20px] 2xl:rounded-[25px] xl:rounded-[18.75px] md:rounded-[16.67px] rounded-[16.26px] 2xl:[&>.card-title]:first-of-type:max-w-[401px] xl:[&>.card-title]:first-of-type:max-w-[301px] md:[&>.card-title]:first-of-type:max-w-[267px] transition-all duration-500 text-white group lg:hover:min-w-[62%] md:hover:min-w-[50%] max-[767px]:w-full md:w-[33.333%]"
+        onMouseEnter={() => setHoveredIndex(index)}
+        onMouseLeave={() => setHoveredIndex(null)}
         >
           <div className="relative overflow-hidden">
-            <div className="2xl:w-[176px] xl:w-[132px] md:w-[118px] w-[115px] rounded-[600px] overflow-hidden transition-all duration-500 group-hover:w-full 2xl:h-[110px] xl:h-[82px] h-[73px] group-hover:[&>img]:w-full">
+            <div className="w-full rounded-[600px] overflow-hidden transition-all duration-500 group-hover:w-full 2xl:max-h-[192px] xl:max-h-[165px] md:max-h-[125px] max-h-[155px]">
               <Image
-                className="transition-all duration-500"
+                className="transition-all duration-500 w-full"
                 src={data.cardImg}
                 alt=""
               />
             </div>
-            <div className="card-title font-semibold min-[1760px]:text-[27px] 2xl:text-[22px] xl:text-[21px] md:text-[16.67px] text-[18.21px] 2xl:pt-[61px] 2xl:pb-[116px] xl:pt-[45px] xl:pb-[115px] md:pt-[41px] lg:pb-[98px] pt-[40px] pb-[76px] max-[575px]:pb-[135px] transition-all group-hover:w-full duration-500">
-              <h3 className="2xl:h-[121px] xl:h-[91px] md:h-[81px]">
+            <div className="card-title font-semibold 2xl:pt-[61px] 2xl:pb-[40px] xl:pt-[45px] xl:pb-[30px] md:pt-[41px] lg:pb-[26px] pt-[40px] pb-[30px] transition-all group-hover:w-full duration-500">
+              <div className="flex items-center 2xl:gap-[20px] xl:gap-[15px] md:gap-[12px] gap-[15px] flex-wrap">
+                <div className="">
+                  <Image className="2xl:w-[60px] xl:w-[50px] md:w-[42px] w-[45px]" src={data.cardIcon} alt="" />
+                </div>
+                <h3 className={`transition-all duration-300 ${
+                      hoveredIndex === index ? "min-[1760px]:text-[27px] 2xl:text-[22px] xl:text-[21px] md:text-[16.67px] text-[18.21px]" : "min-[1760px]:text-[27px] 2xl:text-[22px] xl:text-[21px] md:text-[16.67px] text-[18.21px]"
+                    }`}
+                  >
                 {data.cardTitle}
               </h3>
+              </div>
             </div>
-            <div className="absolute left-0 -bottom-[200px] w-full 2xl:text-[18px] xl:text-[13.5px] md:text-[12px] group-hover:bottom-0 z-[1] transition-all duration-500">
-              {data.cardPara}
-            </div>
-            <div className="transition-all duration-500 group-hover:opacity-0 group-hover:-z-[1]">
-              <Link
-                href={data.cardLink}
-                className="flex items-center 2xl:text-[18.59px] xl:text-[13.95px] md:text-[12.4px] text-[12.09px]"
-              >
-                {data.linkText}{" "}
-                <GrFormNextLink className="ms-2 xl:text-[29px] xl:text-xl text-xl" />
-              </Link>
+            <div className="w-full 2xl:text-[18px] xl:text-[13.5px] md:text-[12px] md:opacity-0 md:h-[0] group-hover:h-full group-hover:opacity-100">
+            <ul className='list-decimal 2xl:ps-[22px] ps-[17px] text-white font-semibold 2xl:text-[20px] xl:text-[15px] md:text-[13.33px] text-[15.24px] flex flex-col gap-2'>
+              {data.decListData.map((list,index)=>(
+                <li key={index}>
+                  {list.listTitle}
+                  <ol className='list-disc flex flex-col gap-2 ps-[15px] my-[8px]'>
+                    {list.orderListData?.map((item, subindex) => (
+                      <li className="font-normal" key={subindex}>
+                          {item.subTitle}
+                      </li>
+                    ))}
+                  </ol>
+                </li>
+              ))}
+            </ul>
             </div>
           </div>
         </div>

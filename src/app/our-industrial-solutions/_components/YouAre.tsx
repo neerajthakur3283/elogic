@@ -3,36 +3,47 @@ import YouAreCard from "./YouAreCard";
 
 // images
 import imgOne from "@/src/assets/images/you-are-one.jpg";
+import iconOne from "@/src/assets/images/factory-menufacturing.svg";
+import iconTwo from "@/src/assets/images/plan-recyle.svg";
+import iconThree from "@/src/assets/images/industrial-machine.svg";
 
 function YouAre() {
   const youCardView = [
     {
       cardImg: imgOne,
+      cardIcon:iconOne,
       cardTitle: (
         <>
-          Factory or manufacturing<br/>plant 
+          Factory or <br/> Manufacturing plant 
         </>
       ),
-      cardLink: "",
-      linkText: "Learn More",
-      cardPara:
-        "We can communicate with a wide range of OEM equipment, PLCs, HMIs and sensors with rich protocol integrations and deploy tailor-made applications on both edge and cloud",
+      decListData:[
+        {listTitle:'Excess operating cost and inconsistent output quality due to',
+          orderListData:[
+            {subTitle:'equipment being in critical health'},
+            {subTitle:'hidden inefficiencies in operational patterns'},
+          ]
+        },
+        {listTitle:'Production Loss due to unexpected breakdowns'}
+      ],
     },
     {
       cardImg: imgOne,
-      cardTitle: <>Plant EPC contractor or system integrator</>,
-      cardLink: "",
-      linkText: "Learn More",
-      cardPara:
-        "We can communicate with a wide range of OEM equipment, PLCs, HMIs and sensors with rich protocol integrations and deploy tailor-made applications on both edge and cloud",
+      cardIcon:iconTwo,
+      cardTitle: <>Plant EPC contractor or <br/>System integrator</>,
+      decListData:[
+        {listTitle:'No visibility over health & status of equipment commissioned across locations',},
+        {listTitle:'Customers & end users deviating from standard SOPs leading to expensive site visits for diagnosis & repair'}
+      ],
     },
     {
       cardImg: imgOne,
-      cardTitle: <>Industrial machine or instrument maker</>,
-      cardLink: "",
-      linkText: "Learn More",
-      cardPara:
-        "We can communicate with a wide range of OEM equipment, PLCs, HMIs and sensors with rich protocol integrations and deploy tailor-made applications on both edge and cloud",
+      cardIcon:iconThree,
+      cardTitle: <>Industrial machine or <br/>Instrument maker</>,
+      decListData:[
+        {listTitle:'No visibility over health & status of equipment commissioned across locations',},
+        {listTitle:'Customers & end users deviating from standard SOPs leading to expensive site visits for diagnosis & repair'}
+      ],
     },
   ];
   return (
@@ -44,11 +55,8 @@ function YouAre() {
               <h2 className="text-white 2xl:text-[62px] xl:text-[47px] lg:text-[41px] text-[24px] font-bold capitalize">
                 You are
               </h2>
-              {/* <div className="2xl:pt-[40px] xl:pt-[30px] md:pt-[26px] pt-[20px] mx-auto text-white font-medium leading-snug w-full 2xl:max-w-[1270px] xl:max-w-[578px] lg:max-w-[514px] md:max-w-[420px] 2xl:text-[24px] xl:text-[18px] text-base opacity-[0.8]">
-              We can communicate with a wide range of OEM equipment, PLCs, HMIs and sensors with rich protocol integrations and deploy tailor-made applications on both edge and cloud
-              </div> */}
             </div>
-            <div className="grid lg:grid-cols-3 2xl:pt-[80px] xl:pt-[60px] lg:pt-[53px] md:pt-[45px] pt-[40px] 2xl:gap-[30px] xl:gap-[22px] md:xl:gap-[20px] gap-[15.81px]">
+            <div className="flex items-start md:flex-nowrap flex-wrap 2xl:pt-[80px] xl:pt-[60px] lg:pt-[53px] md:pt-[45px] pt-[40px] 2xl:gap-[30px] xl:gap-[22px] md:xl:gap-[20px] gap-[15.81px]">
               <YouAreCard youCardView={youCardView} />
             </div>
           </div>
