@@ -19,6 +19,9 @@ const NavBar: React.FC = () => {
   // const [isOpen, setIsOpen] = useState(false);
   const [isIotSolutionsOpen, setIsIotSolutionsOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isProductsOpen, setIsProductsOpen] = useState(false);
+  const [isAboutusOpen, setIsAboutUsOpen] = useState(false);
+  const [isMediaOpen, setIsMediaOpen] = useState(false);
   const dropdownIotRef = useRef<HTMLLIElement>(null);
   const dropdownServicesRef = useRef<HTMLLIElement>(null);
 
@@ -37,6 +40,27 @@ const NavBar: React.FC = () => {
     setIsServicesOpen((prev) => !prev);
     if (isIotSolutionsOpen) {
       setIsIotSolutionsOpen(false);
+    }
+  };
+
+  const toggleProducts = () => {
+    setIsProductsOpen((prev) => !prev);
+    if (isProductsOpen) {
+      setIsProductsOpen(false);
+    }
+  };
+
+  const toggleAboutUs = () => {
+    setIsAboutUsOpen((prev) => !prev);
+    if (isAboutusOpen) {
+      setIsAboutUsOpen(false);
+    }
+  };
+
+  const toggleMedia = () => {
+    setIsMediaOpen((prev) => !prev);
+    if (isMediaOpen) {
+      setIsMediaOpen(false);
     }
   };
 
@@ -683,7 +707,7 @@ const NavBar: React.FC = () => {
                 onClick={toggleServices}
                 className="py-[18px] flex items-center justify-between w-full text-black font-normal text-base border-t border-t-[#E5E5E5] px-[20px] focus:text-[#3563E9]"
               >
-                Our Services{" "}
+                Product Development{" "}
                 <FaChevronDown
                   className={`ml-2 transform transition-all duration-300 ${
                     isServicesOpen ? "rotate-180" : ""
@@ -693,64 +717,118 @@ const NavBar: React.FC = () => {
               {isServicesOpen && (
                 <div className="flex flex-col mb-3">
                   <Link
+                    href="/our-process"
+                    className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
+                  >
+                    Overview
+                  </Link>
+                  <Link
                     href="/services-overview"
                     className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
                   >
-                    Product Development
+                    Capabilities
                   </Link>
                   <Link
-                    href="/"
+                    href="/our-works"
                     className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
                   >
-                    Consulting
-                  </Link>
-                  <Link
-                    href="/"
-                    className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
-                  >
-                    System Integration
-                  </Link>
-                  <Link
-                    href="/"
-                    className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
-                  >
-                    Training Services
+                    Projects
                   </Link>
                 </div>
               )}
             </li>
-            <li>
-              <Link
-                href="/about-us"
-                className="py-[18px] text-base text-black flex items-center justify-between border-t border-t-[#E5E5E5] px-[20px] focus:text-[#3563E9]"
+            <li className="relative">
+              <button
+                onClick={toggleProducts}
+                className="py-[18px] flex items-center justify-between w-full text-black font-normal text-base border-t border-t-[#E5E5E5] px-[20px] focus:text-[#3563E9]"
+              >
+                Products{" "}
+                <FaChevronDown
+                  className={`ml-2 transform transition-all duration-300 ${
+                    isProductsOpen ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+              {isProductsOpen && (
+                <div className="flex flex-col mb-3">
+                  <Link
+                    href="/"
+                    className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
+                  >
+                    Edge Connect Series
+                  </Link>
+                  <Link
+                    href="/"
+                    className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
+                  >
+                    Field Connect Series
+                  </Link>
+                </div>
+              )}
+            </li>
+            <li className="relative">
+              <button
+                onClick={toggleAboutUs}
+                className="py-[18px] flex items-center justify-between w-full text-black font-normal text-base border-t border-t-[#E5E5E5] px-[20px] focus:text-[#3563E9]"
               >
                 About Us{" "}
-                <span>
-                  <Image src={mobArrow} alt="" />
-                </span>
-              </Link>
+                <FaChevronDown
+                  className={`ml-2 transform transition-all duration-300 ${
+                    isAboutusOpen ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+              {isAboutusOpen && (
+                <div className="flex flex-col mb-3">
+                  <Link
+                    href="/about-us"
+                    className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
+                  >
+                    Overview
+                  </Link>
+                  <Link
+                    href="/our-team"
+                    className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
+                  >
+                    Team
+                  </Link>
+                  <Link
+                    href="/"
+                    className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
+                  >
+                    Careers
+                  </Link>
+                </div>
+              )}
             </li>
-            <li>
-              <Link
-                href="/work"
-                className="py-[18px] text-base text-black flex items-center justify-between border-t border-t-[#E5E5E5] px-[20px] focus:text-[#3563E9]"
-              >
-                Our Work{" "}
-                <span>
-                  <Image src={mobArrow} alt="" />
-                </span>
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/work"
-                className="py-[18px] text-base text-black flex items-center justify-between border-t border-t-[#E5E5E5] px-[20px] focus:text-[#3563E9] border-b border-b-[#E5E5E5]"
+            <li className="relative">
+              <button
+                onClick={toggleMedia}
+                className="py-[18px] flex items-center justify-between w-full text-black font-normal text-base border-t border-t-[#E5E5E5] px-[20px] focus:text-[#3563E9]"
               >
                 Media{" "}
-                <span>
-                  <Image src={mobArrow} alt="" />
-                </span>
-              </Link>
+                <FaChevronDown
+                  className={`ml-2 transform transition-all duration-300 ${
+                    isMediaOpen ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+              {isMediaOpen && (
+                <div className="flex flex-col mb-3">
+                  <Link
+                    href="/blogs"
+                    className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
+                  >
+                    Blogs
+                  </Link>
+                  <Link
+                    href="/"
+                    className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
+                  >
+                    Press
+                  </Link>
+                </div>
+              )}
             </li>
           </ul>
           <div className="px-[20px] lg:pt-10 md:pt-7 pt-6 pb-5 md:w-auto w-full">
