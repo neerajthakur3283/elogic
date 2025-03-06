@@ -5,8 +5,6 @@ import { FaChevronDown } from "react-icons/fa6";
 // images
 import { FaChevronRight } from "react-icons/fa";
 import { MdArrowOutward } from "react-icons/md";
-import mobArrow from "@/src/assets/images/right-arrow.svg";
-import Image from "next/image";
 
 const NavBar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
