@@ -676,24 +676,28 @@ const NavBar: React.FC = () => {
                   <Link
                     href="/our-industrial-solutions"
                     className="text-black text-[14px] transition-all duration-1000 hover:text-[#3563E9] py-2 px-[40px]"
+                    onClick={() => toggleMenu()}
                   >
                     Industrial Solutions Overview
                   </Link>
                   <Link
                     href="/energy-consumption-monitoring"
                     className="text-black text-[14px] transition-all duration-1000 hover:text-[#3563E9] py-2 px-[40px]"
+                    onClick={() => toggleMenu()}
                   >
                     Energy Monitoring
                   </Link>
                   <Link
                     href="/machine-condition-monitoring"
                     className="text-black text-[14px] transition-all duration-1000 hover:text-[#3563E9] py-2 px-[40px]"
+                    onClick={() => toggleMenu()}
                   >
                     Condition Monitoring
                   </Link>
                   <Link
                     href="/oee-and-production-monitoring"
                     className="text-black text-[14px] transition-all duration-1000 hover:text-[#3563E9] py-2 px-[40px]"
+                    onClick={() => toggleMenu()}
                   >
                     Productivity Monitoring
                   </Link>
@@ -717,18 +721,21 @@ const NavBar: React.FC = () => {
                   <Link
                     href="/our-process"
                     className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
+                    onClick={() => toggleMenu()}
                   >
                     Overview
                   </Link>
                   <Link
                     href="/services-overview"
                     className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
+                    onClick={() => toggleMenu()}
                   >
                     Capabilities
                   </Link>
                   <Link
                     href="/our-works"
                     className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
+                    onClick={() => toggleMenu()}
                   >
                     Projects
                   </Link>
@@ -752,12 +759,14 @@ const NavBar: React.FC = () => {
                   <Link
                     href="/"
                     className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
+                    onClick={() => toggleMenu()}
                   >
                     Edge Connect Series
                   </Link>
                   <Link
                     href="/"
                     className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
+                    onClick={() => toggleMenu()}
                   >
                     Field Connect Series
                   </Link>
@@ -781,18 +790,21 @@ const NavBar: React.FC = () => {
                   <Link
                     href="/about-us"
                     className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
+                    onClick={() => toggleMenu()}
                   >
                     Overview
                   </Link>
                   <Link
                     href="/our-team"
                     className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
+                    onClick={() => toggleMenu()}
                   >
                     Team
                   </Link>
                   <Link
                     href="/"
                     className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
+                    onClick={() => toggleMenu()}
                   >
                     Careers
                   </Link>
@@ -816,12 +828,14 @@ const NavBar: React.FC = () => {
                   <Link
                     href="/blogs"
                     className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
+                    onClick={() => toggleMenu()}
                   >
                     Blogs
                   </Link>
                   <Link
                     href="/"
                     className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
+                    onClick={() => toggleMenu()}
                   >
                     Press
                   </Link>
@@ -833,6 +847,7 @@ const NavBar: React.FC = () => {
             <Link
               className="bg-[#3563E9] text-white px-[2] w-full 2xl:max-w-[200px] xl:max-w-[153.5px] lg:max-w-[136.44px] md:max-w-[123px] 2xl:h-[60px] xl:h-[45px] md:h-[41px] h-[48px] flex justify-center items-center py-[2px] 2xl:text-[19px] xl:text-[14.25px] text-[16px] md:text-[12.67px] md:font-bold font-semibold rounded-[16px] capitalize duration-500 hover:bg-black hover:text-white md:max-w-auto max-w-full"
               href="/contact-us"
+              onClick={() => toggleMenu()}
             >
               contact us
             </Link>
