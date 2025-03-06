@@ -24,7 +24,6 @@ const NavBar: React.FC = () => {
     }
   };
 
-  
   const toggleServices = () => {
     setIsServicesOpen((prev) => !prev);
     if (isIotSolutionsOpen) {
@@ -53,7 +52,7 @@ const NavBar: React.FC = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
-  
+
   return (
     <nav className="">
       <div className="mx-auto">
@@ -66,8 +65,9 @@ const NavBar: React.FC = () => {
               >
                 Our IoT Solutions{" "}
                 <FaChevronDown
-                  className={`w-[12px] transform transition-all duration-300 ${isIotSolutionsOpen ? "rotate-180" : ""
-                    }`}
+                  className={`w-[12px] transform transition-all duration-300 ${
+                    isIotSolutionsOpen ? "rotate-180" : ""
+                  }`}
                 />
               </button>
               {isIotSolutionsOpen && (
@@ -117,8 +117,9 @@ const NavBar: React.FC = () => {
               >
                 Our Services{" "}
                 <FaChevronDown
-                  className={`w-[12px] transform transition-all duration-300 ${isServicesOpen ? "rotate-180" : ""
-                    }`}
+                  className={`w-[12px] transform transition-all duration-300 ${
+                    isServicesOpen ? "rotate-180" : ""
+                  }`}
                 />
               </button>
               {isServicesOpen && (
@@ -212,8 +213,9 @@ const NavBar: React.FC = () => {
                 >
                   Our IOT Solutions{" "}
                   <FaChevronDown
-                    className={`ml-2 transform transition-all duration-300 ${isIotSolutionsOpen ? "rotate-180" : ""
-                      }`}
+                    className={`ml-2 transform transition-all duration-300 ${
+                      isIotSolutionsOpen ? "rotate-180" : ""
+                    }`}
                   />
                 </button>
                 {isIotSolutionsOpen && (
@@ -258,8 +260,9 @@ const NavBar: React.FC = () => {
                 >
                   Our Services{" "}
                   <FaChevronDown
-                    className={`ml-2 transform transition-all duration-300 ${isServicesOpen ? "rotate-180" : ""
-                      }`}
+                    className={`ml-2 transform transition-all duration-300 ${
+                      isServicesOpen ? "rotate-180" : ""
+                    }`}
                   />
                 </button>
                 {isServicesOpen && (

@@ -27,39 +27,49 @@ const NavBar: React.FC = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const handleCloseMobileMenu = (toggleFunction: () => void) => {
+    toggleMenu();
+    toggleFunction();
+  };
+
   const toggleIotSolutions = () => {
     setIsIotSolutionsOpen((prev) => !prev);
-    if (isServicesOpen) {
-      setIsServicesOpen(false);
-    }
+    setIsServicesOpen(false);
+    setIsProductsOpen(false);
+    setIsAboutUsOpen(false);
+    setIsMediaOpen(false);
   };
 
   const toggleServices = () => {
     setIsServicesOpen((prev) => !prev);
-    if (isIotSolutionsOpen) {
-      setIsIotSolutionsOpen(false);
-    }
+    setIsIotSolutionsOpen(false);
+    setIsProductsOpen(false);
+    setIsAboutUsOpen(false);
+    setIsMediaOpen(false);
   };
 
   const toggleProducts = () => {
     setIsProductsOpen((prev) => !prev);
-    if (isProductsOpen) {
-      setIsProductsOpen(false);
-    }
+    setIsIotSolutionsOpen(false);
+    setIsServicesOpen(false);
+    setIsAboutUsOpen(false);
+    setIsMediaOpen(false);
   };
 
   const toggleAboutUs = () => {
     setIsAboutUsOpen((prev) => !prev);
-    if (isAboutusOpen) {
-      setIsAboutUsOpen(false);
-    }
+    setIsIotSolutionsOpen(false);
+    setIsServicesOpen(false);
+    setIsProductsOpen(false);
+    setIsMediaOpen(false);
   };
 
   const toggleMedia = () => {
     setIsMediaOpen((prev) => !prev);
-    if (isMediaOpen) {
-      setIsMediaOpen(false);
-    }
+    setIsIotSolutionsOpen(false);
+    setIsServicesOpen(false);
+    setIsProductsOpen(false);
+    setIsAboutUsOpen(false);
   };
 
   useEffect(() => {
@@ -676,28 +686,28 @@ const NavBar: React.FC = () => {
                   <Link
                     href="/our-industrial-solutions"
                     className="text-black text-[14px] transition-all duration-1000 hover:text-[#3563E9] py-2 px-[40px]"
-                    onClick={() => toggleMenu()}
+                    onClick={() => handleCloseMobileMenu(toggleIotSolutions)}
                   >
                     Industrial Solutions Overview
                   </Link>
                   <Link
                     href="/energy-consumption-monitoring"
                     className="text-black text-[14px] transition-all duration-1000 hover:text-[#3563E9] py-2 px-[40px]"
-                    onClick={() => toggleMenu()}
+                    onClick={() => handleCloseMobileMenu(toggleIotSolutions)}
                   >
                     Energy Monitoring
                   </Link>
                   <Link
                     href="/machine-condition-monitoring"
                     className="text-black text-[14px] transition-all duration-1000 hover:text-[#3563E9] py-2 px-[40px]"
-                    onClick={() => toggleMenu()}
+                    onClick={() => handleCloseMobileMenu(toggleIotSolutions)}
                   >
                     Condition Monitoring
                   </Link>
                   <Link
                     href="/oee-and-production-monitoring"
                     className="text-black text-[14px] transition-all duration-1000 hover:text-[#3563E9] py-2 px-[40px]"
-                    onClick={() => toggleMenu()}
+                    onClick={() => handleCloseMobileMenu(toggleIotSolutions)}
                   >
                     Productivity Monitoring
                   </Link>
@@ -721,21 +731,21 @@ const NavBar: React.FC = () => {
                   <Link
                     href="/our-process"
                     className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
-                    onClick={() => toggleMenu()}
+                    onClick={() => handleCloseMobileMenu(toggleServices)}
                   >
                     Overview
                   </Link>
                   <Link
                     href="/services-overview"
                     className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
-                    onClick={() => toggleMenu()}
+                    onClick={() => handleCloseMobileMenu(toggleServices)}
                   >
                     Capabilities
                   </Link>
                   <Link
                     href="/our-works"
                     className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
-                    onClick={() => toggleMenu()}
+                    onClick={() => handleCloseMobileMenu(toggleServices)}
                   >
                     Projects
                   </Link>
@@ -759,14 +769,14 @@ const NavBar: React.FC = () => {
                   <Link
                     href="/"
                     className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
-                    onClick={() => toggleMenu()}
+                    onClick={() => handleCloseMobileMenu(toggleProducts)}
                   >
                     Edge Connect Series
                   </Link>
                   <Link
                     href="/"
                     className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
-                    onClick={() => toggleMenu()}
+                    onClick={() => handleCloseMobileMenu(toggleProducts)}
                   >
                     Field Connect Series
                   </Link>
@@ -790,21 +800,21 @@ const NavBar: React.FC = () => {
                   <Link
                     href="/about-us"
                     className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
-                    onClick={() => toggleMenu()}
+                    onClick={() => handleCloseMobileMenu(toggleAboutUs)}
                   >
                     Overview
                   </Link>
                   <Link
                     href="/our-team"
                     className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
-                    onClick={() => toggleMenu()}
+                    onClick={() => handleCloseMobileMenu(toggleAboutUs)}
                   >
                     Team
                   </Link>
                   <Link
                     href="/"
                     className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
-                    onClick={() => toggleMenu()}
+                    onClick={() => handleCloseMobileMenu(toggleAboutUs)}
                   >
                     Careers
                   </Link>
@@ -828,14 +838,14 @@ const NavBar: React.FC = () => {
                   <Link
                     href="/blogs"
                     className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
-                    onClick={() => toggleMenu()}
+                    onClick={() => handleCloseMobileMenu(toggleMedia)}
                   >
                     Blogs
                   </Link>
                   <Link
                     href="/"
                     className="text-black text-[14px] transition-all duration-500 hover:text-[#3563E9] py-2 px-[40px]"
-                    onClick={() => toggleMenu()}
+                    onClick={() => handleCloseMobileMenu(toggleMedia)}
                   >
                     Press
                   </Link>
