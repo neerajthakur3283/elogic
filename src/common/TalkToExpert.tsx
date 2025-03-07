@@ -74,7 +74,7 @@ function TalkToExpert() {
                 </form>
               </div>
             </div>
-            <div className="2xl:w-[calc(100%_-_741px)] xl:w-[calc(100%_-_555px)] lg:w-[calc(100%_-_495px)] md:w-[calc(100%_-_395px)]">
+            <div className="2xl:w-[calc(100%_-_741px)] xl:w-[calc(100%_-_555px)] lg:w-[calc(100%_-_495px)] md:w-[calc(100%_-_395px)] w-full">
               <iframe
                 className="h-full w-full"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30453.907124137066!2d78.423904!3d17.424338!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb970d18993739%3A0x90c151e6974d10e8!2seLogicTech%20Edge!5e0!3m2!1sen!2sin!4v1738235240338!5m2!1sen!2sin"

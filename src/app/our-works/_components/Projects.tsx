@@ -665,6 +665,67 @@ export default function Projects() {
     }
   }, [currentIndex]);
 
+  useEffect(() => {
+  const handleScroll = () => {
+    if (!scrollContainerRef.current) return;
+
+    const scrollTop = scrollContainerRef.current.scrollTop;
+    const listItems = circlesRef.current.filter(Boolean) as HTMLDivElement[];
+    let newIndex = 0;
+
+    for (let i = 0; i < listItems.length; i++) {
+      const itemTop = listItems[i].offsetTop - scrollContainerRef.current.offsetTop;
+      if (scrollTop >= itemTop) {
+        newIndex = i;
+      } else {
+        break;
+      }
+    }
+
+    setCurrentIndex(newIndex);
+  };
+
+  const container = scrollContainerRef.current;
+  container?.addEventListener("scroll", handleScroll);
+
+  return () => container?.removeEventListener("scroll", handleScroll);
+}, []);
+
+useEffect(() => {
+  const handleScroll = () => {
+    if (!scrollContainerRef.current) return;
+
+    const container = scrollContainerRef.current;
+    const listItems = circlesRef.current.filter(Boolean) as HTMLDivElement[];
+
+    if (listItems.length === 0) return;
+
+    let closestIndex = currentIndex;
+    let minDistance = Number.MAX_VALUE;
+
+    listItems.forEach((item, index) => {
+      const itemTop = item.getBoundingClientRect().top;
+      const containerTop = container.getBoundingClientRect().top;
+      const distance = Math.abs(itemTop - containerTop);
+
+      if (distance < minDistance) {
+        minDistance = distance;
+        closestIndex = index;
+      }
+    });
+
+    if (closestIndex !== currentIndex) {
+      setCurrentIndex(closestIndex);
+    }
+  };
+
+  const container = scrollContainerRef.current;
+  container?.addEventListener("scroll", handleScroll);
+
+  return () => container?.removeEventListener("scroll", handleScroll);
+}, [currentIndex]);
+
+
   return (
     <section>
       <div className="2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] 2xl:py-[100px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px]">

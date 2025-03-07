@@ -19,7 +19,7 @@ const AppCard: React.FC<AppCardProps> = ({ appCardData }) => {
   return (
     <>
       {appCardData.map((data, index) => (
-        <div
+        <Link href={data.appLink}
           key={index}
           className="group transition-all duration-500 border border-transparent min-[1200px]:hover:border-[rgba(255,255,255,0.15)] min-[1200px]:hover:shadow-[0_0_15px_rgba(255,255,255,0.35)] 2xl:rounded-[16px] xl:rounded-[12px] lg:px-[48px]rounded-[10px] rounded-[14px] overflow-hidden bg-[rgba(255,255,255,0.14)]"
         >
@@ -40,15 +40,14 @@ const AppCard: React.FC<AppCardProps> = ({ appCardData }) => {
             <h4 className="text-white font-semibold 2xl:text-[24px] xl:text-[18px] md:text-base text-[18px] 2xl:py-[16px] xl:py-[12px] lg:py-[11px] py-[14px] 2xl:leading-[1.5]">
               {data.cardTitle}
             </h4>
-            <Link
-              href={data.appLink}
+            <span
               className="flex items-center text-[#4272FF] 2xl:text-base xl:text-[12px] lg:text-[11px] text-[15px] font-bold 2xl:py-[10px] xl:py-[7.5px] lg:py-[6.6px] py-[8px]"
             >
               <span className="underline">{data.linkText}</span>{" "}
               <IoIosArrowForward />
-            </Link>
+            </span>
           </div>
-        </div>
+        </Link>
       ))}
     </>
   );

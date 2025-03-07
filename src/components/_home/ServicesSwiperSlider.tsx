@@ -101,7 +101,7 @@ const swipeHandlers = useSwipeable({
   trackMouse: true, // Enable mouse swipe for testing in desktop mode
 });
   return (
-    <div {...swipeHandlers} className="flex flex-col justify-center items-center relative w-full m-auto overflow-hidden 2xl:h-[590px] xl:h-[510px] lg:h-[415px] md:h-[375px] sm:h-[780px] max-[639px]:h-[630px]">
+    <div {...swipeHandlers} className="flex flex-col justify-center items-center relative w-full m-auto overflow-hidden 2xl:h-[590px] xl:h-[510px] lg:h-[415px] md:h-[375px] sm:h-[780px] max-[639px]:h-[665px]">
       <div className="relative flex w-full h-full">
         {desktopImages.map((image, index) => {
           const position =
@@ -149,7 +149,7 @@ const swipeHandlers = useSwipeable({
               onClick={() => handleDotClick(index)}
               className="absolute transition-all duration-500 2xl:max-w-[1085px] xl:max-w-[815px] lg:max-w-[725px] md:max-w-[615px] sm:max-w-[505px] max-[639px]:max-w-[320px] max-[450px]:max-w-[calc(100%_-_60px)] w-full"
             >
-              <div className="2xl:rounded-[24px] xl:rounded-[18px] md:rounded-[16px] rounded-[18.45px] bg-no-repeat bg-cover md:bg-[url('../images/swipe-slide-bg.jpg')] bg-[url('../images/swipe-slide-mob-bg.jpg')] mx-auto 2xl:py-[74px] xl:py-[55px] md:py-[30px] py-[30px] 2xl:ps-[60px] xl:ps-[50px] lg:ps-[25px] ps-[20px] 2xl:pe-[70px] xl:pe-[60px] lg:pe-[30px] pe-[20px] flex items-center justify-between md:flex-nowrap flex-wrap max-[767px]:h-[734px] max-[639px]:h-[600px]">
+              <div className="2xl:rounded-[24px] xl:rounded-[18px] md:rounded-[16px] rounded-[18.45px] bg-no-repeat bg-cover md:bg-[url('../images/swipe-slide-bg.jpg')] bg-[url('../images/swipe-slide-mob-bg.jpg')] mx-auto 2xl:py-[74px] xl:py-[55px] md:py-[30px] py-[30px] 2xl:ps-[60px] xl:ps-[50px] lg:ps-[25px] ps-[20px] 2xl:pe-[70px] xl:pe-[60px] lg:pe-[30px] pe-[20px] flex items-center justify-between md:flex-nowrap flex-wrap max-[767px]:h-[734px] max-[639px]:h-[625px]">
                 <div className="2xl:w-[395.81px] xl:w-[330px] lg:w-[360px] md:w-[315px] w-full">
                   <h3 className="font-bold 2xl:text-[32.54px] xl:text-[24px] lg:text-[22.5px] text-[20px] text-white capitalize">
                     {image.slideTitle}
