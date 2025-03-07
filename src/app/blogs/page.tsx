@@ -16,73 +16,73 @@ function page() {
       cardTitle:
         "Accelerate Your IoT Product Development Journey",
       cardLink: "blogs/mastering-chatgpt",
+      blogDes:'The world requirement for IoT devices is continuously increasing around all sectors, industrial verticals, enterprises, and home applications.',
       linkText: "Learn More",
       cardImg: bogOne,
-      blogTag: "Technology",
-      cardDate: "August 20, 2022",
+       
     },
     {
       cardTitle:
         "The Hidden Cost of Hardware Prototyping",
       cardLink: "blogs/mastering-chatgpt",
+      blogDes:'The market for embedded systems and IoT-dominated embedded systems is increasing steadily. To meet the demands of high performance, connectivity.',
       linkText: "Learn More",
       cardImg: blogTwo,
-      blogTag: "Technology",
-      cardDate: "August 20, 2022",
+       
     },
     {
       cardTitle:
         "Outsource IoT Development - Save Your Engineering Hours and Get 10X Results",
       cardLink: "blogs/mastering-chatgpt",
+      blogDes:'The adoption of embedded and IoT products in the industrial and consumer sectors is rising in the embedded system market.',
       linkText: "Learn More",
       cardImg: blogThree,
-      blogTag: "Technology",
-      cardDate: "August 20, 2022",
+       
     },
     {
       cardTitle:
         "What Is Industry 4.0 and the Industry Disruptions",
       cardLink: "blogs/mastering-chatgpt",
+      blogDes:'An extensive blog from eLogicTech about what industry 4.0 is, how it has been shaped over the years, and understanding the use cases to stay prepared.',
       linkText: "Learn More",
       cardImg: blogFour,
-      blogTag: "Technology",
-      cardDate: "August 20, 2022",
+       
     },
     {
       cardTitle:
         "How IIoT can optimize a factory floor",
       cardLink: "blogs/mastering-chatgpt",
+      blogDes:'A bog post on how factories can adopt IIoT based solutions to optimize their processes to improve the operations as well as production effeiciency.',
       linkText: "Learn More",
       cardImg: bogOne,
-      blogTag: "Technology",
-      cardDate: "August 20, 2022",
+       
     },
     {
       cardTitle:
         "What Is Edge Computing? - Everything You Need to Know",
       cardLink: "blogs/mastering-chatgpt",
+      blogDes:'An extensive blog on what is edge computing and how it is powering the industrial revolution by making use of cloud computing and IoT solutions',
       linkText: "Learn More",
       cardImg: blogTwo,
-      blogTag: "Technology",
-      cardDate: "August 20, 2022",
+       
     },
     {
       cardTitle:
         "How Smart Buildings are Paving the Way for Sustainable Infrastructure",
       cardLink: "blogs/mastering-chatgpt",
+      blogDes:'A blog on IoT sensors connected wirelessly backed by embedded systems can log data, monitor, and provide visualized data for sustainable infrastructure.',
       linkText: "Learn More",
       cardImg: blogThree,
-      blogTag: "Technology",
-      cardDate: "August 20, 2022",
+       
     },
     {
       cardTitle:
         "Connected Device - The Rule of Thumb in Embedded Systems Development",
       cardLink: "blogs/mastering-chatgpt",
+      blogDes:'A technical blog from eLogicTech Edge on the importance of device connectivity in embedded systems development and the key factors associated with it',
       linkText: "Learn More",
       cardImg: blogFour,
-      blogTag: "Technology",
-      cardDate: "August 20, 2022",
+       
     },
   ];
   return (
