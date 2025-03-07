@@ -56,7 +56,7 @@ const Slider: React.FC = () => {
     const startSlider = () => {
       intervalRef.current = setInterval(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % sliderData.length);
-      }, 4000);
+      }, 5000);
     };
 
     startSlider();
@@ -93,7 +93,7 @@ const Slider: React.FC = () => {
                       key={currentIndex}
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 1, y: -10 }}
+                      exit={{ opacity: 0.5, y: -10 }}
                       transition={{ duration: 1, ease: "easeInOut" }}
                       className="text-[#F9F9FB] 2xl:text-[24px] xl:text-[18px] text-base md:leading-7 leading-[1.65] tracking-[-0.2px] 2xl:pt-[30px] xl:pt-[20px] md:pt-[15x] pt-[12px]"
                     >
@@ -116,7 +116,7 @@ const Slider: React.FC = () => {
                     key={currentIndex}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    exit={{ opacity: 1 }}
+                    exit={{ opacity: 0.5 }}
                     transition={{ duration: 1, ease: "easeInOut" }}
                   >
                     <Image
