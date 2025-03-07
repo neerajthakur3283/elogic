@@ -9,42 +9,42 @@ import blogFour from "@/src/assets/images/blog-4.jpg";
 
 function RelatedBlogs() {
     const blogCardData = [
-        {
-          cardTitle:
-            "The Impact of Technology on the Workplace: How Technology is Changing",
-          cardLink: "blogs/mastering-chatgpt",
-          linkText: "Learn More",
-          cardImg: bogOne,
-          blogTag: "Technology",
-          cardDate: "August 20, 2022",
-        },
-        {
-          cardTitle:
-            "The Impact of Technology on the Workplace: How Technology is Changing",
-          cardLink: "blogs/mastering-chatgpt",
-          linkText: "Learn More",
-          cardImg: blogTwo,
-          blogTag: "Technology",
-          cardDate: "August 20, 2022",
-        },
-        {
-          cardTitle:
-            "The Impact of Technology on the Workplace: How Technology is Changing",
-          cardLink: "blogs/mastering-chatgpt",
-          linkText: "Learn More",
-          cardImg: blogThree,
-          blogTag: "Technology",
-          cardDate: "August 20, 2022",
-        },
-        {
-          cardTitle:
-            "The Impact of Technology on the Workplace: How Technology is Changing",
-          cardLink: "blogs/mastering-chatgpt",
-          linkText: "Learn More",
-          cardImg: blogFour,
-          blogTag: "Technology",
-          cardDate: "August 20, 2022",
-        },
+      {
+        cardTitle:
+          "Accelerate Your IoT Product Development Journey",
+        cardLink: "blogs/mastering-chatgpt",
+        blogDes:'The world requirement for IoT devices is continuously increasing around all sectors, industrial verticals, enterprises, and home applications.',
+        linkText: "Learn More",
+        cardImg: bogOne,
+         
+      },
+      {
+        cardTitle:
+          "The Hidden Cost of Hardware Prototyping",
+        cardLink: "blogs/mastering-chatgpt",
+        blogDes:'The market for embedded systems and IoT-dominated embedded systems is increasing steadily. To meet the demands of high performance, connectivity.',
+        linkText: "Learn More",
+        cardImg: blogTwo,
+         
+      },
+      {
+        cardTitle:
+          "Outsource IoT Development - Save Your Engineering Hours and Get 10X Results",
+        cardLink: "blogs/mastering-chatgpt",
+        blogDes:'The adoption of embedded and IoT products in the industrial and consumer sectors is rising in the embedded system market.',
+        linkText: "Learn More",
+        cardImg: blogThree,
+         
+      },
+      {
+        cardTitle:
+          "What Is Industry 4.0 and the Industry Disruptions",
+        cardLink: "blogs/mastering-chatgpt",
+        blogDes:'An extensive blog from eLogicTech about what industry 4.0 is, how it has been shaped over the years, and understanding the use cases to stay prepared.',
+        linkText: "Learn More",
+        cardImg: blogFour,
+         
+      },
       ];
   return (
     <>
