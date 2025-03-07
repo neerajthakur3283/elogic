@@ -14,7 +14,7 @@ function page() {
   const blogCardData = [
     {
       cardTitle:
-        "The Impact of Technology on the Workplace: How Technology is Changing",
+        "Accelerate Your IoT Product Development Journey",
       cardLink: "blogs/mastering-chatgpt",
       linkText: "Learn More",
       cardImg: bogOne,
@@ -23,7 +23,7 @@ function page() {
     },
     {
       cardTitle:
-        "The Impact of Technology on the Workplace: How Technology is Changing",
+        "The Hidden Cost of Hardware Prototyping",
       cardLink: "blogs/mastering-chatgpt",
       linkText: "Learn More",
       cardImg: blogTwo,
@@ -32,7 +32,7 @@ function page() {
     },
     {
       cardTitle:
-        "The Impact of Technology on the Workplace: How Technology is Changing",
+        "Outsource IoT Development - Save Your Engineering Hours and Get 10X Results",
       cardLink: "blogs/mastering-chatgpt",
       linkText: "Learn More",
       cardImg: blogThree,
@@ -41,7 +41,7 @@ function page() {
     },
     {
       cardTitle:
-        "The Impact of Technology on the Workplace: How Technology is Changing",
+        "What Is Industry 4.0 and the Industry Disruptions",
       cardLink: "blogs/mastering-chatgpt",
       linkText: "Learn More",
       cardImg: blogFour,
@@ -50,7 +50,7 @@ function page() {
     },
     {
       cardTitle:
-        "The Impact of Technology on the Workplace: How Technology is Changing",
+        "How IIoT can optimize a factory floor",
       cardLink: "blogs/mastering-chatgpt",
       linkText: "Learn More",
       cardImg: bogOne,
@@ -59,7 +59,7 @@ function page() {
     },
     {
       cardTitle:
-        "The Impact of Technology on the Workplace: How Technology is Changing",
+        "What Is Edge Computing? - Everything You Need to Know",
       cardLink: "blogs/mastering-chatgpt",
       linkText: "Learn More",
       cardImg: blogTwo,
@@ -68,7 +68,7 @@ function page() {
     },
     {
       cardTitle:
-        "The Impact of Technology on the Workplace: How Technology is Changing",
+        "How Smart Buildings are Paving the Way for Sustainable Infrastructure",
       cardLink: "blogs/mastering-chatgpt",
       linkText: "Learn More",
       cardImg: blogThree,
@@ -77,7 +77,7 @@ function page() {
     },
     {
       cardTitle:
-        "The Impact of Technology on the Workplace: How Technology is Changing",
+        "Connected Device - The Rule of Thumb in Embedded Systems Development",
       cardLink: "blogs/mastering-chatgpt",
       linkText: "Learn More",
       cardImg: blogFour,
