@@ -727,7 +727,7 @@ function ProjectsCards() {
   return (
     <>
       <section>
-        <div className="flex flex-col md:hidden 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] 2xl:py-[100px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px]">
+        <div className="flex flex-col min-[1200px]:hidden 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] 2xl:py-[100px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px]">
           <h2 className="leading-[1] 2xl:text-[61.77px] xl:text-[46.33px] md:text-[41.18px] text-[24px] font-bold capitalize text-center 2xl:pb-[70px] xl:pb-[52px] lg:pb-[45px] pb-[40px]">
             Projects
           </h2>
@@ -780,7 +780,7 @@ function ProjectsCards() {
             ))}
           </div>
         </div>
-        <div className="hidden md:flex">
+        <div className="hidden min-[1200px]:flex">
           <div className="2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] 2xl:py-[100px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px]">
             <div className="flex items-start 2xl:gap-[54px] max-[991px]:flex-wrap overflow-y-hidden">
               <div className="2xl:w-[383px] xl:w-[303px] md:w-[260px] max-[991px]:!w-full">
