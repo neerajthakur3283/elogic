@@ -617,113 +617,54 @@ const projects = [
 
 function ProjectsCards() {
   const scrollContainerRef = useRef<HTMLUListElement>(null);
-    const circlesRef = useRef<(HTMLDivElement | null)[]>([]);
-    const userInteractedRef = useRef(false);
-    const intervalRef = useRef<NodeJS.Timeout | null>(null);
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const [lineHeight, setLineHeight] = useState<number>(0);
-  
-    const handleClick = (index: number) => {
-      setCurrentIndex(index);
-      userInteractedRef.current = true;
-      if (intervalRef.current) {
-        clearInterval(intervalRef.current);
-      }
-    };
-  
-    const startAutomation = () => {
-      if (!userInteractedRef.current) {
-        intervalRef.current = setInterval(() => {
-          setCurrentIndex((prevIndex) => (prevIndex + 1) % projects.length);
-        }, 6000);
-      }
-    };
-  
-    useEffect(() => {
-      const resetUserInteraction = setTimeout(() => {
-        userInteractedRef.current = false;
-        startAutomation();
-      }, 15000);
-  
-      return () => clearTimeout(resetUserInteraction);
-    }, [currentIndex]);
-  
-    useEffect(() => {
-      startAutomation();
-      return () => {
-        if (intervalRef.current) clearInterval(intervalRef.current);
-      };
-    }, []);
-  
-    useEffect(() => {
-      if (circlesRef.current[currentIndex]) {
-        const containerTop =
-          scrollContainerRef.current?.getBoundingClientRect().top || 0;
-        const activeCircleTop =
-          circlesRef.current[currentIndex]?.getBoundingClientRect().top || 0;
-        setLineHeight(activeCircleTop - containerTop);
-      }
-    }, [currentIndex]);
-  
-    useEffect(() => {
-    const handleScroll = () => {
-      if (!scrollContainerRef.current) return;
-  
-      const scrollTop = scrollContainerRef.current.scrollTop;
-      const listItems = circlesRef.current.filter(Boolean) as HTMLDivElement[];
-      let newIndex = 0;
-  
-      for (let i = 0; i < listItems.length; i++) {
-        const itemTop = listItems[i].offsetTop - scrollContainerRef.current.offsetTop;
-        if (scrollTop >= itemTop) {
-          newIndex = i;
-        } else {
-          break;
-        }
-      }
-  
-      setCurrentIndex(newIndex);
-    };
-  
-    const container = scrollContainerRef.current;
-    container?.addEventListener("scroll", handleScroll);
-  
-    return () => container?.removeEventListener("scroll", handleScroll);
-  }, []);
-  
+  const circlesRef = useRef<(HTMLDivElement | null)[]>([]);
+  const userInteractedRef = useRef(false);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [lineHeight, setLineHeight] = useState<number>(0);
+
+  const handleClick = (index: number) => {
+    setCurrentIndex(index);
+    userInteractedRef.current = true;
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+    }
+  };
+
+  const startAutomation = () => {
+    if (!userInteractedRef.current) {
+      intervalRef.current = setInterval(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % projects.length);
+      }, 6000);
+    }
+  };
+
   useEffect(() => {
-    const handleScroll = () => {
-      if (!scrollContainerRef.current) return;
-  
-      const container = scrollContainerRef.current;
-      const listItems = circlesRef.current.filter(Boolean) as HTMLDivElement[];
-  
-      if (listItems.length === 0) return;
-  
-      let closestIndex = currentIndex;
-      let minDistance = Number.MAX_VALUE;
-  
-      listItems.forEach((item, index) => {
-        const itemTop = item.getBoundingClientRect().top;
-        const containerTop = container.getBoundingClientRect().top;
-        const distance = Math.abs(itemTop - containerTop);
-  
-        if (distance < minDistance) {
-          minDistance = distance;
-          closestIndex = index;
-        }
-      });
-  
-      if (closestIndex !== currentIndex) {
-        setCurrentIndex(closestIndex);
-      }
-    };
-  
-    const container = scrollContainerRef.current;
-    container?.addEventListener("scroll", handleScroll);
-  
-    return () => container?.removeEventListener("scroll", handleScroll);
+    const resetUserInteraction = setTimeout(() => {
+      userInteractedRef.current = false;
+      startAutomation();
+    }, 15000);
+
+    return () => clearTimeout(resetUserInteraction);
   }, [currentIndex]);
+
+  useEffect(() => {
+    startAutomation();
+    return () => {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (circlesRef.current[currentIndex]) {
+      const containerTop =
+        scrollContainerRef.current?.getBoundingClientRect().top || 0;
+      const activeCircleTop =
+        circlesRef.current[currentIndex]?.getBoundingClientRect().top || 0;
+      setLineHeight(activeCircleTop - containerTop);
+    }
+  }, [currentIndex]);
+
   return (
     <>
       <section>
@@ -858,16 +799,21 @@ function ProjectsCards() {
                     </div>
                   </div>
                   <div className="group [&>*:nth-child(1)]:border-b [&>*:nth-child(1)]:border-b-[rgba(255,255,255,0.5)] [&>*:nth-child(2)]:border-b [&>*:nth-child(2)]:border-b-[rgba(255,255,255,0.5)] 2xl:pt-[40px] [&>*:nth-child(1)]:2xl:pb-[30px] [&>*:nth-child(2)]:2xl:pb-[30px] [&>*:nth-child(1)]:2xl:mb-[30px] [&>*:nth-child(2)]:2xl:mb-[30px] [&>*:nth-child(1)]:xl:pb-[20px] [&>*:nth-child(2)]:xl:pb-[20px] [&>*:nth-child(1)]:pb-[18px] [&>*:nth-child(2)]:pb-[18px] [&>*:nth-child(1)]:xl:mb-[20px] [&>*:nth-child(2)]:xl:mb-[20px] [&>*:nth-child(1)]:mb-[18px] [&>*:nth-child(2)]:mb-[18px] xl:pt-[30px] md:pt-[26px] pt-[30px] grid md:grid-cols-2 grid-cols-1 2xl:gap-x-[53px] xl:gap-x-[40px] md:gap-x-[35px] max-[767px]:[&>div]:border-b max-[767px]:[&>div]:border-b-[rgba(255,255,255,0.5)] max-[767px]:[&>div]:!pb-5 max-[767px]:[&>div]:!mb-5 max-[767px]:[&>*:last-child]:border-b-0 max-[767px]:[&>*:last-child]:!pb-0">
-                    {projects[currentIndex].projectCards.map((data, subindex) => (
-                      <div key={subindex} className="group-nth-child(1):border-b">
-                        <h1 className="2xl:text-[21.33px] xl:text-[16px] md:text-[14.22px] text-base text-white">
-                          {data.cardHeading}
-                        </h1>
-                        <div className="2xl:text-base xl:text-[15px] md:text-[14px] text-[12px] text-white 2xl:mt-4 mt-3">
-                          {data.cardDes}
+                    {projects[currentIndex].projectCards.map(
+                      (data, subindex) => (
+                        <div
+                          key={subindex}
+                          className="group-nth-child(1):border-b"
+                        >
+                          <h1 className="2xl:text-[21.33px] xl:text-[16px] md:text-[14.22px] text-base text-white">
+                            {data.cardHeading}
+                          </h1>
+                          <div className="2xl:text-base xl:text-[15px] md:text-[14px] text-[12px] text-white 2xl:mt-4 mt-3">
+                            {data.cardDes}
+                          </div>
                         </div>
-                      </div>
-                    ))}
+                      )
+                    )}
                   </div>
                 </div>
               </div>

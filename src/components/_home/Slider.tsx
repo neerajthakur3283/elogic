@@ -26,12 +26,8 @@ const Slider: React.FC = () => {
       id: 2,
       sliderImg: slideTwo,
       mobSliderImg: moImgeOne,
-      slidePara: (
-        <>
-          Reduction in downtime loss costs through early <br />
-          failure predictions&quot;
-        </>
-      ),
+      slidePara:
+        "Reduction in downtime loss costs through early failure predictions'",
     },
     {
       id: 3,
@@ -45,7 +41,7 @@ const Slider: React.FC = () => {
       sliderImg: slideFour,
       mobSliderImg: moImgeOne,
       slidePara:
-        "Identification of costly sub-optimial running conditions such as excess power, consumables and wastage",
+        "Identification of costly sub-optimal running conditions such as excess power, consumables and wastage",
     },
   ];
 
@@ -81,7 +77,7 @@ const Slider: React.FC = () => {
         className="relative ms:pt-0 pt-4 after:absolute after:left-0 after:right-0 after:top-0 after:h-[210px] after:bg-gradient-to-b after:from-black to-[rgba(0,0,0,0)]"
       >
         <div className="absolute z-[2] left-0 top-0 bottom-0 flex items-center w-full">
-          <div className="relative w-full" key={currentIndex}>
+          <div className="relative w-full">
             <div className="slider-image w-full relative flex items-center md:flex-nowrap flex-wrap justify-between">
               <div className="flex md:items-center 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] max-[991px]:!top-[25px] z-[2]">
                 <div className="w-full 2xl:max-w-[845px] xl:max-w-[632px] md:max-w-[562px] max-w-[372px]">
@@ -91,11 +87,11 @@ const Slider: React.FC = () => {
                   <AnimatePresence mode="wait">
                     <motion.p
                       key={currentIndex}
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0.5, y: -10 }}
-                      transition={{ duration: 1, ease: "easeInOut" }}
-                      className="text-[#F9F9FB] 2xl:text-[24px] xl:text-[18px] text-base md:leading-7 leading-[1.65] tracking-[-0.2px] 2xl:pt-[30px] xl:pt-[20px] md:pt-[15x] pt-[12px]"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      transition={{ duration: 0, ease: "easeInOut" }}
+                      className="text-[#F9F9FB] 2xl:text-[24px] xl:text-[18px] text-base md:leading-7 leading-[1.65] tracking-[-0.2px] 2xl:pt-[30px] xl:pt-[20px] md:pt-[15px] pt-[12px]"
                     >
                       {sliderData[currentIndex].slidePara}
                     </motion.p>
@@ -116,8 +112,8 @@ const Slider: React.FC = () => {
                     key={currentIndex}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    exit={{ opacity: 0.5 }}
-                    transition={{ duration: 1, ease: "easeInOut" }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0, ease: "easeInOut" }}
                   >
                     <Image
                       className="w-full"
