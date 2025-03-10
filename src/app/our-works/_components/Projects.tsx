@@ -27,7 +27,7 @@ const projects = [
         cardHeading: "Capabilities involved",
         cardDes: (
           <>
-            <ul className="list-disc ps-[17px] grid grid-cols-2">
+            <ul className="list-disc ps-[17px] grid grid-cols-2 max-[991px]:!grid-cols-1">
               <li>hardware design </li>
               <li>PCB layout & routing </li>
               <li>power integrity analysis</li>
@@ -69,7 +69,7 @@ const projects = [
         cardHeading: "Capabilities involved",
         cardDes: (
           <>
-            <ul className="list-disc ps-[17px] grid grid-cols-2">
+            <ul className="list-disc ps-[17px] grid grid-cols-2 max-[991px]:!grid-cols-1">
               <li>hardware design</li>
               <li>PCB layout & routing</li>
               <li>antenna design</li>
@@ -120,7 +120,7 @@ const projects = [
         cardHeading: "Capabilities involved",
         cardDes: (
           <>
-            <ul className="list-disc ps-[17px] grid grid-cols-2">
+            <ul className="list-disc ps-[17px] grid grid-cols-2 max-[991px]:!grid-cols-1">
               <li>hardware design</li>
               <li>PCB layout & routing</li>
               <li>firmware development</li>
@@ -164,7 +164,7 @@ const projects = [
         cardHeading: "Capabilities involved",
         cardDes: (
           <>
-            <ul className="list-disc ps-[17px] grid grid-cols-2">
+            <ul className="list-disc ps-[17px] grid grid-cols-2 max-[991px]:!grid-cols-1">
               <li>analog & digital hardware design</li>
               <li>mixed-signal PCB layout & routing</li>
               <li>firmware development</li>
@@ -248,7 +248,7 @@ const projects = [
       {
         cardHeading: "Capabilities involved",
         cardDes: (
-          <ul className="list-disc ps-[17px] grid grid-cols-2">
+          <ul className="list-disc ps-[17px] grid grid-cols-2 max-[991px]:!grid-cols-1">
             <li>modular analog front-end design </li>
             <li>System-on-module-based hardware design </li>
             <li>mechanical design </li>
@@ -289,7 +289,7 @@ const projects = [
       {
         cardHeading: "Capabilities involved",
         cardDes: (
-          <ul className="list-disc ps-[17px] grid grid-cols-2">
+          <ul className="list-disc ps-[17px] grid grid-cols-2 max-[991px]:!grid-cols-1">
             <li>modular analog front-end design</li>
             <li>hardware design</li>
             <li>mixed-signal PCB layout & routing</li>
@@ -333,7 +333,7 @@ const projects = [
       {
         cardHeading: "Capabilities involved",
         cardDes: (
-          <ul className="list-disc ps-[17px] grid grid-cols-2">
+          <ul className="list-disc ps-[17px] grid grid-cols-2 max-[991px]:!grid-cols-1">
             <li>hardware design</li>
             <li>PCB layout & routing</li>
             <li>firmware development</li>
@@ -378,7 +378,7 @@ const projects = [
       {
         cardHeading: "Capabilities involved",
         cardDes: (
-          <ul className="list-disc ps-[17px] grid grid-cols-2">
+          <ul className="list-disc ps-[17px] grid grid-cols-2 max-[991px]:!grid-cols-1">
             <li>linux kernel customization and application development</li>
             <li>System-on-module-based hardware design</li>
             <li>wired & wireless protocol implementation</li>
@@ -425,7 +425,7 @@ const projects = [
       {
         cardHeading: "Capabilities involved",
         cardDes: (
-          <ul className="list-disc ps-[17px] grid grid-cols-2">
+          <ul className="list-disc ps-[17px] grid grid-cols-2 max-[991px]:!grid-cols-1">
             <li>microprocessor-based hardware design</li>
             <li>mixed-signal & high speed PCB layout & routing</li>
             <li>linux kernel customization and application development</li>
@@ -471,7 +471,7 @@ const projects = [
       {
         cardHeading: "Capabilities involved",
         cardDes: (
-          <ul className="list-disc ps-[17px] grid grid-cols-2">
+          <ul className="list-disc ps-[17px] grid grid-cols-2 max-[991px]:!grid-cols-1">
             <li>hardware design</li>
             <li>PCB layout & routing</li>
             <li>power & thermal simulations</li>
@@ -514,7 +514,7 @@ const projects = [
       {
         cardHeading: "Capabilities involved",
         cardDes: (
-          <ul className="list-disc ps-[17px] grid grid-cols-2">
+          <ul className="list-disc ps-[17px] grid grid-cols-2 max-[991px]:!grid-cols-1">
             <li>analog front end design</li>
             <li>hardware design</li>
             <li>PCB layout & routing</li>
@@ -556,7 +556,7 @@ const projects = [
       {
         cardHeading: "Capabilities involved",
         cardDes: (
-          <ul className="list-disc ps-[17px] grid grid-cols-2">
+          <ul className="list-disc ps-[17px] grid grid-cols-2 max-[991px]:!grid-cols-1">
             <li>Firmware development</li>
             <li>System Integration</li>
             <li>Field testing</li>
@@ -595,7 +595,7 @@ const projects = [
       {
         cardHeading: "Capabilities involved",
         cardDes: (
-          <ul className="list-disc ps-[17px] grid grid-cols-2">
+          <ul className="list-disc ps-[17px] grid grid-cols-2 max-[991px]:!grid-cols-1">
             <li>Firmware development</li>
             <li>System Integration</li>
             <li>Field testing</li>
@@ -668,7 +668,7 @@ function ProjectsCards() {
   return (
     <>
       <section>
-        <div className="flex flex-col min-[1200px]:hidden 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] 2xl:py-[100px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px]">
+        <div className="flex flex-col md:hidden 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] 2xl:py-[100px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px]">
           <h2 className="leading-[1] 2xl:text-[61.77px] xl:text-[46.33px] md:text-[41.18px] text-[24px] font-bold capitalize text-center 2xl:pb-[70px] xl:pb-[52px] lg:pb-[45px] pb-[40px]">
             Projects
           </h2>
@@ -721,10 +721,10 @@ function ProjectsCards() {
             ))}
           </div>
         </div>
-        <div className="hidden min-[1200px]:flex">
+        <div className="hidden md:flex">
           <div className="2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] 2xl:py-[100px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px]">
             <div className="flex items-start 2xl:gap-[54px] max-[991px]:flex-wrap overflow-y-hidden">
-              <div className="2xl:w-[383px] xl:w-[303px] md:w-[260px] max-[991px]:!w-full">
+              <div className="2xl:w-[383px] xl:w-[303px] md:w-[260px]">
                 <h2 className="text-[24px] font-bold mb-4">Projects</h2>
                 <div className="relative timeline-block">
                   <div className="absolute h-full w-1 bg-gray-300 max-h-[90vh] -z-[1] timeline-custom">
@@ -776,7 +776,7 @@ function ProjectsCards() {
               </div>
 
               {/* Project Details Card */}
-              <div className="2xl:w-[calc(100%_-_383px)] xl:w-[calc(100%_-_303px)] md:w-[calc(100%_-_260px)] max-[991px]:!w-full max-[991px]:mt-9 max-[767px]:mt-7 bg-[#051731] 2xl:rounded-[17.78px] xl:rounded-[12px] rounded-[10px] 2xl:p-[44px] xl:p-[33px] md:p-[30px] p-[20px]">
+              <div className="2xl:w-[calc(100%_-_383px)] xl:w-[calc(100%_-_303px)] md:w-[calc(100%_-_260px)] max-[991px]:mt-9 max-[767px]:mt-7 bg-[#051731] 2xl:rounded-[17.78px] xl:rounded-[12px] rounded-[10px] 2xl:p-[44px] xl:p-[33px] md:p-[30px] p-[20px]">
                 <div>
                   <div className="relative w-full imggrdnt after:absolute after:left-0 after:bottom-0 after:h-full after:w-full">
                     <Image
