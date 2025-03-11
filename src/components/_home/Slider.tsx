@@ -148,7 +148,7 @@ const Slider: React.FC = () => {
         <div className="bg-image max-[767px]:after:hidden after:absolute after:left-0 after:top-0 after:bottom-0 after:right-0 after:bg-gradient-to-r after:from-[rgba(0,0,0,0.57)] after:to-[rgba(0,0,0,0)] max-[991px]:h-[600px] max-[767px]:h-auto max-[991px]:[&>img]:h-full max-[991px]:[&>img]:object-cover">
           <Image className="md:flex hidden" src={staticBgImage} alt="" />
           <Image
-            className="md:hidden flex w-full"
+            className="md:hidden flex w-full max-[767px]:!h-[850px] max-[639px]:!h-[730px]"
             src={staticMobBgImage}
             alt=""
           />

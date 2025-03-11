@@ -723,7 +723,7 @@ function ProjectsCards() {
         </div>
         <div className="hidden md:flex">
           <div className="2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] 2xl:py-[100px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px]">
-            <div className="flex items-start 2xl:gap-[54px] max-[991px]:flex-wrap overflow-y-hidden">
+            <div className="flex lg:items-start 2xl:gap-[54px] max-[991px]:flex-wrap overflow-y-hidden">
               <div className="2xl:w-[383px] xl:w-[303px] md:w-[260px]">
                 <h2 className="text-[24px] font-bold mb-4">Projects</h2>
                 <div className="relative timeline-block">
@@ -738,7 +738,7 @@ function ProjectsCards() {
                   </div>
                   <ul
                     ref={scrollContainerRef}
-                    className="relative flex flex-col gap-y-[20px] overflow-y-auto max-h-[90vh] px-[20px] 2xl:py-[85px] xl:py-[60px] md:py-[45px] scrollbar-hide after:absolute after:top-0 after:left-0 after:w-full after:2xl:h-[85px] after:xl:h-[60px] after:md:h-[45px] after:bg-gradient-to-b after:from-white after:to-[rgba(255,255,255,0.0)] before:w-full before:2xl:h-[85px] before:xl:h-[60px] before:md:h-[45px] before:bg-gradient-to-t before:from-white before:to-[rgba(255,255,255,0.0)]"
+                    className="relative flex flex-col gap-y-[20px] overflow-y-auto max-h-[90vh] px-[20px] 2xl:py-[85px] xl:py-[60px] md:py-[30px] scrollbar-hide after:absolute after:top-0 after:left-0 after:w-full after:2xl:h-[85px] after:xl:h-[60px] after:md:h-[45px] after:bg-gradient-to-b after:from-white after:to-[rgba(255,255,255,0.0)] before:w-full before:2xl:h-[85px] before:xl:h-[60px] before:md:h-[45px] before:bg-gradient-to-t before:from-white before:to-[rgba(255,255,255,0.0)]"
                   >
                     {projects.map((project, index) => (
                       <li
@@ -766,7 +766,7 @@ function ProjectsCards() {
                               : "border-gray-300 bg-gray-300"
                           }`}
                         />
-                        <div className="2xl:min-h-[66px] xl:min-h-[55px] flex items-center max-[991px]:w-full ml-4">
+                        <div className="2xl:min-h-[66px] xl:min-h-[55px] flex items-center max-[991px]:w-full ml-4 text-base max-[1024px]:!text-[13px]">
                           {project.name}
                         </div>
                       </li>
@@ -776,9 +776,9 @@ function ProjectsCards() {
               </div>
 
               {/* Project Details Card */}
-              <div className="2xl:w-[calc(100%_-_383px)] xl:w-[calc(100%_-_303px)] md:w-[calc(100%_-_260px)] max-[991px]:mt-9 max-[767px]:mt-7 bg-[#051731] 2xl:rounded-[17.78px] xl:rounded-[12px] rounded-[10px] 2xl:p-[44px] xl:p-[33px] md:p-[30px] p-[20px]">
+              <div className="2xl:w-[calc(100%_-_383px)] xl:w-[calc(100%_-_303px)] md:w-[calc(100%_-_260px)] max-[991px]:mt-9 max-[767px]:mt-7 bg-[#051731] 2xl:rounded-[17.78px] xl:rounded-[12px] rounded-[10px] 2xl:p-[44px] xl:p-[33px] md:p-[30px] p-[20px] max-[1200px]:!h-screen max-[767px]:!h-auto">
                 <div>
-                  <div className="relative w-full imggrdnt after:absolute after:left-0 after:bottom-0 after:h-full after:w-full">
+                  <div className="relative w-full imggrdnt after:absolute after:left-0 after:bottom-0 after:h-full after:w-full max-[1024px]:h-[250px]">
                     <Image
                       src={projects[currentIndex].projectImg}
                       alt="Project"

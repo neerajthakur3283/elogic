@@ -58,7 +58,7 @@ const YouAreCard: React.FC<YouAreCardProps> = ({ youCardView }) => {
               </div>
             </div>
             <div className="w-full 2xl:text-[18px] xl:text-[13.5px] md:text-[12px] md:opacity-0 md:h-[0] group-hover:h-full group-hover:opacity-100">
-              <ul className="list-decimal 2xl:ps-[22px] ps-[17px] text-white font-semibold 2xl:text-[20px] xl:text-[15px] md:text-[13.33px] text-[15.24px] flex flex-col gap-2">
+              <ul className="list-decimal 2xl:ps-[22px] ps-[17px] text-white font-semibold 2xl:text-[20px] xl:text-[15px] md:text-[13.33px] text-[15.24px] flex flex-col gap-2 2xl:h-[170px] xl:h-[140px] md:h-[132px]">
                 {data.decListData.map((list, index) => (
                   <li key={index}>
                     {list.listTitle}
