@@ -207,7 +207,7 @@ const swipeHandlers = useSwipeable({
                         <div className="flex w-full justify-center">
                         <Image className={`${itm.imgclass}`} src={itm.slideImgs} alt="" />
                         </div>
-                        <span className="text-white md:text-[10px] text-[11px] flex w-full justify-center text-center lg:h-[40px] xl:h-[32px] break-all max-[767px]:!h-[45px] max-[639px]:!h-[70px] max-[390px]:!h-[90px]">{itm.texSlid}</span>
+                        <span className="home-block-text text-white md:text-[10px] break-words text-[11px] flex w-full justify-center text-center lg:h-[40px] xl:h-[32px] max-[767px]:!h-[45px] max-[639px]:!h-[70px] max-[390px]:!h-[90px]">{itm.texSlid}</span>
                       </div>
                     </li>
                     ))}

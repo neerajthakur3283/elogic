@@ -41,3 +41,38 @@
 .step-line{
   background-size: 100%;
 }
+
+.btn-animation {
+  transition: .2s ease-in-out 0s;
+}
+.btn-animation:hover{
+  transform: scale(1.1);
+}
+
+
+img {
+  transition: .2s ease-in-out 0s;
+}
+img:hover{
+  transform: scale(1.1);
+}
+
+input:hover{
+  outline: 1px solid #3563E9;
+  outline-offset: 1px;
+  box-shadow: #3563e9 0px 0px 6px 0px !important;
+  transition: .2s ease-in-out 0s;
+}
+
+@media (max-width: 767px) {
+  .home-block-text {
+    word-break: break-word !important;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .project-img {
+      height: 250px !important;
+  }
+}
