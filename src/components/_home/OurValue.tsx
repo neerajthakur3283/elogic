@@ -38,7 +38,7 @@ function OurValue() {
           </div>
           <div className="flex justify-center items-center 2xl:py-[50px] xl:py-[30px] lg:py-[20px] pb-[20px] mt-6">
             <Link
-              className="text-center bg-[#3563E9] text-white px-[2] w-full 2xl:max-w-[250px] xl:max-w-[185.5px] md:max-w-[166.44px] max-w-[190px] 2xl:h-[60px] xl:h-[45px] md:h-[41px] h-[48px] flex justify-center items-center py-[2px] 2xl:text-[19px] xl:text-[14.25px] text-[16px] md:text-[12.67px] md:font-bold font-semibold rounded-[16px] capitalize duration-500 hover:bg-white hover:text-black"
+              className="text-center bg-[#3563E9] text-white px-[2] w-full 2xl:max-w-[250px] xl:max-w-[185.5px] md:max-w-[166.44px] max-w-[190px] 2xl:h-[60px] xl:h-[45px] md:h-[41px] h-[48px] flex justify-center items-center py-[2px] 2xl:text-[19px] xl:text-[14.25px] text-[16px] md:text-[12.67px] md:font-bold font-semibold rounded-[16px] capitalize duration-500 hover:bg-white hover:text-black hover:scale-110"
               href="/contact-us"
             >
               Schedule a demo

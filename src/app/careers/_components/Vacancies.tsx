@@ -41,7 +41,7 @@ const Vacancies: React.FC <VacanciesProps> = ({cardData}) => {
                 <IoTimeOutline className='2xl:text-[18px] xl:text-[15px] text-[13px]' /> <span className='2xl:text-[13px] xl:text-[9.75px] text-[8.67px]'>{data.postDuration}</span>
             </div>
             <div className='flex'>
-                <Link href={data.btnLink} className='2xl:rounded-[8px] rounded-[6px] flex items-center text-white gap-2 bg-[#3464FC] 2xl:text-[18px] xl:text-[13.5px] md:text-[12px] text-[11.22px] 2xl:px-[21.25px] xl:px-[18px] md:px-[16px] px-[18px] 2xl:py-[10.5px] xl:py-[7.5px] md:py-[6.75px] py-[7px] transition-all duration-500 hover:bg-black'>Apply Now <IoArrowForwardOutline /></Link>
+                <Link href={data.btnLink} className='2xl:rounded-[8px] rounded-[6px] flex items-center text-white gap-2 bg-[#3464FC] 2xl:text-[18px] xl:text-[13.5px] md:text-[12px] text-[11.22px] 2xl:px-[21.25px] xl:px-[18px] md:px-[16px] px-[18px] 2xl:py-[10.5px] xl:py-[7.5px] md:py-[6.75px] py-[7px] transition-all duration-500 hover:bg-black hover:scale-110'>Apply Now <IoArrowForwardOutline /></Link>
             </div>
             </div>
         ))}

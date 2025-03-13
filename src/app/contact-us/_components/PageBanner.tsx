@@ -16,7 +16,7 @@ function PageBanner() {
                 Get in touch via phone or email or send us a message using the form below and one of our expert team will come back to you soon.
               </div>
               <div className="flex justify-center">
-                <Link className="bg-[#3563E9] text-white px-[2] w-full md:max-w-[136.44px] max-w-[130px] md:h-[41px] h-[40.29px] flex justify-center items-center py-[2px] md:text-[12.67px] text-[11px] md:font-bold font-semibold rounded-[10.67px] capitalize duration-500 hover:bg-white hover:text-black"
+                <Link className="bg-[#3563E9] text-white px-[2] w-full md:max-w-[136.44px] max-w-[130px] md:h-[41px] h-[40.29px] flex justify-center items-center py-[2px] md:text-[12.67px] text-[11px] md:font-bold font-semibold rounded-[10.67px] capitalize duration-500 hover:bg-white hover:text-black  hover:scale-110"
                         href="/contact-us">Get In Touch</Link>
               </div>
             </div>

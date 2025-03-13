@@ -301,7 +301,7 @@ const NavBar: React.FC = () => {
                       <div className="flex justify-start">
                         <Link
                           href={item.learnMoreLink}
-                          className="flex items-center h-[40px] px-[18px] bg-[#3563E9] transition-all duration-500 hover:bg-black rounded-[8px] text-white font-semibold"
+                          className="flex items-center h-[40px] px-[18px] bg-[#3563E9] transition-all duration-500 hover:bg-black rounded-[8px] text-white font-semibold hover:scale-110"
                         >
                           <span className="text-[14px]">Learn More</span>{" "}
                           <MdArrowOutward className="ms-2.5" />
@@ -389,7 +389,7 @@ const NavBar: React.FC = () => {
                       <div className="flex justify-start">
                         <Link
                           href={item.learnMoreLink}
-                          className="flex items-center h-[40px] px-[18px] bg-[#3563E9] transition-all duration-500 hover:bg-black rounded-[8px] text-white font-semibold"
+                          className="flex items-center h-[40px] px-[18px] bg-[#3563E9] transition-all duration-500 hover:bg-black rounded-[8px] text-white font-semibold hover:scale-110"
                         >
                           <span className="text-[14px]">Learn More</span>{" "}
                           <MdArrowOutward className="ms-2.5" />
@@ -477,7 +477,7 @@ const NavBar: React.FC = () => {
                       <div className="flex justify-start">
                         <Link
                           href={item.learnMoreLink}
-                          className="flex items-center h-[40px] px-[18px] bg-[#3563E9] transition-all duration-500 hover:bg-black rounded-[8px] text-white font-semibold"
+                          className="flex items-center h-[40px] px-[18px] bg-[#3563E9] transition-all duration-500 hover:bg-black rounded-[8px] text-white font-semibold hover:scale-110"
                         >
                           <span className="text-[14px]">Learn More</span>{" "}
                           <MdArrowOutward className="ms-2.5" />
@@ -552,7 +552,7 @@ const NavBar: React.FC = () => {
                       <div className="flex justify-start">
                         <Link
                           href={item.learnMoreLink}
-                          className="flex items-center h-[40px] px-[18px] bg-[#3563E9] transition-all duration-500 hover:bg-black rounded-[8px] text-white font-semibold"
+                          className="flex items-center h-[40px] px-[18px] bg-[#3563E9] transition-all duration-500 hover:bg-black rounded-[8px] text-white font-semibold hover:scale-110"
                         >
                           <span className="text-[14px]">Learn More</span>{" "}
                           <MdArrowOutward className="ms-2.5" />
@@ -627,7 +627,7 @@ const NavBar: React.FC = () => {
                       <div className="flex justify-start">
                         <Link
                           href={item.learnMoreLink}
-                          className="flex items-center h-[40px] px-[18px] bg-[#3563E9] transition-all duration-500 hover:bg-black rounded-[8px] text-white font-semibold"
+                          className="flex items-center h-[40px] px-[18px] bg-[#3563E9] transition-all duration-500 hover:bg-black rounded-[8px] text-white font-semibold hover:scale-110"
                         >
                           <span className="text-[14px]">Learn More</span>{" "}
                           <MdArrowOutward className="ms-2.5" />

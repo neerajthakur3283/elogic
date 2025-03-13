@@ -727,7 +727,7 @@ function ProjectsCards() {
               <div className="2xl:w-[383px] xl:w-[303px] md:w-[260px]">
                 <h2 className="text-[24px] font-bold mb-4">Projects</h2>
                 <div className="relative timeline-block">
-                  <div className="absolute h-full w-1 bg-gray-300 max-h-[90vh] -z-[1] timeline-custom">
+                  <div className="absolute h-full w-1 bg-gray-300 max-h-[90vh] min-[1366px]:max-h-[80vh] -z-[1] timeline-custom">
                     <div
                       className="absolute left-0 w-1 bg-blue-500 transition-all duration-300"
                       style={{
@@ -738,7 +738,7 @@ function ProjectsCards() {
                   </div>
                   <ul
                     ref={scrollContainerRef}
-                    className="relative flex flex-col gap-y-[20px] overflow-y-auto max-h-[90vh] px-[20px] 2xl:py-[85px] xl:py-[60px] md:py-[30px] scrollbar-hide after:absolute after:top-0 after:left-0 after:w-full after:2xl:h-[85px] after:xl:h-[60px] after:md:h-[45px] after:bg-gradient-to-b after:from-white after:to-[rgba(255,255,255,0.0)] before:w-full before:2xl:h-[85px] before:xl:h-[60px] before:md:h-[45px] before:bg-gradient-to-t before:from-white before:to-[rgba(255,255,255,0.0)]"
+                    className="relative flex flex-col gap-y-[20px] overflow-y-auto max-h-[90vh] min-[1366px]:max-h-[80vh] px-[20px] 2xl:py-[85px] xl:py-[60px] md:py-[30px] scrollbar-hide after:absolute after:top-0 after:left-0 after:w-full after:2xl:h-[85px] after:xl:h-[60px] after:md:h-[45px] after:bg-gradient-to-b after:from-white after:to-[rgba(255,255,255,0.0)] before:w-full before:2xl:h-[85px] before:xl:h-[60px] before:md:h-[45px] before:bg-gradient-to-t before:from-white before:to-[rgba(255,255,255,0.0)]"
                   >
                     {projects.map((project, index) => (
                       <li
@@ -778,7 +778,7 @@ function ProjectsCards() {
               {/* Project Details Card */}
               <div className="2xl:w-[calc(100%_-_383px)] xl:w-[calc(100%_-_303px)] md:w-[calc(100%_-_260px)] max-[991px]:mt-9 max-[767px]:mt-7 bg-[#051731] 2xl:rounded-[17.78px] xl:rounded-[12px] rounded-[10px] 2xl:p-[44px] xl:p-[33px] md:p-[30px] p-[20px] max-[1200px]:!h-screen max-[767px]:!h-auto">
                 <div>
-                  <div className="relative w-full imggrdnt after:absolute after:left-0 after:bottom-0 after:h-full after:w-full max-[1024px]:h-[250px]">
+                  <div className="relative w-full imggrdnt after:absolute after:left-0 after:bottom-0 after:h-full after:w-full max-[1024px]:h-[250px] min-[1366px]:h-[260px]">
                     <Image
                       src={projects[currentIndex].projectImg}
                       alt="Project"

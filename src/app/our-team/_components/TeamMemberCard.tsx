@@ -19,7 +19,7 @@ const TeamMemberCard: React.FC <TeamMemberCardProps> = ({memberData}) => {
     <>
         {memberData.map((data,index)=>(
             <div className='2xl:rounded-[25px] xl:rounded-[18.75px] md:rounded-[16.67px] rounded-[16.26px] 2xl:shadow-[0_4px_60px_0_rgba(0,0,0,0.04)] xl:shadow-[0_3px_40px_0_rgba(0,0,0,0.04)] md:shadow-[0_3px_30px_0_rgba(0,0,0,0.04)] shadow-[0_2px_25px_0_rgba(0,0,0,0.04)] bg-white overflow-hidden' key={index}>
-                <div className=''>
+                <div className='overflow-hidden'>
                     <Image className='w-full' src={data.profileImg} alt='' />
                 </div>
                 <div className='text-center 2xl:my-[30px] xl:my-[20px] lg:my-[18px] my-[15px]'>

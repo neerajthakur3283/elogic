@@ -119,7 +119,7 @@ function ServiceOverview() {
             Our wireless systems development service encompasses the complete design and implementation of RF-based communication solutions. We specialize in creating reliable wireless systems for industrial IoT, remote monitoring, and control applications, with particular focus on range optimization, power efficiency, and robust communication in challenging environments.
               <div className="2xl:pt-[40px] xl:pt-[30px] md:pt-[26px] pt-[20px]">
                 <Link
-                  className="bg-[#3563E9] text-white px-[2] w-full 2xl:max-w-[320px] xl:max-w-[260px] md:max-w-[225px] max-w-[205px] 2xl:h-[52px] xl:h-[39px] md:h-[35px] h-[40.29px] flex justify-center items-center py-[2px] 2xl:text-[20px] xl:text-[15px] md:text-[13.33px] text-[12px] md:font-bold font-semibold rounded-[16px] capitalize duration-500 hover:bg-black hover:text-white"
+                  className="bg-[#3563E9] text-white px-[2] w-full 2xl:max-w-[320px] xl:max-w-[260px] md:max-w-[225px] max-w-[205px] 2xl:h-[52px] xl:h-[39px] md:h-[35px] h-[40.29px] flex justify-center items-center py-[2px] 2xl:text-[20px] xl:text-[15px] md:text-[13.33px] text-[12px] md:font-bold font-semibold rounded-[16px] capitalize duration-500 hover:bg-black hover:text-white hover:scale-110"
                   href="/contact-us"
                 >
                   Discuss your requirement <MdArrowOutward className="ms-2.5" />

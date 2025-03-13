@@ -44,9 +44,9 @@ function Header() {
         <div>
           <NavBar />
         </div>
-        <div className="max-[1279px]:hidden head-action">
+        <div className="max-[1279px]:hidden head-action group transition-all duration-500 hover:scale-110">
           <Link
-            className="transition-all bg-[#3563E9] 2xl:px-[39px] xl:px-[29.5px] px-[22px] 2xl:py-[15.5px] xl:py-[11.5px] py-[9px] text-white 2xl:text-[18px] xl:text-[13.5px] font-bold rounded-[16px] capitalize translate-x-full duration-500 hover:bg-white hover:text-black"
+            className="transition-all bg-[#3563E9] 2xl:px-[39px] xl:px-[29.5px] px-[22px] 2xl:py-[15.5px] xl:py-[11.5px] py-[9px] text-white 2xl:text-[18px] xl:text-[13.5px] font-bold rounded-[16px] capitalize translate-x-full duration-500 hover:bg-white hover:text-black hover:!scale-125"
             href="/contact-us"
           >
             contact us

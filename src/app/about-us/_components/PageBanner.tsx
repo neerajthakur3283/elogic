@@ -16,7 +16,7 @@ function PageBanner() {
                 Capture and convert equipment data into actionable maintenance insights for enhanced reliability
               </div>
               <div className="flex justify-center">
-                <Link className="bg-[#3563E9] text-white px-[2] w-full 2xl:max-w-[278.44px] xl:max-w-[228.44px] md:max-w-[188.44px] max-w-[150px] 2xl:h-[60px] xl:h-[54px] md:h-[48px] h-[44.29px] flex justify-center items-center py-[2px] 2xl:text-[19px] xl:text-[17px] md:text-[15px] text-[14px] md:font-bold font-semibold rounded-[10.67px] capitalize duration-500 hover:bg-white hover:text-black"
+                <Link className="bg-[#3563E9] text-white px-[2] w-full 2xl:max-w-[278.44px] xl:max-w-[228.44px] md:max-w-[188.44px] max-w-[150px] 2xl:h-[60px] xl:h-[54px] md:h-[48px] h-[44.29px] flex justify-center items-center py-[2px] 2xl:text-[19px] xl:text-[17px] md:text-[15px] text-[14px] md:font-bold font-semibold rounded-[10.67px] capitalize duration-500 hover:bg-white hover:text-black hover:scale-110"
                         href="/contact-us">Reach out to us</Link>
               </div>
             </div>

@@ -265,7 +265,7 @@ function Footer() {
                 </Link>
                 <div className="sm:ms-5 ms-3">
                   <Link
-                    className="bg-[#3563E9] text-white px-[2] w-full 2xl:min-w-[275px] xl:min-w-[209px] md:min-w-[175.44px] sm:min-w-[195px] min-w-[175px] 2xl:h-[52px] xl:h-[39px] md:h-[35px] h-[40.29px] flex justify-center items-center py-[2px] 2xl:text-[20px] xl:text-[15px] md:text-[13.33px] text-[15.24px] md:font-bold font-semibold rounded-[16px] capitalize duration-500 hover:bg-white hover:text-black"
+                    className="bg-[#3563E9] hover:scale-110 text-white px-[2] w-full 2xl:min-w-[275px] xl:min-w-[209px] md:min-w-[175.44px] sm:min-w-[195px] min-w-[175px] 2xl:h-[52px] xl:h-[39px] md:h-[35px] h-[40.29px] flex justify-center items-center py-[2px] 2xl:text-[20px] xl:text-[15px] md:text-[13.33px] text-[15.24px] md:font-bold font-semibold rounded-[16px] capitalize duration-500 hover:bg-white hover:text-black"
                     href="/contact-us"
                   >
                     Schedule a demo <MdArrowOutward className="ms-2.5" />
