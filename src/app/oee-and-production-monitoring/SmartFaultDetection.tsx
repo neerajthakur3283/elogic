@@ -1,3 +1,5 @@
+'use client'
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -35,7 +37,12 @@ function SmartFaultDetection() {
   return (
     <>
       <section>
-        <div className="2xl:py-[100px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px]">
+        <motion.div 
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, ease: "easeInOut", delay: 0.3}}
+        className="2xl:py-[100px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px]">
           <div className="bg-[#EEF1F5] 2xl:rounded-[12px] xl:rounded-[8.4px] md:rounded-[7.74px] rounded-[8px]">
             <div className="2xl:ps-[100px] xl:ps-[76px] lg:ps-[67px] md:ps-[45px] 2xl:pe-[95px] xl:pe-[70px] lg:pe-[25px] md:pe-[50px] 2xl:py-[95px] xl:py-[76px] md:py-[53px] p-[20px] flex items-center justify-between max-[1023px]:flex-col-reverse lg:flex-nowrap flex-wrap">
               <div className="2xl:w-[762.5px] xl:w-[571.87px] lg:w-[508.33px] w-full">
@@ -64,7 +71,7 @@ function SmartFaultDetection() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
     </>
   );

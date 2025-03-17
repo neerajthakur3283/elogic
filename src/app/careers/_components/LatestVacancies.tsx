@@ -1,7 +1,9 @@
+'use client'
 import React from 'react'
 import Vacancies from './Vacancies'
 import Link from 'next/link'
 import { MdArrowOutward } from 'react-icons/md'
+import { motion } from "framer-motion";
 
 function LatestVacancies() {
     const cardData = [
@@ -58,7 +60,12 @@ function LatestVacancies() {
         <>
             <section>
                 <div className="2xl:py-[80px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] bg-[url('../images/vacancies-bg.svg')] bg-no-repeat bg-[center_bottom]">
-                    <div className="flex justify-between items-start md:flex-nowrap flex-wrap md:gap-y-0 gap-y-[20px]">
+                    <motion.div 
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, ease: "easeInOut", delay: 0.3}}
+                    className="flex justify-between items-start md:flex-nowrap flex-wrap md:gap-y-0 gap-y-[20px]">
                         <div className="text-black">
                             <h2 className="leading-[1] 2xl:text-[61.77px] xl:text-[46.33px] md:text-[41.18px] text-[24px] font-bold capitalize">
                                 Latest Vacancies
@@ -67,11 +74,21 @@ function LatestVacancies() {
                         <div className="text-[#4B5563] font-medium leading-snug w-full 2xl:max-w-[771.19px] xl:max-w-[578px] lg:max-w-[514px] md:max-w-[420px] 2xl:text-[24px] xl:text-[18px] text-base">
                             Turn complex energy data into clear operational advantages with our comprehensive energy monitoring platform. Get real-time visibility, predictive insights, and automated reporting to optimize your energy usage and reduce operational costs.
                         </div>
-                    </div>
-                    <div className="2xl:py-[100px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px] grid md:grid-cols-2 2xl:gap-[40px] xl:gap-[30px] md:gap-[26px] gap-[30px]">
+                    </motion.div>
+                    <motion.div 
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, ease: "easeInOut", delay: 0.3}}
+                    className="2xl:py-[100px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px] grid md:grid-cols-2 2xl:gap-[40px] xl:gap-[30px] md:gap-[26px] gap-[30px]">
                         <Vacancies cardData={cardData} />
-                    </div>
-                    <div className="md:flex hidden justify-between items-start md:flex-nowrap flex-wrap md:gap-y-0 gap-y-[20px]">
+                    </motion.div>
+                    <motion.div 
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, ease: "easeInOut", delay: 0.3}}
+                    className="md:flex hidden justify-between items-start md:flex-nowrap flex-wrap md:gap-y-0 gap-y-[20px]">
                         <div className="text-black">
                             <h2 className="leading-[1] 2xl:text-[61.77px] xl:text-[46.33px] md:text-[41.18px] text-[24px] font-bold capitalize pe-[15px]">
                                 {"can't Find your Role"}
@@ -86,7 +103,7 @@ function LatestVacancies() {
                                 </Link>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </section>
         </>

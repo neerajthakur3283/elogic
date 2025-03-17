@@ -1,3 +1,5 @@
+'use client'
+import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
 import { MdArrowOutward } from "react-icons/md";
@@ -6,7 +8,12 @@ function Approach() {
   return (
     <>
       <section>
-        <div className="2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] 2xl:py-[100px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px]">
+        <motion.div 
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, ease: "easeInOut", delay: 0.3}}
+        className="2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] 2xl:py-[100px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px]">
           <div className="flex justify-between items-start md:flex-nowrap flex-wrap md:gap-y-0 gap-y-[20px]">
             <div className="text-black">
               <h2 className="leading-[1] 2xl:text-[61.77px] xl:text-[46.33px] md:text-[41.18px] text-[24px] font-bold capitalize">
@@ -27,7 +34,7 @@ function Approach() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
     </>
   );

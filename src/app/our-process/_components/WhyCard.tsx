@@ -1,4 +1,5 @@
 'use client'
+import { motion } from "framer-motion";
 import React from "react";
 
 
@@ -15,7 +16,12 @@ interface WhyChooseUsProps {
 const WhyChooseCard: React.FC <WhyChooseUsProps> = ({cardData}) => {
   return (
     <section>
-        <div className="2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px]">
+        <motion.div 
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, ease: "easeInOut", delay: 0.3}}
+        className="2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px]">
             <div className="grid md:grid-cols-4 grid-cols-1 2xl:gap-[40px] xl:gap-[30px] md:gap-[26px] gap-[30px]">
                 {cardData.map((data, index) => (
                     <div key={index} className="from-[#E7F1FF] to-[#ffffff] bg-gradient-to-b 2xl:p-[40px] xl:p-[30px] md:p-[26px] p-[20px] 2xl:rounded-[20px] xl:rounded-[16px] md:rounded-[14px] rounded-[12px]">
@@ -25,7 +31,7 @@ const WhyChooseCard: React.FC <WhyChooseUsProps> = ({cardData}) => {
                     </div>
                 ))}
             </div>
-        </div>
+        </motion.div>
     </section>
   );
 };

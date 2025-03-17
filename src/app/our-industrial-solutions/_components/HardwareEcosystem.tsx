@@ -1,3 +1,5 @@
+'use client'
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -19,7 +21,12 @@ import ioModuleMob from "@/src/assets/images/io-module-mob.jpg";
 function HardwareEcosystem() {
   return (
     <section>
-      <div className="bg-[#EEF1F5] 2xl:py-[100px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px]">
+      <motion.div 
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8, ease: "easeInOut", delay: 0.3}}
+      className="bg-[#EEF1F5] 2xl:py-[100px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px]">
         <div className="flex justify-between items-start md:flex-nowrap flex-wrap md:gap-y-0 gap-y-[20px]">
           <div className="text-black">
             <span className="flex text-[#3563E9] uppercase font-bold 2xl:text-[16.88px] xl:text-[12.66px] md:text-[11.25px] text-[10px] 2xl:mb-[20px] xl:mb-[15px] md:mb-[13.33px] mb-[10px]">
@@ -195,7 +202,7 @@ function HardwareEcosystem() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

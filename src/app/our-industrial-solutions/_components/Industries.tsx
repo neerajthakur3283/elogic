@@ -1,4 +1,5 @@
-"use client";
+'use client'
+import { motion } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
 import { useEffect, useRef, useState } from "react";
 
@@ -130,7 +131,12 @@ const IndustriesTabs = () => {
   };
   return (
     <section>
-      <div className="2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] 2xl:py-[80px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px]">
+      <motion.div 
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8, ease: "easeInOut", delay: 0.3}}
+      className="2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] 2xl:py-[80px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px]">
         <div className="flex 2xl:gap-[100px] xl:gap-[75px] lg:gap-[66px] md:gap-[35px] lg:flex-nowrap flex-wrap">
           <div className="2xl:max-w-[742px] xl:max-w-[600px] lg:max-w-[450px] w-full">
             <div className="md:mb-0 mb-8">
@@ -223,7 +229,7 @@ const IndustriesTabs = () => {
             ))}
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

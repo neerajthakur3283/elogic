@@ -1,3 +1,5 @@
+'use client'
+import { motion } from "framer-motion";
 import React from "react";
 import YouAreCard from "./YouAreCard";
 
@@ -49,7 +51,12 @@ function YouAre() {
   return (
     <>
       <section>
-        <div className='relative bg-[url("../images/you-are-bg.png")] md:bg-black bg-[#05152F] 2xl:py-[100px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px] after:absolute after:top-0 after:left-0 after:right-0 after:h-[242px] after:bg-gradient-to-b after:from-[#05152F] after:to-[rgba(5,21,47,0)] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] min-h-screen md:h-auto lg:h-[90vh]'>
+        <motion.div 
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, ease: "easeInOut", delay: 0.3}}
+        className='relative bg-[url("../images/you-are-bg.png")] md:bg-black bg-[#05152F] 2xl:py-[100px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px] after:absolute after:top-0 after:left-0 after:right-0 after:h-[242px] after:bg-gradient-to-b after:from-[#05152F] after:to-[rgba(5,21,47,0)] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] min-h-screen md:h-auto lg:h-[90vh]'>
           <div className="relative z-[1]">
             <div className="text-center">
               <h2 className="text-white 2xl:text-[62px] xl:text-[47px] lg:text-[41px] text-[24px] font-bold capitalize">
@@ -60,7 +67,7 @@ function YouAre() {
               <YouAreCard youCardView={youCardView} />
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
     </>
   );

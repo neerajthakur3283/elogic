@@ -1,3 +1,5 @@
+'use client'
+import { motion } from "framer-motion";
 import React from 'react'
 import TeamMemberCard from './TeamMemberCard'
 
@@ -33,7 +35,12 @@ function TeamMembers() {
     return (
     <>
         <section>
-            <div className='bg-[#EEF1F5] 2xl:pt-[100px] xl:pt-[75px] lg:pt-[66px] md:pt-[45px] pt-[50px] md:pb-0 pb-12 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px]'>
+            <motion.div 
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: "easeInOut", delay: 0.3}}
+            className='bg-[#EEF1F5] 2xl:pt-[100px] xl:pt-[75px] lg:pt-[66px] md:pt-[45px] pt-[50px] md:pb-0 pb-12 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px]'>
                 <div className='container mx-auto min-[1470px]:max-w-[1417.98px]'>
                     <div className='flex justify-center'>
                         <h2 className="text-black leading-[1] 2xl:text-[61.77px] xl:text-[46.33px] md:text-[41.18px] text-[24px] font-bold">Meet The Team</h2>
@@ -42,7 +49,7 @@ function TeamMembers() {
                         <TeamMemberCard memberData={memberData} />
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </section>
     </>
   )

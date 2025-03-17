@@ -1,5 +1,7 @@
+'use client'
 import Image from 'next/image'
 import React from 'react'
+import { motion } from "framer-motion";
 
 // images
 import firstIcon from '@/src/assets/images/flexibility-agility.svg'
@@ -13,7 +15,12 @@ function PerkBenefits() {
   return (
     <>
         <section>
-            <div className='bg-[#111B40] 2xl:py-[100px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px]'>
+            <motion.div 
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: "easeInOut", delay: 0.3}}
+            className='bg-[#111B40] 2xl:py-[100px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px]'>
                 <div className='flex justify-center text-white'>
                     <h2 className='capitalize 2xl:text-[46.88px] xl:text-[35.16px] md:text-[31.25px] text-[24px] font-bold'>perks and Benefits</h2>
                 </div>
@@ -43,7 +50,7 @@ function PerkBenefits() {
                     <Link className="bg-[#3563E9] text-white px-[2] w-full 2xl:max-w-[278.44px] xl:max-w-[228.44px] md:max-w-[188.44px] max-w-[150px] 2xl:h-[60px] xl:h-[54px] md:h-[48px] h-[44.29px] flex justify-center items-center py-[2px] 2xl:text-[19px] xl:text-[17px] md:text-[15px] text-[14px] md:font-bold font-semibold rounded-[10.67px] capitalize duration-500 hover:bg-white hover:text-black hover:scale-110"
                         href="/contact-us">Join Us</Link>
                 </div>
-            </div>
+            </motion.div>
         </section>
     </>
   )

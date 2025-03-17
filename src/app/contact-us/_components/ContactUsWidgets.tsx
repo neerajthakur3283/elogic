@@ -2,6 +2,7 @@
 import { Checkbox } from '@/components/ui/checkbox';
 import Link from 'next/link'
 import React, { useState } from 'react'
+import { motion } from "framer-motion";
 
 function ContactUsWidgets() {
     const [selectedTab, setSelectedTab] = useState("services");
@@ -51,7 +52,12 @@ function ContactUsWidgets() {
 
                     <div className='flex justify-between 2xl:gap-[100px] xl:gap-[75px] lg:gap-[66px] lg:flex-nowrap flex-wrap'>
 
-                        <div className='lg:w-[900px] w-full 2xl:rounded-[26px] xl:rounded-[19.5px] md:rounded-[17.33px] rounded-[16.21px] bg-white 2xl:shadow-[0_0_50px_rgba(0,0,0,0.1)] xl:shadow-[0_0_18px_rgba(146,146,146,0.25)] md:shadow-[0_0_16px_rgba(146,146,146,0.25)] shadow-[0_0_14px_rgba(0,0,0,0.25)] 2xl:p-[50px] xl:p-[40px] lg:p-[35px] md:p-[30px] p-[25px]'>
+                        <motion.div 
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8, ease: "easeInOut", delay: 0.3}}
+                        className='lg:w-[900px] w-full 2xl:rounded-[26px] xl:rounded-[19.5px] md:rounded-[17.33px] rounded-[16.21px] bg-white 2xl:shadow-[0_0_50px_rgba(0,0,0,0.1)] xl:shadow-[0_0_18px_rgba(146,146,146,0.25)] md:shadow-[0_0_16px_rgba(146,146,146,0.25)] shadow-[0_0_14px_rgba(0,0,0,0.25)] 2xl:p-[50px] xl:p-[40px] lg:p-[35px] md:p-[30px] p-[25px]'>
                             <h2 className='text-[#262626] font-bold 2xl:text-[36px] xl:text-[27px] md:text-[24px] text-[22.45px] text-center'>Are you looking for?</h2>
                             <div className='2xl:pt-[60px] xl:pt-[50px] md:pt-[40px] pt-[30px] overflow-hidden'>
                                 <form method='get' action="#">
@@ -361,9 +367,14 @@ function ContactUsWidgets() {
 
                                 </form>
                             </div>
-                        </div>
+                        </motion.div>
 
-                        <div className='lg:w-[calc(100%_-_900px)] w-full 2xl:pt-8 lg:mt-0 mt-10'>
+                        <motion.div 
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8, ease: "easeInOut", delay: 0.3}}
+                        className='lg:w-[calc(100%_-_900px)] w-full 2xl:pt-8 lg:mt-0 mt-10'>
                             <div className='grid grid-cols-1 h-full'>
                                 <div className='flex flex-col border-b border-b-[#DCDCDC] 2xl:pb-[40px] xl:pb-[30px] md:pb-[26px] pb-[20px]'>
                                     <span className='text-[#656567] tracking-[-0.22px] 2xl:text-[18px] md:text-[13.5px] text-[11.22px]'>Email Address</span>
@@ -387,7 +398,7 @@ function ContactUsWidgets() {
                                     <iframe className='w-full 2xl:h-[550px] lg:h-[470px] h-[450px]' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30453.907124137066!2d78.423904!3d17.424338!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb970d18993739%3A0x90c151e6974d10e8!2seLogicTech%20Edge!5e0!3m2!1sen!2sin!4v1738235240338!5m2!1sen!2sin"></iframe>
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
 
                     </div>
 

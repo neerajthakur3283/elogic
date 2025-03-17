@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 
 import teamBgImg from "@/src/assets/images/mastering-chatgpt-banner.jpg";
 
@@ -7,7 +9,11 @@ function PageBanner() {
   return (
     <>
       <section>
-        <div className="relative max-[480px]:h-[400px] 2xl:h-[700px] xl:h-[525px] h-[466.67px] overflow-hidden">
+        <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeInOut", delay: 0 }}
+        className="relative max-[480px]:h-[400px] 2xl:h-[700px] xl:h-[525px] h-[466.67px] overflow-hidden">
           <div className="2xl:py-[260px] xl:py-[195px] flex items-center justify-center md:py-[173px] py-[185px] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] absolute left-0 top-0 w-full h-full">
             <div className="flex justify-center text-white flex-col text-center gap-4">
               <div className="flex justify-center">
@@ -37,7 +43,7 @@ function PageBanner() {
           <div className="h-full">
             <Image src={teamBgImg} className="h-full object-cover" alt="" />
           </div>
-        </div>
+        </motion.div>
       </section>
     </>
   );

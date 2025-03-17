@@ -1,7 +1,9 @@
+'use client'
 import Link from 'next/link'
 import React from 'react'
 import { MdArrowOutward } from 'react-icons/md'
 import AboutCard from './AboutCard'
+import { motion } from "framer-motion";
 
 // images
 import GlobeIcon from '@/src/assets/images/wordwide-presence.svg'
@@ -19,7 +21,12 @@ function WhoWeAre() {
   return (
     <>
       <section>
-        <div className="2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] 2xl:py-[100px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px]">
+        <motion.div 
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, ease: "easeInOut", delay: 0.3}}
+        className="2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] 2xl:py-[100px] xl:py-[75px] lg:py-[66px] md:py-[45px] py-[50px]">
           <div className="flex justify-between items-start md:flex-nowrap flex-wrap md:gap-y-0 gap-y-[20px]">
             <div className="text-black">
               <h2 className="leading-[1] 2xl:text-[61.77px] xl:text-[46.33px] md:text-[41.18px] text-[24px] font-bold capitalize">
@@ -45,7 +52,7 @@ function WhoWeAre() {
           <div className="2xl:pt-[100px] xl:pt-[75px] lg:pt-[66px] md:pt-[45px] pt-[50px] grid lg:grid-cols-4 sm:grid-cols-2 2xl:gap-[25.3px] xl:gap-[20px] sm:gap-[18px] gap-[15px]">
             <AboutCard aboutCardData={aboutCardData} />
           </div>
-        </div>
+        </motion.div>
       </section>
     </>
   );
