@@ -1,3 +1,5 @@
+'use client'
+import { motion } from "framer-motion";
 import Image from 'next/image'
 import React from 'react'
 import Link from 'next/link'
@@ -18,7 +20,12 @@ function CostControlAllocation() {
   return (
     <>
       <section>
-        <div className='bg-[#051731] 2xl:py-[67px] xl:py-[50.33px] md:py-[44px] py-[50px] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px]'>
+        <motion.div 
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, ease: "easeInOut", delay: 0.3}}
+        className='bg-[#051731] 2xl:py-[67px] xl:py-[50.33px] md:py-[44px] py-[50px] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px]'>
           <div className='flex items-center justify-between lg:flex-nowrap flex-wrap xl:gap-0 md:gap-5'>
             <div className='2xl:w-[calc(100%_-_762.5px)] xl:w-[calc(100%_-_571.87px)] lg:w-[calc(100%_-_508.33px)] w-full min-[1850px]:pe-[79.5px] max-[1535px]:pe-[35px] max-[1199px]:pe-0'>
               <div className='lg:hidden flex mb-[30px]'>
@@ -37,7 +44,7 @@ function CostControlAllocation() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
     </>
   )

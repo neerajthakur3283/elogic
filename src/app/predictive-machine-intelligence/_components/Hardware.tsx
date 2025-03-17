@@ -1,3 +1,5 @@
+'use client'
+import { motion } from "framer-motion";
 import React from 'react'
 import HardwareCard from './HardwareCard'
 
@@ -13,7 +15,12 @@ function Hardware() {
   return (
     <>
         <section>
-            <div className='bg-[#EEF1F5] 2xl:pt-[100px] xl:pt-[75px] lg:pt-[66px] md:pt-[45px] pt-[50px] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] md:pb-0 pb-12'>
+            <motion.div 
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: "easeInOut", delay: 0.3}}
+            className='bg-[#EEF1F5] 2xl:pt-[100px] xl:pt-[75px] lg:pt-[66px] md:pt-[45px] pt-[50px] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] md:pb-0 pb-12'>
                 <div className="flex justify-between items-start md:flex-nowrap flex-wrap md:gap-y-0 gap-y-[20px]">
                     <div className="text-black">
                     <h2 className="leading-[1] 2xl:text-[61.77px] xl:text-[46.33px] md:text-[41.18px] text-[24px] font-bold">Hardware</h2>
@@ -23,7 +30,7 @@ function Hardware() {
                 <div className='grid md:grid-cols-2 2xl:mt-[60px] xl:mt-[45px] mt-[40px] 2xl:gap-[51.48px] xl:gap-[38.61px] md:gap-[34.32px] gap-[22.21px]'>
                     <HardwareCard hardwaredCardData={hardwaredCardData} />
                 </div>
-            </div>
+            </motion.div>
         </section>
     </>
   )

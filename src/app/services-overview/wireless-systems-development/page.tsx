@@ -8,9 +8,9 @@ function page() {
   return (
     <>  
       <PageBanner />
-        <ServiceOverview />
-        <OurCulturedValues />
-        <TalkToExpert/>
+      <ServiceOverview />
+      <OurCulturedValues />
+      <TalkToExpert/>
     </>
   )
 }

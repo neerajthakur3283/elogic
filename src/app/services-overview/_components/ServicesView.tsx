@@ -1,4 +1,5 @@
 'use client'
+import { motion } from "framer-motion";
 import React from 'react'
 import ServiceCard from './ServiceCard'
 
@@ -198,10 +199,16 @@ function ServicesView() {
   return (
     <>
       <section>
-        <div className='bg-[#EEF1F5] 2xl:pt-[100px] xl:pt-[75px] lg:pt-[66px] md:pt-[45px] pt-[50px] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px]'>
-          <div className='leading-[1] 2xl:text-[61.77px] xl:text-[46.33px] md:text-[41.18px] text-[24px] font-bold'>
+        <div
+        className='bg-[#EEF1F5] 2xl:pt-[100px] xl:pt-[75px] lg:pt-[66px] md:pt-[45px] pt-[50px] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px]'>
+          <motion.div 
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeInOut", delay: 0.3}}
+          className='leading-[1] 2xl:text-[61.77px] xl:text-[46.33px] md:text-[41.18px] text-[24px] font-bold'>
             Services
-          </div>
+          </motion.div>
           <div className='2xl:pt-[80px] xl:pt-[60px] md:pt-[53px] pt-[40px]'>
             <div className='grid lg:grid-cols-2 grid-cols-1 2xl:gap-x-[40px] xl:gap-x-[30px] md:gap-x-[25px] 2xl:gap-y-[80px] lg:gap-y-[53px] gap-y-[16px] [&>div:nth-child(2)>div:nth-child(1)>div>div:nth-child(2)>ul>li:nth-child(7)]:items-start [&>div:nth-child(2)>div:nth-child(1)>div>div:nth-child(2)>ul>li:nth-child(9)]:items-center [&>div:nth-child(2)>div:nth-child(1)>div>div:nth-child(2)>ul>li:nth-child(9)]:relative md:[&>div:nth-child(2)>div:nth-child(1)>div>div:nth-child(2)>ul>li:nth-child(9)]:-top-[50px] [&>div:nth-child(2)>div:nth-child(1)>div>div:nth-child(2)>ul>li:nth-child(9)]:-top-[40px]'>
               <ServiceCard serviceCardData={serviceCardData} />

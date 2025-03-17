@@ -1,4 +1,5 @@
 'use client'
+import { motion } from "framer-motion";
 import Image, { StaticImageData } from 'next/image';
 import React from 'react';
 import SlickSlider from 'react-slick';
@@ -70,7 +71,12 @@ interface ExampleCardSliderItem {
   return (
     <>
         <section>
-            <div className='2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] 2xl:pb-[100px] xl:pb-[75px] lg:pb-[66px] md:pb-[45px] pb-[50px]'>
+            <motion.div 
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: "easeInOut", delay: 0.3}}
+            className='2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] 2xl:pb-[100px] xl:pb-[75px] lg:pb-[66px] md:pb-[45px] pb-[50px]'>
                 <div className='bg-[#051731] 2xl:p-[50px] xl:p-[40px] lg:p-[30px] p-[20px] 2xl:rounded-[20px] xl:rounded-[16px] md:rounded-[14px] rounded-[12px] flex justify-between md:flex-nowrap flex-wrap md:gap-y-0 gap-y-8 max-[767px]:flex-col-reverse'>
                     <div className='2xl:w-[calc(100%_-_634px)] xl:w-[calc(100%_-_457px)] lg:w-[calc(100%_-_350px)] md:w-[calc(100%_-_328.5px)] w-full 2xl:pe-[72px] xl:pe-[50px] lg:pe-[40px] md:pe-[20px]'>
                         <h4 className='md:flex hidden text-white font-semibold 2xl:text-[36px] xl:text-[27px] md:text-[24px] text-[22.45px]'>Example Applications</h4>
@@ -98,7 +104,7 @@ interface ExampleCardSliderItem {
                         </SlickSlider>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </section>
     </>
   )

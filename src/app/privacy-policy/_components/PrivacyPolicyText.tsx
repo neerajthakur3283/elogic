@@ -1,4 +1,5 @@
-"use client";
+'use client'
+import { motion } from "framer-motion";
 import React, { useEffect, useMemo, useState } from "react";
 import Introduction from "./Introduction";
 import Definitions from "./Definitions";
@@ -119,7 +120,12 @@ function PrivacyPolicyText() {
   return (
     <>
       <section>
-        <div className="bg-[#EEF1F5] 2xl:pt-[100px] xl:pt-[75px] lg:pt-[66px] md:pt-[45px] pt-[50px] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] md:pb-0 pb-12">
+        <motion.div 
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeInOut", delay: 0.3}}
+          className="bg-[#EEF1F5] 2xl:pt-[100px] xl:pt-[75px] lg:pt-[66px] md:pt-[45px] pt-[50px] 2xl:px-[72px] xl:px-[54px] lg:px-[48px] px-[20px] md:pb-0 pb-12">
           <div className="flex 2xl:gap-[30px] md:flex-nowrap flex-wrap">
             <div className="hidden w-full mb-[40px]">
               <button
@@ -245,7 +251,7 @@ function PrivacyPolicyText() {
               })}
             </main>
           </div>
-        </div>
+        </motion.div>
       </section>
     </>
   );
